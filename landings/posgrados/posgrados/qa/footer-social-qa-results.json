@@ -1,0 +1,168 @@
+[
+  {
+    "width": 1440,
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "textContent": "",
+    "imageCount": 4,
+    "brokenImages": [],
+    "socialFontSize": "0px",
+    "socialGap": "24px",
+    "socialJustify": "flex-end",
+    "factsRect": {
+      "left": 0,
+      "right": 1440,
+      "width": 1440
+    },
+    "factsMaxWidth": "none",
+    "factsMarginLeft": "0px",
+    "factsMarginRight": "0px",
+    "imageMetrics": [
+      {
+        "src": "assets/images/icon-facebook.png",
+        "alt": "",
+        "naturalWidth": 9,
+        "naturalHeight": 17,
+        "width": 9,
+        "height": 17,
+        "complete": true
+      },
+      {
+        "src": "assets/images/icon-x.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 16,
+        "width": 18.0625,
+        "height": 17,
+        "complete": true
+      },
+      {
+        "src": "assets/images/icon-linkedin.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17,
+        "complete": true
+      },
+      {
+        "src": "assets/images/icon-instagram.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17,
+        "complete": true
+      }
+    ],
+    "linkMetrics": [
+      {
+        "label": "Facebook",
+        "width": 24,
+        "height": 24,
+        "text": ""
+      },
+      {
+        "label": "X",
+        "width": 24,
+        "height": 24,
+        "text": ""
+      },
+      {
+        "label": "LinkedIn",
+        "width": 24,
+        "height": 24,
+        "text": ""
+      },
+      {
+        "label": "Instagram",
+        "width": 24,
+        "height": 24,
+        "text": ""
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "viewport": 390,
+    "scrollWidth": 390,
+    "textContent": "",
+    "imageCount": 4,
+    "brokenImages": [],
+    "socialFontSize": "0px",
+    "socialGap": "28px",
+    "socialJustify": "center",
+    "factsRect": {
+      "left": 0,
+      "right": 390,
+      "width": 390
+    },
+    "factsMaxWidth": "none",
+    "factsMarginLeft": "0px",
+    "factsMarginRight": "0px",
+    "imageMetrics": [
+      {
+        "src": "assets/images/icon-facebook.png",
+        "alt": "",
+        "naturalWidth": 9,
+        "naturalHeight": 17,
+        "width": 9,
+        "height": 17,
+        "complete": true
+      },
+      {
+        "src": "assets/images/icon-x.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 16,
+        "width": 18.0625,
+        "height": 17,
+        "complete": true
+      },
+      {
+        "src": "assets/images/icon-linkedin.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17,
+        "complete": true
+      },
+      {
+        "src": "assets/images/icon-instagram.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17,
+        "complete": true
+      }
+    ],
+    "linkMetrics": [
+      {
+        "label": "Facebook",
+        "width": 30,
+        "height": 30,
+        "text": ""
+      },
+      {
+        "label": "X",
+        "width": 30,
+        "height": 30,
+        "text": ""
+      },
+      {
+        "label": "LinkedIn",
+        "width": 30,
+        "height": 30,
+        "text": ""
+      },
+      {
+        "label": "Instagram",
+        "width": 30,
+        "height": 30,
+        "text": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "id": "211673389085",
+  "url": "https://universidad.tecmilenio.mx/maestria-administracion-calidad-y-productividad",
+  "htmlTitle": "Maestría en Administración de Negocios Área Calidad y Productividad",
+  "metaDescription": "Aplica Lean Six Sigma y diseña sistemas de calidad que optimizan operaciones y elevan la productividad. Maestría en Administración de Negocios Área Calidad y Productividad Tecmilenio. ¡Inscríbete!",
+  "templatePath": "Módulos Tailwind 2023/Universidad/maps Tailwind - junio 2025.html",
+  "formId": "7e46ab60-44ca-40d8-88b7-cdaca5bd03f4",
+  "thankYouUrl": "https://universidad.tecmilenio.mx/registro-concluido",
+  "assets": {
+    "hero": "https://universidad.tecmilenio.mx/hubfs/Landing%20Pages%20M/Posgrados%20Maps/maestria-admin-calidad-posgrado.jpg",
+    "secondary": "https://universidad.tecmilenio.mx/hubfs/Landing%20Pages%20M/Posgrados%20Maps/maestria-admin-calidad-secundaria.png",
+    "format": "https://universidad.tecmilenio.mx/hubfs/Landing%20Pages%20M/Posgrados%20Maps/formato-posgrados.jpg",
+    "programs": "https://universidad.tecmilenio.mx/hubfs/Landing%20Pages%20M/Posgrados%20Maps/posgrados-general-maps-programas-2.webp",
+    "brochure": "https://universidad.tecmilenio.mx/hubfs/Folletos%20Posgrados%20JM/Folleto%20Maestr%C3%ADa%20en%20Calidad%20y%20Productividad.pdf?hsLang=es-mx"
+  }
+}

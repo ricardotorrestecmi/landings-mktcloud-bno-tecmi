@@ -1,0 +1,63 @@
+{
+  "url": "http://localhost:49622/landings/posgrados/maestria-automatizacion-robotica/",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1200
+      },
+      "title": "Maestría en Automatización y Robótica | Universidad Tecmilenio",
+      "metaDescription": "Diseña, simula y optimiza sistemas industriales inteligentes con dominio en robótica e Internet Industrial de las Cosas. Maestría en Automatización y Robótica de Tecmilenio.",
+      "robots": "noindex,nofollow",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "brokenImages": [],
+      "hasProgramTitle": true,
+      "hasPlanPdf": "https://universidad.tecmilenio.mx/hubfs/Folletos%20Posgrados%20JM/Maestria-en-Automatizacion-y-Robotica-Universidad-Tecmilenio.pdf?hsLang=es-mx",
+      "hasTenth": true,
+      "hasCta": true,
+      "h1Rect": {
+        "x": 95,
+        "y": 167,
+        "width": 650,
+        "height": 192
+      },
+      "formRect": {
+        "x": 835,
+        "y": 179,
+        "width": 505,
+        "height": 372
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 1200
+      },
+      "title": "Maestría en Automatización y Robótica | Universidad Tecmilenio",
+      "metaDescription": "Diseña, simula y optimiza sistemas industriales inteligentes con dominio en robótica e Internet Industrial de las Cosas. Maestría en Automatización y Robótica de Tecmilenio.",
+      "robots": "noindex,nofollow",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "brokenImages": [],
+      "hasProgramTitle": true,
+      "hasPlanPdf": "https://universidad.tecmilenio.mx/hubfs/Folletos%20Posgrados%20JM/Maestria-en-Automatizacion-y-Robotica-Universidad-Tecmilenio.pdf?hsLang=es-mx",
+      "hasTenth": true,
+      "hasCta": true,
+      "h1Rect": {
+        "x": 22,
+        "y": 162,
+        "width": 330,
+        "height": 120
+      },
+      "formRect": {
+        "x": 22,
+        "y": 736,
+        "width": 346,
+        "height": 436
+      }
+    }
+  ]
+}

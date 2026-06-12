@@ -1,0 +1,2352 @@
+[
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "width": 1330,
+    "expectedColumns": 3,
+    "ok": false,
+    "innerWidth": 1330,
+    "scrollWidth": 1330,
+    "grid": {
+      "left": 67,
+      "right": 1264,
+      "width": 1197,
+      "columns": "385.656px 385.672px 385.656px",
+      "justifyContent": "center"
+    },
+    "columns": 3,
+    "cards": [
+      {
+        "card": {
+          "left": 66.5,
+          "right": 452.15625,
+          "top": 5115.75,
+          "bottom": 5319.75,
+          "width": 385.65625,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "385.656px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5189.75,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5277.75,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 472.15625,
+          "right": 857.828125,
+          "top": 5115.75,
+          "bottom": 5319.75,
+          "width": 385.671875,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "385.672px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5189.75,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5255.75,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 877.828125,
+          "right": 1263.484375,
+          "top": 5115.75,
+          "bottom": 5319.75,
+          "width": 385.65625,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "385.656px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5189.75,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5255.75,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 66.5,
+          "right": 452.15625,
+          "top": 5339.75,
+          "bottom": 5563.75,
+          "width": 385.65625,
+          "height": 224,
+          "scrollHeight": 224,
+          "clientHeight": 224
+        },
+        "style": {
+          "width": "385.656px",
+          "height": "224px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5413.75,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5523.75,
+          "height": 110,
+          "scrollHeight": 110,
+          "clientHeight": 110,
+          "heightStyle": "110px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 472.15625,
+          "right": 857.828125,
+          "top": 5339.75,
+          "bottom": 5563.75,
+          "width": 385.671875,
+          "height": 224,
+          "scrollHeight": 224,
+          "clientHeight": 224
+        },
+        "style": {
+          "width": "385.672px",
+          "height": "224px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5413.75,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5479.75,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 877.828125,
+          "right": 1263.484375,
+          "top": 5339.75,
+          "bottom": 5563.75,
+          "width": 385.65625,
+          "height": 224,
+          "scrollHeight": 224,
+          "clientHeight": 224
+        },
+        "style": {
+          "width": "385.656px",
+          "height": "224px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5413.75,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5479.75,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "width": 1200,
+    "expectedColumns": 3,
+    "ok": true,
+    "innerWidth": 1200,
+    "scrollWidth": 1200,
+    "grid": {
+      "left": 60,
+      "right": 1140,
+      "width": 1080,
+      "columns": "346.656px 346.672px 346.656px",
+      "justifyContent": "center"
+    },
+    "columns": 3,
+    "cards": [
+      {
+        "card": {
+          "left": 60,
+          "right": 406.65625,
+          "top": 5206,
+          "bottom": 5464,
+          "width": 346.65625,
+          "height": 258,
+          "scrollHeight": 258,
+          "clientHeight": 258
+        },
+        "style": {
+          "width": "346.656px",
+          "height": "258px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5314,
+          "height": 68,
+          "scrollHeight": 69,
+          "clientHeight": 68,
+          "heightStyle": "68px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5424,
+          "height": 110,
+          "scrollHeight": 110,
+          "clientHeight": 110,
+          "heightStyle": "110px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 426.65625,
+          "right": 773.328125,
+          "top": 5206,
+          "bottom": 5464,
+          "width": 346.671875,
+          "height": 258,
+          "scrollHeight": 258,
+          "clientHeight": 258
+        },
+        "style": {
+          "width": "346.672px",
+          "height": "258px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5280,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5368,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 793.328125,
+          "right": 1139.984375,
+          "top": 5206,
+          "bottom": 5464,
+          "width": 346.65625,
+          "height": 258,
+          "scrollHeight": 258,
+          "clientHeight": 258
+        },
+        "style": {
+          "width": "346.656px",
+          "height": "258px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5280,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5368,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 60,
+          "right": 406.65625,
+          "top": 5484,
+          "bottom": 5730,
+          "width": 346.65625,
+          "height": 246,
+          "scrollHeight": 246,
+          "clientHeight": 246
+        },
+        "style": {
+          "width": "346.656px",
+          "height": "246px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5558,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5690,
+          "height": 132,
+          "scrollHeight": 132,
+          "clientHeight": 132,
+          "heightStyle": "132px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 426.65625,
+          "right": 773.328125,
+          "top": 5484,
+          "bottom": 5730,
+          "width": 346.671875,
+          "height": 246,
+          "scrollHeight": 246,
+          "clientHeight": 246
+        },
+        "style": {
+          "width": "346.672px",
+          "height": "246px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5558,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5646,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 793.328125,
+          "right": 1139.984375,
+          "top": 5484,
+          "bottom": 5730,
+          "width": 346.65625,
+          "height": 246,
+          "scrollHeight": 246,
+          "clientHeight": 246
+        },
+        "style": {
+          "width": "346.656px",
+          "height": "246px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5592,
+          "height": 68,
+          "scrollHeight": 69,
+          "clientHeight": 68,
+          "heightStyle": "68px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5658,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "width": 1024,
+    "expectedColumns": 2,
+    "ok": false,
+    "innerWidth": 1024,
+    "scrollWidth": 1024,
+    "grid": {
+      "left": 51,
+      "right": 973,
+      "width": 922,
+      "columns": "450.812px 450.812px",
+      "justifyContent": "center"
+    },
+    "columns": 2,
+    "cards": [
+      {
+        "card": {
+          "left": 51.1875,
+          "right": 502,
+          "top": 5074,
+          "bottom": 5278,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5148,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5214,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 522,
+          "right": 972.8125,
+          "top": 5074,
+          "bottom": 5278,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5148,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5214,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 51.1875,
+          "right": 502,
+          "top": 5298,
+          "bottom": 5502,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5372,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5438,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 522,
+          "right": 972.8125,
+          "top": 5298,
+          "bottom": 5502,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5372,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5460,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 51.1875,
+          "right": 502,
+          "top": 5522,
+          "bottom": 5726,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5596,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5662,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 522,
+          "right": 972.8125,
+          "top": 5522,
+          "bottom": 5726,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5596,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5640,
+          "height": 44,
+          "scrollHeight": 44,
+          "clientHeight": 44,
+          "heightStyle": "44px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "width": 900,
+    "expectedColumns": 2,
+    "ok": false,
+    "innerWidth": 900,
+    "scrollWidth": 900,
+    "grid": {
+      "left": 45,
+      "right": 855,
+      "width": 810,
+      "columns": "395px 395px",
+      "justifyContent": "center"
+    },
+    "columns": 2,
+    "cards": [
+      {
+        "card": {
+          "left": 45,
+          "right": 440,
+          "top": 6412.421875,
+          "bottom": 6616.421875,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6486.421875,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6574.421875,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 460,
+          "right": 855,
+          "top": 6412.421875,
+          "bottom": 6616.421875,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6486.421875,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6552.421875,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 45,
+          "right": 440,
+          "top": 6636.421875,
+          "bottom": 6860.421875,
+          "width": 395,
+          "height": 224,
+          "scrollHeight": 224,
+          "clientHeight": 224
+        },
+        "style": {
+          "width": "395px",
+          "height": "224px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6710.421875,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6776.421875,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 460,
+          "right": 855,
+          "top": 6636.421875,
+          "bottom": 6860.421875,
+          "width": 395,
+          "height": 224,
+          "scrollHeight": 224,
+          "clientHeight": 224
+        },
+        "style": {
+          "width": "395px",
+          "height": "224px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6710.421875,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6820.421875,
+          "height": 110,
+          "scrollHeight": 110,
+          "clientHeight": 110,
+          "heightStyle": "110px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 45,
+          "right": 440,
+          "top": 6880.421875,
+          "bottom": 7084.421875,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6954.421875,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 7020.421875,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 460,
+          "right": 855,
+          "top": 6880.421875,
+          "bottom": 7084.421875,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6954.421875,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 7020.421875,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "width": 760,
+    "expectedColumns": 1,
+    "ok": false,
+    "innerWidth": 760,
+    "scrollWidth": 760,
+    "grid": {
+      "left": 38,
+      "right": 722,
+      "width": 684,
+      "columns": "684px",
+      "justifyContent": "center"
+    },
+    "columns": 1,
+    "cards": [
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 7351.734375,
+          "bottom": 7555.734375,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 7407.734375,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 7459.734375,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 7575.734375,
+          "bottom": 7779.734375,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 7631.734375,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 7683.734375,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 7799.734375,
+          "bottom": 8003.734375,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 7855.734375,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 7907.734375,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 8023.734375,
+          "bottom": 8227.734375,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 8079.734375,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 8131.734375,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 8247.734375,
+          "bottom": 8451.734375,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 8303.734375,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 8355.734375,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 8471.734375,
+          "bottom": 8675.734375,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 8527.734375,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 8559.734375,
+          "height": 20,
+          "scrollHeight": 20,
+          "clientHeight": 20,
+          "heightStyle": "20px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "width": 1330,
+    "expectedColumns": 3,
+    "ok": false,
+    "innerWidth": 1330,
+    "scrollWidth": 1330,
+    "grid": {
+      "left": 67,
+      "right": 1264,
+      "width": 1197,
+      "columns": "385.656px 385.672px 385.656px",
+      "justifyContent": "center"
+    },
+    "columns": 3,
+    "cards": [
+      {
+        "card": {
+          "left": 66.5,
+          "right": 452.15625,
+          "top": 5023.59375,
+          "bottom": 5227.59375,
+          "width": 385.65625,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "385.656px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5097.59375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5163.59375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 472.15625,
+          "right": 857.828125,
+          "top": 5023.59375,
+          "bottom": 5227.59375,
+          "width": 385.671875,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "385.672px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5097.59375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5163.59375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 877.828125,
+          "right": 1263.484375,
+          "top": 5023.59375,
+          "bottom": 5227.59375,
+          "width": 385.65625,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "385.656px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5097.59375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5163.59375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 66.5,
+          "right": 452.15625,
+          "top": 5247.59375,
+          "bottom": 5451.59375,
+          "width": 385.65625,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "385.656px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5321.59375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5387.59375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 472.15625,
+          "right": 857.828125,
+          "top": 5247.59375,
+          "bottom": 5451.59375,
+          "width": 385.671875,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "385.672px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5321.59375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5387.59375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 877.828125,
+          "right": 1263.484375,
+          "top": 5247.59375,
+          "bottom": 5451.59375,
+          "width": 385.65625,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "385.656px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5321.59375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5387.59375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "width": 1200,
+    "expectedColumns": 3,
+    "ok": true,
+    "innerWidth": 1200,
+    "scrollWidth": 1200,
+    "grid": {
+      "left": 60,
+      "right": 1140,
+      "width": 1080,
+      "columns": "346.656px 346.672px 346.656px",
+      "justifyContent": "center"
+    },
+    "columns": 3,
+    "cards": [
+      {
+        "card": {
+          "left": 60,
+          "right": 406.65625,
+          "top": 5074,
+          "bottom": 5310,
+          "width": 346.65625,
+          "height": 236,
+          "scrollHeight": 236,
+          "clientHeight": 236
+        },
+        "style": {
+          "width": "346.656px",
+          "height": "236px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5182,
+          "height": 68,
+          "scrollHeight": 69,
+          "clientHeight": 68,
+          "heightStyle": "68px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5270,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 426.65625,
+          "right": 773.328125,
+          "top": 5074,
+          "bottom": 5310,
+          "width": 346.671875,
+          "height": 236,
+          "scrollHeight": 236,
+          "clientHeight": 236
+        },
+        "style": {
+          "width": "346.672px",
+          "height": "236px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5148,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5236,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 793.328125,
+          "right": 1139.984375,
+          "top": 5074,
+          "bottom": 5310,
+          "width": 346.65625,
+          "height": 236,
+          "scrollHeight": 236,
+          "clientHeight": 236
+        },
+        "style": {
+          "width": "346.656px",
+          "height": "236px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5182,
+          "height": 68,
+          "scrollHeight": 69,
+          "clientHeight": 68,
+          "heightStyle": "68px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5270,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 60,
+          "right": 406.65625,
+          "top": 5330,
+          "bottom": 5566,
+          "width": 346.65625,
+          "height": 236,
+          "scrollHeight": 236,
+          "clientHeight": 236
+        },
+        "style": {
+          "width": "346.656px",
+          "height": "236px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5438,
+          "height": 68,
+          "scrollHeight": 69,
+          "clientHeight": 68,
+          "heightStyle": "68px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5526,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 426.65625,
+          "right": 773.328125,
+          "top": 5330,
+          "bottom": 5566,
+          "width": 346.671875,
+          "height": 236,
+          "scrollHeight": 236,
+          "clientHeight": 236
+        },
+        "style": {
+          "width": "346.672px",
+          "height": "236px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5404,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5492,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 793.328125,
+          "right": 1139.984375,
+          "top": 5330,
+          "bottom": 5566,
+          "width": 346.65625,
+          "height": 236,
+          "scrollHeight": 236,
+          "clientHeight": 236
+        },
+        "style": {
+          "width": "346.656px",
+          "height": "236px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5404,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5492,
+          "height": 88,
+          "scrollHeight": 88,
+          "clientHeight": 88,
+          "heightStyle": "88px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "width": 1024,
+    "expectedColumns": 2,
+    "ok": false,
+    "innerWidth": 1024,
+    "scrollWidth": 1024,
+    "grid": {
+      "left": 51,
+      "right": 973,
+      "width": 922,
+      "columns": "450.812px 450.812px",
+      "justifyContent": "center"
+    },
+    "columns": 2,
+    "cards": [
+      {
+        "card": {
+          "left": 51.1875,
+          "right": 502,
+          "top": 5074,
+          "bottom": 5278,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5148,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5214,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 522,
+          "right": 972.8125,
+          "top": 5074,
+          "bottom": 5278,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5148,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5214,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 51.1875,
+          "right": 502,
+          "top": 5298,
+          "bottom": 5502,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5372,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5438,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 522,
+          "right": 972.8125,
+          "top": 5298,
+          "bottom": 5502,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5372,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5438,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 51.1875,
+          "right": 502,
+          "top": 5522,
+          "bottom": 5726,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5596,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5662,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 522,
+          "right": 972.8125,
+          "top": 5522,
+          "bottom": 5726,
+          "width": 450.8125,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "450.812px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 5596,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 5662,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "width": 900,
+    "expectedColumns": 2,
+    "ok": false,
+    "innerWidth": 900,
+    "scrollWidth": 900,
+    "grid": {
+      "left": 45,
+      "right": 855,
+      "width": 810,
+      "columns": "395px 395px",
+      "justifyContent": "center"
+    },
+    "columns": 2,
+    "cards": [
+      {
+        "card": {
+          "left": 45,
+          "right": 440,
+          "top": 6366.234375,
+          "bottom": 6570.234375,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6440.234375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6506.234375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 460,
+          "right": 855,
+          "top": 6366.234375,
+          "bottom": 6570.234375,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6440.234375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6506.234375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 45,
+          "right": 440,
+          "top": 6590.234375,
+          "bottom": 6794.234375,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6664.234375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6730.234375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 460,
+          "right": 855,
+          "top": 6590.234375,
+          "bottom": 6794.234375,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6664.234375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6730.234375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 45,
+          "right": 440,
+          "top": 6814.234375,
+          "bottom": 7018.234375,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6888.234375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6954.234375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 460,
+          "right": 855,
+          "top": 6814.234375,
+          "bottom": 7018.234375,
+          "width": 395,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "395px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 6888.234375,
+          "height": 34,
+          "scrollHeight": 35,
+          "clientHeight": 34,
+          "heightStyle": "34px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 6954.234375,
+          "height": 66,
+          "scrollHeight": 66,
+          "clientHeight": 66,
+          "heightStyle": "66px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "width": 760,
+    "expectedColumns": 1,
+    "ok": false,
+    "innerWidth": 760,
+    "scrollWidth": 760,
+    "grid": {
+      "left": 38,
+      "right": 722,
+      "width": 684,
+      "columns": "684px",
+      "justifyContent": "center"
+    },
+    "columns": 1,
+    "cards": [
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 7317.640625,
+          "bottom": 7521.640625,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 7373.640625,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 7425.640625,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 7541.640625,
+          "bottom": 7745.640625,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 7597.640625,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 7649.640625,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 7765.640625,
+          "bottom": 7969.640625,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 7821.640625,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 7873.640625,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 7989.640625,
+          "bottom": 8193.640625,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 8045.640625,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 8097.640625,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 8213.640625,
+          "bottom": 8417.640625,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 8269.640625,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 8321.640625,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      },
+      {
+        "card": {
+          "left": 38,
+          "right": 722,
+          "top": 8437.640625,
+          "bottom": 8641.640625,
+          "width": 684,
+          "height": 204,
+          "scrollHeight": 204,
+          "clientHeight": 204
+        },
+        "style": {
+          "width": "684px",
+          "height": "204px",
+          "minHeight": "204px",
+          "overflow": "visible"
+        },
+        "h3": {
+          "bottom": 8493.640625,
+          "height": 28,
+          "scrollHeight": 28,
+          "clientHeight": 28,
+          "heightStyle": "28px",
+          "overflowWrap": "break-word"
+        },
+        "p": {
+          "bottom": 8545.640625,
+          "height": 40,
+          "scrollHeight": 40,
+          "clientHeight": 40,
+          "heightStyle": "40px",
+          "overflowWrap": "break-word"
+        },
+        "textInside": true,
+        "noInternalOverflow": true
+      }
+    ],
+    "brokenImages": []
+  }
+]

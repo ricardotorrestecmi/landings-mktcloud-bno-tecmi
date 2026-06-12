@@ -1,0 +1,36 @@
+{
+  "sourceUrl": "https://universidad.tecmilenio.mx/maestria-administracion-en-logistica",
+  "title": "Maestría en Administración de Negocios Área Logística",
+  "description": "Lidera operaciones logísticas a escala global. La Maestría en Administración de Negocios Área Logística de Tecmilenio te forma en gestión de inventarios, transporte y cadena de suministro internacional. ¡Inscríbete!",
+  "pageId": "211665478929",
+  "portalId": "2429099",
+  "formId": "7e46ab60-44ca-40d8-88b7-cdaca5bd03f4",
+  "formInstanceId": "4244",
+  "thankYouUrl": "https://universidad.tecmilenio.mx/registro-concluido",
+  "template": "Módulos Tailwind 2023/Universidad/maps Tailwind - junio 2025.html",
+  "programData": {
+    "formato": "Online",
+    "duracion": "2 años",
+    "plan": "Bimestral",
+    "idioma": "Español"
+  },
+  "assets": {
+    "hero": "https://universidad.tecmilenio.mx/hubfs/Landing%20Pages%20M/Posgrados%20Maps/maestria-admin-logistica-posgrado.jpg",
+    "secondary": "https://universidad.tecmilenio.mx/hs-fs/hubfs/Landing%20Pages%20M/Posgrados%20Maps/maestria-admin-logistica-secundaria.png?width=700&height=790&name=maestria-admin-logistica-secundaria.png",
+    "format": "https://universidad.tecmilenio.mx/hs-fs/hubfs/Landing%20Pages%20M/Posgrados%20Maps/formato-posgrados.jpg?width=864&height=600&name=formato-posgrados.jpg",
+    "programs": "https://universidad.tecmilenio.mx/hubfs/Landing%20Pages%20M/Posgrados%20Maps/posgrados-general-maps-programas-2.webp",
+    "brochure": "https://universidad.tecmilenio.mx/hubfs/Folletos%20Posgrados%20JM/Folleto%20Maestr%C3%ADa%20en%20Log%C3%ADstica.pdf?hsLang=es-mx"
+  },
+  "studyPlan": [
+    "Bienestar organizacional",
+    "Análisis de datos para la toma de decisiones",
+    "Reportes financieros",
+    "Gestión de operaciones",
+    "Tecnologías emergentes",
+    "Sistemas y procesos logísticos",
+    "Administración de inventarios y almacenes",
+    "Gestión de mercancías",
+    "Administración del transporte",
+    "Logística global"
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "maestria-administracion-finanzas",
+    "url": "http://localhost:49624/landings/posgrados/maestria-administracion-finanzas/",
+    "title": "Maestría en Finanzas | Universidad Tecmilenio",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "brokenImages": [],
+    "formatImgSrc": "assets/images/figma-4-1-connect-online-cropped.png",
+    "programsImgSrc": "assets/images/programas-global.png"
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "url": "http://localhost:49624/landings/posgrados/maestria-automatizacion-robotica/",
+    "title": "Maestría en Automatización y Robótica | Universidad Tecmilenio",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "brokenImages": [],
+    "formatImgSrc": "assets/images/figma-4-1-connect-online-cropped.png",
+    "programsImgSrc": "assets/images/programas-global.png"
+  }
+]

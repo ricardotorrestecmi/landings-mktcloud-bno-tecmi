@@ -1,0 +1,32 @@
+[
+  {
+    "viewport": "desktop",
+    "status": 200,
+    "title": "Maestría en Gestión de Tecnologías de la Información Área Ciberseguridad | Universidad Tecmilenio",
+    "robots": "noindex,nofollow",
+    "h1": "Maestría en Gestión de Tecnologías de la Información\nÁrea Ciberseguridad",
+    "statusWidth": 1440,
+    "viewportWidth": 1440,
+    "brokenImages": [],
+    "localPdf": true,
+    "formFields": 7,
+    "heroHeight": 587,
+    "formHeight": 372,
+    "horizontalOverflow": false
+  },
+  {
+    "viewport": "mobile",
+    "status": 200,
+    "title": "Maestría en Gestión de Tecnologías de la Información Área Ciberseguridad | Universidad Tecmilenio",
+    "robots": "noindex,nofollow",
+    "h1": "Maestría en Gestión de Tecnologías de la Información\nÁrea Ciberseguridad",
+    "statusWidth": 390,
+    "viewportWidth": 390,
+    "brokenImages": [],
+    "localPdf": true,
+    "formFields": 7,
+    "heroHeight": 1250,
+    "formHeight": 436,
+    "horizontalOverflow": false
+  }
+]

@@ -1,0 +1,369 @@
+{
+  "url": "http://localhost:49324/landings/posgrados/maestria-administracion-calidad-y-productividad/",
+  "checks": [
+    {
+      "viewportWidth": 850,
+      "scrollWidth": 850,
+      "columns": "359px 359px",
+      "gap": "18px 20px",
+      "paddingLeft": "22px",
+      "brokenImages": [],
+      "articles": [
+        {
+          "article": {
+            "left": 22,
+            "right": 381,
+            "width": 359
+          },
+          "img": {
+            "left": 22,
+            "right": 70,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 84,
+            "right": 147,
+            "width": 63
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 401,
+            "right": 760,
+            "width": 359
+          },
+          "img": {
+            "left": 401,
+            "right": 449,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 463,
+            "right": 531,
+            "width": 68
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 22,
+            "right": 381,
+            "width": 359
+          },
+          "img": {
+            "left": 22,
+            "right": 70,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 84,
+            "right": 153,
+            "width": 69
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 401,
+            "right": 760,
+            "width": 359
+          },
+          "img": {
+            "left": 401,
+            "right": 449,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 463,
+            "right": 520,
+            "width": 57
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        }
+      ],
+      "anyOverlap": false
+    },
+    {
+      "viewportWidth": 760,
+      "scrollWidth": 760,
+      "columns": "317.594px 317.594px",
+      "gap": "18px 20px",
+      "paddingLeft": "22px",
+      "brokenImages": [],
+      "articles": [
+        {
+          "article": {
+            "left": 22,
+            "right": 340,
+            "width": 318
+          },
+          "img": {
+            "left": 22,
+            "right": 70,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 84,
+            "right": 147,
+            "width": 63
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 360,
+            "right": 677,
+            "width": 318
+          },
+          "img": {
+            "left": 360,
+            "right": 408,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 422,
+            "right": 489,
+            "width": 68
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 22,
+            "right": 340,
+            "width": 318
+          },
+          "img": {
+            "left": 22,
+            "right": 70,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 84,
+            "right": 153,
+            "width": 69
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 360,
+            "right": 677,
+            "width": 318
+          },
+          "img": {
+            "left": 360,
+            "right": 408,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 422,
+            "right": 479,
+            "width": 57
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        }
+      ],
+      "anyOverlap": false
+    },
+    {
+      "viewportWidth": 640,
+      "scrollWidth": 640,
+      "columns": "262.391px 262.406px",
+      "gap": "18px 20px",
+      "paddingLeft": "22px",
+      "brokenImages": [],
+      "articles": [
+        {
+          "article": {
+            "left": 22,
+            "right": 284,
+            "width": 262
+          },
+          "img": {
+            "left": 22,
+            "right": 70,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 84,
+            "right": 147,
+            "width": 63
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 304,
+            "right": 567,
+            "width": 262
+          },
+          "img": {
+            "left": 304,
+            "right": 352,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 366,
+            "right": 434,
+            "width": 68
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 22,
+            "right": 284,
+            "width": 262
+          },
+          "img": {
+            "left": 22,
+            "right": 70,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 84,
+            "right": 153,
+            "width": 69
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 304,
+            "right": 567,
+            "width": 262
+          },
+          "img": {
+            "left": 304,
+            "right": 352,
+            "width": 48,
+            "height": 48
+          },
+          "text": {
+            "left": 366,
+            "right": 424,
+            "width": 57
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        }
+      ],
+      "anyOverlap": false
+    },
+    {
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "columns": "146px 146px",
+      "gap": "16px 14px",
+      "paddingLeft": "18px",
+      "brokenImages": [],
+      "articles": [
+        {
+          "article": {
+            "left": 18,
+            "right": 164,
+            "width": 146
+          },
+          "img": {
+            "left": 18,
+            "right": 58,
+            "width": 40,
+            "height": 40
+          },
+          "text": {
+            "left": 68,
+            "right": 127,
+            "width": 59
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 178,
+            "right": 324,
+            "width": 146
+          },
+          "img": {
+            "left": 178,
+            "right": 218,
+            "width": 40,
+            "height": 40
+          },
+          "text": {
+            "left": 228,
+            "right": 291,
+            "width": 63
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 18,
+            "right": 164,
+            "width": 146
+          },
+          "img": {
+            "left": 18,
+            "right": 58,
+            "width": 40,
+            "height": 40
+          },
+          "text": {
+            "left": 68,
+            "right": 132,
+            "width": 64
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        },
+        {
+          "article": {
+            "left": 178,
+            "right": 324,
+            "width": 146
+          },
+          "img": {
+            "left": 178,
+            "right": 218,
+            "width": 40,
+            "height": 40
+          },
+          "text": {
+            "left": 228,
+            "right": 281,
+            "width": 53
+          },
+          "overlaps": false,
+          "textOutsideArticle": false
+        }
+      ],
+      "anyOverlap": false
+    }
+  ]
+}

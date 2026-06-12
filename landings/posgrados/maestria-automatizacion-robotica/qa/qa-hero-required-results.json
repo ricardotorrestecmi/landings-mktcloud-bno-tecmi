@@ -1,0 +1,338 @@
+[
+  {
+    "width": 1366,
+    "innerWidth": 1366,
+    "scrollWidth": 1366,
+    "form": {
+      "left": 742,
+      "right": 1247,
+      "top": 220.953125,
+      "bottom": 592.953125,
+      "width": 505,
+      "height": 372
+    },
+    "formDisplay": "grid",
+    "formPosition": "static",
+    "selectRects": [
+      {
+        "left": 742,
+        "right": 1247,
+        "width": 505,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "left": 742,
+        "right": 1247,
+        "width": 505,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "ctaToFormGap": -426,
+    "heroBackground": "linear-gradient(90deg, rgba(0, 83, 76, 0.68) 0%, rgba(0, 83, 76, 0.42) 44%, rgba(0, 83, 76, 0.16) 100%), url(\"http://localhost:49625/landings/posgrados/maestria-automatizacion-robotica/assets/images/maestria-robotica-hero.jpg\")",
+    "heroAfterContent": "none",
+    "brokenImages": [],
+    "pass": {
+      "noHorizontal": true,
+      "formInViewport": true,
+      "selectsInViewport": true,
+      "stackedGap": true,
+      "noBrokenImages": true,
+      "noAfterOverlay": true
+    },
+    "ok": true
+  },
+  {
+    "width": 1200,
+    "innerWidth": 1200,
+    "scrollWidth": 1200,
+    "form": {
+      "left": 591,
+      "right": 1096,
+      "top": 245,
+      "bottom": 617,
+      "width": 505,
+      "height": 372
+    },
+    "formDisplay": "grid",
+    "formPosition": "static",
+    "selectRects": [
+      {
+        "left": 591,
+        "right": 1096,
+        "width": 505,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "left": 591,
+        "right": 1096,
+        "width": 505,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "ctaToFormGap": -460,
+    "heroBackground": "linear-gradient(90deg, rgba(0, 83, 76, 0.68) 0%, rgba(0, 83, 76, 0.42) 44%, rgba(0, 83, 76, 0.16) 100%), url(\"http://localhost:49625/landings/posgrados/maestria-automatizacion-robotica/assets/images/maestria-robotica-hero.jpg\")",
+    "heroAfterContent": "none",
+    "brokenImages": [],
+    "pass": {
+      "noHorizontal": true,
+      "formInViewport": true,
+      "selectsInViewport": true,
+      "stackedGap": true,
+      "noBrokenImages": true,
+      "noAfterOverlay": true
+    },
+    "ok": true
+  },
+  {
+    "width": 1024,
+    "innerWidth": 1024,
+    "scrollWidth": 1024,
+    "form": {
+      "left": 542.8125,
+      "right": 972.8125,
+      "top": 179,
+      "bottom": 551,
+      "width": 430,
+      "height": 372
+    },
+    "formDisplay": "grid",
+    "formPosition": "static",
+    "selectRects": [
+      {
+        "left": 542.8125,
+        "right": 972.8125,
+        "width": 430,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "left": 542.8125,
+        "right": 972.8125,
+        "width": 430,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "ctaToFormGap": -387,
+    "heroBackground": "linear-gradient(90deg, rgba(0, 83, 76, 0.68) 0%, rgba(0, 83, 76, 0.42) 44%, rgba(0, 83, 76, 0.16) 100%), url(\"http://localhost:49625/landings/posgrados/maestria-automatizacion-robotica/assets/images/maestria-robotica-hero.jpg\")",
+    "heroAfterContent": "none",
+    "brokenImages": [],
+    "pass": {
+      "noHorizontal": true,
+      "formInViewport": true,
+      "selectsInViewport": true,
+      "stackedGap": true,
+      "noBrokenImages": true,
+      "noAfterOverlay": true
+    },
+    "ok": true
+  },
+  {
+    "width": 900,
+    "innerWidth": 900,
+    "scrollWidth": 900,
+    "form": {
+      "left": 24,
+      "right": 584,
+      "top": 511.125,
+      "bottom": 883.125,
+      "width": 560,
+      "height": 372
+    },
+    "formDisplay": "grid",
+    "formPosition": "static",
+    "selectRects": [
+      {
+        "left": 24,
+        "right": 584,
+        "width": 560,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "left": 24,
+        "right": 584,
+        "width": 560,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "ctaToFormGap": 28,
+    "heroBackground": "linear-gradient(rgba(0, 83, 76, 0.72) 0%, rgba(0, 106, 69, 0.56) 52%, rgba(0, 83, 76, 0.42) 100%), url(\"http://localhost:49625/landings/posgrados/maestria-automatizacion-robotica/assets/images/maestria-robotica-hero.jpg\")",
+    "heroAfterContent": "none",
+    "brokenImages": [],
+    "pass": {
+      "noHorizontal": true,
+      "formInViewport": true,
+      "selectsInViewport": true,
+      "stackedGap": true,
+      "noBrokenImages": true,
+      "noAfterOverlay": true
+    },
+    "ok": true
+  },
+  {
+    "width": 768,
+    "innerWidth": 768,
+    "scrollWidth": 768,
+    "form": {
+      "left": 24,
+      "right": 584,
+      "top": 511.125,
+      "bottom": 883.125,
+      "width": 560,
+      "height": 372
+    },
+    "formDisplay": "grid",
+    "formPosition": "static",
+    "selectRects": [
+      {
+        "left": 24,
+        "right": 584,
+        "width": 560,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "left": 24,
+        "right": 584,
+        "width": 560,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "ctaToFormGap": 28,
+    "heroBackground": "linear-gradient(rgba(0, 83, 76, 0.72) 0%, rgba(0, 106, 69, 0.56) 52%, rgba(0, 83, 76, 0.42) 100%), url(\"http://localhost:49625/landings/posgrados/maestria-automatizacion-robotica/assets/images/maestria-robotica-hero.jpg\")",
+    "heroAfterContent": "none",
+    "brokenImages": [],
+    "pass": {
+      "noHorizontal": true,
+      "formInViewport": true,
+      "selectsInViewport": true,
+      "stackedGap": true,
+      "noBrokenImages": true,
+      "noAfterOverlay": true
+    },
+    "ok": true
+  },
+  {
+    "width": 640,
+    "innerWidth": 640,
+    "scrollWidth": 640,
+    "form": {
+      "left": 22,
+      "right": 582,
+      "top": 504.671875,
+      "bottom": 942.671875,
+      "width": 560,
+      "height": 438
+    },
+    "formDisplay": "grid",
+    "formPosition": "static",
+    "selectRects": [
+      {
+        "left": 22,
+        "right": 582,
+        "width": 560,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "left": 22,
+        "right": 582,
+        "width": 560,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "ctaToFormGap": 28,
+    "heroBackground": "linear-gradient(rgba(0, 83, 76, 0.72) 0%, rgba(0, 106, 69, 0.56) 52%, rgba(0, 83, 76, 0.42) 100%), url(\"http://localhost:49625/landings/posgrados/maestria-automatizacion-robotica/assets/images/maestria-robotica-hero.jpg\")",
+    "heroAfterContent": "none",
+    "brokenImages": [],
+    "pass": {
+      "noHorizontal": true,
+      "formInViewport": true,
+      "selectsInViewport": true,
+      "stackedGap": true,
+      "noBrokenImages": true,
+      "noAfterOverlay": true
+    },
+    "ok": true
+  },
+  {
+    "width": 390,
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "form": {
+      "left": 22,
+      "right": 368,
+      "top": 483.390625,
+      "bottom": 921.390625,
+      "width": 346,
+      "height": 438
+    },
+    "formDisplay": "grid",
+    "formPosition": "static",
+    "selectRects": [
+      {
+        "left": 22,
+        "right": 368,
+        "width": 346,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "left": 22,
+        "right": 368,
+        "width": 346,
+        "minWidth": "0px",
+        "overflow": "visible",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "ctaToFormGap": 28,
+    "heroBackground": "linear-gradient(rgba(0, 83, 76, 0.72) 0%, rgba(0, 106, 69, 0.56) 52%, rgba(0, 83, 76, 0.42) 100%), url(\"http://localhost:49625/landings/posgrados/maestria-automatizacion-robotica/assets/images/maestria-robotica-hero.jpg\")",
+    "heroAfterContent": "none",
+    "brokenImages": [],
+    "pass": {
+      "noHorizontal": true,
+      "formInViewport": true,
+      "selectsInViewport": true,
+      "stackedGap": true,
+      "noBrokenImages": true,
+      "noAfterOverlay": true
+    },
+    "ok": true
+  }
+]

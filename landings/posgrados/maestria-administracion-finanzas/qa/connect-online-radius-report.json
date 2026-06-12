@@ -1,0 +1,126 @@
+{
+  "url": "http://localhost:49321/landings/posgrados/maestria-administracion-finanzas/",
+  "checkedAt": "2026-06-11T18:30:31.314Z",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "metrics": {
+        "title": "Maestría en Finanzas | Universidad Tecmilenio",
+        "robots": "noindex,nofollow",
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "errorsFromImages": [],
+        "connectOnline": {
+          "card": {
+            "width": 1240,
+            "height": 320,
+            "top": 3323,
+            "bottom": 3643,
+            "display": "grid",
+            "background": "rgb(143, 212, 96)",
+            "objectFit": "fill",
+            "borderTopLeftRadius": "16px",
+            "borderTopRightRadius": "16px",
+            "borderBottomRightRadius": "16px",
+            "borderBottomLeftRadius": "16px"
+          },
+          "text": {
+            "width": 630,
+            "height": 320,
+            "top": 3323,
+            "bottom": 3643,
+            "display": "block",
+            "background": "rgba(0, 0, 0, 0)",
+            "objectFit": "fill",
+            "borderTopLeftRadius": "0px",
+            "borderTopRightRadius": "0px",
+            "borderBottomRightRadius": "0px",
+            "borderBottomLeftRadius": "0px"
+          },
+          "img": {
+            "width": 610,
+            "height": 320,
+            "top": 3323,
+            "bottom": 3643,
+            "display": "block",
+            "background": "rgba(0, 0, 0, 0)",
+            "objectFit": "cover",
+            "borderTopLeftRadius": "0px",
+            "borderTopRightRadius": "16px",
+            "borderBottomRightRadius": "16px",
+            "borderBottomLeftRadius": "0px"
+          },
+          "heightDelta": 0,
+          "rightEdgeDelta": 0,
+          "imageSrc": "assets/images/figma-4-1-connect-online-cropped.png"
+        }
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 1200
+      },
+      "errors": [],
+      "metrics": {
+        "title": "Maestría en Finanzas | Universidad Tecmilenio",
+        "robots": "noindex,nofollow",
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "hasHorizontalOverflow": false,
+        "errorsFromImages": [],
+        "connectOnline": {
+          "card": {
+            "width": 342,
+            "height": 421,
+            "top": 5270,
+            "bottom": 5691,
+            "display": "grid",
+            "background": "rgb(143, 212, 96)",
+            "objectFit": "fill",
+            "borderTopLeftRadius": "16px",
+            "borderTopRightRadius": "16px",
+            "borderBottomRightRadius": "16px",
+            "borderBottomLeftRadius": "16px"
+          },
+          "text": {
+            "width": 171,
+            "height": 421,
+            "top": 5270,
+            "bottom": 5691,
+            "display": "block",
+            "background": "rgba(0, 0, 0, 0)",
+            "objectFit": "fill",
+            "borderTopLeftRadius": "0px",
+            "borderTopRightRadius": "0px",
+            "borderBottomRightRadius": "0px",
+            "borderBottomLeftRadius": "0px"
+          },
+          "img": {
+            "width": 171,
+            "height": 421,
+            "top": 5270,
+            "bottom": 5691,
+            "display": "block",
+            "background": "rgba(0, 0, 0, 0)",
+            "objectFit": "cover",
+            "borderTopLeftRadius": "0px",
+            "borderTopRightRadius": "0px",
+            "borderBottomRightRadius": "16px",
+            "borderBottomLeftRadius": "16px"
+          },
+          "heightDelta": null,
+          "rightEdgeDelta": null,
+          "imageSrc": "assets/images/figma-4-1-connect-online-cropped.png"
+        }
+      }
+    }
+  ]
+}

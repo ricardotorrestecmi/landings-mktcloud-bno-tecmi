@@ -1,0 +1,77 @@
+{
+  "url": "http://localhost:49321/landings/posgrados/maestria-administracion-calidad-y-productividad/",
+  "checks": [
+    {
+      "viewport": "desktop",
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "format": {
+        "card": {
+          "width": 1240,
+          "height": 320,
+          "top": 3375,
+          "bottom": 3695
+        },
+        "text": {
+          "width": 630,
+          "height": 320,
+          "top": 3375,
+          "bottom": 3695
+        },
+        "image": {
+          "width": 610,
+          "height": 320,
+          "top": 3375,
+          "bottom": 3695
+        },
+        "heightDelta": 0,
+        "desktopSideBySideHeightDelta": 0,
+        "imageSrc": "assets/images/figma-4-1-connect-online-cropped.png",
+        "display": "block",
+        "objectFit": "cover",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderTopLeftRadius": "0px",
+        "borderTopRightRadius": "16px",
+        "borderBottomRightRadius": "16px",
+        "borderBottomLeftRadius": "0px"
+      }
+    },
+    {
+      "viewport": "mobile",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "format": {
+        "card": {
+          "width": 346,
+          "height": 375,
+          "top": 5700,
+          "bottom": 6075
+        },
+        "text": {
+          "width": 346,
+          "height": 193,
+          "top": 5700,
+          "bottom": 5893
+        },
+        "image": {
+          "width": 346,
+          "height": 182,
+          "top": 5893,
+          "bottom": 6075
+        },
+        "heightDelta": 0,
+        "desktopSideBySideHeightDelta": 11,
+        "imageSrc": "assets/images/figma-4-1-connect-online-cropped.png",
+        "display": "block",
+        "objectFit": "cover",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderTopLeftRadius": "0px",
+        "borderTopRightRadius": "0px",
+        "borderBottomRightRadius": "16px",
+        "borderBottomLeftRadius": "16px"
+      }
+    }
+  ]
+}

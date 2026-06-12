@@ -1,0 +1,60 @@
+# QA Notes
+
+- Local URL tested: `http://localhost:49324/landings/posgrados/maestria-administracion-gestion-e-innovacion-sanitaria/`
+- Desktop viewport: `1440 x 1400`
+- Mobile viewport: `390 x 1200`
+- Horizontal overflow: none detected.
+- Broken images: none detected.
+- Screenshots:
+  - `qa-desktop.png`
+  - `qa-mobile.png`
+  - `qa-module2-desktop.png`
+  - `qa-module2-mobile.png`
+- Module 2 desktop: left text block `688px`, right photo `688px`, delta `0px`.
+- Module 2 photo container: `background: transparent`, no background image, `height: 100%`.
+- Module 2 image: `object-fit: cover`, `border-radius: 16px`.
+- Connect Online desktop: left green box `630 x 320`, right photo `610 x 320`, card `1240 x 320`.
+- Connect Online deltas: height `0px`, right edge `0px`, bottom edge `0px`.
+- Connect Online image uses `figma-4-1-connect-online-cropped.png`, `display: block`, `height: 100%`, `object-fit: cover`, `border-radius: 16px`.
+- Connect Online integrated radius: desktop image `0 16px 16px 0`; mobile image `0 0 16px 16px`.
+- Programs module desktop: grid `1240px`, columns `610px / 610px`, gap `20px`.
+- Programs module desktop: accordion `610 x 737`, image `610 x 737`, top/bottom/height deltas `0px`.
+- Programs module image uses `programas-global.png`, `display: block`, `height: 100%`, `min-height: 477px`, `object-fit: cover`, `border-radius: 26px`, `background: transparent`.
+- Hero responsive QA passed at `1366`, `1200`, `1024`, `900`, `768`, `640`, and `390`.
+- Hero desktop/tablet QA: form and long program select stay inside viewport at `1366`, `1200`, and `1024`; select uses `min-width:0`, `text-overflow:ellipsis`, and `white-space:nowrap`.
+- Hero stacked QA: at `900`, `768`, `640`, and `390`, form stacks below copy; `Está en ti` to form gap is `28px`.
+- Hero overlay QA: `hero::after` disabled; only a lighter background gradient remains.
+- Horizontal scroll QA: `document.documentElement.scrollWidth === window.innerWidth` at all tested widths.
+- Facts strip QA passed at `850`, `760`, `640`, and `390`: 2 columns at every width, no horizontal scroll, no broken images, and no icon/text overlap.
+- Facts strip mobile sizing: icons are `48px` from `900px` down and `40px` at `390`; text remains compact and readable.
+- Facts full-width QA passed at `1450`, `1330`, `1200`, `900`, `760`, and `390`: `.facts` rect has `left:0`, `right` equal to viewport width, `width` equal to viewport width, `max-width:none`, margins `0`, and `box-sizing:border-box`.
+- Facts full-width visual QA: right-edge probe at every tested width lands inside the green `.facts` band; no white strip on the right and no horizontal scroll.
+- Facts strip screenshots:
+  - `qa-facts-850.png`
+  - `qa-facts-760.png`
+  - `qa-facts-640.png`
+  - `qa-facts-390.png`
+- Facts full-width screenshots:
+  - `qa-facts-fullwidth-1450.png`
+  - `qa-facts-fullwidth-1330.png`
+  - `qa-facts-fullwidth-1200.png`
+  - `qa-facts-fullwidth-900.png`
+  - `qa-facts-fullwidth-760.png`
+  - `qa-facts-fullwidth-390.png`
+- Benefits module QA passed at `1330`, `1200`, `1024`, `900`, and `760`: section centered, no horizontal scroll, no broken images, no internal text clipping.
+- Benefits module columns: `1330` and `1200` use 3 fluid columns; `1024` and `900` use 2 columns; `760` keeps the current mobile single-column layout.
+- Benefits cards use `height:auto`, `min-height:204px`, `width:100%`; headings and paragraphs use auto height with `overflow-wrap:break-word`.
+- Benefits screenshots:
+  - `qa-benefits-1330.png`
+  - `qa-benefits-1200.png`
+  - `qa-benefits-1024.png`
+  - `qa-benefits-900.png`
+  - `qa-benefits-760.png`
+- Footer social QA passed on desktop `1440` and mobile `390`: `.footer-social` trimmed `textContent` is empty, 4 social images load, no broken images, and no horizontal scroll.
+- Footer social desktop: links are `24 x 24`, images render at about `17px` high, Facebook renders `9 x 17`.
+- Footer social mobile: links are `30 x 30`, icons stay centered in one row with `28px` gap.
+- Footer social screenshots:
+  - `qa-footer-social-desktop.png`
+  - `qa-footer-social-mobile.png`
+- PDF checked as a valid 6-page document.
+- SFMC integration remains pending; placeholder preserved in `integrations/sfmc-block.html`.

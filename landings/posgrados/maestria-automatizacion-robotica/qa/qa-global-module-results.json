@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "maestria-administracion-finanzas",
+    "url": "http://localhost:49624/landings/posgrados/maestria-administracion-finanzas/",
+    "title": "Maestría en Finanzas | Universidad Tecmilenio",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "brokenImages": [],
+    "intro": {
+      "cards": {
+        "x": 100,
+        "y": 930,
+        "width": 610,
+        "height": 636
+      },
+      "portrait": {
+        "x": 730,
+        "y": 930,
+        "width": 610,
+        "height": 636
+      },
+      "delta": 0,
+      "gridStyle": {
+        "display": "grid",
+        "width": "1240px",
+        "height": "636px",
+        "minHeight": "0px",
+        "objectFit": "fill",
+        "borderRadius": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "stretch"
+      },
+      "portraitStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "636px",
+        "minHeight": "636px",
+        "objectFit": "fill",
+        "borderRadius": "16px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "normal"
+      },
+      "portraitImgStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "636px",
+        "minHeight": "0px",
+        "objectFit": "cover",
+        "borderRadius": "16px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "normal"
+      }
+    },
+    "format": {
+      "text": {
+        "x": 100,
+        "y": 3323,
+        "width": 630,
+        "height": 320
+      },
+      "img": {
+        "x": 730,
+        "y": 3323,
+        "width": 610,
+        "height": 320
+      },
+      "delta": 0,
+      "cardStyle": {
+        "display": "grid",
+        "width": "1240px",
+        "height": "320px",
+        "minHeight": "0px",
+        "objectFit": "fill",
+        "borderRadius": "16px",
+        "backgroundColor": "rgb(143, 212, 96)",
+        "alignItems": "stretch"
+      },
+      "imgStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "320px",
+        "minHeight": "auto",
+        "objectFit": "cover",
+        "borderRadius": "16px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "normal"
+      },
+      "imgSrc": "assets/images/figma-4-1-connect-online-cropped.png"
+    },
+    "programs": {
+      "accordion": {
+        "x": 100,
+        "y": 4000,
+        "width": 610,
+        "height": 737
+      },
+      "img": {
+        "x": 730,
+        "y": 4000,
+        "width": 610,
+        "height": 737
+      },
+      "delta": 0,
+      "gridStyle": {
+        "display": "grid",
+        "width": "1240px",
+        "height": "737px",
+        "minHeight": "477px",
+        "objectFit": "fill",
+        "borderRadius": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "stretch"
+      },
+      "accordionStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "737px",
+        "minHeight": "477px",
+        "objectFit": "fill",
+        "borderRadius": "26px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "alignItems": "normal"
+      },
+      "imgStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "737px",
+        "minHeight": "477px",
+        "objectFit": "cover",
+        "borderRadius": "26px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "normal"
+      },
+      "imgSrc": "assets/images/programas-global.png"
+    }
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "url": "http://localhost:49624/landings/posgrados/maestria-automatizacion-robotica/",
+    "title": "Maestría en Automatización y Robótica | Universidad Tecmilenio",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "brokenImages": [],
+    "intro": {
+      "cards": {
+        "x": 100,
+        "y": 930,
+        "width": 610,
+        "height": 688
+      },
+      "portrait": {
+        "x": 730,
+        "y": 930,
+        "width": 610,
+        "height": 688
+      },
+      "delta": 0,
+      "gridStyle": {
+        "display": "grid",
+        "width": "1240px",
+        "height": "688.422px",
+        "minHeight": "0px",
+        "objectFit": "fill",
+        "borderRadius": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "stretch"
+      },
+      "portraitStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "688.422px",
+        "minHeight": "0px",
+        "objectFit": "fill",
+        "borderRadius": "16px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "normal"
+      },
+      "portraitImgStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "688.422px",
+        "minHeight": "0px",
+        "objectFit": "cover",
+        "borderRadius": "16px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "normal"
+      }
+    },
+    "format": {
+      "text": {
+        "x": 100,
+        "y": 3375,
+        "width": 630,
+        "height": 320
+      },
+      "img": {
+        "x": 730,
+        "y": 3375,
+        "width": 610,
+        "height": 320
+      },
+      "delta": 0,
+      "cardStyle": {
+        "display": "grid",
+        "width": "1240px",
+        "height": "320px",
+        "minHeight": "0px",
+        "objectFit": "fill",
+        "borderRadius": "16px",
+        "backgroundColor": "rgb(143, 212, 96)",
+        "alignItems": "stretch"
+      },
+      "imgStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "320px",
+        "minHeight": "auto",
+        "objectFit": "cover",
+        "borderRadius": "16px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "normal"
+      },
+      "imgSrc": "assets/images/figma-4-1-connect-online-cropped.png"
+    },
+    "programs": {
+      "accordion": {
+        "x": 100,
+        "y": 4052,
+        "width": 610,
+        "height": 737
+      },
+      "img": {
+        "x": 730,
+        "y": 4052,
+        "width": 610,
+        "height": 737
+      },
+      "delta": 0,
+      "gridStyle": {
+        "display": "grid",
+        "width": "1240px",
+        "height": "737px",
+        "minHeight": "477px",
+        "objectFit": "fill",
+        "borderRadius": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "stretch"
+      },
+      "accordionStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "737px",
+        "minHeight": "477px",
+        "objectFit": "fill",
+        "borderRadius": "26px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "alignItems": "normal"
+      },
+      "imgStyle": {
+        "display": "block",
+        "width": "610px",
+        "height": "737px",
+        "minHeight": "477px",
+        "objectFit": "cover",
+        "borderRadius": "26px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "alignItems": "normal"
+      },
+      "imgSrc": "assets/images/programas-global.png"
+    }
+  }
+]

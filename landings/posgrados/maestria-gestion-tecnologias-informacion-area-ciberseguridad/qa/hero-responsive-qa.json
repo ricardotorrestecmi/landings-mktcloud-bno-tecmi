@@ -1,0 +1,905 @@
+[
+  {
+    "width": 1366,
+    "status": 200,
+    "horizontalOverflow": false,
+    "formWithinViewport": true,
+    "programSelectWithinViewport": true,
+    "controlsWithinViewport": true,
+    "moduleWidthsWithinViewport": true,
+    "pillFormGap": -598,
+    "gapOk": true,
+    "viewportWidth": 1366,
+    "scrollWidth": 1366,
+    "bodyScrollWidth": 1366,
+    "form": {
+      "left": 798,
+      "right": 1303,
+      "top": 167,
+      "bottom": 539,
+      "width": 505,
+      "height": 372
+    },
+    "programSelect": {
+      "left": 798,
+      "right": 1303,
+      "top": 423,
+      "bottom": 475,
+      "width": 505,
+      "height": 52
+    },
+    "pill": {
+      "left": 63,
+      "right": 247,
+      "top": 713,
+      "bottom": 765,
+      "width": 184,
+      "height": 52
+    },
+    "facts": {
+      "left": 0,
+      "right": 1366,
+      "top": 801,
+      "bottom": 941,
+      "width": 1366,
+      "height": 140
+    },
+    "plan": {
+      "left": 100,
+      "right": 1266,
+      "top": 2022,
+      "bottom": 2985,
+      "width": 1166,
+      "height": 963
+    },
+    "format": {
+      "left": 100,
+      "right": 1266,
+      "top": 3467,
+      "bottom": 3787,
+      "width": 1166,
+      "height": 320
+    },
+    "programs": {
+      "left": 100,
+      "right": 1266,
+      "top": 4144,
+      "bottom": 4881,
+      "width": 1166,
+      "height": 737
+    },
+    "benefits": {
+      "left": 100,
+      "right": 1266,
+      "top": 5135,
+      "bottom": 5563,
+      "width": 1166,
+      "height": 428
+    },
+    "controls": [
+      {
+        "left": 798,
+        "right": 1038,
+        "width": 240,
+        "height": 52
+      },
+      {
+        "left": 1063,
+        "right": 1303,
+        "width": 240,
+        "height": 52
+      },
+      {
+        "left": 798,
+        "right": 1303,
+        "width": 505,
+        "height": 52
+      },
+      {
+        "left": 798,
+        "right": 1303,
+        "width": 505,
+        "height": 52
+      },
+      {
+        "left": 798,
+        "right": 1303,
+        "width": 505,
+        "height": 52
+      },
+      {
+        "left": 798,
+        "right": 1303,
+        "width": 505,
+        "height": 52
+      },
+      {
+        "left": 798,
+        "right": 1303,
+        "width": 505,
+        "height": 52
+      }
+    ],
+    "maxControlRight": 1303,
+    "minControlLeft": 798,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "heroAfter": "none",
+    "brokenImages": []
+  },
+  {
+    "width": 1200,
+    "status": 200,
+    "horizontalOverflow": false,
+    "formWithinViewport": true,
+    "programSelectWithinViewport": true,
+    "controlsWithinViewport": true,
+    "moduleWidthsWithinViewport": true,
+    "pillFormGap": -429,
+    "gapOk": true,
+    "viewportWidth": 1200,
+    "scrollWidth": 1200,
+    "bodyScrollWidth": 1200,
+    "form": {
+      "left": 672,
+      "right": 1176,
+      "top": 157,
+      "bottom": 529,
+      "width": 504,
+      "height": 372
+    },
+    "programSelect": {
+      "left": 672,
+      "right": 1176,
+      "top": 413,
+      "bottom": 465,
+      "width": 504,
+      "height": 52
+    },
+    "pill": {
+      "left": 24,
+      "right": 208,
+      "top": 534,
+      "bottom": 586,
+      "width": 184,
+      "height": 52
+    },
+    "facts": {
+      "left": 0,
+      "right": 1200,
+      "top": 672,
+      "bottom": 812,
+      "width": 1200,
+      "height": 140
+    },
+    "plan": {
+      "left": 60,
+      "right": 1140,
+      "top": 1878,
+      "bottom": 2592,
+      "width": 1080,
+      "height": 714
+    },
+    "format": {
+      "left": 60,
+      "right": 1140,
+      "top": 3315,
+      "bottom": 3635,
+      "width": 1080,
+      "height": 320
+    },
+    "programs": {
+      "left": 60,
+      "right": 1140,
+      "top": 3992,
+      "bottom": 4839,
+      "width": 1080,
+      "height": 847
+    },
+    "benefits": {
+      "left": 60,
+      "right": 1140,
+      "top": 5093,
+      "bottom": 5521,
+      "width": 1080,
+      "height": 428
+    },
+    "controls": [
+      {
+        "left": 672,
+        "right": 912,
+        "width": 240,
+        "height": 52
+      },
+      {
+        "left": 937,
+        "right": 1176,
+        "width": 240,
+        "height": 52
+      },
+      {
+        "left": 672,
+        "right": 1176,
+        "width": 504,
+        "height": 52
+      },
+      {
+        "left": 672,
+        "right": 1176,
+        "width": 504,
+        "height": 52
+      },
+      {
+        "left": 672,
+        "right": 1176,
+        "width": 504,
+        "height": 52
+      },
+      {
+        "left": 672,
+        "right": 1176,
+        "width": 504,
+        "height": 52
+      },
+      {
+        "left": 672,
+        "right": 1176,
+        "width": 504,
+        "height": 52
+      }
+    ],
+    "maxControlRight": 1176,
+    "minControlLeft": 672,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "heroAfter": "none",
+    "brokenImages": []
+  },
+  {
+    "width": 1024,
+    "status": 200,
+    "horizontalOverflow": false,
+    "formWithinViewport": true,
+    "programSelectWithinViewport": true,
+    "controlsWithinViewport": true,
+    "moduleWidthsWithinViewport": true,
+    "pillFormGap": -398,
+    "gapOk": true,
+    "viewportWidth": 1024,
+    "scrollWidth": 1024,
+    "bodyScrollWidth": 1024,
+    "form": {
+      "left": 594,
+      "right": 1024,
+      "top": 146,
+      "bottom": 518,
+      "width": 430,
+      "height": 372
+    },
+    "programSelect": {
+      "left": 594,
+      "right": 1024,
+      "top": 402,
+      "bottom": 454,
+      "width": 430,
+      "height": 52
+    },
+    "pill": {
+      "left": 0,
+      "right": 184,
+      "top": 492,
+      "bottom": 544,
+      "width": 184,
+      "height": 52
+    },
+    "facts": {
+      "left": 0,
+      "right": 1024,
+      "top": 672,
+      "bottom": 818,
+      "width": 1024,
+      "height": 146
+    },
+    "plan": {
+      "left": 51,
+      "right": 973,
+      "top": 1884,
+      "bottom": 2847,
+      "width": 922,
+      "height": 963
+    },
+    "format": {
+      "left": 51,
+      "right": 973,
+      "top": 3329,
+      "bottom": 3649,
+      "width": 922,
+      "height": 320
+    },
+    "programs": {
+      "left": 51,
+      "right": 973,
+      "top": 4006,
+      "bottom": 4853,
+      "width": 922,
+      "height": 847
+    },
+    "benefits": {
+      "left": 51,
+      "right": 973,
+      "top": 5107,
+      "bottom": 5535,
+      "width": 922,
+      "height": 428
+    },
+    "controls": [
+      {
+        "left": 594,
+        "right": 802,
+        "width": 208,
+        "height": 52
+      },
+      {
+        "left": 816,
+        "right": 1024,
+        "width": 208,
+        "height": 52
+      },
+      {
+        "left": 594,
+        "right": 1024,
+        "width": 430,
+        "height": 52
+      },
+      {
+        "left": 594,
+        "right": 1024,
+        "width": 430,
+        "height": 52
+      },
+      {
+        "left": 594,
+        "right": 1024,
+        "width": 430,
+        "height": 52
+      },
+      {
+        "left": 594,
+        "right": 1024,
+        "width": 430,
+        "height": 52
+      },
+      {
+        "left": 594,
+        "right": 1024,
+        "width": 430,
+        "height": 52
+      }
+    ],
+    "maxControlRight": 1024,
+    "minControlLeft": 594,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "heroAfter": "none",
+    "brokenImages": []
+  },
+  {
+    "width": 900,
+    "status": 200,
+    "horizontalOverflow": false,
+    "formWithinViewport": true,
+    "programSelectWithinViewport": true,
+    "controlsWithinViewport": true,
+    "moduleWidthsWithinViewport": true,
+    "pillFormGap": 28,
+    "gapOk": true,
+    "viewportWidth": 900,
+    "scrollWidth": 900,
+    "bodyScrollWidth": 900,
+    "form": {
+      "left": 0,
+      "right": 560,
+      "top": 583,
+      "bottom": 955,
+      "width": 560,
+      "height": 372
+    },
+    "programSelect": {
+      "left": 0,
+      "right": 560,
+      "top": 839,
+      "bottom": 891,
+      "width": 560,
+      "height": 52
+    },
+    "pill": {
+      "left": 0,
+      "right": 148,
+      "top": 503,
+      "bottom": 555,
+      "width": 148,
+      "height": 52
+    },
+    "facts": {
+      "left": 0,
+      "right": 900,
+      "top": 997,
+      "bottom": 1143,
+      "width": 900,
+      "height": 146
+    },
+    "plan": {
+      "left": 45,
+      "right": 855,
+      "top": 2209,
+      "bottom": 3172,
+      "width": 810,
+      "height": 963
+    },
+    "format": {
+      "left": 45,
+      "right": 855,
+      "top": 3654,
+      "bottom": 3885,
+      "width": 810,
+      "height": 231
+    },
+    "programs": {
+      "left": 45,
+      "right": 855,
+      "top": 4331,
+      "bottom": 5288,
+      "width": 810,
+      "height": 957
+    },
+    "benefits": {
+      "left": 45,
+      "right": 855,
+      "top": 5542,
+      "bottom": 5970,
+      "width": 810,
+      "height": 428
+    },
+    "controls": [
+      {
+        "left": 0,
+        "right": 273,
+        "width": 273,
+        "height": 52
+      },
+      {
+        "left": 287,
+        "right": 560,
+        "width": 273,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      }
+    ],
+    "maxControlRight": 560,
+    "minControlLeft": 0,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "heroAfter": "none",
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "status": 200,
+    "horizontalOverflow": false,
+    "formWithinViewport": true,
+    "programSelectWithinViewport": true,
+    "controlsWithinViewport": true,
+    "moduleWidthsWithinViewport": true,
+    "pillFormGap": 28,
+    "gapOk": true,
+    "viewportWidth": 768,
+    "scrollWidth": 768,
+    "bodyScrollWidth": 768,
+    "form": {
+      "left": 0,
+      "right": 560,
+      "top": 583,
+      "bottom": 955,
+      "width": 560,
+      "height": 372
+    },
+    "programSelect": {
+      "left": 0,
+      "right": 560,
+      "top": 839,
+      "bottom": 891,
+      "width": 560,
+      "height": 52
+    },
+    "pill": {
+      "left": 0,
+      "right": 148,
+      "top": 503,
+      "bottom": 555,
+      "width": 148,
+      "height": 52
+    },
+    "facts": {
+      "left": 0,
+      "right": 768,
+      "top": 997,
+      "bottom": 1143,
+      "width": 768,
+      "height": 146
+    },
+    "plan": {
+      "left": 38,
+      "right": 730,
+      "top": 2209,
+      "bottom": 3421,
+      "width": 691,
+      "height": 1212
+    },
+    "format": {
+      "left": 38,
+      "right": 730,
+      "top": 3903,
+      "bottom": 4156,
+      "width": 691,
+      "height": 253
+    },
+    "programs": {
+      "left": 38,
+      "right": 730,
+      "top": 4580,
+      "bottom": 5603,
+      "width": 691,
+      "height": 1023
+    },
+    "benefits": {
+      "left": 38,
+      "right": 730,
+      "top": 5857,
+      "bottom": 6509,
+      "width": 691,
+      "height": 652
+    },
+    "controls": [
+      {
+        "left": 0,
+        "right": 273,
+        "width": 273,
+        "height": 52
+      },
+      {
+        "left": 287,
+        "right": 560,
+        "width": 273,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      }
+    ],
+    "maxControlRight": 560,
+    "minControlLeft": 0,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "heroAfter": "none",
+    "brokenImages": []
+  },
+  {
+    "width": 640,
+    "status": 200,
+    "horizontalOverflow": false,
+    "formWithinViewport": true,
+    "programSelectWithinViewport": true,
+    "controlsWithinViewport": true,
+    "moduleWidthsWithinViewport": true,
+    "pillFormGap": 28,
+    "gapOk": true,
+    "viewportWidth": 640,
+    "scrollWidth": 640,
+    "bodyScrollWidth": 640,
+    "form": {
+      "left": 0,
+      "right": 560,
+      "top": 568,
+      "bottom": 1006,
+      "width": 560,
+      "height": 438
+    },
+    "programSelect": {
+      "left": 0,
+      "right": 560,
+      "top": 890,
+      "bottom": 942,
+      "width": 560,
+      "height": 52
+    },
+    "pill": {
+      "left": 0,
+      "right": 148,
+      "top": 488,
+      "bottom": 540,
+      "width": 148,
+      "height": 52
+    },
+    "facts": {
+      "left": 0,
+      "right": 640,
+      "top": 1048,
+      "bottom": 1242,
+      "width": 640,
+      "height": 194
+    },
+    "plan": {
+      "left": 32,
+      "right": 608,
+      "top": 2570,
+      "bottom": 3746,
+      "width": 576,
+      "height": 1176
+    },
+    "format": {
+      "left": 32,
+      "right": 608,
+      "top": 4060,
+      "bottom": 4273,
+      "width": 576,
+      "height": 213
+    },
+    "programs": {
+      "left": 32,
+      "right": 608,
+      "top": 4775,
+      "bottom": 5670,
+      "width": 576,
+      "height": 895
+    },
+    "benefits": {
+      "left": 32,
+      "right": 608,
+      "top": 5874,
+      "bottom": 6538,
+      "width": 576,
+      "height": 664
+    },
+    "controls": [
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 560,
+        "width": 560,
+        "height": 52
+      }
+    ],
+    "maxControlRight": 560,
+    "minControlLeft": 0,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "heroAfter": "none",
+    "brokenImages": []
+  },
+  {
+    "width": 390,
+    "status": 200,
+    "horizontalOverflow": false,
+    "formWithinViewport": true,
+    "programSelectWithinViewport": true,
+    "controlsWithinViewport": true,
+    "moduleWidthsWithinViewport": true,
+    "pillFormGap": 28,
+    "gapOk": true,
+    "viewportWidth": 390,
+    "scrollWidth": 390,
+    "bodyScrollWidth": 390,
+    "form": {
+      "left": 0,
+      "right": 390,
+      "top": 507,
+      "bottom": 945,
+      "width": 390,
+      "height": 438
+    },
+    "programSelect": {
+      "left": 0,
+      "right": 390,
+      "top": 829,
+      "bottom": 881,
+      "width": 390,
+      "height": 52
+    },
+    "pill": {
+      "left": 0,
+      "right": 148,
+      "top": 427,
+      "bottom": 479,
+      "width": 148,
+      "height": 52
+    },
+    "facts": {
+      "left": 0,
+      "right": 390,
+      "top": 987,
+      "bottom": 1345,
+      "width": 390,
+      "height": 358
+    },
+    "plan": {
+      "left": 24,
+      "right": 366,
+      "top": 2553,
+      "bottom": 4929,
+      "width": 342,
+      "height": 2376
+    },
+    "format": {
+      "left": 24,
+      "right": 366,
+      "top": 5299,
+      "bottom": 5640,
+      "width": 342,
+      "height": 341
+    },
+    "programs": {
+      "left": 24,
+      "right": 366,
+      "top": 6066,
+      "bottom": 7605,
+      "width": 342,
+      "height": 1539
+    },
+    "benefits": {
+      "left": 24,
+      "right": 366,
+      "top": 7843,
+      "bottom": 8939,
+      "width": 342,
+      "height": 1096
+    },
+    "controls": [
+      {
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 52
+      },
+      {
+        "left": 0,
+        "right": 390,
+        "width": 390,
+        "height": 52
+      }
+    ],
+    "maxControlRight": 390,
+    "minControlLeft": 0,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "heroAfter": "none",
+    "brokenImages": []
+  }
+]

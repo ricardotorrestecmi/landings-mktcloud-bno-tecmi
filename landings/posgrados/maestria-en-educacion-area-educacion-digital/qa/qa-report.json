@@ -1,0 +1,56 @@
+{
+  "url": "http://localhost:49321/landings/posgrados/maestria-en-educacion-area-educacion-digital/",
+  "checkedAt": "2026-06-11T06:14:43.162Z",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "metrics": {
+        "title": "Maestría en Educación Área Educación Digital | Universidad Tecmilenio",
+        "robots": "noindex,nofollow",
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "brokenImages": [],
+        "formVisible": true,
+        "facts": [
+          "Formato Online",
+          "Duración 2 años",
+          "Plan Bimestral",
+          "Idioma Español"
+        ],
+        "hasLorem": false,
+        "hasFinanceHero": false,
+        "ctaText": "¡Sí! Quiero más información"
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 1200
+      },
+      "errors": [],
+      "metrics": {
+        "title": "Maestría en Educación Área Educación Digital | Universidad Tecmilenio",
+        "robots": "noindex,nofollow",
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "brokenImages": [],
+        "formVisible": true,
+        "facts": [
+          "Formato Online",
+          "Duración 2 años",
+          "Plan Bimestral",
+          "Idioma Español"
+        ],
+        "hasLorem": false,
+        "hasFinanceHero": false,
+        "ctaText": "¡Sí! Quiero más información"
+      }
+    }
+  ]
+}

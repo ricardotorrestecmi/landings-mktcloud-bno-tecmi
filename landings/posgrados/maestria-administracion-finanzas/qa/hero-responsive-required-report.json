@@ -1,0 +1,483 @@
+{
+  "url": "http://localhost:49321/landings/posgrados/maestria-administracion-finanzas/",
+  "checkedAt": "2026-06-11T18:52:14.631Z",
+  "results": [
+    {
+      "width": 1366,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 1366,
+        "scrollWidth": 1366,
+        "scrollEqualsInner": true,
+        "brokenImages": [],
+        "form": {
+          "left": 742,
+          "right": 1247,
+          "top": 186,
+          "bottom": 558,
+          "width": 505,
+          "height": 372
+        },
+        "formInsideViewport": true,
+        "inputsInsideViewport": true,
+        "selectsInsideViewport": true,
+        "selectStyles": [
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 505,
+            "right": 1247
+          },
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 505,
+            "right": 1247
+          }
+        ],
+        "pillToFormGap": -372,
+        "factsWidth": 1366,
+        "factsColsFirstRow": 3,
+        "factsItemOverlap": [],
+        "factsIconTextOverlap": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "formOk": true,
+        "mobileGapOk": true,
+        "factsFullWidth": true,
+        "factsTwoColsOk": true,
+        "factsNoOverlap": true,
+        "all": true
+      }
+    },
+    {
+      "width": 1200,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 1200,
+        "scrollWidth": 1200,
+        "scrollEqualsInner": true,
+        "brokenImages": [],
+        "form": {
+          "left": 591,
+          "right": 1096,
+          "top": 179,
+          "bottom": 551,
+          "width": 505,
+          "height": 372
+        },
+        "formInsideViewport": true,
+        "inputsInsideViewport": true,
+        "selectsInsideViewport": true,
+        "selectStyles": [
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 505,
+            "right": 1096
+          },
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 505,
+            "right": 1096
+          }
+        ],
+        "pillToFormGap": -373,
+        "factsWidth": 1200,
+        "factsColsFirstRow": 3,
+        "factsItemOverlap": [],
+        "factsIconTextOverlap": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "formOk": true,
+        "mobileGapOk": true,
+        "factsFullWidth": true,
+        "factsTwoColsOk": true,
+        "factsNoOverlap": true,
+        "all": true
+      }
+    },
+    {
+      "width": 1024,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 1024,
+        "scrollWidth": 1024,
+        "scrollEqualsInner": true,
+        "brokenImages": [],
+        "form": {
+          "left": 543,
+          "right": 973,
+          "top": 179,
+          "bottom": 551,
+          "width": 430,
+          "height": 372
+        },
+        "formInsideViewport": true,
+        "inputsInsideViewport": true,
+        "selectsInsideViewport": true,
+        "selectStyles": [
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 430,
+            "right": 973
+          },
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 430,
+            "right": 973
+          }
+        ],
+        "pillToFormGap": -366,
+        "factsWidth": 1024,
+        "factsColsFirstRow": 3,
+        "factsItemOverlap": [],
+        "factsIconTextOverlap": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "formOk": true,
+        "mobileGapOk": true,
+        "factsFullWidth": true,
+        "factsTwoColsOk": true,
+        "factsNoOverlap": true,
+        "all": true
+      }
+    },
+    {
+      "width": 900,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 900,
+        "scrollWidth": 900,
+        "scrollEqualsInner": true,
+        "brokenImages": [],
+        "form": {
+          "left": 24,
+          "right": 584,
+          "top": 473,
+          "bottom": 845,
+          "width": 560,
+          "height": 372
+        },
+        "formInsideViewport": true,
+        "inputsInsideViewport": true,
+        "selectsInsideViewport": true,
+        "selectStyles": [
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 584
+          },
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 584
+          }
+        ],
+        "pillToFormGap": 28,
+        "factsWidth": 900,
+        "factsColsFirstRow": 2,
+        "factsItemOverlap": [],
+        "factsIconTextOverlap": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "formOk": true,
+        "mobileGapOk": true,
+        "factsFullWidth": true,
+        "factsTwoColsOk": true,
+        "factsNoOverlap": true,
+        "all": true
+      }
+    },
+    {
+      "width": 850,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 850,
+        "scrollWidth": 850,
+        "scrollEqualsInner": true,
+        "brokenImages": [],
+        "form": {
+          "left": 24,
+          "right": 584,
+          "top": 473,
+          "bottom": 845,
+          "width": 560,
+          "height": 372
+        },
+        "formInsideViewport": true,
+        "inputsInsideViewport": true,
+        "selectsInsideViewport": true,
+        "selectStyles": [
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 584
+          },
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 584
+          }
+        ],
+        "pillToFormGap": 28,
+        "factsWidth": 850,
+        "factsColsFirstRow": 2,
+        "factsItemOverlap": [],
+        "factsIconTextOverlap": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "formOk": true,
+        "mobileGapOk": true,
+        "factsFullWidth": true,
+        "factsTwoColsOk": true,
+        "factsNoOverlap": true,
+        "all": true
+      }
+    },
+    {
+      "width": 768,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 768,
+        "scrollWidth": 768,
+        "scrollEqualsInner": true,
+        "brokenImages": [],
+        "form": {
+          "left": 24,
+          "right": 584,
+          "top": 473,
+          "bottom": 845,
+          "width": 560,
+          "height": 372
+        },
+        "formInsideViewport": true,
+        "inputsInsideViewport": true,
+        "selectsInsideViewport": true,
+        "selectStyles": [
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 584
+          },
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 584
+          }
+        ],
+        "pillToFormGap": 28,
+        "factsWidth": 768,
+        "factsColsFirstRow": 2,
+        "factsItemOverlap": [],
+        "factsIconTextOverlap": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "formOk": true,
+        "mobileGapOk": true,
+        "factsFullWidth": true,
+        "factsTwoColsOk": true,
+        "factsNoOverlap": true,
+        "all": true
+      }
+    },
+    {
+      "width": 760,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 760,
+        "scrollWidth": 760,
+        "scrollEqualsInner": true,
+        "brokenImages": [],
+        "form": {
+          "left": 22,
+          "right": 582,
+          "top": 460,
+          "bottom": 898,
+          "width": 560,
+          "height": 438
+        },
+        "formInsideViewport": true,
+        "inputsInsideViewport": true,
+        "selectsInsideViewport": true,
+        "selectStyles": [
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 582
+          },
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 582
+          }
+        ],
+        "pillToFormGap": 28,
+        "factsWidth": 760,
+        "factsColsFirstRow": 2,
+        "factsItemOverlap": [],
+        "factsIconTextOverlap": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "formOk": true,
+        "mobileGapOk": true,
+        "factsFullWidth": true,
+        "factsTwoColsOk": true,
+        "factsNoOverlap": true,
+        "all": true
+      }
+    },
+    {
+      "width": 640,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 640,
+        "scrollWidth": 640,
+        "scrollEqualsInner": true,
+        "brokenImages": [],
+        "form": {
+          "left": 22,
+          "right": 582,
+          "top": 458,
+          "bottom": 896,
+          "width": 560,
+          "height": 438
+        },
+        "formInsideViewport": true,
+        "inputsInsideViewport": true,
+        "selectsInsideViewport": true,
+        "selectStyles": [
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 582
+          },
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 560,
+            "right": 582
+          }
+        ],
+        "pillToFormGap": 28,
+        "factsWidth": 640,
+        "factsColsFirstRow": 2,
+        "factsItemOverlap": [],
+        "factsIconTextOverlap": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "formOk": true,
+        "mobileGapOk": true,
+        "factsFullWidth": true,
+        "factsTwoColsOk": true,
+        "factsNoOverlap": true,
+        "all": true
+      }
+    },
+    {
+      "width": 390,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "scrollEqualsInner": true,
+        "brokenImages": [],
+        "form": {
+          "left": 22,
+          "right": 368,
+          "top": 446,
+          "bottom": 884,
+          "width": 346,
+          "height": 438
+        },
+        "formInsideViewport": true,
+        "inputsInsideViewport": true,
+        "selectsInsideViewport": true,
+        "selectStyles": [
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 346,
+            "right": 368
+          },
+          {
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+            "minWidth": "0px",
+            "width": 346,
+            "right": 368
+          }
+        ],
+        "pillToFormGap": 28,
+        "factsWidth": 390,
+        "factsColsFirstRow": 2,
+        "factsItemOverlap": [],
+        "factsIconTextOverlap": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "formOk": true,
+        "mobileGapOk": true,
+        "factsFullWidth": true,
+        "factsTwoColsOk": true,
+        "factsNoOverlap": true,
+        "all": true
+      }
+    }
+  ]
+}

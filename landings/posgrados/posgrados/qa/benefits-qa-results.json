@@ -1,0 +1,462 @@
+[
+  {
+    "name": "benefits-w1330",
+    "width": 1330,
+    "viewport": 1330,
+    "scrollWidth": 1330,
+    "brokenImages": [],
+    "section": {
+      "left": 0,
+      "right": 1330,
+      "top": 2681.40625,
+      "bottom": 3377.59375,
+      "width": 1330,
+      "height": 696.1875
+    },
+    "layout": {
+      "left": 66.5,
+      "right": 1263.5,
+      "top": 2895.59375,
+      "bottom": 3285.59375,
+      "width": 1197,
+      "height": 390
+    },
+    "layoutColumns": "300px 520px",
+    "layoutColumnCount": 2,
+    "layoutCentered": true,
+    "articles": [
+      {
+        "article": {
+          "left": 608.1875,
+          "right": 1128.1875,
+          "top": 2912.859375,
+          "bottom": 3071.59375,
+          "width": 520,
+          "height": 158.734375
+        },
+        "heading": {
+          "left": 608.1875,
+          "right": 1128.1875,
+          "top": 2912.859375,
+          "bottom": 2943.65625,
+          "width": 520,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 608.1875,
+          "right": 1128.1875,
+          "top": 2955.65625,
+          "bottom": 3071.59375,
+          "width": 520,
+          "height": 115.9375
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "158.734px",
+        "paragraphHeightStyle": "115.938px"
+      },
+      {
+        "article": {
+          "left": 608.1875,
+          "right": 1128.1875,
+          "top": 3109.59375,
+          "bottom": 3268.328125,
+          "width": 520,
+          "height": 158.734375
+        },
+        "heading": {
+          "left": 608.1875,
+          "right": 1128.1875,
+          "top": 3109.59375,
+          "bottom": 3140.390625,
+          "width": 520,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 608.1875,
+          "right": 1128.1875,
+          "top": 3152.390625,
+          "bottom": 3268.328125,
+          "width": 520,
+          "height": 115.9375
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "158.734px",
+        "paragraphHeightStyle": "115.938px"
+      }
+    ]
+  },
+  {
+    "name": "benefits-w1200",
+    "width": 1200,
+    "viewport": 1200,
+    "scrollWidth": 1200,
+    "brokenImages": [],
+    "section": {
+      "left": 0,
+      "right": 1200,
+      "top": 2665.671875,
+      "bottom": 3353.421875,
+      "width": 1200,
+      "height": 687.75
+    },
+    "layout": {
+      "left": 60,
+      "right": 1140,
+      "top": 2871.421875,
+      "bottom": 3261.421875,
+      "width": 1080,
+      "height": 390
+    },
+    "layoutColumns": "300px 520px",
+    "layoutColumnCount": 2,
+    "layoutCentered": true,
+    "articles": [
+      {
+        "article": {
+          "left": 538,
+          "right": 1058,
+          "top": 2888.6875,
+          "bottom": 3047.421875,
+          "width": 520,
+          "height": 158.734375
+        },
+        "heading": {
+          "left": 538,
+          "right": 1058,
+          "top": 2888.6875,
+          "bottom": 2919.484375,
+          "width": 520,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 538,
+          "right": 1058,
+          "top": 2931.484375,
+          "bottom": 3047.421875,
+          "width": 520,
+          "height": 115.9375
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "158.734px",
+        "paragraphHeightStyle": "115.938px"
+      },
+      {
+        "article": {
+          "left": 538,
+          "right": 1058,
+          "top": 3085.421875,
+          "bottom": 3244.15625,
+          "width": 520,
+          "height": 158.734375
+        },
+        "heading": {
+          "left": 538,
+          "right": 1058,
+          "top": 3085.421875,
+          "bottom": 3116.21875,
+          "width": 520,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 538,
+          "right": 1058,
+          "top": 3128.21875,
+          "bottom": 3244.15625,
+          "width": 520,
+          "height": 115.9375
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "158.734px",
+        "paragraphHeightStyle": "115.938px"
+      }
+    ]
+  },
+  {
+    "name": "benefits-w1024",
+    "width": 1024,
+    "viewport": 1024,
+    "scrollWidth": 1024,
+    "brokenImages": [],
+    "section": {
+      "left": 0,
+      "right": 1024,
+      "top": 2685.3125,
+      "bottom": 3328.484375,
+      "width": 1024,
+      "height": 643.171875
+    },
+    "layout": {
+      "left": 51.1875,
+      "right": 972.8125,
+      "top": 2846.484375,
+      "bottom": 3236.484375,
+      "width": 921.625,
+      "height": 390
+    },
+    "layoutColumns": "300px 585.625px",
+    "layoutColumnCount": 2,
+    "layoutCentered": true,
+    "articles": [
+      {
+        "article": {
+          "left": 387.1875,
+          "right": 972.8125,
+          "top": 2886.9375,
+          "bottom": 3022.484375,
+          "width": 585.625,
+          "height": 135.546875
+        },
+        "heading": {
+          "left": 387.1875,
+          "right": 972.8125,
+          "top": 2886.9375,
+          "bottom": 2917.734375,
+          "width": 585.625,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 387.1875,
+          "right": 972.8125,
+          "top": 2929.734375,
+          "bottom": 3022.484375,
+          "width": 585.625,
+          "height": 92.75
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "135.547px",
+        "paragraphHeightStyle": "92.75px"
+      },
+      {
+        "article": {
+          "left": 387.1875,
+          "right": 972.8125,
+          "top": 3060.484375,
+          "bottom": 3196.03125,
+          "width": 585.625,
+          "height": 135.546875
+        },
+        "heading": {
+          "left": 387.1875,
+          "right": 972.8125,
+          "top": 3060.484375,
+          "bottom": 3091.28125,
+          "width": 585.625,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 387.1875,
+          "right": 972.8125,
+          "top": 3103.28125,
+          "bottom": 3196.03125,
+          "width": 585.625,
+          "height": 92.75
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "135.547px",
+        "paragraphHeightStyle": "92.75px"
+      }
+    ]
+  },
+  {
+    "name": "benefits-w900",
+    "width": 900,
+    "viewport": 900,
+    "scrollWidth": 900,
+    "brokenImages": [],
+    "section": {
+      "left": 0,
+      "right": 900,
+      "top": 3666.21875,
+      "bottom": 4306.453125,
+      "width": 900,
+      "height": 640.234375
+    },
+    "layout": {
+      "left": 45,
+      "right": 855,
+      "top": 3824.453125,
+      "bottom": 4214.453125,
+      "width": 810,
+      "height": 390
+    },
+    "layoutColumns": "300px 474px",
+    "layoutColumnCount": 2,
+    "layoutCentered": true,
+    "articles": [
+      {
+        "article": {
+          "left": 381,
+          "right": 855,
+          "top": 3841.71875,
+          "bottom": 4000.453125,
+          "width": 474,
+          "height": 158.734375
+        },
+        "heading": {
+          "left": 381,
+          "right": 855,
+          "top": 3841.71875,
+          "bottom": 3872.515625,
+          "width": 474,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 381,
+          "right": 855,
+          "top": 3884.515625,
+          "bottom": 4000.453125,
+          "width": 474,
+          "height": 115.9375
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "158.734px",
+        "paragraphHeightStyle": "115.938px"
+      },
+      {
+        "article": {
+          "left": 381,
+          "right": 855,
+          "top": 4038.453125,
+          "bottom": 4197.1875,
+          "width": 474,
+          "height": 158.734375
+        },
+        "heading": {
+          "left": 381,
+          "right": 855,
+          "top": 4038.453125,
+          "bottom": 4069.25,
+          "width": 474,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 381,
+          "right": 855,
+          "top": 4081.25,
+          "bottom": 4197.1875,
+          "width": 474,
+          "height": 115.9375
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "158.734px",
+        "paragraphHeightStyle": "115.938px"
+      }
+    ]
+  },
+  {
+    "name": "benefits-w760",
+    "width": 760,
+    "viewport": 760,
+    "scrollWidth": 760,
+    "brokenImages": [],
+    "section": {
+      "left": 0,
+      "right": 760,
+      "top": 3656.484375,
+      "bottom": 4648.859375,
+      "width": 760,
+      "height": 992.375
+    },
+    "layout": {
+      "left": 38,
+      "right": 722,
+      "top": 3844.953125,
+      "bottom": 4556.859375,
+      "width": 684,
+      "height": 711.90625
+    },
+    "layoutColumns": "684px",
+    "layoutColumnCount": 1,
+    "layoutCentered": true,
+    "articles": [
+      {
+        "article": {
+          "left": 38,
+          "right": 722,
+          "top": 4270.953125,
+          "bottom": 4383.3125,
+          "width": 684,
+          "height": 112.359375
+        },
+        "heading": {
+          "left": 38,
+          "right": 722,
+          "top": 4270.953125,
+          "bottom": 4301.75,
+          "width": 684,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 38,
+          "right": 722,
+          "top": 4313.75,
+          "bottom": 4383.3125,
+          "width": 684,
+          "height": 69.5625
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "112.359px",
+        "paragraphHeightStyle": "69.5625px"
+      },
+      {
+        "article": {
+          "left": 38,
+          "right": 722,
+          "top": 4421.3125,
+          "bottom": 4556.859375,
+          "width": 684,
+          "height": 135.546875
+        },
+        "heading": {
+          "left": 38,
+          "right": 722,
+          "top": 4421.3125,
+          "bottom": 4452.109375,
+          "width": 684,
+          "height": 30.796875
+        },
+        "paragraph": {
+          "left": 38,
+          "right": 722,
+          "top": 4464.109375,
+          "bottom": 4556.859375,
+          "width": 684,
+          "height": 92.75
+        },
+        "articleOverflowY": false,
+        "paragraphOverflowY": false,
+        "articleOverflowX": false,
+        "paragraphOverflowX": false,
+        "articleHeightStyle": "135.547px",
+        "paragraphHeightStyle": "92.75px"
+      }
+    ]
+  }
+]

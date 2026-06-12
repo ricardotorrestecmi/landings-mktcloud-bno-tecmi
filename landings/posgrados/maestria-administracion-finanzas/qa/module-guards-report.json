@@ -1,0 +1,170 @@
+{
+  "url": "http://localhost:49321/landings/posgrados/maestria-administracion-finanzas/",
+  "checkedAt": "2026-06-11T14:37:20.067Z",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 (File not found)"
+      ],
+      "metrics": {
+        "title": "Maestría en Finanzas | Universidad Tecmilenio",
+        "robots": "noindex,nofollow",
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "brokenImages": [],
+        "introCards": {
+          "width": 610,
+          "height": 636,
+          "top": 930,
+          "bottom": 1566,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "0px",
+          "display": "grid",
+          "objectFit": "fill"
+        },
+        "portrait": {
+          "width": 610,
+          "height": 636,
+          "top": 930,
+          "bottom": 1566,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "16px",
+          "display": "block",
+          "objectFit": "fill"
+        },
+        "portraitImg": {
+          "width": 610,
+          "height": 636,
+          "top": 930,
+          "bottom": 1566,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "16px",
+          "display": "block",
+          "objectFit": "cover"
+        },
+        "introHeightDelta": 0,
+        "portraitBackground": "rgba(0, 0, 0, 0)",
+        "formatCard": {
+          "width": 1240,
+          "height": 320,
+          "top": 3323,
+          "bottom": 3643,
+          "background": "rgb(143, 212, 96)",
+          "radius": "16px",
+          "display": "grid",
+          "objectFit": "fill"
+        },
+        "formatText": {
+          "width": 630,
+          "height": 320,
+          "top": 3323,
+          "bottom": 3643,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "0px",
+          "display": "block",
+          "objectFit": "fill"
+        },
+        "formatImg": {
+          "width": 610,
+          "height": 320,
+          "top": 3323,
+          "bottom": 3643,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "16px",
+          "display": "block",
+          "objectFit": "cover"
+        },
+        "formatHeightDelta": 0,
+        "formatRightEdgeDelta": 0,
+        "formatImageSrc": "assets/images/figma-4-1-connect-online-cropped.png",
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 1200
+      },
+      "errors": [],
+      "metrics": {
+        "title": "Maestría en Finanzas | Universidad Tecmilenio",
+        "robots": "noindex,nofollow",
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "brokenImages": [],
+        "introCards": {
+          "width": 346,
+          "height": 680,
+          "top": 1488,
+          "bottom": 2168,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "0px",
+          "display": "grid",
+          "objectFit": "fill"
+        },
+        "portrait": {
+          "width": 346,
+          "height": 420,
+          "top": 2188,
+          "bottom": 2608,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "16px",
+          "display": "block",
+          "objectFit": "fill"
+        },
+        "portraitImg": {
+          "width": 346,
+          "height": 420,
+          "top": 2188,
+          "bottom": 2608,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "16px",
+          "display": "block",
+          "objectFit": "cover"
+        },
+        "introHeightDelta": 260,
+        "portraitBackground": "rgba(0, 0, 0, 0)",
+        "formatCard": {
+          "width": 346,
+          "height": 415,
+          "top": 5576,
+          "bottom": 5991,
+          "background": "rgb(143, 212, 96)",
+          "radius": "16px",
+          "display": "grid",
+          "objectFit": "fill"
+        },
+        "formatText": {
+          "width": 346,
+          "height": 233,
+          "top": 5576,
+          "bottom": 5809,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "0px",
+          "display": "block",
+          "objectFit": "fill"
+        },
+        "formatImg": {
+          "width": 346,
+          "height": 182,
+          "top": 5809,
+          "bottom": 5991,
+          "background": "rgba(0, 0, 0, 0)",
+          "radius": "16px",
+          "display": "block",
+          "objectFit": "cover"
+        },
+        "formatHeightDelta": null,
+        "formatRightEdgeDelta": null,
+        "formatImageSrc": "assets/images/figma-4-1-connect-online-cropped.png",
+        "hasHorizontalOverflow": false
+      }
+    }
+  ]
+}

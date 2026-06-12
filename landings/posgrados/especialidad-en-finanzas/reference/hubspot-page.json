@@ -1,0 +1,46 @@
+{
+  "htmlTitle": "Especialidad en Finanzas",
+  "metaDescription": "Evalua estrategias financieras avanzadas y toma decisiones empresariales mas efectivas. Especialidad en Finanzas Tecmilenio. Inscribete.",
+  "hubspotUrl": "https://universidad.tecmilenio.mx/especialidad-en-finanzas",
+  "pageId": "211968430188",
+  "pageName": "Especialidad en Finanzas",
+  "portalId": "2429099",
+  "formId": "7e46ab60-44ca-40d8-88b7-cdaca5bd03f4",
+  "formInstanceId": "5247",
+  "redirectUrl": "https://universidad.tecmilenio.mx/registro-concluido",
+  "program": {
+    "title": "Especialidad en Finanzas",
+    "description": "Evalua estrategias financieras avanzadas para la toma de decisiones empresariales efectivas.",
+    "format": "Online",
+    "duration": "1 ano",
+    "plan": "Bimestral",
+    "language": "Espanol"
+  },
+  "studyPlan": [
+    {
+      "period": "Primer Bimestre",
+      "certificate": "Finanzas corporativas avanzadas"
+    },
+    {
+      "period": "Segundo Bimestre",
+      "certificate": "Matematicas financieras"
+    },
+    {
+      "period": "Tercer Bimestre",
+      "certificate": "Mercados e instituciones financieras"
+    },
+    {
+      "period": "Cuarto Bimestre",
+      "certificate": "Instrumentos financieros"
+    },
+    {
+      "period": "Quinto Bimestre",
+      "certificate": "Gestion de portafolios internacionales"
+    }
+  ],
+  "assets": {
+    "hero": "https://universidad.tecmilenio.mx/hubfs/Landing%20Pages%20M/Posgrados%20Maps/especialidad-finanzas.jpg",
+    "secondary": "https://universidad.tecmilenio.mx/hubfs/Landing%20Pages%20M/Posgrados%20Maps/especialidad-finanzas-secundaria.png",
+    "brochure": "https://universidad.tecmilenio.mx/hubfs/Folletos%20Posgrados%20JM/Folleto%20Especialidad%20en%20Finanzas.pdf?hsLang=es-mx"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "viewport": 1440,
+    "httpStatus": 200,
+    "failed": [],
+    "title": "Maestría en Administración de Negocios Área Logística | Universidad Tecmilenio",
+    "readyState": "complete",
+    "scrollWidth": 1440,
+    "bodyWidth": 1440,
+    "brokenImages": [],
+    "heroTitle": "Maestría en Administración\nde Negocios Área Logística",
+    "heroTitleBox": {
+      "x": 95,
+      "y": 167,
+      "width": 650,
+      "height": 88,
+      "bottom": 255
+    },
+    "heroTextBox": {
+      "x": 97,
+      "y": 295,
+      "width": 578,
+      "height": 144,
+      "top": 295
+    },
+    "heroOverlap": false,
+    "formProgram": "Maestría en Administración de Negocios Área Logística",
+    "hasNoindex": "noindex,nofollow",
+    "hasLorem": false,
+    "downloadHref": "https://universidad.tecmilenio.mx/hubfs/Folletos%20Posgrados%20JM/Folleto%20Maestr%C3%ADa%20en%20Log%C3%ADstica.pdf?hsLang=es-mx"
+  },
+  {
+    "viewport": 390,
+    "httpStatus": 200,
+    "failed": [],
+    "title": "Maestría en Administración de Negocios Área Logística | Universidad Tecmilenio",
+    "readyState": "complete",
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "brokenImages": [],
+    "heroTitle": "Maestría en Administración\nde Negocios Área Logística",
+    "heroTitleBox": {
+      "x": 22,
+      "y": 162,
+      "width": 310,
+      "height": 230,
+      "bottom": 392
+    },
+    "heroTextBox": {
+      "x": 22,
+      "y": 410,
+      "width": 330,
+      "height": 96,
+      "top": 410
+    },
+    "heroOverlap": false,
+    "formProgram": "Maestría en Administración de Negocios Área Logística",
+    "hasNoindex": "noindex,nofollow",
+    "hasLorem": false,
+    "downloadHref": "https://universidad.tecmilenio.mx/hubfs/Folletos%20Posgrados%20JM/Folleto%20Maestr%C3%ADa%20en%20Log%C3%ADstica.pdf?hsLang=es-mx"
+  }
+]

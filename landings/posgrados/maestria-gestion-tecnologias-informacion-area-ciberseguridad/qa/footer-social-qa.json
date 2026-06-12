@@ -1,0 +1,402 @@
+{
+  "generatedAt": "2026-06-11T19:28:04.459Z",
+  "results": [
+    {
+      "slug": "landings/posgrados/maestria-gestion-tecnologias-informacion-area-ciberseguridad/",
+      "size": "desktop",
+      "width": 1366,
+      "viewport": 1366,
+      "scrollWidth": 1366,
+      "textContent": "",
+      "rect": {
+        "left": 1108.703125,
+        "right": 1297.703125,
+        "width": 189
+      },
+      "computed": {
+        "display": "flex",
+        "justifyContent": "flex-end",
+        "gap": "18px",
+        "fontSize": "0px",
+        "lineHeight": "0px"
+      },
+      "links": [
+        {
+          "label": "Facebook",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 24,
+            "height": 24,
+            "left": 1147.703125,
+            "right": 1171.703125
+          },
+          "img": {
+            "src": "assets/images/icon-facebook.png",
+            "complete": true,
+            "naturalWidth": 9,
+            "naturalHeight": 17,
+            "width": 9,
+            "height": 17
+          }
+        },
+        {
+          "label": "X",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 24,
+            "height": 24,
+            "left": 1189.703125,
+            "right": 1213.703125
+          },
+          "img": {
+            "src": "assets/images/icon-x.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 16,
+            "width": 18.0625,
+            "height": 17
+          }
+        },
+        {
+          "label": "LinkedIn",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 24,
+            "height": 24,
+            "left": 1231.703125,
+            "right": 1255.703125
+          },
+          "img": {
+            "src": "assets/images/icon-linkedin.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 17,
+            "width": 17,
+            "height": 17
+          }
+        },
+        {
+          "label": "Instagram",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 24,
+            "height": 24,
+            "left": 1273.703125,
+            "right": 1297.703125
+          },
+          "img": {
+            "src": "assets/images/icon-instagram.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 17,
+            "width": 17,
+            "height": 17
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "slug": "landings/posgrados/maestria-gestion-tecnologias-informacion-area-ciberseguridad/",
+      "size": "mobile",
+      "width": 390,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "textContent": "",
+      "rect": {
+        "left": 28,
+        "right": 362,
+        "width": 334
+      },
+      "computed": {
+        "display": "flex",
+        "justifyContent": "center",
+        "gap": "28px",
+        "fontSize": "0px",
+        "lineHeight": "0px"
+      },
+      "links": [
+        {
+          "label": "Facebook",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 30,
+            "height": 30,
+            "left": 93,
+            "right": 123
+          },
+          "img": {
+            "src": "assets/images/icon-facebook.png",
+            "complete": true,
+            "naturalWidth": 9,
+            "naturalHeight": 17,
+            "width": 9,
+            "height": 17
+          }
+        },
+        {
+          "label": "X",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 30,
+            "height": 30,
+            "left": 151,
+            "right": 181
+          },
+          "img": {
+            "src": "assets/images/icon-x.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 16,
+            "width": 18.0625,
+            "height": 17
+          }
+        },
+        {
+          "label": "LinkedIn",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 30,
+            "height": 30,
+            "left": 209,
+            "right": 239
+          },
+          "img": {
+            "src": "assets/images/icon-linkedin.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 17,
+            "width": 17,
+            "height": 17
+          }
+        },
+        {
+          "label": "Instagram",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 30,
+            "height": 30,
+            "left": 267,
+            "right": 297
+          },
+          "img": {
+            "src": "assets/images/icon-instagram.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 17,
+            "width": 17,
+            "height": 17
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "slug": "landings/posgrados/maestria-administracion-finanzas/",
+      "size": "desktop",
+      "width": 1366,
+      "viewport": 1366,
+      "scrollWidth": 1366,
+      "textContent": "",
+      "rect": {
+        "left": 1108.703125,
+        "right": 1297.703125,
+        "width": 189
+      },
+      "computed": {
+        "display": "flex",
+        "justifyContent": "flex-end",
+        "gap": "18px",
+        "fontSize": "0px",
+        "lineHeight": "0px"
+      },
+      "links": [
+        {
+          "label": "Facebook",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 24,
+            "height": 24,
+            "left": 1147.703125,
+            "right": 1171.703125
+          },
+          "img": {
+            "src": "assets/images/icon-facebook.png",
+            "complete": true,
+            "naturalWidth": 9,
+            "naturalHeight": 17,
+            "width": 9,
+            "height": 17
+          }
+        },
+        {
+          "label": "X",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 24,
+            "height": 24,
+            "left": 1189.703125,
+            "right": 1213.703125
+          },
+          "img": {
+            "src": "assets/images/icon-x.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 16,
+            "width": 18.0625,
+            "height": 17
+          }
+        },
+        {
+          "label": "LinkedIn",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 24,
+            "height": 24,
+            "left": 1231.703125,
+            "right": 1255.703125
+          },
+          "img": {
+            "src": "assets/images/icon-linkedin.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 17,
+            "width": 17,
+            "height": 17
+          }
+        },
+        {
+          "label": "Instagram",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 24,
+            "height": 24,
+            "left": 1273.703125,
+            "right": 1297.703125
+          },
+          "img": {
+            "src": "assets/images/icon-instagram.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 17,
+            "width": 17,
+            "height": 17
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "slug": "landings/posgrados/maestria-administracion-finanzas/",
+      "size": "mobile",
+      "width": 390,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "textContent": "",
+      "rect": {
+        "left": 28,
+        "right": 362,
+        "width": 334
+      },
+      "computed": {
+        "display": "flex",
+        "justifyContent": "center",
+        "gap": "28px",
+        "fontSize": "0px",
+        "lineHeight": "0px"
+      },
+      "links": [
+        {
+          "label": "Facebook",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 30,
+            "height": 30,
+            "left": 93,
+            "right": 123
+          },
+          "img": {
+            "src": "assets/images/icon-facebook.png",
+            "complete": true,
+            "naturalWidth": 9,
+            "naturalHeight": 17,
+            "width": 9,
+            "height": 17
+          }
+        },
+        {
+          "label": "X",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 30,
+            "height": 30,
+            "left": 151,
+            "right": 181
+          },
+          "img": {
+            "src": "assets/images/icon-x.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 16,
+            "width": 18.0625,
+            "height": 17
+          }
+        },
+        {
+          "label": "LinkedIn",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 30,
+            "height": 30,
+            "left": 209,
+            "right": 239
+          },
+          "img": {
+            "src": "assets/images/icon-linkedin.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 17,
+            "width": 17,
+            "height": 17
+          }
+        },
+        {
+          "label": "Instagram",
+          "text": "",
+          "href": "#",
+          "link": {
+            "width": 30,
+            "height": 30,
+            "left": 267,
+            "right": 297
+          },
+          "img": {
+            "src": "assets/images/icon-instagram.png",
+            "complete": true,
+            "naturalWidth": 17,
+            "naturalHeight": 17,
+            "width": 17,
+            "height": 17
+          }
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

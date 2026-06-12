@@ -1,0 +1,516 @@
+{
+  "url": "http://localhost:49322/landings/posgrados/maestria-administracion-calidad-y-productividad/",
+  "checks": [
+    {
+      "viewportWidth": 1366,
+      "scrollWidth": 1366,
+      "maxElementRight": 1366,
+      "brokenImages": [],
+      "form": {
+        "left": 742,
+        "right": 1247,
+        "top": 212,
+        "bottom": 584,
+        "width": 505,
+        "height": 372
+      },
+      "formInsideViewport": true,
+      "select": {
+        "left": 742,
+        "right": 1247,
+        "top": 468,
+        "bottom": 520,
+        "width": 505,
+        "height": 52
+      },
+      "selectInsideViewport": true,
+      "selectTextOverflow": "ellipsis",
+      "heroDisplay": "grid",
+      "heroColumns": "554.703px 505px",
+      "heroPillToFormGap": -417,
+      "heroAfterContent": "none",
+      "format": {
+        "text": {
+          "left": 100,
+          "right": 730,
+          "top": 3377,
+          "bottom": 3697,
+          "width": 630,
+          "height": 320
+        },
+        "image": {
+          "left": 730,
+          "right": 1340,
+          "top": 3377,
+          "bottom": 3697,
+          "width": 610,
+          "height": 320
+        },
+        "imageRadius": "0px 16px 16px 0px",
+        "imageObjectFit": "cover"
+      },
+      "programs": {
+        "accordion": {
+          "left": 100,
+          "right": 710,
+          "top": 4054,
+          "bottom": 4791,
+          "width": 610,
+          "height": 737
+        },
+        "image": {
+          "left": 730,
+          "right": 1340,
+          "top": 4054,
+          "bottom": 4791,
+          "width": 610,
+          "height": 737
+        },
+        "heightDelta": 0,
+        "imageObjectFit": "cover",
+        "imageBackground": "rgba(0, 0, 0, 0)"
+      },
+      "factsColumns": "275.688px 275.703px 275.688px 275.703px 0px",
+      "planColumns": "400px 400px 400px",
+      "benefitColumns": "400px 400px 400px"
+    },
+    {
+      "viewportWidth": 1200,
+      "scrollWidth": 1200,
+      "maxElementRight": 1200,
+      "brokenImages": [],
+      "form": {
+        "left": 591,
+        "right": 1096,
+        "top": 217,
+        "bottom": 589,
+        "width": 505,
+        "height": 372
+      },
+      "formInsideViewport": true,
+      "select": {
+        "left": 591,
+        "right": 1096,
+        "top": 473,
+        "bottom": 525,
+        "width": 505,
+        "height": 52
+      },
+      "selectInsideViewport": true,
+      "selectTextOverflow": "ellipsis",
+      "heroDisplay": "grid",
+      "heroColumns": "427px 505px",
+      "heroPillToFormGap": -432,
+      "heroAfterContent": "none",
+      "format": {
+        "text": {
+          "left": 60,
+          "right": 609,
+          "top": 3372,
+          "bottom": 3692,
+          "width": 549,
+          "height": 320
+        },
+        "image": {
+          "left": 609,
+          "right": 1140,
+          "top": 3372,
+          "bottom": 3692,
+          "width": 531,
+          "height": 320
+        },
+        "imageRadius": "0px 16px 16px 0px",
+        "imageObjectFit": "cover"
+      },
+      "programs": {
+        "accordion": {
+          "left": 60,
+          "right": 590,
+          "top": 4049,
+          "bottom": 4896,
+          "width": 530,
+          "height": 847
+        },
+        "image": {
+          "left": 610,
+          "right": 1140,
+          "top": 4049,
+          "bottom": 4896,
+          "width": 530,
+          "height": 847
+        },
+        "heightDelta": 0,
+        "imageObjectFit": "cover",
+        "imageBackground": "rgba(0, 0, 0, 0)"
+      },
+      "factsColumns": "252px 252px 252px 252px",
+      "planColumns": "346.656px 346.672px 346.656px",
+      "benefitColumns": "346.656px 346.672px 346.656px"
+    },
+    {
+      "viewportWidth": 1024,
+      "scrollWidth": 1024,
+      "maxElementRight": 1024,
+      "brokenImages": [],
+      "form": {
+        "left": 492,
+        "right": 932,
+        "top": 234,
+        "bottom": 606,
+        "width": 440,
+        "height": 372
+      },
+      "formInsideViewport": true,
+      "select": {
+        "left": 492,
+        "right": 932,
+        "top": 490,
+        "bottom": 542,
+        "width": 440,
+        "height": 52
+      },
+      "selectInsideViewport": true,
+      "selectTextOverflow": "ellipsis",
+      "heroDisplay": "grid",
+      "heroColumns": "367.703px 440px",
+      "heroPillToFormGap": -460,
+      "heroAfterContent": "none",
+      "format": {
+        "text": {
+          "left": 51,
+          "right": 519,
+          "top": 3407,
+          "bottom": 3727,
+          "width": 468,
+          "height": 320
+        },
+        "image": {
+          "left": 519,
+          "right": 973,
+          "top": 3407,
+          "bottom": 3727,
+          "width": 453,
+          "height": 320
+        },
+        "imageRadius": "0px 16px 16px 0px",
+        "imageObjectFit": "cover"
+      },
+      "programs": {
+        "accordion": {
+          "left": 51,
+          "right": 502,
+          "top": 4084,
+          "bottom": 4931,
+          "width": 451,
+          "height": 847
+        },
+        "image": {
+          "left": 522,
+          "right": 973,
+          "top": 4084,
+          "bottom": 4931,
+          "width": 451,
+          "height": 847
+        },
+        "heightDelta": 0,
+        "imageObjectFit": "cover",
+        "imageBackground": "rgba(0, 0, 0, 0)"
+      },
+      "factsColumns": "212.406px 212.406px 212.406px 212.406px",
+      "planColumns": "293.875px 293.875px 293.875px",
+      "benefitColumns": "293.875px 293.875px 293.875px"
+    },
+    {
+      "viewportWidth": 900,
+      "scrollWidth": 900,
+      "maxElementRight": 900,
+      "brokenImages": [],
+      "form": {
+        "left": 24,
+        "right": 584,
+        "top": 603,
+        "bottom": 975,
+        "width": 560,
+        "height": 372
+      },
+      "formInsideViewport": true,
+      "select": {
+        "left": 24,
+        "right": 584,
+        "top": 859,
+        "bottom": 911,
+        "width": 560,
+        "height": 52
+      },
+      "selectInsideViewport": true,
+      "selectTextOverflow": "ellipsis",
+      "heroDisplay": "grid",
+      "heroColumns": "852px",
+      "heroPillToFormGap": 28,
+      "heroAfterContent": "none",
+      "format": {
+        "text": {
+          "left": 45,
+          "right": 855,
+          "top": 3933,
+          "bottom": 4142,
+          "width": 810,
+          "height": 209
+        },
+        "image": {
+          "left": 45,
+          "right": 855,
+          "top": 4142,
+          "bottom": 4566,
+          "width": 810,
+          "height": 425
+        },
+        "imageRadius": "0px 0px 16px 16px",
+        "imageObjectFit": "cover"
+      },
+      "programs": {
+        "accordion": {
+          "left": 45,
+          "right": 855,
+          "top": 4923,
+          "bottom": 5572,
+          "width": 810,
+          "height": 649
+        },
+        "image": {
+          "left": 45,
+          "right": 855,
+          "top": 5592,
+          "bottom": 6226,
+          "width": 810,
+          "height": 633
+        },
+        "heightDelta": 16,
+        "imageObjectFit": "cover",
+        "imageBackground": "rgba(0, 0, 0, 0)"
+      },
+      "factsColumns": "254px 254px 254px",
+      "planColumns": "395px 395px",
+      "benefitColumns": "395px 395px"
+    },
+    {
+      "viewportWidth": 768,
+      "scrollWidth": 768,
+      "maxElementRight": 768,
+      "brokenImages": [],
+      "form": {
+        "left": 24,
+        "right": 584,
+        "top": 603,
+        "bottom": 975,
+        "width": 560,
+        "height": 372
+      },
+      "formInsideViewport": true,
+      "select": {
+        "left": 24,
+        "right": 584,
+        "top": 859,
+        "bottom": 911,
+        "width": 560,
+        "height": 52
+      },
+      "selectInsideViewport": true,
+      "selectTextOverflow": "ellipsis",
+      "heroDisplay": "grid",
+      "heroColumns": "720px",
+      "heroPillToFormGap": 28,
+      "heroAfterContent": "none",
+      "format": {
+        "text": {
+          "left": 38,
+          "right": 730,
+          "top": 3933,
+          "bottom": 4142,
+          "width": 691,
+          "height": 209
+        },
+        "image": {
+          "left": 38,
+          "right": 730,
+          "top": 4142,
+          "bottom": 4504,
+          "width": 691,
+          "height": 363
+        },
+        "imageRadius": "0px 0px 16px 16px",
+        "imageObjectFit": "cover"
+      },
+      "programs": {
+        "accordion": {
+          "left": 38,
+          "right": 730,
+          "top": 4861,
+          "bottom": 5554,
+          "width": 691,
+          "height": 693
+        },
+        "image": {
+          "left": 38,
+          "right": 730,
+          "top": 5574,
+          "bottom": 6115,
+          "width": 691,
+          "height": 541
+        },
+        "heightDelta": 152,
+        "imageObjectFit": "cover",
+        "imageBackground": "rgba(0, 0, 0, 0)"
+      },
+      "factsColumns": "214.406px 214.406px 214.406px",
+      "planColumns": "335.609px 335.609px",
+      "benefitColumns": "335.609px 335.609px"
+    },
+    {
+      "viewportWidth": 640,
+      "scrollWidth": 640,
+      "maxElementRight": 640,
+      "brokenImages": [],
+      "form": {
+        "left": 22,
+        "right": 582,
+        "top": 582,
+        "bottom": 1018,
+        "width": 560,
+        "height": 436
+      },
+      "formInsideViewport": true,
+      "select": {
+        "left": 22,
+        "right": 582,
+        "top": 902,
+        "bottom": 954,
+        "width": 560,
+        "height": 52
+      },
+      "selectInsideViewport": true,
+      "selectTextOverflow": "ellipsis",
+      "heroDisplay": "grid",
+      "heroColumns": "596px",
+      "heroPillToFormGap": 28,
+      "heroAfterContent": "none",
+      "format": {
+        "text": {
+          "left": 32,
+          "right": 608,
+          "top": 5442,
+          "bottom": 5595,
+          "width": 576,
+          "height": 153
+        },
+        "image": {
+          "left": 32,
+          "right": 608,
+          "top": 5595,
+          "bottom": 5897,
+          "width": 576,
+          "height": 302
+        },
+        "imageRadius": "0px 0px 16px 16px",
+        "imageObjectFit": "cover"
+      },
+      "programs": {
+        "accordion": {
+          "left": 32,
+          "right": 608,
+          "top": 6157,
+          "bottom": 6772,
+          "width": 576,
+          "height": 615
+        },
+        "image": {
+          "left": 32,
+          "right": 608,
+          "top": 6792,
+          "bottom": 7242,
+          "width": 576,
+          "height": 450
+        },
+        "heightDelta": 165,
+        "imageObjectFit": "cover",
+        "imageBackground": "rgba(0, 0, 0, 0)"
+      },
+      "factsColumns": "576px",
+      "planColumns": "576px",
+      "benefitColumns": "576px"
+    },
+    {
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "maxElementRight": 390,
+      "brokenImages": [],
+      "form": {
+        "left": 22,
+        "right": 368,
+        "top": 583,
+        "bottom": 1019,
+        "width": 346,
+        "height": 436
+      },
+      "formInsideViewport": true,
+      "select": {
+        "left": 22,
+        "right": 368,
+        "top": 903,
+        "bottom": 955,
+        "width": 346,
+        "height": 52
+      },
+      "selectInsideViewport": true,
+      "selectTextOverflow": "ellipsis",
+      "heroDisplay": "grid",
+      "heroColumns": "346px",
+      "heroPillToFormGap": 28,
+      "heroAfterContent": "none",
+      "format": {
+        "text": {
+          "left": 28,
+          "right": 362,
+          "top": 5410,
+          "bottom": 5603,
+          "width": 334,
+          "height": 193
+        },
+        "image": {
+          "left": 28,
+          "right": 362,
+          "top": 5603,
+          "bottom": 5778,
+          "width": 334,
+          "height": 175
+        },
+        "imageRadius": "0px 0px 16px 16px",
+        "imageObjectFit": "cover"
+      },
+      "programs": {
+        "accordion": {
+          "left": 28,
+          "right": 362,
+          "top": 6177,
+          "bottom": 7012,
+          "width": 334,
+          "height": 835
+        },
+        "image": {
+          "left": 28,
+          "right": 362,
+          "top": 7032,
+          "bottom": 7293,
+          "width": 334,
+          "height": 261
+        },
+        "heightDelta": 574,
+        "imageObjectFit": "cover",
+        "imageBackground": "rgba(0, 0, 0, 0)"
+      },
+      "factsColumns": "334px",
+      "planColumns": "334px",
+      "benefitColumns": "334px"
+    }
+  ]
+}

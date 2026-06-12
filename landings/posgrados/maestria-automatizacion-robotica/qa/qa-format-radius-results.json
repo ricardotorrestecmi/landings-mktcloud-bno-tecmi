@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "maestria-administracion-finanzas",
+    "viewport": "desktop",
+    "url": "http://localhost:49625/landings/posgrados/maestria-administracion-finanzas/",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "brokenImages": [],
+    "formatDelta": 0,
+    "formatText": {
+      "x": 100,
+      "y": 3323,
+      "width": 630,
+      "height": 320
+    },
+    "formatImg": {
+      "x": 730,
+      "y": 3323,
+      "width": 610,
+      "height": 320
+    },
+    "formatCardStyle": {
+      "display": "grid",
+      "width": "1240px",
+      "height": "320px",
+      "objectFit": "fill",
+      "borderRadius": "16px",
+      "backgroundColor": "rgb(143, 212, 96)"
+    },
+    "formatImgStyle": {
+      "display": "block",
+      "width": "610px",
+      "height": "320px",
+      "objectFit": "cover",
+      "borderRadius": "0px 16px 16px 0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)"
+    },
+    "formatImgSrc": "assets/images/figma-4-1-connect-online-clean.png"
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "viewport": "mobile",
+    "url": "http://localhost:49625/landings/posgrados/maestria-administracion-finanzas/",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "brokenImages": [],
+    "formatDelta": 51,
+    "formatText": {
+      "x": 22,
+      "y": 5576,
+      "width": 346,
+      "height": 233
+    },
+    "formatImg": {
+      "x": 22,
+      "y": 5809,
+      "width": 346,
+      "height": 182
+    },
+    "formatCardStyle": {
+      "display": "grid",
+      "width": "346px",
+      "height": "414.5px",
+      "objectFit": "fill",
+      "borderRadius": "16px",
+      "backgroundColor": "rgb(143, 212, 96)"
+    },
+    "formatImgStyle": {
+      "display": "block",
+      "width": "346px",
+      "height": "181.5px",
+      "objectFit": "cover",
+      "borderRadius": "0px 0px 16px 16px",
+      "backgroundColor": "rgba(0, 0, 0, 0)"
+    },
+    "formatImgSrc": "assets/images/figma-4-1-connect-online-clean.png"
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "viewport": "desktop",
+    "url": "http://localhost:49625/landings/posgrados/maestria-automatizacion-robotica/",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "brokenImages": [],
+    "formatDelta": 0,
+    "formatText": {
+      "x": 100,
+      "y": 3375,
+      "width": 630,
+      "height": 320
+    },
+    "formatImg": {
+      "x": 730,
+      "y": 3375,
+      "width": 610,
+      "height": 320
+    },
+    "formatCardStyle": {
+      "display": "grid",
+      "width": "1240px",
+      "height": "320px",
+      "objectFit": "fill",
+      "borderRadius": "16px",
+      "backgroundColor": "rgb(143, 212, 96)"
+    },
+    "formatImgStyle": {
+      "display": "block",
+      "width": "610px",
+      "height": "320px",
+      "objectFit": "cover",
+      "borderRadius": "0px 16px 16px 0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)"
+    },
+    "formatImgSrc": "assets/images/figma-4-1-connect-online-clean.png"
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "viewport": "mobile",
+    "url": "http://localhost:49625/landings/posgrados/maestria-automatizacion-robotica/",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "brokenImages": [],
+    "formatDelta": 11,
+    "formatText": {
+      "x": 22,
+      "y": 5466,
+      "width": 346,
+      "height": 193
+    },
+    "formatImg": {
+      "x": 22,
+      "y": 5659,
+      "width": 346,
+      "height": 182
+    },
+    "formatCardStyle": {
+      "display": "grid",
+      "width": "346px",
+      "height": "374.5px",
+      "objectFit": "fill",
+      "borderRadius": "16px",
+      "backgroundColor": "rgb(143, 212, 96)"
+    },
+    "formatImgStyle": {
+      "display": "block",
+      "width": "346px",
+      "height": "181.5px",
+      "objectFit": "cover",
+      "borderRadius": "0px 0px 16px 16px",
+      "backgroundColor": "rgba(0, 0, 0, 0)"
+    },
+    "formatImgSrc": "assets/images/figma-4-1-connect-online-clean.png"
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "viewport": {
+      "name": "desktop",
+      "width": 1366,
+      "height": 1200
+    },
+    "ok": true,
+    "screenshot": "landings/posgrados/maestria-automatizacion-robotica/qa/qa-footer-social-desktop.png",
+    "exists": true,
+    "textContent": "",
+    "imageCount": 4,
+    "linkCount": 4,
+    "broken": [],
+    "imgData": [
+      {
+        "src": "assets/images/icon-facebook.png",
+        "alt": "",
+        "naturalWidth": 9,
+        "naturalHeight": 17,
+        "width": 9,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-x.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 16,
+        "width": 18.0625,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-linkedin.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-instagram.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17
+      }
+    ],
+    "linkData": [
+      {
+        "ariaLabel": "Facebook",
+        "width": 24,
+        "height": 24
+      },
+      {
+        "ariaLabel": "X",
+        "width": 24,
+        "height": 24
+      },
+      {
+        "ariaLabel": "LinkedIn",
+        "width": 24,
+        "height": 24
+      },
+      {
+        "ariaLabel": "Instagram",
+        "width": 24,
+        "height": 24
+      }
+    ],
+    "socialStyle": {
+      "display": "flex",
+      "justifyContent": "flex-end",
+      "gap": "18px",
+      "fontSize": "0px",
+      "lineHeight": "0px"
+    },
+    "scrollWidth": 1366,
+    "innerWidth": 1366
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 1200
+    },
+    "ok": true,
+    "screenshot": "landings/posgrados/maestria-automatizacion-robotica/qa/qa-footer-social-mobile.png",
+    "exists": true,
+    "textContent": "",
+    "imageCount": 4,
+    "linkCount": 4,
+    "broken": [],
+    "imgData": [
+      {
+        "src": "assets/images/icon-facebook.png",
+        "alt": "",
+        "naturalWidth": 9,
+        "naturalHeight": 17,
+        "width": 9,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-x.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 16,
+        "width": 18.0625,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-linkedin.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-instagram.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17
+      }
+    ],
+    "linkData": [
+      {
+        "ariaLabel": "Facebook",
+        "width": 30,
+        "height": 30
+      },
+      {
+        "ariaLabel": "X",
+        "width": 30,
+        "height": 30
+      },
+      {
+        "ariaLabel": "LinkedIn",
+        "width": 30,
+        "height": 30
+      },
+      {
+        "ariaLabel": "Instagram",
+        "width": 30,
+        "height": 30
+      }
+    ],
+    "socialStyle": {
+      "display": "flex",
+      "justifyContent": "center",
+      "gap": "28px",
+      "fontSize": "0px",
+      "lineHeight": "0px"
+    },
+    "scrollWidth": 390,
+    "innerWidth": 390
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "viewport": {
+      "name": "desktop",
+      "width": 1366,
+      "height": 1200
+    },
+    "ok": true,
+    "screenshot": "landings/posgrados/maestria-administracion-finanzas/qa/qa-footer-social-desktop.png",
+    "exists": true,
+    "textContent": "",
+    "imageCount": 4,
+    "linkCount": 4,
+    "broken": [],
+    "imgData": [
+      {
+        "src": "assets/images/icon-facebook.png",
+        "alt": "",
+        "naturalWidth": 9,
+        "naturalHeight": 17,
+        "width": 9,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-x.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 16,
+        "width": 18.0625,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-linkedin.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-instagram.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17
+      }
+    ],
+    "linkData": [
+      {
+        "ariaLabel": "Facebook",
+        "width": 24,
+        "height": 24
+      },
+      {
+        "ariaLabel": "X",
+        "width": 24,
+        "height": 24
+      },
+      {
+        "ariaLabel": "LinkedIn",
+        "width": 24,
+        "height": 24
+      },
+      {
+        "ariaLabel": "Instagram",
+        "width": 24,
+        "height": 24
+      }
+    ],
+    "socialStyle": {
+      "display": "flex",
+      "justifyContent": "flex-end",
+      "gap": "18px",
+      "fontSize": "0px",
+      "lineHeight": "0px"
+    },
+    "scrollWidth": 1366,
+    "innerWidth": 1366
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 1200
+    },
+    "ok": true,
+    "screenshot": "landings/posgrados/maestria-administracion-finanzas/qa/qa-footer-social-mobile.png",
+    "exists": true,
+    "textContent": "",
+    "imageCount": 4,
+    "linkCount": 4,
+    "broken": [],
+    "imgData": [
+      {
+        "src": "assets/images/icon-facebook.png",
+        "alt": "",
+        "naturalWidth": 9,
+        "naturalHeight": 17,
+        "width": 9,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-x.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 16,
+        "width": 18.0625,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-linkedin.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17
+      },
+      {
+        "src": "assets/images/icon-instagram.png",
+        "alt": "",
+        "naturalWidth": 17,
+        "naturalHeight": 17,
+        "width": 17,
+        "height": 17
+      }
+    ],
+    "linkData": [
+      {
+        "ariaLabel": "Facebook",
+        "width": 30,
+        "height": 30
+      },
+      {
+        "ariaLabel": "X",
+        "width": 30,
+        "height": 30
+      },
+      {
+        "ariaLabel": "LinkedIn",
+        "width": 30,
+        "height": 30
+      },
+      {
+        "ariaLabel": "Instagram",
+        "width": 30,
+        "height": 30
+      }
+    ],
+    "socialStyle": {
+      "display": "flex",
+      "justifyContent": "center",
+      "gap": "28px",
+      "fontSize": "0px",
+      "lineHeight": "0px"
+    },
+    "scrollWidth": 390,
+    "innerWidth": 390
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "maestria-administracion-finanzas",
+    "url": "http://localhost:49624/landings/posgrados/maestria-administracion-finanzas/",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "brokenImages": [],
+    "introDelta": 0,
+    "formatDelta": 0,
+    "programsDelta": 0,
+    "formatImgSrc": "assets/images/figma-4-1-connect-online-clean.png",
+    "programsImgSrc": "assets/images/programas-global.png",
+    "introGrid": {
+      "display": "grid",
+      "objectFit": "fill",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "stretch",
+      "minHeight": "0px"
+    },
+    "portrait": {
+      "display": "block",
+      "objectFit": "fill",
+      "borderRadius": "16px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "normal",
+      "minHeight": "636px"
+    },
+    "portraitImg": {
+      "display": "block",
+      "objectFit": "cover",
+      "borderRadius": "16px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "normal",
+      "minHeight": "0px"
+    },
+    "formatImg": {
+      "display": "block",
+      "objectFit": "cover",
+      "borderRadius": "16px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "normal",
+      "minHeight": "auto"
+    },
+    "programsGrid": {
+      "display": "grid",
+      "objectFit": "fill",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "stretch",
+      "minHeight": "477px"
+    },
+    "programsImg": {
+      "display": "block",
+      "objectFit": "cover",
+      "borderRadius": "26px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "normal",
+      "minHeight": "477px"
+    },
+    "accordion": {
+      "display": "block",
+      "objectFit": "fill",
+      "borderRadius": "26px",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "alignItems": "normal",
+      "minHeight": "477px"
+    }
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "url": "http://localhost:49624/landings/posgrados/maestria-automatizacion-robotica/",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "brokenImages": [],
+    "introDelta": 0,
+    "formatDelta": 0,
+    "programsDelta": 0,
+    "formatImgSrc": "assets/images/figma-4-1-connect-online-clean.png",
+    "programsImgSrc": "assets/images/programas-global.png",
+    "introGrid": {
+      "display": "grid",
+      "objectFit": "fill",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "stretch",
+      "minHeight": "0px"
+    },
+    "portrait": {
+      "display": "block",
+      "objectFit": "fill",
+      "borderRadius": "16px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "normal",
+      "minHeight": "0px"
+    },
+    "portraitImg": {
+      "display": "block",
+      "objectFit": "cover",
+      "borderRadius": "16px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "normal",
+      "minHeight": "0px"
+    },
+    "formatImg": {
+      "display": "block",
+      "objectFit": "cover",
+      "borderRadius": "16px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "normal",
+      "minHeight": "auto"
+    },
+    "programsGrid": {
+      "display": "grid",
+      "objectFit": "fill",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "stretch",
+      "minHeight": "477px"
+    },
+    "programsImg": {
+      "display": "block",
+      "objectFit": "cover",
+      "borderRadius": "26px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "alignItems": "normal",
+      "minHeight": "477px"
+    },
+    "accordion": {
+      "display": "block",
+      "objectFit": "fill",
+      "borderRadius": "26px",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "alignItems": "normal",
+      "minHeight": "477px"
+    }
+  }
+]

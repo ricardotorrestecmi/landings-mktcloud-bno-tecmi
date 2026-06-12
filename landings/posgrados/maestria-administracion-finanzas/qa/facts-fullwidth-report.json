@@ -1,0 +1,234 @@
+{
+  "url": "http://localhost:49321/landings/posgrados/maestria-administracion-finanzas/",
+  "checkedAt": "2026-06-11T19:16:12.834Z",
+  "results": [
+    {
+      "width": 1450,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 1450,
+        "scrollWidth": 1450,
+        "scrollEqualsInner": true,
+        "rect": {
+          "left": 0,
+          "right": 1450,
+          "width": 1450
+        },
+        "style": {
+          "width": "1450px",
+          "maxWidth": "none",
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "boxSizing": "border-box",
+          "gridTemplateColumns": "342px 342px 342px",
+          "paddingLeft": "188px",
+          "paddingRight": "188px"
+        },
+        "colsFirstRow": 3,
+        "iconTextOverlap": false,
+        "brokenImages": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "leftZero": true,
+        "rightEqualsViewport": true,
+        "widthEqualsViewport": true,
+        "noIconTextOverlap": true,
+        "twoColsBelow900": true,
+        "all": true
+      }
+    },
+    {
+      "width": 1330,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 1330,
+        "scrollWidth": 1330,
+        "scrollEqualsInner": true,
+        "rect": {
+          "left": 0,
+          "right": 1330,
+          "width": 1330
+        },
+        "style": {
+          "width": "1330px",
+          "maxWidth": "none",
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "boxSizing": "border-box",
+          "gridTemplateColumns": "383px 383px 383px 0px 0px",
+          "paddingLeft": "66.5px",
+          "paddingRight": "66.5px"
+        },
+        "colsFirstRow": 3,
+        "iconTextOverlap": false,
+        "brokenImages": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "leftZero": true,
+        "rightEqualsViewport": true,
+        "widthEqualsViewport": true,
+        "noIconTextOverlap": true,
+        "twoColsBelow900": true,
+        "all": true
+      }
+    },
+    {
+      "width": 1200,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 1200,
+        "scrollWidth": 1200,
+        "scrollEqualsInner": true,
+        "rect": {
+          "left": 0,
+          "right": 1200,
+          "width": 1200
+        },
+        "style": {
+          "width": "1200px",
+          "maxWidth": "none",
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "boxSizing": "border-box",
+          "gridTemplateColumns": "344px 344px 344px 0px",
+          "paddingLeft": "60px",
+          "paddingRight": "60px"
+        },
+        "colsFirstRow": 3,
+        "iconTextOverlap": false,
+        "brokenImages": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "leftZero": true,
+        "rightEqualsViewport": true,
+        "widthEqualsViewport": true,
+        "noIconTextOverlap": true,
+        "twoColsBelow900": true,
+        "all": true
+      }
+    },
+    {
+      "width": 900,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 900,
+        "scrollWidth": 900,
+        "scrollEqualsInner": true,
+        "rect": {
+          "left": 0,
+          "right": 900,
+          "width": 900
+        },
+        "style": {
+          "width": "900px",
+          "maxWidth": "none",
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "boxSizing": "border-box",
+          "gridTemplateColumns": "422px 422px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        "colsFirstRow": 2,
+        "iconTextOverlap": false,
+        "brokenImages": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "leftZero": true,
+        "rightEqualsViewport": true,
+        "widthEqualsViewport": true,
+        "noIconTextOverlap": true,
+        "twoColsBelow900": true,
+        "all": true
+      }
+    },
+    {
+      "width": 760,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 760,
+        "scrollWidth": 760,
+        "scrollEqualsInner": true,
+        "rect": {
+          "left": 0,
+          "right": 760,
+          "width": 760
+        },
+        "style": {
+          "width": "760px",
+          "maxWidth": "none",
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "boxSizing": "border-box",
+          "gridTemplateColumns": "352px 352px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        "colsFirstRow": 2,
+        "iconTextOverlap": false,
+        "brokenImages": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "leftZero": true,
+        "rightEqualsViewport": true,
+        "widthEqualsViewport": true,
+        "noIconTextOverlap": true,
+        "twoColsBelow900": true,
+        "all": true
+      }
+    },
+    {
+      "width": 390,
+      "errors": [],
+      "metrics": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "scrollEqualsInner": true,
+        "rect": {
+          "left": 0,
+          "right": 390,
+          "width": 390
+        },
+        "style": {
+          "width": "390px",
+          "maxWidth": "none",
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "boxSizing": "border-box",
+          "gridTemplateColumns": "175px 175px",
+          "paddingLeft": "14px",
+          "paddingRight": "14px"
+        },
+        "colsFirstRow": 2,
+        "iconTextOverlap": false,
+        "brokenImages": []
+      },
+      "pass": {
+        "noErrors": true,
+        "noBrokenImages": true,
+        "noHorizontalScroll": true,
+        "leftZero": true,
+        "rightEqualsViewport": true,
+        "widthEqualsViewport": true,
+        "noIconTextOverlap": true,
+        "twoColsBelow900": true,
+        "all": true
+      }
+    }
+  ]
+}

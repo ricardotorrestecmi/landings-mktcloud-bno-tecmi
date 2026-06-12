@@ -1,0 +1,805 @@
+{
+  "url": "http://localhost:49325/landings/posgrados/maestria-administracion-calidad-y-productividad/",
+  "checks": [
+    {
+      "viewportWidth": 1330,
+      "scrollWidth": 1330,
+      "columns": "385.656px 385.672px 385.656px",
+      "grid": {
+        "left": 67,
+        "right": 1264,
+        "width": 1197
+      },
+      "centeredDelta": 0,
+      "brokenImages": [],
+      "cards": [
+        {
+          "rect": {
+            "left": 67,
+            "right": 452,
+            "width": 386,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 88,
+            "clientHeight": 88,
+            "overflow": "visible",
+            "height": "88px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 472,
+            "right": 858,
+            "width": 386,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 878,
+            "right": 1263,
+            "width": 386,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 67,
+            "right": 452,
+            "width": 386,
+            "height": 226
+          },
+          "cardHeight": "226px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 110,
+            "clientHeight": 110,
+            "overflow": "visible",
+            "height": "110px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 472,
+            "right": 858,
+            "width": 386,
+            "height": 226
+          },
+          "cardHeight": "226px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 878,
+            "right": 1263,
+            "width": 386,
+            "height": 226
+          },
+          "cardHeight": "226px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        }
+      ],
+      "anyTextCut": false,
+      "anyCardOverflowX": false
+    },
+    {
+      "viewportWidth": 1200,
+      "scrollWidth": 1200,
+      "columns": "346.656px 346.672px 346.656px",
+      "grid": {
+        "left": 60,
+        "right": 1140,
+        "width": 1080
+      },
+      "centeredDelta": 0,
+      "brokenImages": [],
+      "cards": [
+        {
+          "rect": {
+            "left": 60,
+            "right": 407,
+            "width": 347,
+            "height": 261
+          },
+          "cardHeight": "261px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 71,
+            "clientHeight": 71,
+            "overflow": "visible",
+            "height": "71px"
+          },
+          "p": {
+            "scrollHeight": 110,
+            "clientHeight": 110,
+            "overflow": "visible",
+            "height": "110px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 427,
+            "right": 773,
+            "width": 347,
+            "height": 261
+          },
+          "cardHeight": "261px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 88,
+            "clientHeight": 88,
+            "overflow": "visible",
+            "height": "88px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 793,
+            "right": 1140,
+            "width": 347,
+            "height": 261
+          },
+          "cardHeight": "261px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 88,
+            "clientHeight": 88,
+            "overflow": "visible",
+            "height": "88px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 60,
+            "right": 407,
+            "width": 347,
+            "height": 248
+          },
+          "cardHeight": "248px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 132,
+            "clientHeight": 132,
+            "overflow": "visible",
+            "height": "132px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 427,
+            "right": 773,
+            "width": 347,
+            "height": 248
+          },
+          "cardHeight": "248px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 88,
+            "clientHeight": 88,
+            "overflow": "visible",
+            "height": "88px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 793,
+            "right": 1140,
+            "width": 347,
+            "height": 248
+          },
+          "cardHeight": "248px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 71,
+            "clientHeight": 71,
+            "overflow": "visible",
+            "height": "71px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        }
+      ],
+      "anyTextCut": false,
+      "anyCardOverflowX": false
+    },
+    {
+      "viewportWidth": 1024,
+      "scrollWidth": 1024,
+      "columns": "400px 400px",
+      "grid": {
+        "left": 51,
+        "right": 973,
+        "width": 922
+      },
+      "centeredDelta": 0,
+      "brokenImages": [],
+      "cards": [
+        {
+          "rect": {
+            "left": 102,
+            "right": 502,
+            "width": 400,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 88,
+            "clientHeight": 88,
+            "overflow": "visible",
+            "height": "88px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 522,
+            "right": 922,
+            "width": 400,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 102,
+            "right": 502,
+            "width": 400,
+            "height": 226
+          },
+          "cardHeight": "226px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 522,
+            "right": 922,
+            "width": 400,
+            "height": 226
+          },
+          "cardHeight": "226px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 110,
+            "clientHeight": 110,
+            "overflow": "visible",
+            "height": "110px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 102,
+            "right": 502,
+            "width": 400,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 522,
+            "right": 922,
+            "width": 400,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        }
+      ],
+      "anyTextCut": false,
+      "anyCardOverflowX": false
+    },
+    {
+      "viewportWidth": 900,
+      "scrollWidth": 900,
+      "columns": "395px 395px",
+      "grid": {
+        "left": 45,
+        "right": 855,
+        "width": 810
+      },
+      "centeredDelta": 0,
+      "brokenImages": [],
+      "cards": [
+        {
+          "rect": {
+            "left": 45,
+            "right": 440,
+            "width": 395,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 88,
+            "clientHeight": 88,
+            "overflow": "visible",
+            "height": "88px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 460,
+            "right": 855,
+            "width": 395,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 45,
+            "right": 440,
+            "width": 395,
+            "height": 226
+          },
+          "cardHeight": "226px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 460,
+            "right": 855,
+            "width": 395,
+            "height": 226
+          },
+          "cardHeight": "226px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 110,
+            "clientHeight": 110,
+            "overflow": "visible",
+            "height": "110px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 45,
+            "right": 440,
+            "width": 395,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 460,
+            "right": 855,
+            "width": 395,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 36,
+            "clientHeight": 36,
+            "overflow": "visible",
+            "height": "36px"
+          },
+          "p": {
+            "scrollHeight": 66,
+            "clientHeight": 66,
+            "overflow": "visible",
+            "height": "66px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        }
+      ],
+      "anyTextCut": false,
+      "anyCardOverflowX": false
+    },
+    {
+      "viewportWidth": 760,
+      "scrollWidth": 760,
+      "columns": "684px",
+      "grid": {
+        "left": 38,
+        "right": 722,
+        "width": 684
+      },
+      "centeredDelta": 0,
+      "brokenImages": [],
+      "cards": [
+        {
+          "rect": {
+            "left": 38,
+            "right": 722,
+            "width": 684,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 28,
+            "clientHeight": 28,
+            "overflow": "visible",
+            "height": "28px"
+          },
+          "p": {
+            "scrollHeight": 40,
+            "clientHeight": 40,
+            "overflow": "visible",
+            "height": "40px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 38,
+            "right": 722,
+            "width": 684,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 28,
+            "clientHeight": 28,
+            "overflow": "visible",
+            "height": "28px"
+          },
+          "p": {
+            "scrollHeight": 40,
+            "clientHeight": 40,
+            "overflow": "visible",
+            "height": "40px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 38,
+            "right": 722,
+            "width": 684,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 28,
+            "clientHeight": 28,
+            "overflow": "visible",
+            "height": "28px"
+          },
+          "p": {
+            "scrollHeight": 40,
+            "clientHeight": 40,
+            "overflow": "visible",
+            "height": "40px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 38,
+            "right": 722,
+            "width": 684,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 28,
+            "clientHeight": 28,
+            "overflow": "visible",
+            "height": "28px"
+          },
+          "p": {
+            "scrollHeight": 40,
+            "clientHeight": 40,
+            "overflow": "visible",
+            "height": "40px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 38,
+            "right": 722,
+            "width": 684,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 28,
+            "clientHeight": 28,
+            "overflow": "visible",
+            "height": "28px"
+          },
+          "p": {
+            "scrollHeight": 40,
+            "clientHeight": 40,
+            "overflow": "visible",
+            "height": "40px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        },
+        {
+          "rect": {
+            "left": 38,
+            "right": 722,
+            "width": 684,
+            "height": 204
+          },
+          "cardHeight": "204px",
+          "cardMinHeight": "204px",
+          "h3": {
+            "scrollHeight": 28,
+            "clientHeight": 28,
+            "overflow": "visible",
+            "height": "28px"
+          },
+          "p": {
+            "scrollHeight": 20,
+            "clientHeight": 20,
+            "overflow": "visible",
+            "height": "20px",
+            "overflowWrap": "break-word"
+          },
+          "textCut": false
+        }
+      ],
+      "anyTextCut": false,
+      "anyCardOverflowX": false
+    }
+  ]
+}

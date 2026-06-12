@@ -1,0 +1,26 @@
+{
+  "source": "https://universidad.tecmilenio.mx/maestria-inteligencia-artificial",
+  "pageId": "211968395946",
+  "title": "Maestría en Inteligencia Artificial",
+  "metaDescription": "Lidera la implementación de soluciones de inteligencia artificial con impacto real en el negocio. Maestría en Inteligencia Artificial de Tecmilenio. Online y presencial. ¡Inscríbete!",
+  "form": {
+    "portalId": "2429099",
+    "formId": "7e46ab60-44ca-40d8-88b7-cdaca5bd03f4",
+    "redirectUrl": "https://universidad.tecmilenio.mx/registro-concluido"
+  },
+  "programFacts": {
+    "formato": "Online",
+    "duracion": "2 años",
+    "plan": "Bimestral",
+    "idioma": "Español"
+  },
+  "assets": {
+    "hero": "https://universidad.tecmilenio.mx/hubfs/Landing%20Pages%20M/Posgrados%20Maps/maestria-inteligencia-artificial.jpg",
+    "secondary": "https://universidad.tecmilenio.mx/hs-fs/hubfs/Landing%20Pages%20M/Posgrados%20Maps/maestria-inteligencia-artificial-secundaria.png?width=700&height=790&name=maestria-inteligencia-artificial-secundaria.png",
+    "brochure": "https://universidad.tecmilenio.mx/hubfs/Folletos%20Posgrados%20JM/Maestria-en-Inteligencia-Artificial-Universidad-Tecmilenio.pdf?hsLang=es-mx"
+  },
+  "notes": [
+    "Extracted from the published HubSpot HTML snapshot saved as reference/hubspot-page.html.",
+    "Request type: MISMA ESTRUCTURA, using maestria-administracion-finanzas as the base."
+  ]
+}

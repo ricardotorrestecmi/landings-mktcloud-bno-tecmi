@@ -1,0 +1,485 @@
+[
+  {
+    "name": "w1366",
+    "width": 1366,
+    "viewport": 1366,
+    "scrollWidth": 1366,
+    "brokenImages": [],
+    "heroInner": {
+      "left": 63,
+      "right": 1303,
+      "top": 57,
+      "bottom": 644,
+      "width": 1240,
+      "height": 587
+    },
+    "form": {
+      "left": 798,
+      "right": 1303,
+      "top": 138.953125,
+      "bottom": 467.953125,
+      "width": 505,
+      "height": 329
+    },
+    "programSelect": {
+      "left": 798,
+      "right": 1303,
+      "top": 366.953125,
+      "bottom": 410.953125,
+      "width": 505,
+      "height": 44
+    },
+    "pillToFormGap": -343,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "formInsideViewport": true,
+    "selectInsideViewport": true,
+    "facts": {
+      "left": 0,
+      "right": 1366,
+      "top": 1903.890625,
+      "bottom": 2043.890625,
+      "width": 1366,
+      "height": 140
+    },
+    "programs": {
+      "left": 92.875,
+      "right": 1273.125,
+      "top": 1026.890625,
+      "bottom": 1811.890625,
+      "width": 1180.25,
+      "height": 785
+    },
+    "format": {
+      "left": 148,
+      "right": 1218,
+      "top": 2332.9375,
+      "bottom": 2578.9375,
+      "width": 1070,
+      "height": 246
+    },
+    "benefits": {
+      "left": 92.875,
+      "right": 1273.125,
+      "top": 2887.4375,
+      "bottom": 3277.4375,
+      "width": 1180.25,
+      "height": 390
+    }
+  },
+  {
+    "name": "w1200",
+    "width": 1200,
+    "viewport": 1200,
+    "scrollWidth": 1200,
+    "brokenImages": [],
+    "heroInner": {
+      "left": 24,
+      "right": 1176,
+      "top": 57,
+      "bottom": 644,
+      "width": 1152,
+      "height": 587
+    },
+    "form": {
+      "left": 672,
+      "right": 1176,
+      "top": 129,
+      "bottom": 458,
+      "width": 504,
+      "height": 329
+    },
+    "programSelect": {
+      "left": 672,
+      "right": 1176,
+      "top": 357,
+      "bottom": 401,
+      "width": 504,
+      "height": 44
+    },
+    "pillToFormGap": -286,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "formInsideViewport": true,
+    "selectInsideViewport": true,
+    "facts": {
+      "left": 0,
+      "right": 1200,
+      "top": 1898.265625,
+      "bottom": 2038.265625,
+      "width": 1200,
+      "height": 140
+    },
+    "programs": {
+      "left": 60,
+      "right": 1140,
+      "top": 977.265625,
+      "bottom": 1806.265625,
+      "width": 1080,
+      "height": 829
+    },
+    "format": {
+      "left": 60,
+      "right": 1140,
+      "top": 2321.9375,
+      "bottom": 2605.203125,
+      "width": 1080,
+      "height": 283.265625
+    },
+    "benefits": {
+      "left": 60,
+      "right": 1140,
+      "top": 2902.953125,
+      "bottom": 3292.953125,
+      "width": 1080,
+      "height": 390
+    }
+  },
+  {
+    "name": "w1024",
+    "width": 1024,
+    "viewport": 1024,
+    "scrollWidth": 1024,
+    "brokenImages": [],
+    "heroInner": {
+      "left": 24,
+      "right": 1000,
+      "top": 57,
+      "bottom": 644,
+      "width": 976,
+      "height": 587
+    },
+    "form": {
+      "left": 569.921875,
+      "right": 1000,
+      "top": 118.4375,
+      "bottom": 447.4375,
+      "width": 430.078125,
+      "height": 329
+    },
+    "programSelect": {
+      "left": 569.921875,
+      "right": 1000,
+      "top": 346.4375,
+      "bottom": 390.4375,
+      "width": 430.078125,
+      "height": 44
+    },
+    "pillToFormGap": -260,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "formInsideViewport": true,
+    "selectInsideViewport": true,
+    "facts": {
+      "left": 0,
+      "right": 1024,
+      "top": 1914.5625,
+      "bottom": 2054.5625,
+      "width": 1024,
+      "height": 140
+    },
+    "programs": {
+      "left": 51.1875,
+      "right": 972.8125,
+      "top": 971.5625,
+      "bottom": 1822.5625,
+      "width": 921.625,
+      "height": 851
+    },
+    "format": {
+      "left": 51.1875,
+      "right": 972.8125,
+      "top": 2332.53125,
+      "bottom": 2620.3125,
+      "width": 921.625,
+      "height": 287.78125
+    },
+    "benefits": {
+      "left": 51.1875,
+      "right": 972.8125,
+      "top": 2873.484375,
+      "bottom": 3263.484375,
+      "width": 921.625,
+      "height": 390
+    }
+  },
+  {
+    "name": "w900",
+    "width": 900,
+    "viewport": 900,
+    "scrollWidth": 900,
+    "brokenImages": [],
+    "heroInner": {
+      "left": 130,
+      "right": 770,
+      "top": 64,
+      "bottom": 757.1875,
+      "width": 640,
+      "height": 693.1875
+    },
+    "form": {
+      "left": 130,
+      "right": 770,
+      "top": 346.1875,
+      "bottom": 715.1875,
+      "width": 640,
+      "height": 369
+    },
+    "programSelect": {
+      "left": 150,
+      "right": 750,
+      "top": 594.1875,
+      "bottom": 638.1875,
+      "width": 600,
+      "height": 44
+    },
+    "pillToFormGap": 28,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "formInsideViewport": true,
+    "selectInsideViewport": true,
+    "facts": {
+      "left": 0,
+      "right": 900,
+      "top": 2436.203125,
+      "bottom": 2576.203125,
+      "width": 900,
+      "height": 140
+    },
+    "programs": {
+      "left": 45,
+      "right": 855,
+      "top": 1081.8125,
+      "bottom": 2344.203125,
+      "width": 810,
+      "height": 1262.390625
+    },
+    "format": {
+      "left": 45,
+      "right": 855,
+      "top": 2851.234375,
+      "bottom": 3162.203125,
+      "width": 810,
+      "height": 310.96875
+    },
+    "benefits": {
+      "left": 45,
+      "right": 855,
+      "top": 3412.4375,
+      "bottom": 4137.15625,
+      "width": 810,
+      "height": 724.71875
+    }
+  },
+  {
+    "name": "w768",
+    "width": 768,
+    "viewport": 768,
+    "scrollWidth": 768,
+    "brokenImages": [],
+    "heroInner": {
+      "left": 64,
+      "right": 704,
+      "top": 64,
+      "bottom": 757.1875,
+      "width": 640,
+      "height": 693.1875
+    },
+    "form": {
+      "left": 64,
+      "right": 704,
+      "top": 346.1875,
+      "bottom": 715.1875,
+      "width": 640,
+      "height": 369
+    },
+    "programSelect": {
+      "left": 84,
+      "right": 684,
+      "top": 594.1875,
+      "bottom": 638.1875,
+      "width": 600,
+      "height": 44
+    },
+    "pillToFormGap": 28,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "formInsideViewport": true,
+    "selectInsideViewport": true,
+    "facts": {
+      "left": 0,
+      "right": 768,
+      "top": 2439.546875,
+      "bottom": 2579.546875,
+      "width": 768,
+      "height": 140
+    },
+    "programs": {
+      "left": 38.390625,
+      "right": 729.609375,
+      "top": 1112.046875,
+      "bottom": 2347.546875,
+      "width": 691.21875,
+      "height": 1235.5
+    },
+    "format": {
+      "left": 38.390625,
+      "right": 729.609375,
+      "top": 2879.375,
+      "bottom": 3213.53125,
+      "width": 691.21875,
+      "height": 334.15625
+    },
+    "benefits": {
+      "left": 38.390625,
+      "right": 729.609375,
+      "top": 3494,
+      "bottom": 4231.34375,
+      "width": 691.21875,
+      "height": 737.34375
+    }
+  },
+  {
+    "name": "w640",
+    "width": 640,
+    "viewport": 640,
+    "scrollWidth": 640,
+    "brokenImages": [],
+    "heroInner": {
+      "left": 22,
+      "right": 618,
+      "top": 64,
+      "bottom": 813.1875,
+      "width": 596,
+      "height": 749.1875
+    },
+    "form": {
+      "left": 22,
+      "right": 618,
+      "top": 346.1875,
+      "bottom": 771.1875,
+      "width": 596,
+      "height": 425
+    },
+    "programSelect": {
+      "left": 42,
+      "right": 598,
+      "top": 650.1875,
+      "bottom": 694.1875,
+      "width": 556,
+      "height": 44
+    },
+    "pillToFormGap": 28,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "formInsideViewport": true,
+    "selectInsideViewport": true,
+    "facts": {
+      "left": 0,
+      "right": 640,
+      "top": 2632.25,
+      "bottom": 2830.25,
+      "width": 640,
+      "height": 198
+    },
+    "programs": {
+      "left": 32,
+      "right": 608,
+      "top": 1192.84375,
+      "bottom": 2540.25,
+      "width": 576,
+      "height": 1347.40625
+    },
+    "format": {
+      "left": 32,
+      "right": 608,
+      "top": 3160.3125,
+      "bottom": 3462.46875,
+      "width": 576,
+      "height": 302.15625
+    },
+    "benefits": {
+      "left": 32,
+      "right": 608,
+      "top": 3742.9375,
+      "bottom": 4678.953125,
+      "width": 576,
+      "height": 936.015625
+    }
+  },
+  {
+    "name": "w390",
+    "width": 390,
+    "viewport": 390,
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "heroInner": {
+      "left": 22,
+      "right": 368,
+      "top": 64,
+      "bottom": 852.796875,
+      "width": 346,
+      "height": 788.796875
+    },
+    "form": {
+      "left": 22,
+      "right": 368,
+      "top": 385.796875,
+      "bottom": 810.796875,
+      "width": 346,
+      "height": 425
+    },
+    "programSelect": {
+      "left": 42,
+      "right": 348,
+      "top": 689.796875,
+      "bottom": 733.796875,
+      "width": 306,
+      "height": 44
+    },
+    "pillToFormGap": 28,
+    "selectOverflow": "visible",
+    "selectTextOverflow": "ellipsis",
+    "selectWhiteSpace": "nowrap",
+    "formInsideViewport": true,
+    "selectInsideViewport": true,
+    "facts": {
+      "left": 0,
+      "right": 390,
+      "top": 3187.5,
+      "bottom": 3471.5,
+      "width": 390,
+      "height": 284
+    },
+    "programs": {
+      "left": 24,
+      "right": 366,
+      "top": 1337.078125,
+      "bottom": 3095.5,
+      "width": 342,
+      "height": 1758.421875
+    },
+    "format": {
+      "left": 24,
+      "right": 366,
+      "top": 3876.359375,
+      "bottom": 4406.046875,
+      "width": 342,
+      "height": 529.6875
+    },
+    "benefits": {
+      "left": 24,
+      "right": 366,
+      "top": 4716.75,
+      "bottom": 5566.40625,
+      "width": 342,
+      "height": 849.65625
+    }
+  }
+]

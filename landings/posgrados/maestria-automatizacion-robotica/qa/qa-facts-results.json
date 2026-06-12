@@ -1,0 +1,842 @@
+[
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "width": 850,
+    "ok": true,
+    "innerWidth": 850,
+    "scrollWidth": 850,
+    "gridTemplateColumns": "359px 359px",
+    "gap": "18px 20px",
+    "padding": "24px 22px",
+    "itemCount": 3,
+    "rows": 2,
+    "items": [
+      {
+        "article": {
+          "left": 22,
+          "right": 381,
+          "top": 959,
+          "bottom": 1007,
+          "width": 359,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 959,
+          "bottom": 1007,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 147,
+          "top": 965,
+          "bottom": 1001,
+          "width": 63,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 401,
+          "right": 760,
+          "top": 959,
+          "bottom": 1007,
+          "width": 359,
+          "height": 48
+        },
+        "icon": {
+          "left": 401,
+          "right": 449,
+          "top": 959,
+          "bottom": 1007,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 463,
+          "right": 532,
+          "top": 965,
+          "bottom": 1001,
+          "width": 69,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 22,
+          "right": 381,
+          "top": 1025,
+          "bottom": 1073,
+          "width": 359,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 1025,
+          "bottom": 1073,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 141,
+          "top": 1031,
+          "bottom": 1067,
+          "width": 57,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "width": 760,
+    "ok": true,
+    "innerWidth": 760,
+    "scrollWidth": 760,
+    "gridTemplateColumns": "317.594px 317.594px",
+    "gap": "18px 20px",
+    "padding": "24px 22px",
+    "itemCount": 3,
+    "rows": 2,
+    "items": [
+      {
+        "article": {
+          "left": 22,
+          "right": 340,
+          "top": 1016,
+          "bottom": 1064,
+          "width": 318,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 1016,
+          "bottom": 1064,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 147,
+          "top": 1022,
+          "bottom": 1058,
+          "width": 63,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 360,
+          "right": 677,
+          "top": 1016,
+          "bottom": 1064,
+          "width": 318,
+          "height": 48
+        },
+        "icon": {
+          "left": 360,
+          "right": 408,
+          "top": 1016,
+          "bottom": 1064,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 422,
+          "right": 491,
+          "top": 1022,
+          "bottom": 1058,
+          "width": 69,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 22,
+          "right": 340,
+          "top": 1082,
+          "bottom": 1130,
+          "width": 318,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 1082,
+          "bottom": 1130,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 141,
+          "top": 1088,
+          "bottom": 1124,
+          "width": 57,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "width": 640,
+    "ok": true,
+    "innerWidth": 640,
+    "scrollWidth": 640,
+    "gridTemplateColumns": "262.391px 262.406px",
+    "gap": "18px 20px",
+    "padding": "24px 22px",
+    "itemCount": 3,
+    "rows": 2,
+    "items": [
+      {
+        "article": {
+          "left": 22,
+          "right": 284,
+          "top": 1015,
+          "bottom": 1063,
+          "width": 262,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 1015,
+          "bottom": 1063,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 147,
+          "top": 1021,
+          "bottom": 1057,
+          "width": 63,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 304,
+          "right": 567,
+          "top": 1015,
+          "bottom": 1063,
+          "width": 262,
+          "height": 48
+        },
+        "icon": {
+          "left": 304,
+          "right": 352,
+          "top": 1015,
+          "bottom": 1063,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 366,
+          "right": 436,
+          "top": 1021,
+          "bottom": 1057,
+          "width": 69,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 22,
+          "right": 284,
+          "top": 1081,
+          "bottom": 1129,
+          "width": 262,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 1081,
+          "bottom": 1129,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 141,
+          "top": 1087,
+          "bottom": 1123,
+          "width": 57,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-automatizacion-robotica",
+    "width": 390,
+    "ok": true,
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "gridTemplateColumns": "146px 146px",
+    "gap": "16px 14px",
+    "padding": "22px 18px",
+    "itemCount": 3,
+    "rows": 2,
+    "items": [
+      {
+        "article": {
+          "left": 18,
+          "right": 164,
+          "top": 991,
+          "bottom": 1031,
+          "width": 146,
+          "height": 40
+        },
+        "icon": {
+          "left": 18,
+          "right": 58,
+          "top": 991,
+          "bottom": 1031,
+          "width": 40,
+          "height": 40
+        },
+        "text": {
+          "left": 68,
+          "right": 127,
+          "top": 994,
+          "bottom": 1028,
+          "width": 59,
+          "height": 34
+        },
+        "iconSize": "40px",
+        "textFont": "13px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 178,
+          "right": 324,
+          "top": 991,
+          "bottom": 1031,
+          "width": 146,
+          "height": 40
+        },
+        "icon": {
+          "left": 178,
+          "right": 218,
+          "top": 991,
+          "bottom": 1031,
+          "width": 40,
+          "height": 40
+        },
+        "text": {
+          "left": 228,
+          "right": 292,
+          "top": 994,
+          "bottom": 1028,
+          "width": 64,
+          "height": 34
+        },
+        "iconSize": "40px",
+        "textFont": "13px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 18,
+          "right": 164,
+          "top": 1047,
+          "bottom": 1087,
+          "width": 146,
+          "height": 40
+        },
+        "icon": {
+          "left": 18,
+          "right": 58,
+          "top": 1047,
+          "bottom": 1087,
+          "width": 40,
+          "height": 40
+        },
+        "text": {
+          "left": 68,
+          "right": 121,
+          "top": 1050,
+          "bottom": 1084,
+          "width": 53,
+          "height": 34
+        },
+        "iconSize": "40px",
+        "textFont": "13px",
+        "noOverlap": true,
+        "inArticle": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "width": 850,
+    "ok": true,
+    "innerWidth": 850,
+    "scrollWidth": 850,
+    "gridTemplateColumns": "359px 359px",
+    "gap": "18px 20px",
+    "padding": "24px 22px",
+    "itemCount": 3,
+    "rows": 2,
+    "items": [
+      {
+        "article": {
+          "left": 22,
+          "right": 381,
+          "top": 913,
+          "bottom": 961,
+          "width": 359,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 913,
+          "bottom": 961,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 197,
+          "top": 919,
+          "bottom": 955,
+          "width": 113,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 401,
+          "right": 760,
+          "top": 913,
+          "bottom": 961,
+          "width": 359,
+          "height": 48
+        },
+        "icon": {
+          "left": 401,
+          "right": 449,
+          "top": 913,
+          "bottom": 961,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 463,
+          "right": 552,
+          "top": 919,
+          "bottom": 955,
+          "width": 89,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 22,
+          "right": 381,
+          "top": 979,
+          "bottom": 1027,
+          "width": 359,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 979,
+          "bottom": 1027,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 273,
+          "top": 985,
+          "bottom": 1021,
+          "width": 189,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "width": 760,
+    "ok": true,
+    "innerWidth": 760,
+    "scrollWidth": 760,
+    "gridTemplateColumns": "317.594px 317.594px",
+    "gap": "18px 20px",
+    "padding": "24px 22px",
+    "itemCount": 3,
+    "rows": 2,
+    "items": [
+      {
+        "article": {
+          "left": 22,
+          "right": 340,
+          "top": 970,
+          "bottom": 1018,
+          "width": 318,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 970,
+          "bottom": 1018,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 197,
+          "top": 976,
+          "bottom": 1012,
+          "width": 113,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 360,
+          "right": 677,
+          "top": 970,
+          "bottom": 1018,
+          "width": 318,
+          "height": 48
+        },
+        "icon": {
+          "left": 360,
+          "right": 408,
+          "top": 970,
+          "bottom": 1018,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 422,
+          "right": 510,
+          "top": 976,
+          "bottom": 1012,
+          "width": 89,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 22,
+          "right": 340,
+          "top": 1036,
+          "bottom": 1084,
+          "width": 318,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 1036,
+          "bottom": 1084,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 273,
+          "top": 1042,
+          "bottom": 1078,
+          "width": 189,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "width": 640,
+    "ok": true,
+    "innerWidth": 640,
+    "scrollWidth": 640,
+    "gridTemplateColumns": "262.391px 262.406px",
+    "gap": "18px 20px",
+    "padding": "24px 22px",
+    "itemCount": 3,
+    "rows": 2,
+    "items": [
+      {
+        "article": {
+          "left": 22,
+          "right": 284,
+          "top": 968,
+          "bottom": 1016,
+          "width": 262,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 968,
+          "bottom": 1016,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 197,
+          "top": 974,
+          "bottom": 1010,
+          "width": 113,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 304,
+          "right": 567,
+          "top": 968,
+          "bottom": 1016,
+          "width": 262,
+          "height": 48
+        },
+        "icon": {
+          "left": 304,
+          "right": 352,
+          "top": 968,
+          "bottom": 1016,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 366,
+          "right": 455,
+          "top": 974,
+          "bottom": 1010,
+          "width": 89,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 22,
+          "right": 284,
+          "top": 1034,
+          "bottom": 1082,
+          "width": 262,
+          "height": 48
+        },
+        "icon": {
+          "left": 22,
+          "right": 70,
+          "top": 1034,
+          "bottom": 1082,
+          "width": 48,
+          "height": 48
+        },
+        "text": {
+          "left": 84,
+          "right": 273,
+          "top": 1040,
+          "bottom": 1076,
+          "width": 189,
+          "height": 36
+        },
+        "iconSize": "48px",
+        "textFont": "14px",
+        "noOverlap": true,
+        "inArticle": true
+      }
+    ],
+    "brokenImages": []
+  },
+  {
+    "slug": "maestria-administracion-finanzas",
+    "width": 390,
+    "ok": true,
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "gridTemplateColumns": "146px 146px",
+    "gap": "16px 14px",
+    "padding": "22px 18px",
+    "itemCount": 3,
+    "rows": 2,
+    "items": [
+      {
+        "article": {
+          "left": 18,
+          "right": 164,
+          "top": 954,
+          "bottom": 1005,
+          "width": 146,
+          "height": 51
+        },
+        "icon": {
+          "left": 18,
+          "right": 58,
+          "top": 959,
+          "bottom": 999,
+          "width": 40,
+          "height": 40
+        },
+        "text": {
+          "left": 68,
+          "right": 164,
+          "top": 954,
+          "bottom": 1005,
+          "width": 96,
+          "height": 51
+        },
+        "iconSize": "40px",
+        "textFont": "13px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 178,
+          "right": 324,
+          "top": 954,
+          "bottom": 1005,
+          "width": 146,
+          "height": 51
+        },
+        "icon": {
+          "left": 178,
+          "right": 218,
+          "top": 959,
+          "bottom": 999,
+          "width": 40,
+          "height": 40
+        },
+        "text": {
+          "left": 228,
+          "right": 311,
+          "top": 962,
+          "bottom": 996,
+          "width": 83,
+          "height": 34
+        },
+        "iconSize": "40px",
+        "textFont": "13px",
+        "noOverlap": true,
+        "inArticle": true
+      },
+      {
+        "article": {
+          "left": 18,
+          "right": 164,
+          "top": 1021,
+          "bottom": 1089,
+          "width": 146,
+          "height": 68
+        },
+        "icon": {
+          "left": 18,
+          "right": 58,
+          "top": 1035,
+          "bottom": 1075,
+          "width": 40,
+          "height": 40
+        },
+        "text": {
+          "left": 68,
+          "right": 164,
+          "top": 1021,
+          "bottom": 1089,
+          "width": 96,
+          "height": 68
+        },
+        "iconSize": "40px",
+        "textFont": "13px",
+        "noOverlap": true,
+        "inArticle": true
+      }
+    ],
+    "brokenImages": []
+  }
+]
