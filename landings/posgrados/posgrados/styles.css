@@ -2241,3 +2241,8 @@ main,
       var(--hero-image, url("assets/images/figma-node-122-365-hero-bg.png")) !important;
   }
 }
+
+/* Banner: mostrar a la persona completa (no cortar la cabeza) — igualar referencia HubSpot */
+.hero {
+  background-position: center top !important;
+}
