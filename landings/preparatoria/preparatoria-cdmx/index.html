@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+  <meta charset="utf-8">
+  <title>Preparatoria Tecmilenio CDMX</title>
+  <meta name="description" content="Vive la experiencia Prepa Tecmilenio. Desarrolla tu creatividad, crea vínculos importantes y desarrollate para cumplir tu Propósito de Vida. ¡Conócenos!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <!-- canonical / og / twitter del original: NO se incluyen en el preview (apuntan al dominio real).
+       Para la publicación final ver integrations/head-hubspot.md -->
+  <!-- Tracking (GTM-N34CD2M · GA4 G-7L1162JBSS · TikTok · Clarity · HubSpot analytics):
+       NO incluido en el preview. Ver integrations/tracking.md -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/preparatoria/styles.css">
+</head>
+<body class="tpl-prepa">
+
+<!-- ============ 1. HEADER (Figma 1:365) ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="header-logo" href="#banner-form-section">
+      <img src="assets/logo-prepa-tecmilenio.png" alt="Prepa Tecmilenio" width="179" height="35">
+    </a>
+    <a class="btn btn-header" href="#banner-form-section">¡Quiero ser Halcón!</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+      <img src="assets/icon-hamburger.svg" alt="" width="24" height="19">
+    </button>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu" hidden aria-label="Menú principal">
+    <button class="menu-close" type="button" aria-label="Cerrar menú">&#10006;</button>
+    <a class="btn btn-header btn-menu-item" href="#banner-form-section">¡Quiero ser Halcón!</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ 2. HERO + FORMULARIO (Figma 1:321) ============ -->
+  <section class="hero" id="banner-form-section">
+    <div class="hero-media">
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/4836f1f5-5bed-4c70-9958-61e7eecbe80c.jpg" alt="Estudiante de Prepa Tecmilenio CDMX" width="1191" height="1600" fetchpriority="high">
+      <div class="hero-copy">
+        <h1>Crea tu Historia en<br>Prepa Tecmilenio</h1>
+        <p class="hero-sub">Vive la única prepa intercultural con 3 certificaciones.</p>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="hero-form">
+        <h2 class="form-title">Recibe más información y<br>conoce tu mejor opción</h2>
+        <!-- Target original de HubSpot; el form real se inyecta con hbspt.forms.create en producción.
+             Identidad intocable CDMX: portalId 2429099 · formId c2d0dfb8-a463-4001-b888-e6750c3baef5 ·
+             redirect https://universidad.tecmilenio.mx/registro-concluido-prepa — ver integrations/hubspot-form.md -->
+        <div id="hs_form_target_form_339333563">
+          <form id="lead-form" class="hs-form stacked hs-custom-form" novalidate
+                data-portal-id="2429099"
+                data-form-id="c2d0dfb8-a463-4001-b888-e6750c3baef5"
+                data-form-instance-id="8615"
+                data-page-id="130269436427"
+                data-redirect-url="https://universidad.tecmilenio.mx/registro-concluido-prepa">
+            <div class="form-row-split">
+              <div class="form-field">
+                <label class="sr-only" for="field-firstname">Nombre</label>
+                <input type="text" id="field-firstname" name="firstname" placeholder="Nombre" autocomplete="given-name" required>
+              </div>
+              <div class="form-field">
+                <label class="sr-only" for="field-lastname">Apellido</label>
+                <input type="text" id="field-lastname" name="lastname" placeholder="Apellido" autocomplete="family-name" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="sr-only" for="field-phone">Número de teléfono</label>
+              <input type="tel" id="field-phone" name="phone" placeholder="Número de teléfono" autocomplete="tel" inputmode="tel" pattern="[0-9+\(\)\s\-]{8,15}" required>
+            </div>
+            <div class="form-field">
+              <label class="sr-only" for="field-email">Correo electrónico</label>
+              <input type="email" id="field-email" name="email" placeholder="Correo electrónico" autocomplete="email" required>
+            </div>
+            <!-- "nivel_de_interes" aparece también en la lista de hidden del CSS de HubSpot; Figma dibuja el select
+                 visible → manda Figma en lo visual. Contradicción documentada en integrations/hubspot-form.md -->
+            <div class="form-field form-select">
+              <label class="sr-only" for="field-nivel">Nivel de interés</label>
+              <select id="field-nivel" name="nivel_de_interes" required>
+                <option value="" disabled selected>Nivel de interés</option>
+                <!-- PENDIENTE: opciones reales no definidas en Figma ni en el HTML estático de HubSpot.
+                     Ejemplo: <option value="preparatoria">Preparatoria</option> -->
+              </select>
+              <svg class="chevron" width="12" height="6" viewBox="0 0 12 6" aria-hidden="true" focusable="false"><path d="M1 1l5 4 5-4" fill="none" stroke="#00534C" stroke-width="1"/></svg>
+            </div>
+            <div class="form-field form-select">
+              <label class="sr-only" for="field-programa">Programa de interés</label>
+              <select id="field-programa" name="programa_de_interes" required>
+                <option value="" disabled selected>Programa de interés</option>
+                <!-- PENDIENTE: opciones reales no definidas en Figma ni en el HTML estático de HubSpot.
+                     Ejemplo: <option value="prepa-intercultural">Prepa Intercultural</option> -->
+              </select>
+              <svg class="chevron" width="12" height="6" viewBox="0 0 12 6" aria-hidden="true" focusable="false"><path d="M1 1l5 4 5-4" fill="none" stroke="#00534C" stroke-width="1"/></svg>
+            </div>
+            <!-- Checkbox de privacidad: visible SOLO en mobile (mock 1:392); desktop sin checkbox (frame 1:43) -->
+            <div class="form-field form-privacy">
+              <input type="checkbox" id="field-privacy" name="aviso_privacidad">
+              <label for="field-privacy">Acepto y autorizo que la Universidad Tecmilenio utilice la información proporcionada para los fines señalados <a href="https://tecmilenio.mx/es/aviso-de-privacidad/alumnos?_ga=2.24398712.390955569.1692399012-1086248713.1692399012" target="_blank" rel="noopener">aquí</a></label>
+            </div>
+            <!-- 17 campos hidden de HubSpot (orden del CSS del head original) -->
+            <input type="hidden" name="posteo" value="">
+            <input type="hidden" name="nivel_de_interes" value="">
+            <input type="hidden" name="modalidad" value="">
+            <input type="hidden" name="enfoque" value="">
+            <input type="hidden" name="proveedor" value="">
+            <input type="hidden" name="modalidad_" value="">
+            <input type="hidden" name="utm_medioro__c" value="">
+            <input type="hidden" name="formato" value="">
+            <input type="hidden" name="canal" value="">
+            <input type="hidden" name="localizacion" value="">
+            <input type="hidden" name="periodo" value="">
+            <input type="hidden" name="gclid" value="">
+            <input type="hidden" name="custom_2" value="">
+            <input type="hidden" name="custom_3" value="">
+            <input type="hidden" name="custom_8" value="">
+            <input type="hidden" name="connect" value="">
+            <input type="hidden" name="campanas_salesforce" value="">
+            <button type="submit" class="btn btn-submit">Enviar</button>
+            <p class="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. TIPOS DE PREPA (Figma 1:282) ============ -->
+  <section class="tipos" id="tipos-de-prepa">
+    <div class="container-text">
+      <h2>Tipos de Prepa para estudiar en Tecmilenio</h2>
+      <p>Ofrecemos <strong>dos programas de preparatoria</strong> que ayudan a nuestros(as) estudiantes a obtener las habilidades y la experiencia necesaria para impactar positivamente en su futuro profesional.</p>
+      <p>Nuestros programas de preparatoria se enfocan en desarrollar habilidades que acercan a las y los estudiantes al mundo laboral. Al mismo tiempo, viven nuevas experiencias interactuando con otras culturas, que potenciarán su desarrollo y fortalecerán su autonomía. Esto les permitirá tomar la mejor decisión en su vocación profesional y encontrar su propósito de vida.</p>
+    </div>
+    <div class="container-cards tipos-grid">
+      <article class="tipo-card bg-amarillo">
+        <h3>Prepa Intercultural</h3>
+        <p>En Prepa Tecmilenio Intercultural nuestros(as) estudiantes desarrollan la competencia en el idioma inglés, que le dará el acceso a mayores oportunidades en su futuro profesional.</p>
+      </article>
+      <article class="tipo-card bg-naranja">
+        <h3>Prepa Intercultural Bilingüe</h3>
+        <p>En Prepa Tecmilenio Intercultural Bilingüe nuestros(as) estudiantes cursan más de la mitad de la preparatoria en inglés, además de aprender a la par un tercer idioma.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 4. VENTAJAS (Figma 1:261) ============ -->
+  <section class="ventajas" id="ventajas-prepa-tecmilenio">
+    <div class="container-cards ventajas-grid">
+      <div class="ventajas-card">
+        <h2>¿Qué ventajas te ofrece<br>Prepa Tecmilenio?</h2>
+        <ul>
+          <li>Tres certificaciones que fortalecen tus habilidades técnicas, dan valor a tu currículum y te acercan al mundo laboral.</li>
+          <li>Acompañamiento cercano de un mentor a lo largo de toda tu preparatoria.</li>
+          <li>La oportunidad de desarrollar un plan vocacional y descubrir tu Propósito de Vida.</li>
+          <li>Pertenecer a una sociedad estudiantil en donde desarrollas habilidades y crear lazos entre amigos.</li>
+          <li>*La posibilidad de cursar tus materias en inglés y adentrarte a un tercer idioma.</li>
+        </ul>
+        <p class="ventajas-disclaimer">*Aplica para Prepa Intercultural Bilingüe.</p>
+        <a class="btn btn-mas-info" href="#banner-form-section">Más información</a>
+      </div>
+      <img class="ventajas-foto" src="assets/ventajas-foto.webp" alt="Grupo de estudiantes de Prepa Tecmilenio sonriendo" width="1220" height="1272" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ============ 5. CERTIFICACIONES (Figma 1:658, nodo suelto) ============ -->
+  <section class="certificaciones" id="certificaciones">
+    <h2 class="section-title">Obtén certificaciones para tu futuro profesional</h2>
+    <div class="container-cards cert-grid">
+      <img class="cert-foto" src="assets/certificaciones-foto.webp" alt="Estudiantes trabajando en su certificación para el futuro profesional" width="610" height="422" loading="lazy">
+      <div class="accordion">
+        <div class="accordion-item">
+          <h3 class="accordion-heading">
+            <button type="button" class="accordion-trigger" id="cert-trigger-1" aria-expanded="false" aria-controls="cert-panel-1">
+              Certificación en Tecnología (Python)
+              <svg class="chevron" width="12" height="6" viewBox="0 0 12 6" aria-hidden="true" focusable="false"><path d="M1 1l5 4 5-4" fill="none" stroke="#00534C" stroke-width="1"/></svg>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="cert-panel-1" role="region" aria-labelledby="cert-trigger-1" hidden>
+            <p>Con esta certificación aprenderás uno de los lenguajes de programación más importantes en la actualidad, para desarrollar una amplia gama de aplicaciones tecnológicas, incluso con desarrollos de inteligencia artificial que te abrirán las puertas a mayores oportunidades laborales.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-heading">
+            <button type="button" class="accordion-trigger" id="cert-trigger-2" aria-expanded="false" aria-controls="cert-panel-2">
+              Certificación en Creatividad e Innovación
+              <svg class="chevron" width="12" height="6" viewBox="0 0 12 6" aria-hidden="true" focusable="false"><path d="M1 1l5 4 5-4" fill="none" stroke="#00534C" stroke-width="1"/></svg>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="cert-panel-2" role="region" aria-labelledby="cert-trigger-2" hidden>
+            <p>En esta certificación el estudiante desarrolla una de las 10 habilidades que el Foro Económico Mundial menciona en el reporte de futuros del trabajo para el año 2025 y que se refiere a la creatividad, la originalidad e iniciativa. Por medio de un proyecto profesional, cada estudiante llevará una idea a la innovación aplicada.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-heading">
+            <button type="button" class="accordion-trigger" id="cert-trigger-3" aria-expanded="true" aria-controls="cert-panel-3">
+              Certificación en Finanzas Personales
+              <svg class="chevron" width="12" height="6" viewBox="0 0 12 6" aria-hidden="true" focusable="false"><path d="M1 1l5 4 5-4" fill="none" stroke="#00534C" stroke-width="1"/></svg>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="cert-panel-3" role="region" aria-labelledby="cert-trigger-3">
+            <p>Brinda las bases para una buena gestión de los recursos económicos de tal forma que se tomen decisiones con los conocimientos necesarios. Durante tercer año en diversas asignaturas y en co-creación con una institución bancaria internacional los estudiantes obtendrán el certificado de bases en herramientas financieras.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. UBICACIONES CDMX (Figma 1:691, nodo suelto; contenido del propio Figma —
+       la página nacional de HubSpot NO tiene esta sección; las variantes la surtirán de su content-*.md) ============ -->
+  <section class="ubicaciones" id="ubicaciones">
+    <h2 class="section-title ubicaciones-title">¿Cuáles son las ubicaciones que tenemos en Ciudad de México?</h2>
+    <div class="carousel ubicaciones-carousel">
+      <button class="carousel-arrow" type="button" data-carousel="ubicaciones" data-dir="-1" aria-label="Campus anterior">
+        <svg width="15" height="14" viewBox="0 0 15 14" aria-hidden="true" focusable="false"><path d="M7.5 1 1 7l6.5 6M1 7h13" fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="carousel-track ubicaciones-track">
+        <li class="campus-card">
+          <img src="assets/campus-cuautitlan-izcalli.webp" alt="Fachada del Campus Cuautitlán Izcalli" width="786" height="440" loading="lazy">
+          <div class="campus-info">
+            <h3>Campus Cuautitlán Izcalli</h3>
+            <p>Dr. J. Jiménez Cantú s/n, Bosques de la Hacienda, 54715 Cuautitlán Izcalli, Méx</p>
+          </div>
+        </li>
+        <li class="campus-card">
+          <img src="assets/campus-ferreria.webp" alt="Fachada del Campus Ferrería" width="664" height="372" loading="lazy">
+          <div class="campus-info">
+            <h3>Campus Ferrería</h3>
+            <p>Av. de las Granjas 800, Santa Barbara, Azcapotzalco, 02230 Ciudad de México, CDMX</p>
+          </div>
+        </li>
+        <li class="campus-card">
+          <img src="assets/campus-connect.webp" alt="Fachada del Espacio Connect Las Américas" width="664" height="372" loading="lazy">
+          <div class="campus-info">
+            <h3>Espacio Connect Las Américas</h3>
+            <p>Lote1 Norte Paseo de Las Americas Manzana 138, Av Insurgentes, Las Américas, 55076 Ecatepec de Morelos, Méx</p>
+          </div>
+        </li>
+      </ul>
+      <button class="carousel-arrow" type="button" data-carousel="ubicaciones" data-dir="1" aria-label="Campus siguiente">
+        <svg width="15" height="14" viewBox="0 0 15 14" aria-hidden="true" focusable="false"><path d="M7.5 1 14 7l-6.5 6M14 7H1" fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ 7. AL GRADUARTE (Figma 1:221) ============ -->
+  <section class="graduarte" id="benefits-section">
+    <h2>Al graduarte de la Prepa en Tecmilenio podrás:</h2>
+    <!-- Íconos: crops PNG 1× del render (tile de color incluido). Swap a tile CSS + SVG al liberar la cuota de Figma (~2026-07-09) -->
+    <ul class="graduarte-grid">
+      <li>
+        <img src="assets/icon-mountain-flag.png" alt="" width="129" height="129" loading="lazy">
+        <p>Descubrir y desarrollar tu <strong>Propósito de Vida.</strong></p>
+      </li>
+      <li>
+        <img src="assets/icon-signpost.png" alt="" width="129" height="129" loading="lazy">
+        <p>Tomar la <strong>mejor decisión</strong> al momento de elegir tu carrera, con ayuda de nuestro plan vocacional.</p>
+      </li>
+      <li>
+        <img src="assets/icon-connect-without-contact.png" alt="" width="129" height="129" loading="lazy">
+        <p><strong>Acrecentar tu capacidad para interactuar</strong> con personas de diferentes entornos culturales, lograr entendimiento cultural y una sana convivencia.</p>
+      </li>
+      <li>
+        <img src="assets/icon-handshake.png" alt="" width="129" height="129" loading="lazy">
+        <p>Relacionarte <strong>positivamente</strong> con quienes te rodean.</p>
+      </li>
+      <li>
+        <img src="assets/icon-engineering.png" alt="" width="129" height="129" loading="lazy">
+        <p><strong>Desarrollar habilidades tecnológicas</strong> que te permitan impulsarte en el mundo digital.</p>
+      </li>
+      <li>
+        <img src="assets/icon-cognition.png" alt="" width="129" height="129" loading="lazy">
+        <p><strong>Desarrollar tu creatividad</strong> al tener la capacidad de pensar en nuevas soluciones y formas diferentes de hacer las cosas.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ 8. RUTAS DE EXPLORACIÓN (Figma 1:131) ============ -->
+  <section class="rutas" id="rutas-de-exploracion">
+    <h2>Preparamos a nuestros estudiantes<br>para dar su siguiente paso</h2>
+    <p class="rutas-intro">Nuestros(as) estudiantes de preparatoria experimentarán una área de interés con nuestras <strong>Rutas de Exploración.</strong></p>
+    <div class="rutas-carousel">
+      <button class="carousel-arrow rutas-arrow" type="button" data-carousel="rutas" data-dir="-1" aria-label="Ruta anterior">
+        <svg width="12" height="22" viewBox="0 0 12 22" aria-hidden="true" focusable="false"><path d="M10.5 1 2 11l8.5 10" fill="none" stroke="#00534C" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <ul class="rutas-grid rutas-track">
+        <li class="ruta-card">
+          <img src="assets/ruta-lean.webp" alt="Notas adhesivas de un ejercicio de mejora de procesos" width="800" height="560" loading="lazy">
+          <div class="ruta-body bg-amarillo">
+            <h3>Innovación y diseño Lean</h3>
+            <p>Nuestros(as) estudiantes dominarán una de <strong>las metodologías para mejorar procesos, Lean Sigma,</strong> mediante herramientas estadísticas y análisis de datos que ayudan a realizar cualquier actividad laboral de manera más eficiente.</p>
+          </div>
+        </li>
+        <li class="ruta-card">
+          <img src="assets/ruta-marketing.webp" alt="Estudiantes trazando una estrategia de marketing digital en un pizarrón" width="800" height="560" loading="lazy">
+          <div class="ruta-body bg-naranja-sec">
+            <h3>Marketing Digital</h3>
+            <p>Las y los estudiantes aprenderán las bases de la mercadotecnia digital, con la finalidad de trazar estrategias mediante el uso y gestión de social media, marketing de contenidos, medios digitales y experiencia de usuario (UX). Además, analizarán los datos recogidos por los servidores para tomar mejores decisiones, orientadas a incrementar el tráfico de usuarios.</p>
+          </div>
+        </li>
+        <li class="ruta-card">
+          <img src="assets/ruta-robotica.webp" alt="Brazo robótico programado por estudiantes" width="800" height="560" loading="lazy">
+          <div class="ruta-body bg-naranja">
+            <h3>Desarrollador Jr en Robótica</h3>
+            <p>Porque la robotización tiene un gran presente y futuro, aquí las y los estudiantes aprenden los conceptos básicos sobre programación, electricidad y diseño mecánico; para que descubran si les apasiona la idea de buscar soluciones tecnológicas para automatizar procesos, que nos hacen la vida más fácil a todos.</p>
+          </div>
+        </li>
+        <li class="ruta-card">
+          <img src="assets/ruta-hospitalidad.webp" alt="Personal de hospitalidad dando la bienvenida" width="800" height="560" loading="lazy">
+          <div class="ruta-body bg-naranja-sec">
+            <h3>Hospitalidad y Turismo</h3>
+            <p>En esta ruta conocerán las bases de la industria del turismo de manera profesional en los siguientes rubros: alimentos, viajes, logística y servicios basados en aplicaciones tecnológicas.</p>
+          </div>
+        </li>
+        <li class="ruta-card">
+          <img src="assets/ruta-diseno.webp" alt="Estudiante dibujando una ilustración digital" width="800" height="560" loading="lazy">
+          <div class="ruta-body bg-naranja">
+            <h3>Diseño e Ilustración</h3>
+            <p>Elaborarán representaciones gráficas, a través de herramientas digitales, que puedan proyectar y expresar ideas de forma creativa e informada sobre diferentes temas sociales, culturales, estéticos, tecnológicos, entre otros.</p>
+          </div>
+        </li>
+        <li class="ruta-card">
+          <img src="assets/ruta-empresas.webp" alt="Equipo de estudiantes planeando su emprendimiento" width="800" height="560" loading="lazy">
+          <div class="ruta-body bg-amarillo">
+            <h3>Creación de empresas</h3>
+            <p>En esta ruta diseñarán, planearán y desarrollarán su negocio, utilizando una metodología de innovación. Además, conocerán cómo administrarlo correctamente para que destaque de entre los demás emprendimientos.</p>
+          </div>
+        </li>
+      </ul>
+      <button class="carousel-arrow rutas-arrow" type="button" data-carousel="rutas" data-dir="1" aria-label="Ruta siguiente">
+        <svg width="12" height="22" viewBox="0 0 12 22" aria-hidden="true" focusable="false"><path d="M1.5 1 10 11l-8.5 10" fill="none" stroke="#00534C" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="rutas-dots" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ 9. EXPERIENCIA (Figma 1:93): acompañados + extracurriculares ============ -->
+  <section class="experiencia" id="image-paragraph-block-section">
+    <div class="exp-card exp-acompanados">
+      <img src="assets/acompanamiento-foto.webp" alt="Estudiante de Prepa Tecmilenio con su tablet" width="1162" height="1000" loading="lazy">
+      <div class="exp-panel bg-cafe">
+        <h2>¡Nuestros estudiantes siempre estarán acompañados!</h2>
+        <p>Sabemos lo difícil que puede ser esta etapa de la vida. Por eso, en Prepa Tecmilenio tenemos un modelo de acompañamiento apreciativo.</p>
+        <p>La <strong>mentora o el mentor</strong> ofrecen orientación, apoyo, ayuda y asesoramiento en el proceso de autodescubrimiento y educación.</p>
+        <p>Este modelo es una práctica que les ayudará a optimizar sus experiencias en la preparatoria y alcanzar sus sueños y metas.</p>
+      </div>
+    </div>
+    <div class="exp-card exp-extra" id="extracurriculares">
+      <div class="exp-panel bg-amarillo-panel">
+        <h2>Conoce nuestras actividades extracurriculares</h2>
+        <p>Estudiar la preparatoria no será lo mismo sin las actividades extracurriculares que tenemos para ti.</p>
+        <p>Participa cada tarde en diferentes talleres y experiencias deportivas como fútbol, baile, canto, entre otros, que <strong>te impulsarán a descubrir tus talentos, socializar y crear una base de disciplina</strong> que te ayudará a lograr lo que te propongas en la vida.</p>
+        <img class="escudos" src="assets/escudos-halcones.png" alt="Escudos de las sociedades Halcones: Aire, Fuego, Tierra y Agua" width="342" height="80" loading="lazy">
+      </div>
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/c2dc3592-85e6-42f2-9280-4165e49065a8.jpg" alt="Estudiantes de Prepa Tecmilenio CDMX en actividades extracurriculares" width="605" height="540" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Sub-sección "Descubre" (banda #FF7F32; en mobile se mueve DESPUÉS del CTA final vía order) -->
+  <section class="descubre">
+    <div class="descubre-inner">
+      <div class="descubre-copy">
+        <h2>¡Descubre cómo se vive esta experiencia!</h2>
+        <p>Queremos que no pierdas la oportunidad de participar en talleres deportivos y culturales que te permitan descubrir tu pasión y ser feliz durante tu paso como estudiante en <strong>Prepa Tecmilenio</strong>.</p>
+        <p>Además, <strong>puedes pertenecer a una sociedad</strong> y convivir con otros(as) estudiantes que comparten los mismos intereses, desarrollar hábitos y habilidades que contribuyan a su bienestar, mientras construyen relaciones positivas.</p>
+      </div>
+      <img class="descubre-foto" src="assets/descubre-foto.webp" alt="Tres estudiantes conviviendo con un balón y una laptop" width="1086" height="640" loading="lazy">
+    </div>
+  </section>
+
+  <!-- HubSpot trae aquí #carousel-events-section (H2 "Algunos eventos que se viven en Prepa Tecmilenio", 6 slides en CDMX) OCULTO por CSS display:none. Sin diseño Figma: no se maqueta. Contenido verbatim: integrations/carousel-eventos-oculto.md -->
+
+  <!-- ============ 10. CTA FINAL (Figma 1:80) ============ -->
+  <section class="cta-final" id="cta-bg-solid-section">
+    <h2>Comienza tu historia en Prepa Intercultural Tecmilenio</h2>
+    <p>Si tienes alguna duda sobre el proceso de admisión, escríbenos. Nos contactaremos contigo para ayudarte a tomar la mejor decisión.</p>
+    <a class="btn btn-cta-final" href="#banner-form-section">¡Sí, quiero más información!</a>
+  </section>
+
+</main>
+
+<!-- ============ 11. FOOTER (Figma 1:44) ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <a class="footer-logo" href="#banner-form-section">
+        <img src="assets/logo-prepa-tecmilenio.png" alt="Prepa Tecmilenio" width="178" height="35">
+      </a>
+      <ul class="footer-social">
+        <li>
+          <a href="https://www.facebook.com/TecmilenioPrepa/" target="_blank" rel="noopener" aria-label="Facebook de Prepa Tecmilenio">
+            <svg width="10" height="17" viewBox="0 0 320 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/prepatecmi/" target="_blank" rel="noopener" aria-label="Instagram de Prepa Tecmilenio">
+            <svg width="17" height="17" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@prepatecmi" target="_blank" rel="noopener" aria-label="TikTok de Prepa Tecmilenio">
+            <svg width="15" height="17" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@PrepaTecmi" target="_blank" rel="noopener" aria-label="YouTube de Prepa Tecmilenio">
+            <svg width="19" height="17" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-legal">
+      <p>Universidad Tecmilenio D.R. Enseñanza e Investigación Superior, A.C.</p>
+      <a href="https://tecmilenio.mx/es/aviso-de-privacidad/alumnos?_ga=2.24398712.390955569.1692399012-1086248713.1692399012" target="_blank" rel="noopener">Aviso de Privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../shared/prepa.js" defer></script>
+</body>
+</html>

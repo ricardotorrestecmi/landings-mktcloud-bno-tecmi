@@ -1,0 +1,10 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Instalaciones / campus: edificio (icono de línea blanca, estilo Figma card openhouse) -->
+<path d="M14 68V26L40 12L66 26V68" stroke="white" stroke-width="3.2" stroke-linejoin="round"/>
+<path d="M8 68H72" stroke="white" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="23" y="33" width="9" height="9" rx="1.5" stroke="white" stroke-width="3"/>
+<rect x="48" y="33" width="9" height="9" rx="1.5" stroke="white" stroke-width="3"/>
+<rect x="23" y="49" width="9" height="9" rx="1.5" stroke="white" stroke-width="3"/>
+<rect x="48" y="49" width="9" height="9" rx="1.5" stroke="white" stroke-width="3"/>
+<path d="M35 68V60H45V68" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+</svg>

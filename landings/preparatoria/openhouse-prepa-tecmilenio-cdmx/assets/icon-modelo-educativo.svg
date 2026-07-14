@@ -1,0 +1,11 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Modelo educativo / programas: libro abierto (icono de línea blanca, estilo Figma card openhouse) -->
+<path d="M40 24C34 19.5 27 18 18 18.5V58.5C27 58 34 59.5 40 64C46 59.5 53 58 62 58.5V18.5C53 18 46 19.5 40 24Z" stroke="white" stroke-width="3.2" stroke-linejoin="round"/>
+<path d="M40 24V64" stroke="white" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M26 30C29 29.5 32.5 30 35 31" stroke="white" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M26 39C29 38.5 32.5 39 35 40" stroke="white" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M26 48C29 47.5 32.5 48 35 49" stroke="white" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M54 30C51 29.5 47.5 30 45 31" stroke="white" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M54 39C51 38.5 47.5 39 45 40" stroke="white" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M54 48C51 47.5 47.5 48 45 49" stroke="white" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

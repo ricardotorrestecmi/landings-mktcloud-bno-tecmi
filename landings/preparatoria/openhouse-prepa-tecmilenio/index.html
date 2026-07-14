@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Openhouse Prepa Tecmilenio</title>
+  <meta name="description" content="Conoce la nueva prepa TecMilenio en nuestro Openhouse.">
+  <meta property="og:title" content="Openhouse Prepa Tecmilenio">
+  <meta property="og:description" content="Conoce la nueva prepa TecMilenio en nuestro Openhouse.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <!-- Sin canonical a tecmilenio.mx: preview noindex (X-Robots-Tag lo fuerza _headers del repo). Documentado, no es un olvido. -->
+  <!-- Sin tracking (GTM/GA4/TikTok/Clarity/HubSpot loader): documentado en integrations/tracking.md -->
+  <link rel="icon" type="image/png" href="assets/favicon-tecmilenio-04.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/preparatoria/styles.css">
+</head>
+<body class="tpl-openhouse">
+
+  <!-- ============ HEADER (fixed, comportamiento HubSpot header-section) ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="#banner-image-section" aria-label="Prepa Tecmilenio — ir al inicio">
+        <img src="assets/logo-header.png" alt="Prepa Tecmilenio" width="204" height="60">
+      </a>
+      <a class="btn-pill site-header__cta" href="#image-form-section">Registro</a>
+      <button class="site-header__burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menú">
+        <!-- Geometría del icon-hamburger.svg de HubSpot; trazo blanco según Figma mobile (HubSpot lo trae #26D07C) -->
+        <svg width="32" height="22" viewBox="0 0 32 22" fill="none" aria-hidden="true">
+          <path d="M1 11H31M1 1H31M1 21H31" stroke="#F8F9FA" stroke-width="2" stroke-linecap="square"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Menú mobile: Figma no diseña el panel abierto; panel mínimo #00534C con los 3 links de HubSpot (blueprint Huecos #2) -->
+    <nav class="mobile-menu" id="mobile-menu" hidden aria-label="Menú principal">
+      <button class="mobile-menu__close" type="button" aria-label="Cerrar menú">&#10006;</button>
+      <ul>
+        <li><a href="#carousel-benefits-section">Qué esperar</a></li>
+        <li><a href="#carousel-section">Galería</a></li>
+        <li><a href="#image-form-section">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="banner-image-section">
+      <!-- H1 de HubSpot sin lugar visual en el Figma: se conserva sr-only (blueprint Huecos #3) -->
+      <h1 class="sr-only">Crea tu historia en Prepa Tecmilenio</h1>
+
+      <picture class="hero__bg-picture">
+        <source media="(max-width: 767px)" type="image/webp" srcset="assets/hero-bg-mobile.webp">
+        <source media="(max-width: 767px)" srcset="assets/hero-bg-mobile.jpg">
+        <source type="image/webp" srcset="assets/hero-bg.webp">
+        <img class="hero__bg" src="assets/hero-bg.jpg" alt="" width="1920" height="969" fetchpriority="high">
+      </picture>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Canvas desktop 1440x727: crops del render empalmados en sus coordenadas exactas -->
+      <div class="hero__canvas hero__canvas--desktop">
+        <picture>
+          <source media="(max-width: 767px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          <img class="hero__art hero__art--logo" src="assets/open-house.svg" alt="Open House Preparatoria" width="460" height="319">
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          <img class="hero__art hero__art--sub" src="assets/hero-subtitulo.png" alt="Preparatoria. Ven y descubre tu propósito y tu carrera haciendo amigos" width="612" height="77">
+        </picture>
+        <a class="btn-pill hero__cta" href="#image-form-section">¡Me interesa!</a>
+      </div>
+
+      <!-- Canvas mobile (frame 1:996): foto interna + arte + CTA -->
+      <div class="hero__canvas hero__canvas--mobile">
+        <div class="hero__photo-card">
+          <picture>
+            <source media="(min-width: 768px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <source type="image/webp" srcset="assets/hero-mobile-inner.webp">
+            <img class="hero__photo-card-img" src="assets/hero-mobile-inner.jpg" alt="" width="600" height="950">
+          </picture>
+          <div class="hero__photo-card-overlay" aria-hidden="true"></div>
+          <picture>
+            <source media="(min-width: 768px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img class="hero__art-m hero__art-m--logo" src="assets/open-house.svg" alt="Open House" width="200" height="140">
+          </picture>
+          <p class="hero__sub-m" aria-hidden="true">
+            <!-- El arte vectorial mobile (nodo 1:1145) no tiene crop; se recrea como texto (mismo copy del arte) -->
+            <span class="hero__sub-m-title">PREPARATORIA</span>
+            <span class="hero__sub-m-copy">Ven y descubre tu propósito y<br>tu carrera haciendo amigos</span>
+          </p>
+          <a class="btn-pill hero__cta-m" href="#image-form-section">¡Me interesa!</a>
+        </div>
+      </div>
+
+      <!-- Ondas decorativas verdes: SVGs de Figma no exportados (429); calcadas a mano de los renders (blueprint §Producir) -->
+      <svg class="hero__waves hero__waves--desktop" viewBox="0 0 1440 727" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <!-- listón: sube por la colina, baja al valle y se esconde bajo el aro -->
+        <path d="M615 850 C695 782, 732 648, 830 646 C925 645, 1010 760, 1110 768 C1150 770, 1152 707, 1182 648 C1210 580, 1250 525, 1325 488" fill="none" stroke="#26D07C" stroke-width="84"/>
+        <!-- aro espiral: centro (1416,534) rel, R exterior 136 / interior 52 -->
+        <path d="M1424.2 627.6 A94 94 0 1 1 1497.4 487" fill="none" stroke="#78D64B" stroke-width="84"/>
+        <!-- rizo interior del listón (visible por la ventana del aro) -->
+        <path d="M1389.2 549.5 A31 31 0 1 1 1437.9 555.9" fill="none" stroke="#26D07C" stroke-width="46" stroke-linecap="round"/>
+      </svg>
+      <svg class="hero__waves hero__waves--mobile hero__waves--ring" viewBox="0 0 72 116" aria-hidden="true" focusable="false">
+        <path d="M42.8 86.3 A40.75 40.75 0 1 1 47.4 34.1" fill="none" stroke="#A7E393" stroke-width="33.5"/>
+      </svg>
+      <svg class="hero__waves hero__waves--mobile hero__waves--wave" viewBox="0 0 320 122" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+        <path d="M-15 130 C15 118, 30 87, 60 87 C95 87, 110 140, 155 145 C190 148, 200 100, 230 60 C250 33, 285 30, 305 48 C315 57, 322 66, 330 72" fill="none" stroke="#26D07C" stroke-width="50"/>
+      </svg>
+    </section>
+
+    <!-- ============ 2. BENEFICIOS ============ -->
+    <section class="benefits" id="carousel-benefits-section" aria-labelledby="benefits-title">
+      <h2 class="benefits__title" id="benefits-title">¿Qué puedes<br class="br-mobile"> esperar del evento?</h2>
+      <div class="benefits__carousel">
+        <button class="carousel-arrow benefits__arrow benefits__arrow--prev" type="button" aria-label="Beneficio anterior">
+          <svg viewBox="0 0 20 40" fill="none" aria-hidden="true"><path d="M16 4 6 20l10 16" stroke="#F8F9FA" stroke-width="1.5"/></svg>
+        </button>
+        <div class="benefits__viewport" tabindex="0" aria-label="Carrusel de beneficios">
+          <ul class="benefits__track">
+            <li class="benefit-card">
+              <span class="benefit-card__icon-frame">
+                <img src="assets/icon-certificaciones.svg" alt="" width="80" height="80" loading="lazy">
+              </span>
+              <p>Entenderás las certificaciones que ofrece Prepa Tecmilenio</p>
+            </li>
+            <li class="benefit-card">
+              <span class="benefit-card__icon-frame">
+                <img src="assets/icon-medalla-estrella.svg" alt="" width="80" height="80" loading="lazy">
+              </span>
+              <p>Disfrutarás el aprendizaje por retos interdisciplinarios</p>
+            </li>
+            <li class="benefit-card">
+              <span class="benefit-card__icon-frame">
+                <img src="assets/icon-conexion.svg" alt="" width="80" height="80" loading="lazy">
+              </span>
+              <p>Conocerás gente de tu edad en distintas actividades</p>
+            </li>
+            <li class="benefit-card">
+              <span class="benefit-card__icon-frame">
+                <img src="assets/icon-personas-corazon.svg" alt="" width="80" height="80" loading="lazy">
+              </span>
+              <p>Vivirás el ambiente de las sociedades estudiantiles</p>
+            </li>
+            <li class="benefit-card">
+              <span class="benefit-card__icon-frame">
+                <img src="assets/icon-interculturalidad.svg" alt="" width="80" height="80" loading="lazy">
+              </span>
+              <p>Realizarás un presupuesto para conocer cómo vivir tu primera experiencia intercultural</p>
+            </li>
+          </ul>
+        </div>
+        <button class="carousel-arrow benefits__arrow benefits__arrow--next" type="button" aria-label="Siguiente beneficio">
+          <svg viewBox="0 0 20 40" fill="none" aria-hidden="true"><path d="M4 4 14 20 4 36" stroke="#F8F9FA" stroke-width="1.5"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ 3. GALERÍA ============ -->
+    <section class="gallery" id="carousel-section" aria-labelledby="gallery-title">
+      <h2 class="gallery__title" id="gallery-title">¡Una mirada dentro de<br class="br-mobile"> nuestro Open House!</h2>
+      <div class="gallery__carousel">
+        <div class="gallery__viewport" tabindex="0" aria-label="Galería de fotos del Open House">
+          <ul class="gallery__track">
+            <li class="gallery__card">
+              <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/c16b17e5-5a25-4ea7-b236-d49f54380b86.png" alt="1 OP" width="550" height="700" loading="lazy">
+            </li>
+            <li class="gallery__card">
+              <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/8ab9b12c-acf3-42bc-ad78-47260f506a60.png" alt="2 OP" width="550" height="700" loading="lazy">
+            </li>
+            <li class="gallery__card">
+              <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/62b28077-47a3-471d-a685-737370774911.png" alt="3 OP" width="550" height="700" loading="lazy">
+            </li>
+            <li class="gallery__card">
+              <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/38ec4ea8-65d5-405f-965e-c6797a8f4702.png" alt="4 OP" width="550" height="700" loading="lazy">
+            </li>
+            <li class="gallery__card">
+              <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/f6113292-7099-478e-9d7a-b1c3ec995a4d.png" alt="5 OP" width="550" height="700" loading="lazy">
+            </li>
+            <li class="gallery__card">
+              <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/ee6e9d9d-e0d7-4904-9c09-97c77cd11a9d.png" alt="6 OP" width="550" height="700" loading="lazy">
+            </li>
+          </ul>
+        </div>
+        <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Foto anterior">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.6" fill="#F8F9FA"/><path d="M12 5.5 7.5 10l4.5 4.5" stroke="#00534C" stroke-width="1.5" fill="none"/></svg>
+        </button>
+        <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Siguiente foto">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9.6" fill="#F8F9FA"/><path d="M8 5.5 12.5 10 8 14.5" stroke="#00534C" stroke-width="1.5" fill="none"/></svg>
+        </button>
+      </div>
+      <div class="gallery__dots" role="tablist" aria-label="Ir a la foto">
+        <button type="button" role="tab" aria-selected="true" aria-label="Foto 1"></button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Foto 2"></button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Foto 3"></button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Foto 4"></button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Foto 5"></button>
+        <button type="button" role="tab" aria-selected="false" aria-label="Foto 6"></button>
+      </div>
+    </section>
+
+    <!-- ============ 4. VIDEO ============ -->
+    <section class="video" id="video-cards-section" aria-labelledby="video-title">
+      <div class="video__inner">
+        <div class="video__copy">
+          <!-- (sic) "como" sin tilde: así está en Figma y en HubSpot; no corregir -->
+          <h2 class="video__title" id="video-title">Descubre como es un día en Prepa Tecmilenio</h2>
+          <p class="video__body">Conoce nuestras instalaciones, vive el ambiente estudiantil y resuelve tus dudas en nuestro Open House.</p>
+          <button class="btn-pill video__cta btn-modal" type="button">Ver video</button>
+        </div>
+        <button class="video__poster btn-modal" type="button" aria-label="Ver video: Descubre como es un día en Prepa Tecmilenio">
+          <picture>
+            <source type="image/webp" srcset="assets/video-poster.webp">
+            <img src="assets/video-poster.jpg" alt="Captura de pantalla 2024-10-17 174524" width="1222" height="612" loading="lazy">
+          </picture>
+          <span class="video__poster-overlay" aria-hidden="true"></span>
+          <span class="video__play" aria-hidden="true">
+            <!-- Reproductor estilo YouTube calcado de crop-video-play-youtube.png (nodo 1:793 sin exportar) -->
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="4" y="19" width="33" height="21" rx="6" fill="#F00"/>
+              <path d="M17 24.5 25 29.5 17 34.5Z" fill="#FFF"/>
+              <circle cx="20" cy="16.5" r="13" fill="rgba(0,0,0,.35)" stroke="#FFF" stroke-width="2.5"/>
+              <path d="M16 10.5 26.5 16.5 16 22.5Z" fill="#FFF"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ 5. REGISTRO / FORM ============ -->
+    <section class="registro" id="image-form-section" aria-label="Registro">
+      <div class="registro__inner">
+        <div class="registro__photo">
+          <picture>
+            <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/412740e3-421b-4b2f-8e90-8ebefe8b8542.jpg" alt="Estudiante de Prepa Tecmilenio" width="1010" height="1294" loading="lazy">
+          </picture>
+        </div>
+        <div class="registro__col">
+          <h2 class="registro__title">¡Regístrate y vive esta gran experiencia!</h2>
+          <!--
+            Réplica visual/interactiva del form de HubSpot (en producción lo inyecta hbspt.forms.create).
+            Integración intacta documentada en integrations/hubspot-form.md:
+            portalId 2429099 · formId c8a571a6-56c5-4e42-8cfe-72355d858eef · redirect /registro-concluido-prepa
+            Este preview NO postea a HubSpot (submit con preventDefault + validación ligera).
+          -->
+          <form class="registro__form" id="registro-form" novalidate>
+            <div class="registro__row">
+              <div class="field">
+                <label class="sr-only" for="f-nombre">Nombre</label>
+                <input id="f-nombre" name="nombre" type="text" placeholder="Nombre" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label class="sr-only" for="f-apellido">Apellido(s)</label>
+                <input id="f-apellido" name="apellidos" type="text" placeholder="Apellido(s)" autocomplete="family-name" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="sr-only" for="f-telefono">Teléfono</label>
+              <input id="f-telefono" name="telefono" type="tel" placeholder="Teléfono" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="field">
+              <label class="sr-only" for="f-email">Correo electrónico</label>
+              <input id="f-email" name="email" type="email" placeholder="Correo electrónico" autocomplete="email" required>
+            </div>
+            <!-- Selects con una sola option-label: las listas reales las define el form de HubSpot en producción (no inventar opciones) -->
+            <div class="field field--select">
+              <label class="sr-only" for="f-nivel">Nivel de interés</label>
+              <select id="f-nivel" name="nivel_de_interes" required>
+                <option value="" disabled selected>Nivel de interés</option>
+              </select>
+            </div>
+            <div class="field field--select">
+              <label class="sr-only" for="f-programa">Programa de interés</label>
+              <select id="f-programa" name="programa_de_interes" required>
+                <option value="" disabled selected>Programa de interés</option>
+              </select>
+            </div>
+            <div class="field field--select">
+              <label class="sr-only" for="f-periodo">Periodo</label>
+              <select id="f-periodo" name="periodo" required>
+                <option value="" disabled selected>Periodo</option>
+              </select>
+            </div>
+
+            <!-- Campos hidden documentados (los llena utm.js en producción). nivel_de_interes y periodo
+                 no se duplican aquí porque en ESTA página son campos visibles. Lista completa en integrations/hubspot-form.md -->
+            <input type="hidden" name="posteo" value="">
+            <input type="hidden" name="modalidad" value="">
+            <input type="hidden" name="enfoque" value="">
+            <input type="hidden" name="proveedor" value="">
+            <input type="hidden" name="modalidad_" value="">
+            <input type="hidden" name="utm_medioro__c" value="">
+            <input type="hidden" name="formato" value="">
+            <input type="hidden" name="canal" value="">
+            <input type="hidden" name="localizacion" value="">
+            <input type="hidden" name="gclid" value="">
+            <input type="hidden" name="custom_2" value="">
+            <input type="hidden" name="custom_3" value="">
+            <input type="hidden" name="custom_8" value="">
+            <input type="hidden" name="connect" value="">
+            <input type="hidden" name="campanas_salesforce" value="">
+
+            <label class="registro__check">
+              <input type="checkbox" name="acepto" required>
+              <span class="registro__checkbox" aria-hidden="true"></span>
+              <!-- "aquí" sin link: no inventar destino (blueprint §6) -->
+              <span class="registro__check-text">Acepto y autorizo que la Universidad Tecmilenio utilice la información proporcionada para los fines señalados aquí</span>
+            </label>
+
+            <p class="registro__error" id="registro-error" role="alert" hidden></p>
+
+            <button class="registro__submit" type="submit">Enviar</button>
+            <p class="registro__preview-note" id="registro-ok" hidden>Preview sin envío: en producción este formulario postea a HubSpot y redirige a registro-concluido-prepa.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <img class="site-footer__logo" src="assets/logo-footer.png" alt="Prepa Tecmilenio" width="195" height="50">
+        <!-- Redes reales de HubSpot (FB/IG/TikTok/YT); glifos propios estilo Figma (base Font Awesome Free, CC BY 4.0) -->
+        <ul class="site-footer__social">
+          <li>
+            <a href="https://www.facebook.com/TecmilenioPrepa/" target="_blank" rel="noopener" aria-label="Facebook de Prepa Tecmilenio">
+              <svg viewBox="0 0 320 512" aria-hidden="true"><path fill="#F8F9FA" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/prepatecmi/" target="_blank" rel="noopener" aria-label="Instagram de Prepa Tecmilenio">
+              <svg viewBox="0 0 448 512" aria-hidden="true"><path fill="#F8F9FA" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@prepatecmi" target="_blank" rel="noopener" aria-label="TikTok de Prepa Tecmilenio">
+              <svg viewBox="0 0 448 512" aria-hidden="true"><path fill="#F8F9FA" d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@PrepaTecmi" target="_blank" rel="noopener" aria-label="YouTube de Prepa Tecmilenio">
+              <svg viewBox="0 0 576 512" aria-hidden="true"><path fill="#F8F9FA" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="site-footer__bottom">
+        <!-- Legal verbatim HubSpot: "Da click aquí" NO es <a> en el DOM en vivo — no inventarle link -->
+        <p class="site-footer__legal">
+          Consulta la validez oficial de estudios reconocida por la SEP Da click aquí<br>
+          Universidad Tecmilenio D.R. Enseñanza e Investigación Superior, A.C. Monterrey, N.L. México 2019.
+        </p>
+        <!-- href vacío intencional: así está en HubSpot en vivo (content-openhouse-prepa-tecmilenio.md §5) -->
+        <a class="site-footer__link" href="">Aviso de Privacidad</a>
+        <!-- "Términos y Condiciones" existe en el Figma pero NO en HubSpot: no va (blueprint Huecos #16) -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL VIDEO (patrón HubSpot: iframe src diferido, se vacía al cerrar) ============ -->
+  <div class="modal" id="modal-video" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-label="Descubre como es un día en Prepa Tecmilenio">
+      <button class="modal__close" type="button" data-close-modal aria-label="Cerrar video">&#10006;</button>
+      <div class="modal__frame">
+        <iframe class="iframe-video" src="" data-url="https://www.youtube.com/watch?v=dqUHsj5LZL0&amp;feature=youtu.be" title="Descubre como es un día en Prepa Tecmilenio" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="../shared/prepa.js" defer></script>
+</body>
+</html>
