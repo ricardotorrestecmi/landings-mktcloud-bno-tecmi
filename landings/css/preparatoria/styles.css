@@ -91,8 +91,8 @@ body {
 }
 
 body.tpl-prepa {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;                 /* Figma: texto de párrafo 16px (antes 14px) */
+  line-height: 22px;
   letter-spacing: 0.0075em;
   color: var(--verde);
   overflow-x: clip; /* sin scroll horizontal en ningún viewport */
@@ -942,26 +942,22 @@ body.modal-open { overflow: hidden; }
 }
 
 /* ============================================================
-   ORDEN MOBILE (§13.1): CTA final ANTES de "Descubre"
+   ORDEN: el CTA final va al ÚLTIMO (después de "Descubre"),
+   siguiendo el orden del HTML en todos los anchos. Se conserva
+   el flex del <main> para no alterar el manejo de márgenes.
    ============================================================ */
 .tpl-prepa main { display: flex; flex-direction: column; }
-.tpl-prepa main > .cta-final { order: 1; }
-.tpl-prepa main > .descubre { order: 2; }
 
 /* ============================================================
    PREPA · TABLET ≥768px — estructura desktop con grids adaptados
    ============================================================ */
 @media (min-width: 768px) {
-  .tpl-prepa body { font-size: 16px; line-height: 22px; }
+  /* nota: el tamaño de párrafo (16px) ya es global desde body.tpl-prepa */
 
   /* header desktop: botón visible, sin hamburguesa */
   .header-logo img { width: 179px; }
   .btn-header { display: inline-flex; }
   .menu-toggle, .tpl-prepa .mobile-menu { display: none !important; }
-
-  /* orden desktop restaurado */
-  .tpl-prepa main > .cta-final { order: 0; }
-  .tpl-prepa main > .descubre { order: 0; }
 
   .hero-media { height: 420px; }
   .tpl-prepa .hero h1 { font-size: clamp(34px, 3.47vw, 50px); line-height: 1.08; }
@@ -1243,6 +1239,14 @@ body.modal-open { overflow: hidden; }
   position: absolute; inset: 0;
   background: var(--overlay-media); /* rgba(0,0,0,.15) */
 }
+/* Móvil (open house): mostrar SOLO el fondo (las 3 chicas, como desktop).
+   Se oculta la tarjeta con la foto interna del hero (persona con videojuego)
+   y su overlay, para no encimar dos fotos distintas; el logo/subtítulo/botón
+   quedan sobre el fondo de las 3 chicas. Aplica a openhouse (genérico y CDMX). */
+.tpl-openhouse .hero__photo-card > picture:first-child,
+.tpl-openhouse .hero__photo-card-overlay {
+  display: none;
+}
 
 /* Crop del logo OPEN HOUSE mobile: 200×140 en (60,180) abs = (50.25,70) rel a la foto */
 .hero__art-m--logo {
@@ -1303,7 +1307,7 @@ body.modal-open { overflow: hidden; }
 .hero__waves--desktop { display: none; }
 .hero__waves--ring {
   left: 0;
-  top: 48.3%;             /* 245/507 del frame mobile */
+  top: 53%;               /* aro recogido a la esquina inferior izq., sin encimarse con el logo (ref. Figma móvil) */
   width: min(22.5vw, 108px); /* 72/320 */
   height: auto;
 }
