@@ -1307,7 +1307,7 @@ body.modal-open { overflow: hidden; }
 .hero__waves--desktop { display: none; }
 .hero__waves--ring {
   left: 0;
-  top: 56%;                   /* aro recogido abajo-izquierda, debajo de PREPARATORIA (Figma móvil) */
+  top: 43%;                   /* aro a la izquierda, arriba del CTA (base ~12px sobre el botón, sin empalmar) */
   width: min(19.375vw, 93px); /* 62/320 — ancho del SVG exacto de Figma (Graphics.svg) */
   height: auto;
 }
