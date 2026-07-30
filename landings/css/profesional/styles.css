@@ -1,0 +1,533 @@
+/* ==========================================================================
+   PROFESIONAL — CSS del nivel (template reutilizable de Licenciaturas)
+   Un solo styles.css para TODAS las LP de Profesional.
+   Todo va scopeado bajo .tpl-profesional para no colisionar con otros niveles.
+   Lo específico de una carrera puede sobrescribirse con body.lp-<slug>.
+   Tokens de marca reutilizados de Posgrados (Montserrat, verdes, radios).
+   ========================================================================== */
+
+.tpl-profesional {
+  --white: #f8f9fa;
+  --ink: #0b3b2e;          /* texto verde oscuro */
+  --forest: #0e4a31;       /* verde bosque: cards, botones, tabs activos, footer */
+  --teal: #0c3a34;         /* banda "Voces" */
+  --lime: #8fd460;         /* lima: franja datos, pills, botones secundarios */
+  --lime-soft: #b7e38c;
+  --leaf: #66be4e;         /* SEDI, barras, tarjetas beneficios */
+  --plan-bg: #cbe8a6;      /* fondo plan de estudios */
+  --mist: #eaf3e4;         /* faq / celdas curso */
+  --mint: #dff0c8;         /* encabezados de columna del plan */
+  --shadow: 0 18px 50px rgba(11, 59, 46, 0.14);
+  --wrap: 1160px;
+
+  margin: 0;
+  color: var(--ink);
+  font-family: "Montserrat", "Aptos", "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tpl-profesional * { box-sizing: border-box; }
+.tpl-profesional img { display: block; max-width: 100%; }
+.tpl-profesional a { color: inherit; text-decoration: none; }
+html { scroll-behavior: smooth; }
+
+/* Helpers ------------------------------------------------------------------ */
+.tpl-profesional .section { padding: 64px 24px; }
+.tpl-profesional .section-heading { max-width: var(--wrap); margin: 0 auto 32px; }
+.tpl-profesional .section-heading h2 {
+  margin: 0 0 12px;
+  color: var(--forest);
+  font-size: 30px;
+  font-weight: 800;
+}
+.tpl-profesional .section-heading p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.tpl-profesional .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  /* contenido alineado al mismo contenedor (1160px) que los demás módulos */
+  padding: 12px max(24px, calc((100% - var(--wrap)) / 2));
+  background: var(--forest);
+  color: #fff;
+}
+.tpl-profesional .brand { display: inline-flex; align-items: center; }
+.tpl-profesional .brand img { height: 34px; width: auto; object-fit: contain; }
+.tpl-profesional .header-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: var(--lime);
+  color: var(--forest);
+  font-weight: 800;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+.tpl-profesional .hero {
+  position: relative;
+  color: #fff;
+  /* imagen bajada: sujeto más abajo, con aire arriba (como Figma/referencia) */
+  background: #0c3a34 var(--hero-image, none) center 10% / cover no-repeat;
+}
+.tpl-profesional .hero__inner {
+  position: relative;
+  z-index: 1;
+  /* +48 para que, con el padding lateral de 24, el contenido caiga en el mismo
+     contenedor (1160px) que header, módulos y footer */
+  max-width: calc(var(--wrap) + 48px);
+  margin: 0 auto;
+  padding: 72px 24px;
+  display: grid;
+  grid-template-columns: 1fr minmax(360px, 430px);
+  gap: 48px;
+  align-items: center;
+  min-height: 540px;
+}
+.tpl-profesional .hero__copy h1 {
+  margin: 0 0 20px;
+  font-size: 54px;
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+.tpl-profesional .hero__copy > p {
+  margin: 0 0 28px;
+  max-width: 34ch;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.tpl-profesional .esta-en-ti { display: inline-block; }
+.tpl-profesional .esta-en-ti img { width: 150px; height: auto; }
+
+/* Formulario */
+.tpl-profesional .lead-form { display: grid; gap: 12px; min-width: 0; }
+.tpl-profesional .lead-form label { display: grid; gap: 4px; min-width: 0; }
+.tpl-profesional .lead-form .sr-only {   /* etiquetas accesibles ocultas */
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+.tpl-profesional .form-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; min-width: 0;
+}
+.tpl-profesional .form-group { display: grid; gap: 6px; min-width: 0; }
+.tpl-profesional .form-label { color: #fff; font-size: 14px; font-weight: 700; }
+.tpl-profesional .lead-form .form-consent { display: flex; align-items: flex-start; gap: 10px; }
+.tpl-profesional .lead-form .form-consent input {
+  width: 18px; height: 18px; min-width: 18px; padding: 0; margin: 2px 0 0; flex: none;
+  accent-color: var(--forest); cursor: pointer;
+}
+.tpl-profesional .form-consent span { color: #fff; font-size: 12px; line-height: 1.45; font-weight: 500; }
+.tpl-profesional .lead-form input,
+.tpl-profesional .lead-form select {
+  width: 100%;
+  min-width: 0;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+}
+.tpl-profesional .lead-form select { appearance: none; cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%230e4a31' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 18px center;
+  padding-right: 44px;
+}
+.tpl-profesional .lead-form button {
+  height: 52px;
+  border: none;
+  border-radius: 12px;
+  background: var(--lime);
+  color: var(--forest);
+  font: inherit;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tpl-profesional .lead-form button:hover { filter: brightness(0.96); }
+
+/* ==========================================================================
+   FRANJA DE DATOS (.facts)
+   ========================================================================== */
+.tpl-profesional .facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 32px;
+  /* mismo contenedor (1160px) que header, hero y módulos */
+  padding: 30px max(24px, calc((100% - var(--wrap)) / 2));
+  background: var(--lime);
+}
+.tpl-profesional .facts article { display: flex; align-items: center; gap: 16px; }
+.tpl-profesional .facts img { width: 60px; height: 60px; object-fit: contain; }
+.tpl-profesional .facts strong {
+  display: block; color: var(--ink); font-size: 18px; font-weight: 800;
+}
+.tpl-profesional .facts span { color: var(--ink); font-size: 15px; font-weight: 600; }
+
+/* ==========================================================================
+   INTRO — ¿Qué hace un(a)…?
+   ========================================================================== */
+.tpl-profesional .intro__grid {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-areas: "dark photo" "lime photo";
+  gap: 22px 28px;
+  align-items: stretch;
+}
+.tpl-profesional .info-card--dark { grid-area: dark; }
+.tpl-profesional .info-card--lime { grid-area: lime; }
+.tpl-profesional .portrait-card { grid-area: photo; }
+.tpl-profesional .info-card { border-radius: 22px; padding: 32px; }
+.tpl-profesional .info-card h2 { margin: 0 0 14px; font-size: 24px; font-weight: 800; }
+.tpl-profesional .info-card p { margin: 0 0 12px; font-size: 15px; line-height: 1.55; }
+.tpl-profesional .info-card p:last-of-type { margin-bottom: 0; }
+.tpl-profesional .info-card--dark { background: var(--forest); color: #eaf3ea; }
+.tpl-profesional .info-card--dark h2 { color: #fff; }
+.tpl-profesional .btn-folleto {
+  display: inline-flex; align-items: center; margin-top: 20px;
+  padding: 12px 28px; border-radius: 999px;
+  background: var(--lime); color: var(--forest); font-weight: 800; font-size: 14px;
+}
+.tpl-profesional .info-card--lime { background: var(--lime); color: var(--forest); }
+.tpl-profesional .info-card--lime h2 { color: var(--forest); }
+.tpl-profesional .portrait-card { margin: 0; height: 100%; }
+.tpl-profesional .portrait-card img {
+  width: 100%; height: 100%; min-height: 320px; object-fit: cover; border-radius: 22px;
+}
+
+/* ==========================================================================
+   PLAN DE ESTUDIOS
+   ========================================================================== */
+.tpl-profesional .study-plan {
+  --p-dark: #00534c;   /* verde oscuro de marca */
+  --p-mint: #a7e393;   /* fondo de sección + celdas SEDi */
+  --p-course: #d9f2d2; /* celda de materia */
+  --p-head: #d3e1da;   /* header gris (8 Semanas / 1 Semana) */
+  --p-bar: #26d07c;    /* barra Vivencia y bienestar */
+  padding: 56px 24px;
+  background: var(--p-mint);
+}
+.tpl-profesional .study-plan .section-heading { text-align: center; margin-bottom: 24px; }
+.tpl-profesional .study-plan .section-heading h2 { color: var(--p-dark); font-size: 34px; margin: 0; }
+.tpl-profesional .plan { max-width: 1160px; margin: 0 auto; }
+
+/* Control de año: etiqueta + 4 pills (desktop) / dropdown (móvil) */
+.tpl-profesional .plan__control { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+.tpl-profesional .plan__label { color: var(--p-dark); font-weight: 700; white-space: nowrap; }
+.tpl-profesional .plan__tabs { display: flex; flex: 1; gap: 16px; }
+.tpl-profesional .plan-tab {
+  flex: 1; border: 1px solid var(--p-dark); background: transparent; color: var(--p-dark);
+  border-radius: 24px; padding: 10px 20px; font: inherit; font-weight: 600; font-size: 16px; cursor: pointer;
+}
+.tpl-profesional .plan-tab.is-active { background: var(--p-dark); color: #fff; }
+.tpl-profesional .plan__select {
+  display: none; width: 100%; border: 1px solid var(--p-dark); background: transparent;
+  color: var(--p-dark); border-radius: 24px; padding: 12px 44px 12px 24px; font: inherit;
+  font-weight: 700; font-size: 16px; text-align: center; text-align-last: center; cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2300534c' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 18px center;
+}
+
+.tpl-profesional .plan-panel { display: grid; gap: 20px; }
+.tpl-profesional .plan-panel[hidden] { display: none; }
+.tpl-profesional .plan-sem { display: grid; gap: 12px; }
+.tpl-profesional .plan-sem__title {
+  padding: 16px; border-radius: 16px; background: #fff; color: var(--p-dark);
+  text-align: center; font-size: 18px; font-weight: 700;
+}
+.tpl-profesional .plan-sem__card { display: grid; gap: 16px; padding: 16px; border-radius: 16px; background: #fff; }
+
+/* Cada semestre: 2 bloques (8 Semanas + SEDi); el bloque verano añade 3ª columna */
+.tpl-profesional .plan-sem__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.tpl-profesional .plan-block { display: grid; grid-template-columns: 1fr 118px; gap: 16px; align-items: stretch; }
+.tpl-profesional .plan-block--verano { grid-template-columns: 1fr 118px 80px; }
+.tpl-profesional .plan-block__weeks { display: grid; grid-template-rows: auto 1fr 1fr; gap: 16px; }
+.tpl-profesional .plan-block__sedi { display: grid; grid-template-rows: auto 1fr; gap: 16px; }
+
+.tpl-profesional .plan-head,
+.tpl-profesional .plan-course,
+.tpl-profesional .plan-sedi,
+.tpl-profesional .plan-estancia {
+  display: grid; place-items: center; text-align: center; overflow-wrap: break-word;
+  border-radius: 16px; color: var(--p-dark); font-size: 18px; line-height: 1.25;
+}
+.tpl-profesional .plan-head { background: var(--p-head); padding: 8px; }
+.tpl-profesional .plan-course { background: var(--p-course); padding: 8px 12px; }
+.tpl-profesional .plan-sedi { background: var(--p-mint); padding: 8px; }
+.tpl-profesional .plan-estancia { background: var(--p-course); padding: 24px; font-weight: 700; font-size: 20px; }
+.tpl-profesional .plan-sem__bar {
+  padding: 8px; border-radius: 16px; background: var(--p-bar); color: var(--p-dark);
+  text-align: center; font-size: 18px;
+}
+.tpl-profesional .download {
+  display: flex; align-items: center; justify-content: center; width: max-content;
+  margin: 28px auto 0; min-height: 44px; padding: 8px 36px; border-radius: 24px;
+  background: var(--p-dark); color: #fff; font-weight: 600; font-size: 16px;
+}
+
+/* ==========================================================================
+   CERTIFICADOS Y RUTA DE ENFOQUE
+   ========================================================================== */
+.tpl-profesional .tracks { background: #5cbe6e; }
+.tpl-profesional .tracks .section-heading { max-width: 900px; margin: 0 auto 28px; text-align: center; }
+/* dos pills independientes y separados (como Figma), sin contenedor con borde */
+.tpl-profesional .tracks__toggle {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 28px; margin: 0 auto 32px;
+}
+.tpl-profesional .tracks-tab {
+  min-width: 220px; border: 1.5px solid var(--forest); background: transparent; color: var(--forest);
+  border-radius: 999px; padding: 12px 28px; font: inherit; font-weight: 600; font-size: 16px; cursor: pointer;
+}
+.tpl-profesional .tracks-tab.is-active { background: var(--forest); color: #fff; font-weight: 700; }
+.tpl-profesional .tracks__grid {
+  max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr;
+  gap: 28px; align-items: stretch;
+}
+.tpl-profesional .tracks__panels {
+  background: #fff; border-radius: 22px; padding: 12px 24px; box-shadow: var(--shadow);
+}
+.tpl-profesional .tracks-panel[hidden] { display: none; }
+.tpl-profesional .tracks__photo { margin: 0; }
+.tpl-profesional .tracks__photo img {
+  width: 100%; height: 100%; min-height: 320px; object-fit: cover; border-radius: 22px;
+}
+
+/* ==========================================================================
+   ACORDEÓN (compartido: tracks + faq)
+   ========================================================================== */
+.tpl-profesional .accordion details { border-bottom: 1px solid #e0e8df; }
+.tpl-profesional .accordion details:last-child { border-bottom: none; }
+.tpl-profesional .accordion summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center;
+  justify-content: space-between; gap: 16px; padding: 18px 4px;
+  font-weight: 700; font-size: 15px; color: var(--ink);
+}
+.tpl-profesional .accordion summary::-webkit-details-marker { display: none; }
+.tpl-profesional .accordion summary::after {
+  content: ""; flex: none; width: 11px; height: 11px; border-right: 2px solid var(--forest);
+  border-bottom: 2px solid var(--forest); transform: rotate(45deg); transition: transform 0.2s;
+}
+.tpl-profesional .accordion details[open] summary::after { transform: rotate(-135deg); }
+.tpl-profesional .accordion__body { padding: 0 4px 18px; font-size: 14px; line-height: 1.55; }
+.tpl-profesional .accordion__body p { margin: 0; }
+.tpl-profesional .accordion__body ul { margin: 0; padding-left: 20px; }
+.tpl-profesional .accordion__body li { margin: 4px 0; }
+
+/* ==========================================================================
+   BENEFICIOS
+   ========================================================================== */
+.tpl-profesional .benefits .section-heading { text-align: center; }
+.tpl-profesional .benefit-grid {
+  max-width: 1060px; margin: 0 auto; display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;
+}
+.tpl-profesional .benefit-grid article {
+  padding: 26px; border-radius: 18px; background: var(--leaf); color: #fff;
+}
+.tpl-profesional .benefit-grid h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; }
+.tpl-profesional .benefit-grid p { margin: 0; font-size: 14px; line-height: 1.5; overflow-wrap: break-word; }
+
+/* ==========================================================================
+   VOCES DE NUESTROS ESTUDIANTES
+   ========================================================================== */
+.tpl-profesional .voices { padding: 52px 24px; background: var(--teal); color: #fff; }
+.tpl-profesional .voices__inner {
+  max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr;
+  gap: 44px; align-items: center;
+}
+.tpl-profesional .voices__video {
+  position: relative; display: block; border-radius: 18px; overflow: hidden;
+}
+.tpl-profesional .voices__video img { width: 100%; display: block; }
+.tpl-profesional .voices__play {
+  position: absolute; top: 50%; left: 50%; width: 66px; height: 66px;
+  transform: translate(-50%, -50%); border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+.tpl-profesional .voices__play::after {
+  content: ""; position: absolute; top: 50%; left: 54%; transform: translate(-50%, -50%);
+  border-style: solid; border-width: 12px 0 12px 20px; border-color: transparent transparent transparent var(--forest);
+}
+.tpl-profesional .voices__copy h2 { margin: 0 0 12px; font-size: 30px; font-weight: 800; }
+.tpl-profesional .voices__copy p { margin: 0 0 22px; font-size: 16px; line-height: 1.55; }
+.tpl-profesional .btn-lime {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 13px 30px; border-radius: 999px; background: var(--lime); color: var(--forest);
+  font-weight: 800; font-size: 15px;
+}
+
+/* ==========================================================================
+   PERFIL DE INGRESO / EGRESO
+   ========================================================================== */
+.tpl-profesional .profile__grid {
+  max-width: var(--wrap); margin: 0 auto; display: grid;
+  grid-template-columns: 0.85fr 1.15fr; gap: 44px; align-items: center;
+}
+.tpl-profesional .profile__photo { margin: 0; }
+.tpl-profesional .profile__photo img { width: 100%; border-radius: 22px; }
+.tpl-profesional .profile__text h2 {
+  margin: 24px 0 10px; color: var(--forest); font-size: 24px; font-weight: 800;
+}
+.tpl-profesional .profile__text h2:first-child { margin-top: 0; }
+.tpl-profesional .profile__text p { margin: 0; font-size: 15px; line-height: 1.6; }
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+.tpl-profesional .faq .section-heading { text-align: center; }
+.tpl-profesional .faq__list { max-width: 820px; margin: 0 auto; display: grid; gap: 12px; }
+.tpl-profesional .faq__list details {
+  background: var(--mist); border-radius: 14px; padding: 0 20px; overflow: hidden;
+}
+.tpl-profesional .faq__list summary { padding: 18px 0; }
+.tpl-profesional .faq__list .accordion__body { padding: 0 0 18px; }
+
+/* ==========================================================================
+   CTA FINAL
+   ========================================================================== */
+.tpl-profesional .final-cta { padding: 56px 24px; background: var(--lime); text-align: center; }
+.tpl-profesional .final-cta h2 { margin: 0 0 12px; color: var(--forest); font-size: 30px; font-weight: 800; }
+.tpl-profesional .final-cta p {
+  max-width: 640px; margin: 0 auto 24px; color: var(--forest); font-size: 15px; line-height: 1.55;
+}
+.tpl-profesional .final-cta a {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 52px; padding: 0 34px; border-radius: 999px;
+  background: var(--forest); color: #fff; font-weight: 800; font-size: 16px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.tpl-profesional .site-footer {
+  padding: 40px max(24px, calc((100% - var(--wrap)) / 2));
+  background: var(--forest); color: #fff;
+  display: grid; gap: 20px;
+}
+.tpl-profesional .brand--footer img { height: 32px; }
+.tpl-profesional .footer-social { display: flex; gap: 16px; }
+.tpl-profesional .footer-social img { width: 24px; height: 24px; }
+.tpl-profesional .site-footer small { display: block; font-size: 12px; line-height: 1.6; opacity: 0.9; }
+.tpl-profesional .footer-links { display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; }
+.tpl-profesional .footer-links a { text-decoration: underline; }
+
+/* ==========================================================================
+   DESKTOP AMPLIO: footer en fila (logo+redes arriba, texto abajo)
+   ========================================================================== */
+@media (min-width: 901px) {
+  .tpl-profesional .site-footer {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand social"
+      "addr  addr"
+      "links links";
+    align-items: center;
+  }
+  .tpl-profesional .brand--footer { grid-area: brand; justify-self: start; }
+  .tpl-profesional .footer-social { grid-area: social; justify-self: end; }
+  .tpl-profesional .site-footer small { grid-area: addr; }
+  .tpl-profesional .footer-links { grid-area: links; }
+}
+
+/* ==========================================================================
+   TABLET / MOBILE  (≤ 900px)
+   ========================================================================== */
+@media (max-width: 900px) {
+  /* Hero móvil: la foto va detrás del copy; el formulario baja a fondo blanco */
+  .tpl-profesional .hero { background: var(--white); }
+  .tpl-profesional .hero::before { display: none; }
+  .tpl-profesional .hero__inner {
+    grid-template-columns: 1fr; gap: 0; padding: 0; min-height: 0;
+  }
+  .tpl-profesional .hero__copy {
+    position: relative; min-height: 360px;
+    background: var(--hero-image) center top / cover no-repeat;
+    padding: 24px 20px 28px;
+    display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;
+  }
+  .tpl-profesional .hero__copy::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(12, 58, 52, 0.12) 0%, rgba(12, 58, 52, 0.62) 100%);
+  }
+  .tpl-profesional .hero__copy > * { position: relative; z-index: 1; }
+  .tpl-profesional .hero__copy h1 { font-size: 34px; }
+  .tpl-profesional .hero__copy > p { font-size: 16px; margin-bottom: 20px; }
+  .tpl-profesional .esta-en-ti img { width: 128px; }
+  .tpl-profesional .lead-form { padding: 24px 20px 36px; background: var(--white); }
+  .tpl-profesional .form-label { color: var(--ink); }
+  .tpl-profesional .form-consent span { color: var(--ink); }
+
+  .tpl-profesional .facts { gap: 20px 28px; }
+  .tpl-profesional .facts article { width: calc(50% - 28px); }
+
+  .tpl-profesional .section { padding: 44px 20px; }
+  .tpl-profesional .intro__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "dark" "photo" "lime";
+    gap: 20px;
+  }
+  .tpl-profesional .portrait-card img { min-height: 240px; }
+
+  .tpl-profesional .study-plan { padding: 44px 16px; }
+  .tpl-profesional .study-plan .section-heading h2 { font-size: 26px; }
+  .tpl-profesional .plan__control { flex-direction: column; align-items: stretch; gap: 12px; }
+  .tpl-profesional .plan__label { text-align: center; }
+  .tpl-profesional .plan__tabs { display: none; }
+  .tpl-profesional .plan__select { display: block; }
+  .tpl-profesional .plan-sem__grid,
+  .tpl-profesional .plan-sem__grid--verano { grid-template-columns: 1fr; gap: 16px; }
+  .tpl-profesional .plan-block,
+  .tpl-profesional .plan-block--verano { grid-template-columns: 1fr; }
+  .tpl-profesional .plan-block__weeks,
+  .tpl-profesional .plan-block__sedi { grid-template-rows: none; }
+  .tpl-profesional .plan-course,
+  .tpl-profesional .plan-head,
+  .tpl-profesional .plan-sedi { font-size: 15px; }
+
+  .tpl-profesional .tracks__toggle { flex-direction: column; gap: 12px; max-width: 340px; }
+  .tpl-profesional .tracks-tab { min-width: 0; width: 100%; }
+  .tpl-profesional .tracks__grid { grid-template-columns: 1fr; }
+  .tpl-profesional .tracks__photo { display: none; } /* móvil: sin foto (como el Figma) */
+
+  .tpl-profesional .benefit-grid { grid-template-columns: 1fr; }
+
+  .tpl-profesional .voices__inner { grid-template-columns: 1fr; gap: 24px; }
+  .tpl-profesional .voices__copy h2 { font-size: 24px; }
+
+  .tpl-profesional .profile__grid { grid-template-columns: 1fr; gap: 24px; }
+  .tpl-profesional .profile__photo { display: none; } /* móvil: sin foto (como el Figma) */
+
+  .tpl-profesional .section-heading h2 { font-size: 24px; }
+  .tpl-profesional .final-cta h2 { font-size: 24px; }
+}
+
+@media (min-width: 561px) and (max-width: 900px) {
+  .tpl-profesional .benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
