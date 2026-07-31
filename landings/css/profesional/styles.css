@@ -99,9 +99,11 @@ html { scroll-behavior: smooth; }
   display: grid;
   grid-template-columns: 1fr minmax(360px, 430px);
   gap: 48px;
-  align-items: center;
-  min-height: 540px;
+  /* copy abajo: el título queda por debajo del rostro de la foto */
+  align-items: end;
+  min-height: 700px;
 }
+.tpl-profesional .lead-form { align-self: center; }
 .tpl-profesional .hero__copy h1 {
   margin: 0 0 20px;
   font-size: 54px;
@@ -467,9 +469,11 @@ html { scroll-behavior: smooth; }
     grid-template-columns: 1fr; gap: 0; padding: 0; min-height: 0;
   }
   .tpl-profesional .hero__copy {
-    position: relative; min-height: 360px;
+    /* padding-top alto: deja ver el rostro de la foto antes de que empiece el
+       copy, sin importar qué tan largo sea el texto de cada carrera */
+    position: relative; min-height: 580px;
     background: var(--hero-image) center top / cover no-repeat;
-    padding: 24px 20px 28px;
+    padding: 215px 20px 28px;
     display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;
   }
   .tpl-profesional .hero__copy::before {
