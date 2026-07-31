@@ -288,6 +288,15 @@ html { scroll-behavior: smooth; }
   padding: 8px; border-radius: 16px; background: var(--p-bar); color: var(--p-dark);
   text-align: center; font-size: 18px;
 }
+
+/* Variante de plan sin bloques de semanas (p. ej. Psicología): título de
+   semestre en verde oscuro y las materias en dos columnas; la última materia
+   del semestre ocupa el ancho completo. */
+.tpl-profesional .plan-sem__title--solid {
+  background: var(--p-dark); color: #fff; border-radius: 8px; font-weight: 600;
+}
+.tpl-profesional .plan-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.tpl-profesional .plan-list__wide { grid-column: 1 / -1; width: min(100%, 76%); margin-inline: auto; }
 .tpl-profesional .download {
   display: flex; align-items: center; justify-content: center; width: max-content;
   margin: 28px auto 0; min-height: 44px; padding: 8px 36px; border-radius: 24px;
@@ -514,6 +523,8 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .plan-course,
   .tpl-profesional .plan-head,
   .tpl-profesional .plan-sedi { font-size: 15px; }
+  .tpl-profesional .plan-list { grid-template-columns: 1fr; }
+  .tpl-profesional .plan-list__wide { width: 100%; }
 
   .tpl-profesional .tracks__toggle { flex-direction: column; gap: 12px; max-width: 340px; }
   .tpl-profesional .tracks-tab { min-width: 0; width: 100%; }
