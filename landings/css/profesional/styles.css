@@ -373,6 +373,15 @@ html { scroll-behavior: smooth; }
   max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr;
   gap: 44px; align-items: center;
 }
+/* Variante sin video: solo copy, a una columna centrada (p. ej. Enfermería) */
+.tpl-profesional .voices--text .voices__inner { grid-template-columns: 1fr; max-width: 860px; text-align: center; }
+.tpl-profesional .voices--text .voices__list {
+  display: grid; gap: 12px; margin: 0 0 22px; padding: 0; list-style: none; text-align: left;
+}
+.tpl-profesional .voices--text .voices__list li {
+  padding: 14px 18px; border-radius: 14px; background: rgba(255, 255, 255, 0.1);
+  font-size: 15px; line-height: 1.55;
+}
 .tpl-profesional .voices__video {
   position: relative; display: block; border-radius: 18px; overflow: hidden;
 }
