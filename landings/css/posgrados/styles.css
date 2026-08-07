@@ -17382,7 +17382,7 @@ body.lp-posgrados .hero p {
   max-width: 585px;
   margin: 0 0 48px;
   color: var(--white);
-  font-weight: 800;
+  font-weight: 700;
   font-size: clamp(20px, 2.15vw, 30px);
   line-height: 1.14;
 }
