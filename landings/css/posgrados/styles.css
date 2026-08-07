@@ -17375,7 +17375,7 @@ body.lp-posgrados .hero h1 {
   color: var(--white);
   font-size: clamp(42px, 5vw, 70px);
   line-height: 0.98;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 body.lp-posgrados .hero p {
@@ -17458,7 +17458,7 @@ body.lp-posgrados .section-heading h2 {
   color: var(--green-2);
   font-size: clamp(28px, 3vw, 42px);
   line-height: 1.08;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 body.lp-posgrados .section-heading p {
@@ -17677,7 +17677,7 @@ body.lp-posgrados .format-card h3 {
   margin: 0 0 18px;
   font-size: 30px;
   line-height: 1.1;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 body.lp-posgrados .format-card p {
@@ -17743,7 +17743,7 @@ body.lp-posgrados .benefits-copy h3 {
   color: var(--green-2);
   font-size: 28px;
   line-height: 1.1;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 body.lp-posgrados .benefits-copy p {
@@ -17822,7 +17822,7 @@ body.lp-posgrados .inter-card h3 {
   margin: 0 0 16px;
   font-size: 30px;
   line-height: 1.04;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 body.lp-posgrados .inter-card p {
@@ -17899,7 +17899,7 @@ body.lp-posgrados .final-cta h2 {
   margin: 0;
   font-size: clamp(28px, 3vw, 38px);
   line-height: 1.08;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 body.lp-posgrados .final-cta p {
