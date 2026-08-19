@@ -61,7 +61,7 @@ html { scroll-behavior: smooth; }
   gap: 16px;
   /* contenido alineado al mismo contenedor (1160px) que los demás módulos */
   padding: 12px max(24px, calc((100% - var(--wrap)) / 2));
-  background: var(--forest);
+  background: #00534C;
   color: #fff;
 }
 .tpl-profesional .brand { display: inline-flex; align-items: center; }
@@ -87,6 +87,11 @@ html { scroll-behavior: smooth; }
   color: #fff;
   /* imagen bajada: sujeto más abajo, con aire arriba (como Figma/referencia) */
   background: #0c3a34 var(--hero-image, none) center 10% / cover no-repeat;
+}
+/* capa oscura sobre la foto del hero */
+.tpl-profesional .hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 .tpl-profesional .hero__inner {
   position: relative;
@@ -181,7 +186,7 @@ html { scroll-behavior: smooth; }
   gap: 20px 32px;
   /* mismo contenedor (1160px) que header, hero y módulos */
   padding: 30px max(24px, calc((100% - var(--wrap)) / 2));
-  background: var(--lime);
+  background: #78D64B;
 }
 .tpl-profesional .facts article { display: flex; align-items: center; gap: 16px; }
 .tpl-profesional .facts img { width: 60px; height: 60px; object-fit: contain; }
@@ -209,14 +214,14 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .info-card h2 { margin: 0 0 14px; font-size: 24px; font-weight: 800; }
 .tpl-profesional .info-card p { margin: 0 0 12px; font-size: 15px; line-height: 1.55; }
 .tpl-profesional .info-card p:last-of-type { margin-bottom: 0; }
-.tpl-profesional .info-card--dark { background: var(--forest); color: #eaf3ea; }
+.tpl-profesional .info-card--dark { background: #00534C; color: #eaf3ea; }
 .tpl-profesional .info-card--dark h2 { color: #fff; }
 .tpl-profesional .btn-folleto {
   display: inline-flex; align-items: center; margin-top: 20px;
   padding: 12px 28px; border-radius: 999px;
-  background: var(--lime); color: var(--forest); font-weight: 800; font-size: 14px;
+  background: #26D07C; color: var(--forest); font-weight: 800; font-size: 14px;
 }
-.tpl-profesional .info-card--lime { background: var(--lime); color: var(--forest); }
+.tpl-profesional .info-card--lime { background: #26D07C; color: var(--forest); }
 .tpl-profesional .info-card--lime h2 { color: var(--forest); }
 .tpl-profesional .portrait-card { margin: 0; height: 100%; }
 .tpl-profesional .portrait-card img {
@@ -306,7 +311,7 @@ html { scroll-behavior: smooth; }
 /* ==========================================================================
    CERTIFICADOS Y RUTA DE ENFOQUE
    ========================================================================== */
-.tpl-profesional .tracks { background: #5cbe6e; }
+.tpl-profesional .tracks { background: #26D07C; }
 .tpl-profesional .tracks .section-heading { max-width: 900px; margin: 0 auto 28px; text-align: center; }
 /* dos pills independientes y separados (como Figma), sin contenedor con borde */
 .tpl-profesional .tracks__toggle {
@@ -360,10 +365,12 @@ html { scroll-behavior: smooth; }
   grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;
 }
 .tpl-profesional .benefit-grid article {
-  padding: 26px; border-radius: 18px; background: var(--leaf); color: #fff;
+  padding: 26px; border-radius: 18px; background: #78d64b; color: #00534c;
 }
-.tpl-profesional .benefit-grid h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; }
-.tpl-profesional .benefit-grid p { margin: 0; font-size: 14px; line-height: 1.5; overflow-wrap: break-word; }
+/* damero: alterna lima / verde brillante como en el Figma */
+.tpl-profesional .benefit-grid article:nth-child(even) { background: #26d07c; }
+.tpl-profesional .benefit-grid h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #00534c; }
+.tpl-profesional .benefit-grid p { margin: 0; font-size: 14px; line-height: 1.5; color: #00534c; overflow-wrap: break-word; }
 
 /* ==========================================================================
    VOCES DE NUESTROS ESTUDIANTES
@@ -496,7 +503,7 @@ html { scroll-behavior: smooth; }
   }
   .tpl-profesional .hero__copy::before {
     content: ""; position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(12, 58, 52, 0.12) 0%, rgba(12, 58, 52, 0.62) 100%);
+    background: rgba(0, 0, 0, 0.3) linear-gradient(180deg, rgba(12, 58, 52, 0.12) 0%, rgba(12, 58, 52, 0.62) 100%);
   }
   .tpl-profesional .hero__copy > * { position: relative; z-index: 1; }
   .tpl-profesional .hero__copy h1 { font-size: 34px; }
