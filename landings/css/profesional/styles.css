@@ -605,8 +605,9 @@ html { scroll-behavior: smooth; }
    TABLET / MOBILE  (≤ 900px)
    ========================================================================== */
 @media (max-width: 900px) {
-  /* Hero móvil: la foto va detrás del copy; el formulario baja a fondo blanco */
-  .tpl-profesional .hero { background: var(--white); }
+  /* Hero móvil: la foto va detrás del copy y se funde en el verde, de modo que
+     el formulario queda dentro del mismo bloque y no sobre una banda aparte */
+  .tpl-profesional .hero { background: #00534c; }
   .tpl-profesional .hero::before { display: none; }
   .tpl-profesional .hero__inner {
     grid-template-columns: 1fr; gap: 0; padding: 0; min-height: 0;
@@ -621,15 +622,16 @@ html { scroll-behavior: smooth; }
   }
   .tpl-profesional .hero__copy::before {
     content: ""; position: absolute; inset: 0;
-    background: rgba(0, 0, 0, 0.3) linear-gradient(180deg, rgba(12, 58, 52, 0.12) 0%, rgba(12, 58, 52, 0.62) 100%);
+    background: rgba(0, 0, 0, 0.3) linear-gradient(180deg,
+      rgba(0, 83, 76, 0.1) 0%, rgba(0, 83, 76, 0.55) 70%, #00534c 100%);
   }
   .tpl-profesional .hero__copy > * { position: relative; z-index: 1; }
   .tpl-profesional .hero__copy h1 { font-size: 34px; }
   .tpl-profesional .hero__copy > p { font-size: 16px; margin-bottom: 20px; }
   .tpl-profesional .esta-en-ti img { width: 128px; }
-  .tpl-profesional .lead-form { padding: 24px 20px 36px; background: var(--white); }
-  .tpl-profesional .form-label { color: var(--ink); }
-  .tpl-profesional .form-consent span { color: var(--ink); }
+  .tpl-profesional .lead-form { padding: 8px 20px 40px; background: #00534c; }
+  .tpl-profesional .form-label { color: #fff; }
+  .tpl-profesional .form-consent span { color: #fff; }
 
   .tpl-profesional .facts { gap: 20px 28px; }
   .tpl-profesional .facts article { width: calc(50% - 28px); }
