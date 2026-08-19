@@ -471,7 +471,8 @@ html { scroll-behavior: smooth; }
   display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;
 }
 .tpl-profesional .campus-card {
-  width: 320px; max-width: 100%;
+  /* crecen hasta 320px: 2 campus quedan holgados y 4 caben en una fila */
+  flex: 1 1 240px; max-width: 320px;
   display: flex; flex-direction: column;
   border-radius: 20px; overflow: hidden; background: #00534c; color: #fff;
 }
@@ -481,6 +482,7 @@ html { scroll-behavior: smooth; }
   margin: 0 0 10px; color: #78d64b; font-size: 17px; font-weight: 800;
 }
 .tpl-profesional .campus-card p { margin: 0; font-size: 14px; line-height: 1.55; }
+.tpl-profesional .campus-card__tel { margin-top: 8px; font-weight: 700; }
 
 /* ==========================================================================
    ¿POR QUÉ ESTUDIAR EN UNIVERSIDAD TECMILENIO? — iconos
@@ -740,7 +742,7 @@ html { scroll-behavior: smooth; }
 
   /* Ubicaciones de campus */
   .tpl-profesional .campuses .section-heading h2 { font-size: 20px; }
-  .tpl-profesional .campus-card { width: 100%; }
+  .tpl-profesional .campus-card { flex: 1 1 100%; max-width: 100%; }
   .tpl-profesional .campus-card img { height: 180px; }
 
   /* Rutas de enfoque */
