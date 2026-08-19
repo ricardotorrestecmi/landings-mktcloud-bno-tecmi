@@ -385,18 +385,25 @@ html { scroll-behavior: smooth; }
   background: #78d64b; color: #00534c; font: inherit; font-size: 13px; font-weight: 700;
   cursor: pointer; transition: background 0.2s, border-color 0.2s;
 }
+.tpl-profesional .program-tab:nth-child(even) { background: #26d07c; }
 .tpl-profesional .program-tab:hover { background: #26d07c; }
 .tpl-profesional .program-tab.is-active {
   background: #fff; border-color: #26d07c; color: #00534c;
 }
 .tpl-profesional .programs__select { display: none; }
-.tpl-profesional .program-panel { padding: 36px 40px; border-radius: 20px; background: #f7f8fa; }
+.tpl-profesional .program-panel {
+  padding: 0; border-radius: 20px; background: #f7f8fa; overflow: hidden;
+}
 .tpl-profesional .program-panel[hidden] { display: none; }
 .tpl-profesional .program-panel h3 {
-  margin: 0 0 24px; color: #00534c; font-size: 28px; font-weight: 800; text-align: center;
+  margin: 0 0 20px; color: #00534c; font-size: 28px; font-weight: 800;
 }
 .tpl-profesional .program-panel__grid {
-  display: grid; grid-template-columns: 1fr 0.85fr; gap: 40px; align-items: center;
+  display: grid; grid-template-columns: 1fr 0.85fr; gap: 40px; align-items: stretch;
+}
+.tpl-profesional .program-panel__copy {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 40px 0 40px 40px;
 }
 .tpl-profesional .program-panel__copy p {
   margin: 0 0 24px; color: var(--ink); font-size: 16px; line-height: 1.6;
@@ -410,9 +417,11 @@ html { scroll-behavior: smooth; }
 }
 .tpl-profesional .btn-green { background: #26d07c; color: #00534c; }
 .tpl-profesional .btn-ghost { border: 2px solid #26d07c; color: #00534c; }
+/* la foto cubre todo el alto del panel y llega al borde derecho, como en el Figma */
 .tpl-profesional .program-panel__photo { margin: 0; }
 .tpl-profesional .program-panel__photo img {
-  width: 100%; height: 300px; object-fit: cover; border-radius: 16px;
+  width: 100%; height: 100%; min-height: 360px; object-fit: cover;
+  border-radius: 20px 0 0 20px;
 }
 
 /* ==========================================================================
@@ -435,7 +444,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .path-card img { width: 100%; height: 260px; object-fit: cover; }
 .tpl-profesional .path-card h3 {
   position: absolute; left: 0; right: 0; bottom: 0; margin: 0;
-  padding: 14px 18px; background: #26d07c; color: #00534c;
+  padding: 14px 18px; background: #78d64b; color: #00534c;
   font-size: 15px; font-weight: 700; text-align: center;
 }
 .tpl-profesional .paths__arrow {
@@ -460,25 +469,28 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .reasons__grid {
   max-width: var(--wrap); margin: 0 auto;
   /* 8 columnas: cada tarjeta ocupa 2 → 4 por fila y la 2ª fila se puede centrar */
-  display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 40px 28px;
-  justify-items: center;
+  display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 20px;
 }
-.tpl-profesional .reasons__grid article { grid-column: span 2; max-width: 260px; text-align: center; }
+.tpl-profesional .reasons__grid article {
+  grid-column: span 2;
+  display: flex; flex-direction: column; align-items: center;
+  min-height: 274px; padding: 28px 24px; border-radius: 20px;
+  background: #26d07c; color: #fff; text-align: center;
+}
+/* damero del Figma: 1, 3 y 6 en verde oscuro */
+.tpl-profesional .reasons__grid article:nth-child(1),
+.tpl-profesional .reasons__grid article:nth-child(3),
+.tpl-profesional .reasons__grid article:nth-child(6) { background: #00534c; }
 /* la segunda fila (3 tarjetas) queda centrada bajo la primera */
 .tpl-profesional .reasons__grid article:nth-child(5) { grid-column: 2 / span 2; }
-.tpl-profesional .reasons__icon {
-  display: flex; align-items: center; justify-content: center;
-  width: 64px; height: 64px; margin: 0 auto 16px; padding: 13px;
-  border-radius: 6px; background: #00534c;
-}
 .tpl-profesional .reasons__grid img {
-  width: 100%; height: 100%; object-fit: contain;
+  width: 56px; height: 56px; margin: 0 0 16px; object-fit: contain;
   /* el CDN entrega unos iconos en blanco y otros en verde oscuro:
-     el filtro los normaliza a blanco sobre el cuadro verde */
+     el filtro los normaliza a blanco sobre el color de la tarjeta */
   filter: brightness(0) invert(1);
 }
-.tpl-profesional .reasons__grid h3 { margin: 0 0 10px; color: #00534c; font-size: 17px; font-weight: 800; }
-.tpl-profesional .reasons__grid p { margin: 0; font-size: 14px; line-height: 1.55; }
+.tpl-profesional .reasons__grid h3 { margin: 0 0 12px; color: #fff; font-size: 18px; font-weight: 800; }
+.tpl-profesional .reasons__grid p { margin: 0; color: #fff; font-size: 14px; line-height: 1.55; }
 
 /* ==========================================================================
    VOCES DE NUESTROS ESTUDIANTES
@@ -676,11 +688,13 @@ html { scroll-behavior: smooth; }
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%230e4a31' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat; background-position: right 18px center;
   }
-  .tpl-profesional .program-panel { padding: 24px 20px; }
   .tpl-profesional .program-panel h3 { font-size: 22px; }
-  .tpl-profesional .program-panel__grid { grid-template-columns: 1fr; gap: 24px; }
+  .tpl-profesional .program-panel__grid { grid-template-columns: 1fr; gap: 0; }
+  .tpl-profesional .program-panel__copy { padding: 24px 20px; text-align: center; }
   .tpl-profesional .program-panel__photo { order: -1; }
-  .tpl-profesional .program-panel__photo img { height: 220px; }
+  .tpl-profesional .program-panel__photo img {
+    height: 220px; min-height: 0; border-radius: 20px 20px 0 0;
+  }
   .tpl-profesional .program-panel__actions { justify-content: center; }
 
   /* Rutas de enfoque */
@@ -689,9 +703,11 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .paths__track { grid-auto-columns: 100%; }
 
   /* Razones */
-  .tpl-profesional .reasons__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; }
+  .tpl-profesional .reasons__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
   .tpl-profesional .reasons__grid article,
-  .tpl-profesional .reasons__grid article:nth-child(5) { grid-column: auto; justify-self: center; }
+  .tpl-profesional .reasons__grid article:nth-child(5) {
+    grid-column: auto; min-height: 0; padding: 22px 18px;
+  }
 }
 
 @media (min-width: 561px) and (max-width: 900px) {
