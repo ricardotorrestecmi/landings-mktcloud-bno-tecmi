@@ -622,6 +622,25 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .footer-links a { text-decoration: underline; }
 
 /* ==========================================================================
+   DESKTOP: footer en dos filas alineadas a los bordes (Figma)
+   logo | redes   ·   dirección | avisos legales
+   ========================================================================== */
+@media (min-width: 901px) {
+  .tpl-profesional .site-footer {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand social"
+      "addr  links";
+    gap: 28px 24px;
+    justify-items: start; text-align: left;
+  }
+  .tpl-profesional .brand--footer { grid-area: brand; }
+  .tpl-profesional .footer-social { grid-area: social; justify-self: end; align-self: center; }
+  .tpl-profesional .site-footer small { grid-area: addr; align-self: center; }
+  .tpl-profesional .footer-links { grid-area: links; justify-self: end; align-self: center; }
+}
+
+/* ==========================================================================
    TABLET / MOBILE  (≤ 900px)
    ========================================================================== */
 @media (max-width: 900px) {
