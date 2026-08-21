@@ -570,7 +570,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .oh-hero .hero__copy > p { max-width: 44ch; margin-bottom: 26px; font-size: 16px; }
 .tpl-profesional .oh-hero::before { background: rgba(0, 0, 0, 0.12); }   /* la foto ya es oscura */
 /* encuadre: el estudiante corrido a la derecha y sin el control ni los pufs */
-.tpl-profesional .oh-hero { background-size: auto 138%; background-position: 20% top; }
+.tpl-profesional .oh-hero { background-size: auto 142%; background-position: 0 top; }
 
 /* formas orgánicas del Figma, exportadas del nodo Main Hero Banner.
    Van en porcentaje para que sigan a la foto en cualquier ancho. */
@@ -580,7 +580,7 @@ html { scroll-behavior: smooth; }
 }
 /* medidas tomadas del Figma sobre la foto de 1440x727:
    la dona nace pegada al borde superior y las dos de la derecha llegan al borde */
-.tpl-profesional .oh-shape--ring-top   { left: 43.8%; top: 0;       width: 19.4%; }
+.tpl-profesional .oh-shape--ring-top   { left: 38%;   top: 0;       width: 17%; }
 .tpl-profesional .oh-shape--ring-right { right: 0;    top: 54.2%;   width: 11.5%; }
 .tpl-profesional .oh-shape--wave       { right: 0;    bottom: 0;    width: 55.3%; }
 
