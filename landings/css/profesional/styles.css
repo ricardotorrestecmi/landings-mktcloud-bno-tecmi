@@ -569,6 +569,8 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .oh-hero .oh-lockup { width: 100%; max-width: 430px; height: auto; margin-bottom: 20px; }
 .tpl-profesional .oh-hero .hero__copy > p { max-width: 44ch; margin-bottom: 26px; font-size: 16px; }
 .tpl-profesional .oh-hero::before { background: rgba(0, 0, 0, 0.12); }   /* la foto ya es oscura */
+/* encuadre: el estudiante corrido a la derecha y sin el control ni los pufs */
+.tpl-profesional .oh-hero { background-size: auto 138%; background-position: 20% top; }
 
 /* formas orgánicas del Figma, exportadas del nodo Main Hero Banner.
    Van en porcentaje para que sigan a la foto en cualquier ancho. */
