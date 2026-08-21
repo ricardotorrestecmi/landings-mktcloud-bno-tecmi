@@ -570,6 +570,17 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .oh-hero .hero__copy > p { max-width: 44ch; margin-bottom: 26px; font-size: 16px; }
 .tpl-profesional .oh-hero::before { background: rgba(0, 0, 0, 0.12); }   /* la foto ya es oscura */
 
+/* formas orgánicas del Figma, exportadas del nodo Main Hero Banner.
+   Van en porcentaje para que sigan a la foto en cualquier ancho. */
+.tpl-profesional .oh-hero { overflow: hidden; }
+.tpl-profesional .oh-shape {
+  position: absolute; z-index: 0; height: auto; pointer-events: none; user-select: none;
+}
+.tpl-profesional .oh-shape--ring-top   { left: 43.4%; top: -9%;   width: 20.1%; }
+.tpl-profesional .oh-shape--ring-right { left: 88%;   top: 54.6%; width: 11.5%; }
+/* anclada al borde inferior: asoma como en el Figma y se corta abajo */
+.tpl-profesional .oh-shape--wave       { left: 43.7%; bottom: -14%; width: 56.3%; }
+
 /* 2. iconos sobre verde oscuro */
 .tpl-profesional .oh-icons { background: #00534c; }
 .tpl-profesional .oh-icons .section-heading { max-width: 1030px; margin: 0 auto 40px; text-align: center; }
@@ -874,6 +885,8 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .oh-form__photo img { min-height: 240px; }
   .tpl-profesional .oh-form h2 { font-size: 24px; text-align: center; }
   .tpl-profesional .oh-hero .hero__copy { padding-top: 120px; }
+  /* en móvil la foto vive en .hero__copy: las formas no encajan */
+  .tpl-profesional .oh-shape { display: none; }
 
   /* MAPS */
   .tpl-profesional .hero--simple .hero__copy h1 { font-size: 30px; }
