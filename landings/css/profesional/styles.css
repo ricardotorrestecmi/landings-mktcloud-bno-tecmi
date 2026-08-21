@@ -574,6 +574,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .oh-icons { background: #00534c; }
 .tpl-profesional .oh-icons .section-heading { max-width: 1030px; margin: 0 auto 40px; text-align: center; }
 .tpl-profesional .oh-icons .section-heading h2 { color: #f8f9fa; font-size: 30px; line-height: 1.15; }
+.tpl-profesional .oh-icons .section-heading p { color: #f8f9fa; font-size: 16px; line-height: 22px; }
 .tpl-profesional .oh-icons__grid {
   max-width: var(--wrap); margin: 0 auto;
   display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px;
