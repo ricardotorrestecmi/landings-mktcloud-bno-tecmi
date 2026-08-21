@@ -521,6 +521,44 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .reasons__grid p { margin: 0; color: #fff; font-size: 14px; line-height: 1.55; }
 
 /* ==========================================================================
+   MAPS (LP en inglés) — hero sin formulario, 3 tarjetas y ruta de aprendizaje
+   ========================================================================== */
+/* hero a una sola columna cuando no hay formulario */
+.tpl-profesional .hero--simple .hero__inner {
+  grid-template-columns: 1fr; min-height: 560px;
+}
+.tpl-profesional .hero--simple .hero__copy { max-width: 620px; }
+.tpl-profesional .hero--simple .hero__copy h1 { font-size: 46px; }
+.tpl-profesional .hero--simple .hero__copy > p { max-width: 46ch; margin-bottom: 32px; }
+
+/* las 3 tarjetas del modelo: lima · verde oscuro · verde brillante */
+.tpl-profesional .benefit-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tpl-profesional .benefit-grid--three article:nth-child(2) { background: #00534c; }
+.tpl-profesional .benefit-grid--three article:nth-child(2) h3,
+.tpl-profesional .benefit-grid--three article:nth-child(2) p { color: #fff; }
+.tpl-profesional .benefit-grid--three article:nth-child(3) { background: #26d07c; }
+
+/* ruta de aprendizaje: icono en cuadro verde + título y texto */
+.tpl-profesional .steps .section-heading { max-width: 820px; margin: 0 auto 40px; text-align: center; }
+.tpl-profesional .steps .section-heading p { color: var(--ink); }
+.tpl-profesional .steps__grid {
+  max-width: var(--wrap); margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 28px;
+  justify-items: center;
+}
+.tpl-profesional .steps__grid article { max-width: 300px; text-align: center; }
+.tpl-profesional .step__icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 96px; height: 96px; margin: 0 auto 18px; background: #00534c;
+}
+.tpl-profesional .steps__grid img {
+  width: 56px; height: 56px; object-fit: contain;
+  filter: brightness(0) invert(1);   /* iconos siempre blancos sobre el cuadro */
+}
+.tpl-profesional .steps__grid h3 { margin: 0 0 10px; color: #00534c; font-size: 18px; font-weight: 800; }
+.tpl-profesional .steps__grid p { margin: 0; font-size: 14px; line-height: 1.55; }
+
+/* ==========================================================================
    VOCES DE NUESTROS ESTUDIANTES
    ========================================================================== */
 .tpl-profesional .voices { padding: 52px 24px; background: var(--teal); color: #fff; }
@@ -745,6 +783,16 @@ html { scroll-behavior: smooth; }
     height: 220px; min-height: 0; border-radius: 20px 20px 0 0;
   }
   .tpl-profesional .program-panel__actions { justify-content: center; }
+
+  /* MAPS */
+  .tpl-profesional .hero--simple .hero__copy h1 { font-size: 30px; }
+  /* sin formulario debajo, el degradado no tiene que fundirse en verde sólido */
+  .tpl-profesional .hero--simple .hero__copy::before {
+    background: rgba(0, 0, 0, 0.3) linear-gradient(180deg,
+      rgba(0, 83, 76, 0.1) 0%, rgba(0, 83, 76, 0.62) 100%);
+  }
+  .tpl-profesional .benefit-grid--three { grid-template-columns: 1fr; }
+  .tpl-profesional .steps__grid { grid-template-columns: 1fr; gap: 32px; }
 
   /* Ubicaciones de campus */
   .tpl-profesional .campuses .section-heading h2 { font-size: 20px; }
