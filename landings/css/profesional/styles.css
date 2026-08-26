@@ -629,7 +629,6 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .oh-card:nth-child(3) { background: #78d64b; }
 
 /* 4. banda del video: el copy va a la izquierda */
-.tpl-profesional .oh-video { background: #00534c; }
 .tpl-profesional .oh-video .voices__copy h2 { font-size: 26px; }
 
 /* 5. formulario sobre lima, con campos tipo píldora */
@@ -654,7 +653,7 @@ html { scroll-behavior: smooth; }
 /* ==========================================================================
    VOCES DE NUESTROS ESTUDIANTES
    ========================================================================== */
-.tpl-profesional .voices { padding: 52px 24px; background: var(--teal); color: #fff; }
+.tpl-profesional .voices { padding: 52px 24px; background: #00534c; color: #fff; }
 .tpl-profesional .voices__inner {
   max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr;
   gap: 44px; align-items: center;
