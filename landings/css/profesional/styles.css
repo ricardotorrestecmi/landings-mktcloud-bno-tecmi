@@ -276,7 +276,9 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .plan-block { display: grid; grid-template-columns: 1fr 118px; gap: 16px; align-items: stretch; }
 .tpl-profesional .plan-block--verano { grid-template-columns: 1fr 118px 80px; }
 .tpl-profesional .plan-block__weeks { display: grid; grid-template-rows: auto 1fr 1fr; gap: 16px; }
-.tpl-profesional .plan-block__sedi { display: grid; grid-template-rows: auto 1fr; gap: 16px; }
+/* el SEDi va en dos pastillas alineadas con las dos materias; el bloque de
+   Verano (Skilling) trae una sola y ocupa el alto completo */
+.tpl-profesional .plan-block__sedi { display: grid; grid-template-rows: auto; grid-auto-rows: 1fr; gap: 16px; }
 
 .tpl-profesional .plan-head,
 .tpl-profesional .plan-course,
@@ -832,7 +834,9 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .plan-block,
   .tpl-profesional .plan-block--verano { grid-template-columns: 1fr; }
   .tpl-profesional .plan-block__weeks,
-  .tpl-profesional .plan-block__sedi { grid-template-rows: none; }
+  .tpl-profesional .plan-block__sedi { grid-template-rows: none; grid-auto-rows: auto; }
+  /* en móvil, con una sola columna, la segunda pastilla del SEDi sobra */
+  .tpl-profesional .plan-block__sedi .plan-sedi + .plan-sedi { display: none; }
   .tpl-profesional .plan-course,
   .tpl-profesional .plan-head,
   .tpl-profesional .plan-sedi { font-size: 15px; }
