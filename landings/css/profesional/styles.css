@@ -72,7 +72,7 @@ html { scroll-behavior: smooth; }
   justify-content: center;
   padding: 10px 24px;
   border-radius: 999px;
-  background: var(--lime);
+  background: #26d07c;
   color: var(--forest);
   font-weight: 800;
   font-size: 14px;
