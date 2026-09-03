@@ -812,8 +812,13 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .form-label { color: #fff; }
   .tpl-profesional .form-consent span { color: #fff; }
 
-  .tpl-profesional .facts { gap: 20px 28px; }
-  .tpl-profesional .facts article { width: calc(50% - 28px); }
+  /* móvil: el texto va debajo del icono, centrado */
+  .tpl-profesional .facts { gap: 28px 20px; align-items: flex-start; }
+  .tpl-profesional .facts article {
+    width: calc(50% - 10px);
+    flex-direction: column; align-items: center; gap: 10px; text-align: center;
+  }
+  .tpl-profesional .facts img { width: 68px; height: 68px; }
 
   .tpl-profesional .section { padding: 44px 20px; }
   .tpl-profesional .intro__grid {
