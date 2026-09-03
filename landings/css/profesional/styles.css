@@ -40,7 +40,7 @@ html { scroll-behavior: smooth; }
   margin: 0 0 12px;
   color: var(--forest);
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .tpl-profesional .section-heading p {
   margin: 0;
@@ -113,7 +113,7 @@ html { scroll-behavior: smooth; }
   margin: 0 0 20px;
   font-size: 54px;
   line-height: 1.05;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.3px;
 }
 .tpl-profesional .hero__copy > p {
@@ -211,7 +211,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .info-card--lime { grid-area: lime; }
 .tpl-profesional .portrait-card { grid-area: photo; }
 .tpl-profesional .info-card { border-radius: 22px; padding: 32px; }
-.tpl-profesional .info-card h2 { margin: 0 0 14px; font-size: 24px; font-weight: 800; }
+.tpl-profesional .info-card h2 { margin: 0 0 14px; font-size: 24px; font-weight: 700; }
 .tpl-profesional .info-card p { margin: 0 0 12px; font-size: 15px; line-height: 1.55; }
 .tpl-profesional .info-card p:last-of-type { margin-bottom: 0; }
 .tpl-profesional .info-card--dark { background: #00534C; color: #eaf3ea; }
@@ -369,7 +369,7 @@ html { scroll-behavior: smooth; }
 }
 /* damero: alterna lima / verde brillante como en el Figma */
 .tpl-profesional .benefit-grid article:nth-child(even) { background: #26d07c; }
-.tpl-profesional .benefit-grid h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; color: #00534c; }
+.tpl-profesional .benefit-grid h3 { margin: 0 0 10px; font-size: 18px; font-weight: 700; color: #00534c; }
 .tpl-profesional .benefit-grid p { margin: 0; font-size: 14px; line-height: 1.5; color: #00534c; overflow-wrap: break-word; }
 
 /* ==========================================================================
@@ -396,7 +396,7 @@ html { scroll-behavior: smooth; }
 }
 .tpl-profesional .program-panel[hidden] { display: none; }
 .tpl-profesional .program-panel h3 {
-  margin: 0 0 20px; color: #00534c; font-size: 28px; font-weight: 800;
+  margin: 0 0 20px; color: #00534c; font-size: 28px; font-weight: 700;
 }
 .tpl-profesional .program-panel__grid {
   display: grid; grid-template-columns: 1fr 0.85fr; gap: 40px; align-items: stretch;
@@ -479,7 +479,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .campus-card img { width: 100%; height: 200px; object-fit: cover; }
 .tpl-profesional .campus-card__copy { padding: 22px 24px 26px; text-align: center; }
 .tpl-profesional .campus-card h3 {
-  margin: 0 0 10px; color: #78d64b; font-size: 17px; font-weight: 800;
+  margin: 0 0 10px; color: #78d64b; font-size: 17px; font-weight: 700;
 }
 .tpl-profesional .campus-card p { margin: 0; font-size: 14px; line-height: 1.55; }
 .tpl-profesional .campus-card__tel { margin-top: 8px; font-weight: 700; }
@@ -517,7 +517,7 @@ html { scroll-behavior: smooth; }
      el filtro los normaliza a blanco sobre el color de la tarjeta */
   filter: brightness(0) invert(1);
 }
-.tpl-profesional .reasons__grid h3 { margin: 0 0 12px; color: #fff; font-size: 18px; font-weight: 800; }
+.tpl-profesional .reasons__grid h3 { margin: 0 0 12px; color: #fff; font-size: 18px; font-weight: 700; }
 .tpl-profesional .reasons__grid p { margin: 0; color: #fff; font-size: 14px; line-height: 1.55; }
 
 /* ==========================================================================
@@ -555,7 +555,7 @@ html { scroll-behavior: smooth; }
   width: 56px; height: 56px; object-fit: contain;
   filter: brightness(0) invert(1);   /* iconos siempre blancos sobre el cuadro */
 }
-.tpl-profesional .steps__grid h3 { margin: 0 0 10px; color: #00534c; font-size: 18px; font-weight: 800; }
+.tpl-profesional .steps__grid h3 { margin: 0 0 10px; color: #00534c; font-size: 18px; font-weight: 700; }
 .tpl-profesional .steps__grid p { margin: 0; font-size: 14px; line-height: 1.55; }
 
 /* ==========================================================================
@@ -641,7 +641,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .oh-form__photo img {
   width: 100%; height: 100%; min-height: 420px; object-fit: cover; border-radius: 20px;
 }
-.tpl-profesional .oh-form h2 { margin: 0 0 18px; color: #00534c; font-size: 30px; font-weight: 800; }
+.tpl-profesional .oh-form h2 { margin: 0 0 18px; color: #00534c; font-size: 30px; font-weight: 700; }
 .tpl-profesional .lead-form--pill input:not([type="checkbox"]),
 .tpl-profesional .lead-form--pill select { border-radius: 999px; padding: 0 24px; }
 .tpl-profesional .lead-form--pill select { padding-right: 44px; }
@@ -685,7 +685,7 @@ html { scroll-behavior: smooth; }
   content: ""; position: absolute; top: 50%; left: 54%; transform: translate(-50%, -50%);
   border-style: solid; border-width: 12px 0 12px 20px; border-color: transparent transparent transparent var(--forest);
 }
-.tpl-profesional .voices__copy h2 { margin: 0 0 12px; font-size: 30px; font-weight: 800; }
+.tpl-profesional .voices__copy h2 { margin: 0 0 12px; font-size: 30px; font-weight: 700; }
 .tpl-profesional .voices__copy p { margin: 0 0 22px; font-size: 16px; line-height: 1.55; }
 .tpl-profesional .btn-lime {
   display: inline-flex; align-items: center; justify-content: center;
@@ -703,7 +703,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .profile__photo { margin: 0; }
 .tpl-profesional .profile__photo img { width: 100%; border-radius: 22px; }
 .tpl-profesional .profile__text h2 {
-  margin: 24px 0 10px; color: var(--forest); font-size: 24px; font-weight: 800;
+  margin: 24px 0 10px; color: var(--forest); font-size: 24px; font-weight: 700;
 }
 .tpl-profesional .profile__text h2:first-child { margin-top: 0; }
 .tpl-profesional .profile__text p { margin: 0; font-size: 15px; line-height: 1.6; }
@@ -734,7 +734,7 @@ html { scroll-behavior: smooth; }
    CTA FINAL
    ========================================================================== */
 .tpl-profesional .final-cta { padding: 56px 24px; background: #26d07c; text-align: center; }
-.tpl-profesional .final-cta h2 { margin: 0 0 12px; color: #00534c; font-size: 30px; font-weight: 800; }
+.tpl-profesional .final-cta h2 { margin: 0 0 12px; color: #00534c; font-size: 30px; font-weight: 700; }
 .tpl-profesional .final-cta p {
   max-width: 640px; margin: 0 auto 24px; color: #00534c; font-size: 15px; line-height: 1.55;
 }
