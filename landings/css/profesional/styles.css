@@ -835,9 +835,10 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .hero__copy h1 { font-size: 34px; }
   .tpl-profesional .hero__copy > p { font-size: 16px; margin-bottom: 20px; }
   .tpl-profesional .esta-en-ti img { width: 128px; }
-  .tpl-profesional .lead-form { padding: 8px 20px 40px; background: #00534c; }
-  .tpl-profesional .form-label { color: #fff; }
-  .tpl-profesional .form-consent span { color: #fff; }
+  /* solo el formulario del hero: el de Open House vive en su propio módulo */
+  .tpl-profesional .hero .lead-form { padding: 8px 20px 40px; background: #00534c; }
+  .tpl-profesional .hero .form-label { color: #fff; }
+  .tpl-profesional .hero .form-consent span { color: #fff; }
 
   /* móvil: el texto va debajo del icono, centrado */
   .tpl-profesional .facts { gap: 28px 20px; align-items: flex-start; }
@@ -913,6 +914,11 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .program-panel__actions { justify-content: center; }
 
   /* Open House */
+  /* la foto del hero vive en .hero__copy: sin quitar el tope de 520px, en
+     tablet la imagen se cortaba y el resto del hero quedaba verde plano */
+  .tpl-profesional .oh-hero .hero__copy { max-width: none; }
+  /* la foto del formulario se estiraba a ~970px de alto en tablet */
+  .tpl-profesional .oh-form__photo img { height: 320px; min-height: 0; }
   .tpl-profesional .oh-icons .section-heading h2 { font-size: 22px; }
   .tpl-profesional .oh-icons__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }
   .tpl-profesional .oh-icon { width: 96px; height: 96px; }
@@ -920,7 +926,6 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .oh-gallery__grid { grid-template-columns: 1fr; }
   .tpl-profesional .oh-form { padding: 40px 20px; }
   .tpl-profesional .oh-form__inner { grid-template-columns: 1fr; gap: 24px; }
-  .tpl-profesional .oh-form__photo img { min-height: 240px; }
   .tpl-profesional .oh-form h2 { font-size: 24px; text-align: center; }
   .tpl-profesional .oh-hero .hero__copy { padding-top: 120px; }
   /* en móvil la foto vive en .hero__copy: las formas no encajan */
