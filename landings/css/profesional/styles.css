@@ -74,7 +74,7 @@ html { scroll-behavior: smooth; }
   border-radius: 999px;
   background: #26d07c;
   color: var(--forest);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 14px;
   white-space: nowrap;
 }
@@ -171,7 +171,7 @@ html { scroll-behavior: smooth; }
   background: var(--lime);
   color: var(--forest);
   font: inherit;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 16px;
   cursor: pointer;
 }
@@ -193,7 +193,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .facts article { display: flex; align-items: center; gap: 16px; }
 .tpl-profesional .facts img { width: 60px; height: 60px; object-fit: contain; }
 .tpl-profesional .facts strong {
-  display: block; color: var(--ink); font-size: 18px; font-weight: 800;
+  display: block; color: var(--ink); font-size: 18px; font-weight: 700;
 }
 .tpl-profesional .facts span { color: var(--ink); font-size: 15px; font-weight: 600; }
 
@@ -221,7 +221,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .btn-folleto {
   display: inline-flex; align-items: center; margin-top: 20px;
   padding: 12px 28px; border-radius: 999px;
-  background: #26D07C; color: var(--forest); font-weight: 800; font-size: 14px;
+  background: #26D07C; color: var(--forest); font-weight: 700; font-size: 14px;
 }
 .tpl-profesional .info-card--lime { background: #26D07C; color: var(--forest); }
 .tpl-profesional .info-card--lime h2 { color: var(--forest); }
@@ -417,7 +417,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .btn-ghost {
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 44px; padding: 0 26px; border-radius: 999px;
-  font-weight: 800; font-size: 14px;
+  font-weight: 700; font-size: 14px;
 }
 .tpl-profesional .btn-green { background: #26d07c; color: #00534c; }
 .tpl-profesional .btn-ghost { border: 2px solid #26d07c; color: #00534c; }
@@ -608,7 +608,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .oh-icons__grid article:nth-child(even) .oh-icon { background: #78d64b; }
 .tpl-profesional .oh-icons__grid img { width: 80px; height: 80px; object-fit: contain; }
 .tpl-profesional .oh-icons__grid p { margin: 0; color: #f8f9fa; font-size: 16px; line-height: 22px; }
-.tpl-profesional .oh-icons__grid strong { font-weight: 800; }
+.tpl-profesional .oh-icons__grid strong { font-weight: 700; }
 
 /* 3. galería de 4 fotos con banda de texto */
 .tpl-profesional .oh-gallery { background: var(--white); }
@@ -694,7 +694,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .btn-lime {
   display: inline-flex; align-items: center; justify-content: center;
   padding: 13px 30px; border-radius: 999px; background: #26d07c; color: var(--forest);
-  font-weight: 800; font-size: 15px;
+  font-weight: 700; font-size: 15px;
 }
 
 /* ==========================================================================
@@ -745,7 +745,7 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .final-cta a {
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 52px; padding: 0 34px; border-radius: 999px;
-  background: #00534c; color: #fff; font-weight: 800; font-size: 16px;
+  background: #00534c; color: #fff; font-weight: 700; font-size: 16px;
 }
 
 /* ==========================================================================
