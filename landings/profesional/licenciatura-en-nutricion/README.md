@@ -34,6 +34,19 @@ salud** junto con Psicología: misma estructura y mismas particularidades.
 Nota: se escribió "Interacción fármaco-nutrimento" (la fuente la escribe junta,
 "fármaconutrimento").
 
+## Contenido: solo lo que trae la página oficial
+Esta LP **no lleva** perfil de ingreso/egreso, preguntas frecuentes ni un
+módulo de "Certificados y Ruta de enfoque" con descripciones: la página
+oficial no los tiene y no se rellenan huecos con texto redactado.
+
+Lo que se retiró (agosto 2026, a petición de Marketing):
+- El módulo de **Preguntas frecuentes** completo.
+- El toggle "Certificados / Rutas de enfoque" y la descripción de cada
+  certificado. Ahora es la lista de 9 nombres de la oficial, bajo el título
+  "Potencializa tu carrera con Certificados".
+- El párrafo del módulo de video (la oficial solo lleva el título y el CTA).
+- El título de la tarjeta lima (el texto del CESIVS sí es oficial).
+
 ## Pendientes
 - URL del **folleto** ("Descarga el folleto") y del **plan de estudios**
   ("Descarga Plan") — hoy `href="#"`.

@@ -361,6 +361,20 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .accordion__body li { margin: 4px 0; }
 
 /* ==========================================================================
+   CERTIFICADOS EN LISTA (carreras de salud: solo los nombres, como la oficial)
+   ========================================================================== */
+.tpl-profesional .certs { background: #d9f2d2; }
+.tpl-profesional .certs .section-heading { max-width: 900px; margin: 0 auto 28px; text-align: center; }
+.tpl-profesional .certs__list {
+  max-width: 900px; margin: 0 auto; padding: 0; list-style: none;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px;
+}
+.tpl-profesional .certs__list li {
+  padding: 16px 20px; border-radius: 16px; background: #fff;
+  color: var(--p-dark); font-size: 16px; font-weight: 700; text-align: center;
+}
+
+/* ==========================================================================
    BENEFICIOS
    ========================================================================== */
 .tpl-profesional .benefits .section-heading { text-align: center; }
@@ -884,6 +898,7 @@ html { scroll-behavior: smooth; }
 
   .tpl-profesional .benefit-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .tpl-profesional .benefit-grid > article { grid-column: span 4; }
+  .tpl-profesional .certs__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .tpl-profesional .voices__inner { grid-template-columns: 1fr; gap: 24px; }
   .tpl-profesional .voices__copy h2 { font-size: 24px; }

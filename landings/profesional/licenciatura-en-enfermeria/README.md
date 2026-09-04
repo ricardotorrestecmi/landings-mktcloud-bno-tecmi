@@ -41,6 +41,23 @@ para "Certificados y ruta de enfoque", así que el módulo se mantuvo:
 Correcciones ortográficas tomadas de la fuente: "Estadísitca" → "Estadística",
 "Pisquiatría" → "Psiquiatría", "enfermeria" → "enfermería" (acentos).
 
+## Contenido: solo lo que trae la página oficial
+Esta LP **no lleva** perfil de ingreso/egreso, preguntas frecuentes ni un
+módulo de "Certificados y Ruta de enfoque" con descripciones: la página
+oficial no los tiene y no se rellenan huecos con texto redactado.
+
+Lo que se retiró (agosto 2026, a petición de Marketing):
+- El módulo de **Preguntas frecuentes** completo.
+- El módulo de **Certificados y Ruta de enfoque** entero: la oficial no lo
+  tiene. Sus certificados (RCP avanzado, cuidados paliativos…) estaban
+  derivados de un párrafo, no eran una lista oficial.
+- El botón **"Descarga el folleto"**: la oficial de Enfermería no lo ofrece.
+- El título "Respaldo de TecSalud" de la tarjeta lima (el texto sí es oficial).
+
+**Pendiente de Marketing:** la oficial muestra el texto de TecSalud dentro de
+un módulo de video que aquí no existe (se confirmó que Enfermería no lleva
+video). El texto está en la tarjeta lima del módulo 3.
+
 ## Pendientes
 - URL del **folleto** ("Descarga el folleto") y del **plan de estudios**
   ("Descarga Plan") — hoy `href="#"`.
