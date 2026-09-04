@@ -917,8 +917,8 @@ html { scroll-behavior: smooth; }
   /* la foto del hero vive en .hero__copy: sin quitar el tope de 520px, en
      tablet la imagen se cortaba y el resto del hero quedaba verde plano */
   .tpl-profesional .oh-hero .hero__copy { max-width: none; }
-  /* la foto del formulario se estiraba a ~970px de alto en tablet */
-  .tpl-profesional .oh-form__photo img { height: 320px; min-height: 0; }
+  /* en móvil y tablet solo se muestra el formulario, sin la foto */
+  .tpl-profesional .oh-form__photo { display: none; }
   .tpl-profesional .oh-icons .section-heading h2 { font-size: 22px; }
   .tpl-profesional .oh-icons__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }
   .tpl-profesional .oh-icon { width: 96px; height: 96px; }
@@ -966,4 +966,10 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .paths__track { grid-auto-columns: calc((100% - 24px) / 2); }
 
   .tpl-profesional .benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  /* Open House: los 5 iconos caen 3 + 2, con la segunda fila centrada
+     (6 columnas y cada tarjeta ocupa 2). En móvil siguen en 2 columnas. */
+  .tpl-profesional .oh-icons__grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .tpl-profesional .oh-icons__grid article { grid-column: span 2; }
+  .tpl-profesional .oh-icons__grid article:nth-child(4) { grid-column: 2 / span 2; }
 }
