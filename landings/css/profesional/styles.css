@@ -958,6 +958,8 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .reasons__grid article:nth-child(5) {
     grid-column: auto; min-height: 0; padding: 22px 18px;
   }
+  /* son 7: la última ocupa las dos columnas y no queda huérfana */
+  .tpl-profesional .reasons__grid article:last-child { grid-column: 1 / -1; }
 }
 
 @media (min-width: 561px) and (max-width: 900px) {
