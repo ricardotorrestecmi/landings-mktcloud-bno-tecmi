@@ -881,7 +881,8 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .tracks__grid { grid-template-columns: 1fr; }
   .tpl-profesional .tracks__photo { display: none; } /* móvil: sin foto (como el Figma) */
 
-  .tpl-profesional .benefit-grid { grid-template-columns: 1fr; }
+  .tpl-profesional .benefit-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tpl-profesional .benefit-grid > article { grid-column: span 4; }
 
   .tpl-profesional .voices__inner { grid-template-columns: 1fr; gap: 24px; }
   .tpl-profesional .voices__copy h2 { font-size: 24px; }
@@ -920,10 +921,12 @@ html { scroll-behavior: smooth; }
   /* en móvil y tablet solo se muestra el formulario, sin la foto */
   .tpl-profesional .oh-form__photo { display: none; }
   .tpl-profesional .oh-icons .section-heading h2 { font-size: 22px; }
-  .tpl-profesional .oh-icons__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }
+  .tpl-profesional .oh-icons__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 16px; }
+  .tpl-profesional .oh-icons__grid > article { grid-column: span 2; }
   .tpl-profesional .oh-icon { width: 96px; height: 96px; }
   .tpl-profesional .oh-icons__grid img { width: 56px; height: 56px; }
-  .tpl-profesional .oh-gallery__grid { grid-template-columns: 1fr; }
+  .tpl-profesional .oh-gallery__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tpl-profesional .oh-gallery__grid > .oh-card { grid-column: span 4; }
   .tpl-profesional .oh-form { padding: 40px 20px; }
   .tpl-profesional .oh-form__inner { grid-template-columns: 1fr; gap: 24px; }
   .tpl-profesional .oh-form h2 { font-size: 24px; text-align: center; }
@@ -938,8 +941,9 @@ html { scroll-behavior: smooth; }
     background: rgba(0, 0, 0, 0.3) linear-gradient(180deg,
       rgba(0, 83, 76, 0.1) 0%, rgba(0, 83, 76, 0.62) 100%);
   }
-  .tpl-profesional .benefit-grid--three { grid-template-columns: 1fr; }
-  .tpl-profesional .steps__grid { grid-template-columns: 1fr; gap: 32px; }
+  .tpl-profesional .benefit-grid--three { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tpl-profesional .steps__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+  .tpl-profesional .steps__grid > article { grid-column: span 4; }
 
   /* Ubicaciones de campus */
   .tpl-profesional .campuses .section-heading h2 { font-size: 20px; }
@@ -953,25 +957,35 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .paths__track { grid-auto-columns: 100%; }
 
   /* Razones */
-  .tpl-profesional .reasons__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .tpl-profesional .reasons__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
   .tpl-profesional .reasons__grid article,
   .tpl-profesional .reasons__grid article:nth-child(5) {
-    grid-column: auto; min-height: 0; padding: 22px 18px;
+    grid-column: span 2; min-height: 0; padding: 22px 18px;
   }
-  /* son 7: la última ocupa las dos columnas y no queda huérfana */
-  .tpl-profesional .reasons__grid article:last-child { grid-column: 1 / -1; }
+
+  /* REGLA GENERAL: cuando la última tarjeta se queda sola en su fila, se
+     centra en lugar de quedar pegada a la izquierda. Los grids van en 4
+     columnas y cada tarjeta ocupa 2, así el huérfano cae en las centrales. */
+  .tpl-profesional .reasons__grid > article:last-child:nth-child(odd),
+  .tpl-profesional .benefit-grid > article:last-child:nth-child(odd),
+  .tpl-profesional .oh-icons__grid > article:last-child:nth-child(odd),
+  .tpl-profesional .steps__grid > article:last-child:nth-child(odd),
+  .tpl-profesional .oh-gallery__grid > .oh-card:last-child:nth-child(odd) {
+    grid-column: 2 / span 2;
+  }
 }
 
 @media (min-width: 561px) and (max-width: 900px) {
   .tpl-profesional .paths__track { grid-auto-columns: calc((100% - 24px) / 2); }
 
-  .tpl-profesional .benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tpl-profesional .benefit-grid > article { grid-column: span 2; }
 
   /* Open House: los 5 iconos caen 3 + 2, con la segunda fila centrada
      (6 columnas y cada tarjeta ocupa 2). En móvil siguen en 2 columnas. */
   .tpl-profesional .oh-icons__grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-  .tpl-profesional .oh-icons__grid article { grid-column: span 2; }
-  .tpl-profesional .oh-icons__grid article:nth-child(4) { grid-column: 2 / span 2; }
+  .tpl-profesional .oh-icons__grid > article,
+  .tpl-profesional .oh-icons__grid > article:last-child:nth-child(odd) { grid-column: span 2; }
+  .tpl-profesional .oh-icons__grid > article:nth-child(4) { grid-column: 2 / span 2; }
 }
 
 /* ==========================================================================
@@ -980,9 +994,7 @@ html { scroll-behavior: smooth; }
 @media (max-width: 560px) {
   /* "¿Por qué estudiar…?": solo icono y título, en dos columnas y con la
      última tarjeta centrada */
-  .tpl-profesional .reasons__grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px;
-  }
+  .tpl-profesional .reasons__grid { gap: 14px; }
   .tpl-profesional .reasons__grid article,
   .tpl-profesional .reasons__grid article:nth-child(5) {
     grid-column: span 2; min-height: 0; padding: 22px 14px; justify-content: center;
