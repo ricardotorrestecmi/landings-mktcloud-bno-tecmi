@@ -111,7 +111,9 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .lead-form { align-self: center; }
 .tpl-profesional .hero__copy h1 {
   margin: 0 0 20px;
-  font-size: 54px;
+  /* en tablet la columna del copy baja a ~390px: con 54px fijos el título se
+     partía en 6 líneas, así que escala con el viewport hasta el tope de 54 */
+  font-size: clamp(34px, 3.9vw, 54px);
   line-height: 1.05;
   font-weight: 700;
   letter-spacing: 0.3px;
@@ -778,6 +780,31 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .footer-social { grid-area: social; justify-self: end; align-self: center; }
   .tpl-profesional .site-footer small { grid-area: addr; align-self: center; }
   .tpl-profesional .footer-links { grid-area: links; justify-self: end; align-self: center; }
+}
+
+/* ==========================================================================
+   TABLET HORIZONTAL (901–1200px): el layout de escritorio necesita holgura
+   ========================================================================== */
+@media (min-width: 901px) and (max-width: 1200px) {
+  /* el formulario cede ancho para que el título respire */
+  .tpl-profesional .hero__inner {
+    grid-template-columns: 1fr minmax(320px, 390px);
+    gap: 32px; padding: 56px 24px; min-height: 620px;
+  }
+  .tpl-profesional .hero__copy > p { font-size: 16px; }
+
+  /* 4 campus caen 3+1: mejor 2 y 2 */
+  .tpl-profesional .campus-card { flex: 1 1 calc(50% - 12px); max-width: 420px; }
+
+  /* tarjetas de "¿Por qué estudiar?" muy estrechas: se les da aire */
+  .tpl-profesional .reasons__grid { gap: 16px; }
+  .tpl-profesional .reasons__grid article { padding: 22px 16px; min-height: 0; }
+  .tpl-profesional .reasons__grid h3 { font-size: 16px; }
+
+  /* los 5 iconos de Open House quedan al límite */
+  .tpl-profesional .oh-icons__grid { gap: 16px; }
+  .tpl-profesional .oh-icon { width: 108px; height: 108px; }
+  .tpl-profesional .oh-icons__grid img { width: 64px; height: 64px; }
 }
 
 /* ==========================================================================
