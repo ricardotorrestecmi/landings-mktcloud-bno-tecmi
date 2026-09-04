@@ -425,7 +425,8 @@ html { scroll-behavior: smooth; }
 .tpl-profesional .program-panel__photo { margin: 0; }
 .tpl-profesional .program-panel__photo img {
   width: 100%; height: 100%; min-height: 360px; object-fit: cover;
-  border-radius: 20px 0 0 20px;
+  /* recta del lado del texto: las esquinas derechas ya las recorta el panel */
+  border-radius: 0;
 }
 
 /* ==========================================================================
@@ -910,7 +911,7 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .program-panel__copy { padding: 24px 20px; text-align: center; }
   .tpl-profesional .program-panel__photo { order: -1; }
   .tpl-profesional .program-panel__photo img {
-    height: 220px; min-height: 0; border-radius: 20px 20px 0 0;
+    height: 220px; min-height: 0; border-radius: 0;
   }
   .tpl-profesional .program-panel__actions { justify-content: center; }
 
