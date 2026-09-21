@@ -16,6 +16,11 @@
        del tema y no esta ni en preflight.css ni en styles.css. */
     .prepa26 .mb-6 { margin-bottom: 1.5rem; }
 
+    /* Los iconos de la barra y de "que esperar" ahora son PNG y no todos son
+       cuadrados, mientras que las clases les fijan alto y ancho: sin object-fit
+       saldrian deformados. */
+    .barra-evento-openhouse img, .expectativas-openhouse img { object-fit: contain; }
+
     /* CSS propio de la pagina en HubSpot (su bloque <style> del head). */
     html { scroll-behavior: smooth; }
 
@@ -51,7 +56,7 @@
 </header>
     <main>
       <section id="open-house" class="prepa26 hero-openhouse relative w-full [container-type:inline-size] hero-openhouse--con-movil">
-  <img src="assets/oh-hero-fondo.webp" alt="Ilustración del Open House de Prepa Tecmilenio con ventanas, estrellas y una foto de dos estudiantes" width="1440" height="723" class="hero-openhouse__fondo hero-openhouse__fondo--escritorio block w-full">
+  <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/70e83e19-636e-41c8-bc47-bb2234ee92cd.jpg" alt="Ilustración del Open House de Prepa Tecmilenio con ventanas, estrellas y una foto de dos estudiantes" width="1440" height="727" class="hero-openhouse__fondo hero-openhouse__fondo--escritorio block w-full">
   <img src="assets/oh-hero-fondo-movil.jpg" alt="Open House Prepa Tecmilenio: Descubre la nueva Prepa Tecmi, ven y conócenos el 10 de octubre 2026" width="550" height="620" class="hero-openhouse__fondo hero-openhouse__fondo--movil w-full">
   <div class="hero-openhouse__texto absolute left-[43.4%] top-[39.4%] w-[46%] -translate-x-1/2 text-center">
     <h1 class="font-semibold leading-[1.19] text-[3.125cqw]">
@@ -67,14 +72,14 @@
 <section class="prepa26 barra-evento-openhouse bg-prepa-durazno-claro py-8 lg:py-0" id="evento">
   <ul class="mx-auto flex w-full max-w-[1440px] flex-wrap gap-6 px-3 sm:flex-row sm:flex-nowrap sm:justify-between lg:h-[140px] lg:items-center lg:gap-0 lg:px-0 lg:pb-3 lg:pl-[134px] lg:pr-[94px]">
     <li class="flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5">
-      <img src="assets/oh-calendario.svg" alt="" aria-hidden="true" width="45" height="50" class="shrink-0">
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/94149237-fa4b-48c5-aefd-b456e70220c9.png" alt="" aria-hidden="true" width="45" height="45" class="shrink-0">
       <p class="min-w-0 text-body text-prepa-verde lg:w-[210px]">
         <span class="block font-bold">Fecha</span>
         <span class="block font-normal">10 de Octubre 2026</span>
       </p>
     </li>
     <li class="flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5">
-      <img src="assets/oh-reloj.svg" alt="" aria-hidden="true" width="42" height="42" class="shrink-0">
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/c53c6596-5f5d-47ca-a445-92be15bfc01c.png" alt="" aria-hidden="true" width="42" height="42" class="shrink-0">
       <p class="min-w-0 text-body text-prepa-verde lg:w-[210px]">
         <span class="block font-bold">Hora</span>
         <span class="block font-normal">9:00 am</span>
@@ -98,23 +103,23 @@
       </button>
       <ul class="js-expectativas-track flex min-w-0 flex-1 snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth [scrollbar-width:none] lg:gap-[73px] [&amp;::-webkit-scrollbar]:hidden">
         <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
-          <img src="assets/oh-personas.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/cf3e5b4b-f2dd-4db7-8564-f68b347194ec.png" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
           <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Vivirás el ambiente de las sociedades estudiantiles</p>
         </li>
         <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
-          <img src="assets/oh-interculturalidad.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/66b376a4-6e12-4f6c-b3da-ad3c40a025a5.png" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
           <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Realizarás un presupuesto para conocer cómo vivir tu primera experiencia intercultural</p>
         </li>
         <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
-          <img src="assets/oh-certificaciones.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/6b66ec69-f9f6-4a50-9c26-cc473096156d.png" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
           <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Entenderás las certificaciones que ofrece Prepa Tecmilenio</p>
         </li>
         <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
-          <img src="assets/oh-medalla.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/f898f4da-6bc8-4492-b53f-2ff02c8fa3bb.png" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
           <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Disfrutarás el aprendizaje por retos interdisciplinarios</p>
         </li>
         <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
-          <img src="assets/oh-conexion.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/7f38524d-04a7-45f1-8f29-09ada4e2f641.png" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
           <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Conocerás gente de tu edad en distintas actividades</p>
         </li>
       </ul>
@@ -129,27 +134,27 @@
     <h2 class="lp-heading mx-auto max-w-lp-text text-center text-prepa-verde">¡Una mirada dentro de nuestro Open House!</h2>
   </div>
   <ul class="js-galeria-track mt-[45px] flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth px-[56px] [scrollbar-width:none] lg:mt-[54px] lg:gap-5 lg:px-[520px] [&amp;::-webkit-scrollbar]:hidden">
-    <li class="relative shrink-0 snap-center">
-      <img src="assets/oh-galeria-0.jpg" alt="open-house-prepa-cdmx1" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+        <li class="relative shrink-0 snap-center">
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/8ab9b12c-acf3-42bc-ad78-47260f506a60.png" alt="La mascota de Prepa Tecmilenio bailando con los asistentes" loading="lazy" width="550" height="700" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
     </li>
     <li class="relative shrink-0 snap-center">
-      <img src="assets/oh-galeria-1.webp" alt="Estudiantes caminando por el campus durante el Open House" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/ee6e9d9d-e0d7-4904-9c09-97c77cd11a9d.png" alt="Presentación en el auditorio durante el Open House" loading="lazy" width="550" height="700" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
     </li>
     <li class="relative shrink-0 snap-center">
-      <img src="assets/oh-galeria-2.webp" alt="Grupo de estudiantes con la mascota de Prepa Tecmilenio" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/62b28077-47a3-471d-a685-737370774911.png" alt="Grupo de estudiantes posando con la mascota" loading="lazy" width="550" height="700" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
     </li>
     <li class="relative shrink-0 snap-center">
-      <img src="assets/oh-galeria-3.webp" alt="La mascota bailando con las familias asistentes" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/38ec4ea8-65d5-405f-965e-c6797a8f4702.png" alt="Tres estudiantes de Prepa Tecmilenio sonriendo en el campus" loading="lazy" width="550" height="700" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
     </li>
     <li class="relative shrink-0 snap-center">
-      <img src="assets/oh-galeria-5.webp" alt="Video del Open House" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
-      <span class="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true">
-        <img src="assets/oh-play.svg" alt="" width="41" height="40" class="h-[30px] w-auto lg:h-10">
-      </span>
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/c16b17e5-5a25-4ea7-b236-d49f54380b86.png" alt="Actividad al aire libre en el patio del campus" loading="lazy" width="550" height="700" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+    </li>
+    <li class="relative shrink-0 snap-center">
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/f6113292-7099-478e-9d7a-b1c3ec995a4d.png" alt="Estudiantes y familias en una charla dentro del salón" loading="lazy" width="550" height="700" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
     </li>
   </ul>
   <div class="js-galeria-puntos mt-[25px] flex justify-center gap-1.5 lg:mt-[24px] lg:gap-[10px]" role="group" aria-label="¡Una mirada dentro de nuestro Open House!">
-    <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 1">
+        <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 1">
       <span class="block h-1.5 w-1.5 rounded-full bg-prepa-amarillo transition-colors lg:h-[10px] lg:w-[10px]"></span>
     </button>
     <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 2">
@@ -164,6 +169,9 @@
     <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 5">
       <span class="block h-1.5 w-1.5 rounded-full bg-prepa-amarillo transition-colors lg:h-[10px] lg:w-[10px]"></span>
     </button>
+    <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 6">
+      <span class="block h-1.5 w-1.5 rounded-full bg-prepa-amarillo transition-colors lg:h-[10px] lg:w-[10px]"></span>
+    </button>
   </div>
 </section>
 <section class="prepa26 video-openhouse bg-prepa-verde pb-14 pt-[37px] lg:pb-[101px] lg:pt-[100px]" id="video">
@@ -174,7 +182,7 @@
       <a href="https://www.youtube.com/watch?v=dqUHsj5LZL0" class="lp-btn lp-btn--naranja mt-6 w-full text-white lg:mt-[36px] lg:w-auto">Ver video</a>
     </div>
     <a href="https://www.youtube.com/watch?v=dqUHsj5LZL0" class="group relative block overflow-hidden rounded-card-sm lg:rounded-card" aria-label="Reproducir el video">
-      <img src="assets/oh-video.webp" alt="Video: conoce a tus futuros amigos y compañeros" loading="lazy" width="611" height="344" class="h-auto w-full">
+      <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/7b827580-a080-4178-99d2-9734e3e5be90.png" alt="Video: conoce a tus futuros amigos y compañeros" loading="lazy" width="1511" height="757" class="h-auto w-full">
       <span class="pointer-events-none absolute left-1/2 top-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center transition-transform duration-200 group-hover:scale-110">
         <img src="assets/oh-play.svg" alt="" aria-hidden="true" width="41" height="40">
       </span>
@@ -183,7 +191,7 @@
 </section>
 <section class="prepa26 formulario-openhouse bg-prepa-naranja pb-5 pt-5 lg:pb-[100px] lg:pt-[88px]" id="registro">
   <div class="mx-auto grid w-full max-w-[1440px] items-start gap-8 px-3 lg:grid-cols-[505px_505px] lg:gap-[83px] lg:px-0 lg:pl-[142px]">
-    <img src="assets/oh-form-foto.png" alt="form-image-open-house-prepa-2" loading="lazy" width="1010" height="1294" class="hidden h-auto w-full rounded-card-sm object-cover lg:block lg:h-[647px] lg:rounded-card">
+    <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/f398cfe3-dac6-4733-945e-6e22b2f90c8a.png" alt="form-image-open-house-prepa-2" loading="lazy" width="1010" height="1294" class="hidden h-auto w-full rounded-card-sm object-cover lg:block lg:h-[647px] lg:rounded-card">
     <div class="text-center text-prepa-gris lg:text-left">
       <h2 class="lp-heading text-white lg:mt-[11px] lg:w-[537px]">¡Regístrate y vive la experiencia!</h2>
       <div class="prepa26-form mt-[30px] text-left lg:mt-[42px]">
