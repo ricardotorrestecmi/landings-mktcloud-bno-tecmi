@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preparatoria Tecmilenio</title>
+  <meta name="description" content="Encuentra tu propósito de vida y prepárate para el mundo laboral en Prepa Tecmilenio. Conoce nuestros diferentes modelos educativos ¡Únete a Tecmilenio!">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Sin canonical ni og/twitter: el preview es noindex. El bloque para publicar esta en integrations/head-hubspot.md -->
+  <!-- Sin tracking (GTM/GA4/HubSpot loader): documentado en integrations/tracking.md -->
+  <link rel="stylesheet" href="preflight.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Complemento de la pagina: lo que la version de HubSpot recibia del CSS global
+       del tema y no esta ni en preflight.css ni en styles.css. */
+    .prepa26 .mb-6 { margin-bottom: 1.5rem; }
+
+    /* CSS propio de la pagina en HubSpot (sus bloques <style> del head). */
+    .prepa26 img[src*="equipos-preparatoria"] { align-self: center; }
+    .hero-container > div:first-child { margin-top: auto; margin-bottom: auto; }
+    @media screen and (max-width: 1024px) {
+      /* El !important es del original: el <div> del hero trae `padding: 2rem 0rem`
+         en el atributo style y sin el no habria forma de ganarle. */
+      .hero-container { flex-direction: column; padding: 1rem 4rem !important; }
+    }
+    /* NO se copia la regla `.hs-form fieldset:nth-child(4,5,6,10..15){display:none}`
+       de la pagina: alli escondia los campos ocultos del embed de HubSpot, que
+       llegaban como fieldsets. Aqui esos campos son <input type="hidden">, asi que
+       esa regla taparia campus, programa y periodo. */
+  </style>
+</head>
+<body class="bg-white">
+<header class="prepa26 header_ago26 header-prepa bg-prepa-verde">
+  <div class="lp-container flex h-[70px] items-center justify-between gap-4 lg:h-[85px]">
+    <a href="#recibe-informacion" class="shrink-0">
+      <img src="assets/logo-prepa-tecmilenio.svg" alt="Prepa Tecmilenio" width="178" height="35" class="h-[28px] w-auto lg:h-[35px]">
+    </a>
+    <div class="flex items-center gap-4 lg:gap-10">
+      <nav aria-label="Secciones de la página">
+        <ul class="hidden items-center gap-7 lg:flex">
+          <li>
+            <a href="#que-esperar" class="text-btn-sm font-medium text-white transition-opacity hover:opacity-80">Que esperar</a>
+          </li>
+          <li>
+            <a href="#galeria" class="text-btn-sm font-medium text-white transition-opacity hover:opacity-80">Galería</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#recibe-informacion" class="lp-btn lp-btn--sm lp-btn--naranja text-white text-btn-sm">¡Quiero ser Halcón!</a>
+    </div>
+  </div>
+</header>
+    <main>
+      <section id="recibe-informacion" class="prepa26 hero-prepa relative bg-prepa-naranja-hero py-10 lg:py-0">
+    <div style="display: flex; justify-content: space-between; padding: 2rem 0rem" class="hero-container relative mx-auto w-full max-w-[1240px] px-3 lg:px-0">
+        <div style="display: flex; align-items: center; flex-direction: column;">
+            <img src="assets/hero-estudiante-liston.webp" alt="Estudiante de Prepa Tecmilenio sonriendo mientras sostiene el peluche de la mascota" width="480" height="428" loading="eager" class="mx-auto block w-[280px] max-w-full sm:w-[360px] lg:left-[8px] lg:top-[53px] lg:mx-0 lg:w-[480px]">
+            <div class="mt-8 rounded-full bg-prepa-naranja-pill px-6 py-7 text-hero-sub-sm font-semibold lg:left-[-2px] lg:top-[499px] lg:mt-0 lg:flex lg:h-[137px] lg:w-[501px] lg:items-center lg:py-0 lg:pl-[67px] lg:pr-[18px] lg:text-hero-sub">
+                <p class="lg:w-[416px]">
+                    <span class="text-prepa-gris">La única prepa donde </span><span class="text-prepa-verde">tu identidad cobra fuerza, tu vocación encuentra claridad y tu vida toma un propósito</span>
+                </p>
+            </div>
+        </div>
+        <div class="mt-8 lg:right-0 lg:top-[108px] lg:mt-0 lg:w-[505px]">
+            <h2 class="lp-heading text-white lg:w-[508px]">Recibe más información y conoce tu mejor opción.</h2>
+            <div class="prepa26-form mt-6 text-left lg:mt-[35px]">
+                <form class="hs-form stacked" id="np-form" novalidate>
+      <fieldset class="form-columns-2">
+        <div class="hs_firstname hs-firstname hs-fieldtype-text field hs-form-field">
+          <label for="np-firstname"><span>Nombre</span></label>
+          <div class="input"><input id="np-firstname" name="firstname" type="text" class="hs-input" placeholder="Nombre*" autocomplete="given-name" required></div>
+        </div>
+        <div class="hs_lastname hs-lastname hs-fieldtype-text field hs-form-field">
+          <label for="np-lastname"><span>Apellido</span></label>
+          <div class="input"><input id="np-lastname" name="lastname" type="text" class="hs-input" placeholder="Apellido" autocomplete="family-name"></div>
+        </div>
+      </fieldset>
+      <fieldset class="form-columns-2">
+        <div class="hs_email hs-email hs-fieldtype-text field hs-form-field">
+          <label for="np-email"><span>Correo electrónico</span></label>
+          <div class="input"><input id="np-email" name="email" type="email" class="hs-input" placeholder="Correo electrónico*" autocomplete="email" required></div>
+        </div>
+        <div class="hs_phone hs-phone hs-fieldtype-phonenumber field hs-form-field">
+          <label for="np-phone"><span>Número de teléfono</span></label>
+          <div class="input"><input id="np-phone" name="phone" type="tel" class="hs-input" placeholder="Número de teléfono*" autocomplete="tel" required></div>
+        </div>
+      </fieldset>
+      <fieldset class="form-columns-1">
+        <div class="hs_tipo_lead_prepa hs-tipo_lead_prepa hs-fieldtype-select field hs-form-field">
+          <label for="np-tipo_lead_prepa"><span>Soy:</span></label>
+          <div class="input">
+            <select id="np-tipo_lead_prepa" name="tipo_lead_prepa" class="hs-input" required>
+            <option disabled selected value="">Soy:*</option>
+            <option value="1">Soy menor de 18 años y quiero estudiar prepa</option>
+            <option value="2">Soy adulto y quiero estudiar preparatoria</option>
+            <option value="3">Soy adulto y busco prepa para mi hijo</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-columns-1">
+        <div class="hs_campus_de_interes hs-campus_de_interes hs-fieldtype-select field hs-form-field">
+          <label for="np-campus_de_interes"><span>Campus de Interés</span></label>
+          <div class="input">
+            <select id="np-campus_de_interes" name="campus_de_interes" class="hs-input" required>
+            <option disabled selected value="">Campus de Interés*</option>
+            <option value="2309">CANCUN</option>
+            <option value="2101">CD. JUAREZ</option>
+            <option value="1502">CHIHUAHUA</option>
+            <option value="1201">CUAUTITLAN IZCALLI</option>
+            <option value="2307">CUERNAVACA</option>
+            <option value="1601">CULIACAN</option>
+            <option value="1105">CUMBRES</option>
+            <option value="2104">DURANGO</option>
+            <option value="1202">FERRERIA</option>
+            <option value="1403">GUADALAJARA NORTE (ZAPOPAN)</option>
+            <option value="1401">GUADALAJARA SUR</option>
+            <option value="1106">GUADALUPE</option>
+            <option value="2401">HERMOSILLO</option>
+            <option value="2103">LAGUNA</option>
+            <option value="1101">LAS TORRES</option>
+            <option value="1604">LOS MOCHIS</option>
+            <option value="1603">MAZATLAN</option>
+            <option value="2308">MERIDA</option>
+            <option value="2305">MORELIA</option>
+            <option value="2108">NUEVO LAREDO</option>
+            <option value="2303">PUEBLA</option>
+            <option value="2205">QUERETARO</option>
+            <option value="2107">REYNOSA</option>
+            <option value="2102">SAN LUIS POTOSI</option>
+            <option value="1102">SAN NICOLAS</option>
+            <option value="2503">TAMPICO</option>
+            <option value="2201">TOLUCA</option>
+            <option value="2301">VERACRUZ</option>
+            <option value="2302">VILLAHERMOSA</option>
+            <option value="2404">ZACATECAS</option>
+            <option value="2505">AGUASCALIENTES</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-columns-1">
+        <div class="hs_listadoprofesional hs-listadoprofesional hs-fieldtype-select field hs-form-field">
+          <label for="np-listadoprofesional"><span>Programa de interés</span></label>
+          <div class="input">
+            <select id="np-listadoprofesional" name="listadoprofesional" class="hs-input" required>
+            <option disabled selected value="">Programa de interés*</option>
+            <option value="201">Especialidad en Finanzas.</option>
+            <option value="199">Especialidad en Innovación.</option>
+            <option value="200">Especialidad en Recursos Humanos</option>
+            <option value="66">Ingeniería en Computación Administrativa</option>
+            <option value="822">Ingeniería en Logística y Cadena de Suministro</option>
+            <option value="74">Ingeniería en Sistemas de Computación Administrativa</option>
+            <option value="LAN_BI">Lic Administracion de Negocios</option>
+            <option value="95">Licenciatura en Administración</option>
+            <option value="205">Licenciatura en Administración de Negocios</option>
+            <option value="120">Licenciatura en Administración Hotelera y Turística</option>
+            <option value="730">Licenciatura en Administración y Desarrollo del Talento</option>
+            <option value="101">Licenciatura en Comercio Internacional</option>
+            <option value="103">Licenciatura en Derecho</option>
+            <option value="104">Licenciatura en Derecho (Tetramestral)</option>
+            <option value="106">Licenciatura en Diseño Gráfico y Animación</option>
+            <option value="108">Licenciatura en Educación y Desarrollo</option>
+            <option value="116">Licenciatura en Nutrición</option>
+            <option value="117">Licenciatura en Psicologia</option>
+            <option value="190">Maestria en Liderazgo Positivo</option>
+            <option value="54">Maestría en Administración de Negocios Área Calidad y Productividad</option>
+            <option value="55">Maestría en Administración de Negocios Área Finanzas</option>
+            <option value="203">Maestría en Administración de Negocios Área Logística</option>
+            <option value="56">Maestría en Administración de Negocios Área Mercadotecnia</option>
+            <option value="57">Maestría en Administración de Negocios Área Recursos Humanos</option>
+            <option value="124">Maestría en Educación</option>
+            <option value="204">Maestría en Educación Positiva</option>
+            <option value="63">Maestría en Gestión de Tecnologías de Información</option>
+            <option value="820">Máster en Automatización y Robótica</option>
+            <option value="234">Máster en Inteligencia Artificial</option>
+            <option value="131">Otros Prepa</option>
+            <option value="137">Preparatoria Bilingüe</option>
+            <option value="136">Preparatoria General</option>
+            <option value="813">Preparatoria Intercultural</option>
+            <option value="818">Preparatoria Intercultural Bilingüe</option>
+            <option value="IIS_T19">Licenciatura en Ingeniería Industrial y de Sistemas</option>
+            <option value="LCN_T19">Licenciatura en Comercio y Negocios Internacionales </option>
+            <option value="LEA_T19">Licenciatura en Administración </option>
+            <option value="LMP_T19">Licenciatura en Mercadotecnia y Publicidad </option>
+            <option value="IOCD_T22">Ingeniería en Computación Administrativa  </option>
+            <option value="LOMP_T22">Licenciado en Mercadotecnia y Publicidad</option>
+            <option value="LOD_T22">Licenciado en Derecho</option>
+            <option value="LOEA_T22">Licenciatura en Administración  </option>
+            <option value="LOCN_T22">Licenciado en Comercio y Negocios Internacionales</option>
+            <option value="IOIS_T22">Ingeniería Industrial y de Sistemas</option>
+            <option value="LADT_T22">Licenciatura en Administración y Desarrollo del Talento </option>
+            <option value="LOED_T22">Licenciatura en Educación y Desarrollo </option>
+            <option value="824">Maestría en Dirección del Capital Humano.</option>
+            <option value="823">Maestría en Mercadotecnia Digital.</option>
+            <option value="825">Maestría en Finanzas.</option>
+            <option value="IMT_S24">Ingeniería en Mecatrónica</option>
+            <option value="IIN_S24">Ingeniería Industrial</option>
+            <option value="LAE_S24">Licenciatura en Administración de Empresas</option>
+            <option value="LCN_S24">Licenciatura en Comercio y Negocios Internacionales</option>
+            <option value="LGI_S24">Licenciatura en Gastronomía Internacional</option>
+            <option value="IDS_S24">Ingeniería en Desarrollo de Software</option>
+            <option value="LEM_S24">Licenciatura en Mercadotecnia </option>
+            <option value="LCF_S24">Licenciatura en Contabilidad y Estrategia Financiera</option>
+            <option value="LCDE_S24">Licenciatura en Creación y Desarrollo de Empresas</option>
+            <option value="IDS_B24">Licenciatura Ingeniería en Desarrollo de Software</option>
+            <option value="IIN_B24">Licenciatura Ingeniería Industrial</option>
+            <option value="LAE_B24">Licenciatura Administración de Empresas</option>
+            <option value="LCN_B24">Licenciatura Comercio y Negocios Internacionales</option>
+            <option value="LD_B24">Licenciatura Derecho</option>
+            <option value="LED_B24">Licenciatura Educación</option>
+            <option value="LEM_B24">Licenciatura Mercadotecnia</option>
+            <option value="ITT_B24">Ingeniería en Tecnología y Transformación Digital</option>
+            <option value="LADT_B24">Licenciatura en Administración y Desarrollo de Talento</option>
+            <option value="LEN_S24">Licenciatura en Enfermería</option>
+            <option value="MGTC_B24">Maestría en Gestión de Tecnologías de la Información Área Ciberseguridad</option>
+            <option value="ESCI_B24">Especialidad en Ciberseguridad</option>
+            <option value="MGTD_B24">Maestría en Gestión de Tecnologías de la Información Área Ciencia de Datos</option>
+            <option value="ESCD_B24">Especialidad en Ciencia de Datos</option>
+            <option value="MGTN_B24">Maestría en Gestión de Tecnologías de la Información Área Computación en la Nube</option>
+            <option value="ESCN_B24">Especialidad en Computación en la Nube</option>
+            <option value="MIA_B24">Maestría en Inteligencia Artificial</option>
+            <option value="MITP_B24">Maestría en Ingeniería con enfoque en Transformación de Procesos de Manufactura</option>
+            <option value="MIGP_B24">Maestría en Ingeniería Área Gestión de Proyectos</option>
+            <option value="MIMC_B24">Maestría en Ingeniería con enfoque en Optimización y Mejora Continua</option>
+            <option value="MIRS_B24">Maestría en Ingeniería Área Regulación Ambiental y Seguridad Operacional</option>
+            <option value="MAUR_B24">Maestría en Automatización y Robótica</option>
+            <option value="MANB_B24">Maestría en Administración de Negocios Área Analítica de Datos Empresariales</option>
+            <option value="MANE_B24">Maestría en Administración de Negocios Área Innovación</option>
+            <option value="EIN_B24">Especialidad en Innovación</option>
+            <option value="MANF_B24">Maestría en Administración de Negocios Area Finanzas</option>
+            <option value="EFZ_B24">Especialidad en Finanzas</option>
+            <option value="MFZ_B24">Maestría en Finanzas</option>
+            <option value="MANP_B24">Maestría en Administración de Negocios Área Calidad y Productividad.</option>
+            <option value="MANI_B24">Maestría en Administración de Negocios Área Negocios Internacionales</option>
+            <option value="MANL_B24">Maestría en Administración de Negocios Área Logística.</option>
+            <option value="MANM_B24">Maestría en Administración de Negocios Área Mercadotecnia.</option>
+            <option value="MANH_B24">Maestría en Administración de Negocios Área Capital Humano</option>
+            <option value="ESCH_B24">Especialidad en Capital Humano</option>
+            <option value="MDCH_B24">Maestría en Dirección del Capital Humano</option>
+            <option value="MMD_B24">Maestría en Mercadotecnia Digital</option>
+            <option value="MEDA_B24">Maestría en Educación Área Administración de Instituciones Educativas</option>
+            <option value="MAED_B24">Maestría en Educación Área Educación Digital</option>
+            <option value="MEDI_B24">Maestría en Educación Área Educación Inicial y Media Superior</option>
+            <option value="MANS_B24">Maestría en Administración de Negocios Área Gestión e Innovación Sanitaria</option>
+            <option value="LCDE_B24">Licenciatura en Creación y Desarrollo de Empresas.</option>
+            <option value="LCF_B24">Licenciatura en Contabilidad y Estrategia Financiera.</option>
+            <option value="LDG_B24">Licenciatura en Diseño Gráfico y Animación.</option>
+            <option value="ILC_B24">Licenciatura en Ingeniería en Logística y Cadena de Suministro</option>
+            <option value="MSIA_B24">Máster en Inteligencia Artificial Aplicada</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-columns-1">
+        <div class="hs_periodo hs-periodo hs-fieldtype-select field hs-form-field">
+          <label for="np-periodo"><span>Selecciona un periodo</span></label>
+          <div class="input">
+            <select id="np-periodo" name="periodo" class="hs-input">
+            <option disabled selected value="">Selecciona un periodo</option>
+            <option value="95">Septiembre 2024</option>
+            <option value="104">Agosto 2025</option>
+            <option value="102">Enero 2025</option>
+            <option value="101">Septiembre 2025</option>
+            <option value="103">Mayo 2025</option>
+            <option value="108">Octubre 2025</option>
+            <option value="110">Agosto 2026</option>
+            <option value="111">Septiembre 2026</option>
+            <option value="113">Enero 2026</option>
+            <option value="114">Mayo 2026</option>
+            <option value="115">Abril 2026</option>
+            <option value="116">Julio 2026</option>
+            <option value="118">Marzo 2026</option>
+            <option value="119">Octubre 2026</option>
+            <option value="120">Agosto 2027</option>
+            <option value="122">Enero 2027</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-columns-1">
+        <div class="hs_revalidacion hs-revalidacion hs-fieldtype-booleancheckbox field hs-form-field">
+          <div class="input">
+            <ul class="inputs-list">
+              <li class="hs-form-booleancheckbox">
+                <label class="hs-form-booleancheckbox-display">
+                  <input id="np-revalidacion" name="revalidacion" type="checkbox" class="hs-input" value="true">
+                  <span>¿Te interesa revalidar materias?</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-columns-1">
+        <div class="hs_pol_ticas_de_privacidad hs-pol_ticas_de_privacidad hs-fieldtype-booleancheckbox field hs-form-field">
+          <div class="input">
+            <ul class="inputs-list">
+              <li class="hs-form-booleancheckbox">
+                <label class="hs-form-booleancheckbox-display">
+                  <input id="np-pol_ticas_de_privacidad" name="pol_ticas_de_privacidad" type="checkbox" class="hs-input" value="true" required>
+                  <span>Acepto y autorizo que la Universidad Tecmilenio utilice la información proporcionada para los fines señalados <a href="http://tecmilenio.mx/es/aviso-de-privacidad/alumnos" rel="noopener" target="_blank">aquí</a>.<span class="hs-form-required">*</span></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </fieldset>
+      <!-- Ocultos del formulario de HubSpot. Se conservan con su valor para que SFMC los mapee. -->
+      <input type="hidden" name="nivel_de_interes" value="1">
+      <input type="hidden" name="nivel_de_interes_2" value="1">
+      <input type="hidden" name="modalidad" value="1">
+      <input type="hidden" name="modalidad_" value="Presencial">
+      <input type="hidden" name="canal" value="13">
+      <input type="hidden" name="area_de_ventas" value="1">
+      <input type="hidden" name="origen" value="4">
+      <input type="hidden" name="detalle_de_origen" value="390">
+      <input type="hidden" name="enfoque" value="">
+      <input type="hidden" name="proveedor" value="">
+      <input type="hidden" name="utm_medioro__c" value="">
+      <input type="hidden" name="formato" value="">
+      <input type="hidden" name="localizacion" value="">
+      <input type="hidden" name="custom_2" value="">
+      <input type="hidden" name="custom_3" value="">
+      <input type="hidden" name="custom_8" value="">
+      <input type="hidden" name="gclid" value="">
+      <input type="hidden" name="campanas_salesforce" value="">
+      <input type="hidden" name="posteo" value="">
+      <div class="hs_submit">
+        <div class="actions"><input type="submit" class="hs-button primary large" value="Solicitar Información"></div>
+      </div>
+                    </form>
+                    <p class="np-form-gracias" role="status" hidden>&lt;p style="text-align: center;"&gt;Gracias por tu interés en Tecmilenio, un ejecutivo se pondrá en contacto contigo</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="prepa26 programas-prepa bg-prepa-gris pb-14 pt-14 lg:pb-[90px] lg:pt-20" id="programas">
+  <div class="lp-container">
+    <header class="mx-auto max-w-[1036px] text-center">
+      <h2 class="lp-heading mx-auto max-w-lp-text text-prepa-verde">Elige la Prepa que mejor se adapta a ti</h2>
+      <div class="lp-body mt-6 text-prepa-verde lg:mt-[31px]"><p>Nuestro modelo educativo impulsa una identidad sólida, una vocación elegida con mayor claridad y un propósito de vida que da dirección a tus decisiones. Nuestros programas están diseñados para que aprendas, desarrolles tus habilidades y pongas en práctica tus conocimientos a través de experiencias reales.</p></div>
+    </header>
+    <ul class="mt-9 grid gap-x-5 gap-y-6 lg:mt-[44px] lg:grid-cols-2 lg:gap-y-[35px]">
+      <li class="flex flex-col rounded-card-sm p-6 text-prepa-gris lg:min-h-[306px] lg:rounded-card lg:px-card-p lg:pt-card-p lg:pb-[37px] bg-prepa-naranja-oscuro">
+        <h3 class="text-h3-sm font-bold lg:-mr-10 lg:text-h3">Prepa Intercultural</h3>
+        <div class="lp-body mt-6 lg:mt-[33px]"><p>En Prepa Tecmilenio Intercultural nuestros(as) estudiantes desarrollan la competencia en el idioma inglés, que le dará el acceso a mayores oportunidades en su futuro profesional.</p></div>
+        <div class="mt-10 lg:mt-auto lg:pt-0">
+          <a href="https://universidad.tecmilenio.mx/hubfs/Folletos%20Preparatoria%20JM/Folleto%20Prepa%20Intercultural.pdf?hsLang=es-mx" class="lp-btn lp-btn--verde w-full min-w-0 lg:w-auto lg:min-w-[295px]">Descargar folleto</a>
+        </div>
+      </li>
+      <li class="flex flex-col rounded-card-sm p-6 text-prepa-gris lg:min-h-[306px] lg:rounded-card lg:px-card-p lg:pt-card-p lg:pb-[37px] bg-prepa-naranja">
+        <h3 class="text-h3-sm font-bold lg:-mr-10 lg:text-h3">Prepa Intercultural Bilingüe </h3>
+        <div class="lp-body mt-6 lg:mt-[33px]"><p>En Prepa Tecmilenio Intercultural Bilingüe nuestros(as) estudiantes cursan más de la mitad de la preparatoria en inglés, además de aprender a la par un tercer idioma.</p></div>
+        <div class="mt-10 lg:mt-auto lg:pt-0">
+          <a href="https://universidad.tecmilenio.mx/hubfs/Folletos%20Preparatoria%20JM/Folleto%20Prepa%20Intercultural%20Biling%C3%BCe%20Avanzado.pdf?hsLang=es-mx" class="lp-btn lp-btn--verde w-full min-w-0 lg:w-auto lg:min-w-[295px]">Descargar folleto</a>
+        </div>
+      </li>
+      <li class="flex flex-col rounded-card-sm p-6 text-prepa-gris lg:min-h-[306px] lg:rounded-card lg:px-card-p lg:pt-[36px] lg:pb-[26px] bg-prepa-naranja-medio">
+        <h3 class="text-h3-sm font-bold lg:-mr-10 lg:text-h3">Prepa Intercultural (Tetramestral)</h3>
+        <div class="lp-body mt-6 lg:mt-[26px]"><p>Prepa General Tetramestral se enfoca en desarrollar las competencias en el idioma inglés y ayudar a definir el Propósito de Vida. Además, les brindamos herramientas para incrementar sus niveles de bienestar y felicidad.</p><p>Disponible solo en Monterrey</p></div>
+        <div class="mt-10 lg:mt-auto lg:pt-0">
+          <a href="https://universidad.tecmilenio.mx/hubfs/Folletos%20Preparatoria%20JM/Folleto%20Prepa%20General%20Tetramestral_MTY.pdf?hsLang=es-mx" class="lp-btn lp-btn--verde w-full min-w-0 lg:w-auto lg:min-w-[295px]">Descargar folleto</a>
+        </div>
+      </li>
+      <li class="flex flex-col rounded-card-sm p-6 text-prepa-gris lg:min-h-[306px] lg:rounded-card lg:px-card-p lg:pt-[36px] lg:pb-[26px] bg-prepa-amarillo">
+        <h3 class="text-h3-sm font-bold lg:-mr-10 lg:text-h3">Prepa Intercultural Bilingüe (Tetramestral)</h3>
+        <div class="lp-body mt-6 lg:mt-[26px]"><p>Prepa Bilingüe&nbsp; Tetramestral va dirigido a estudiantes que tienen aprecio e interés en otras culturas y desean continuar desarrollando sus competencias en el idioma inglés y, adquirir habilidades de comunicación oral y escrita en un tercer idioma.</p>
+<p><strong>Disponible solo en Monterrey</strong></p>
+<p>&nbsp;</p></div>
+        <div class="mt-10 lg:mt-auto lg:pt-0">
+          <a href="https://universidad.tecmilenio.mx/hubfs/Folletos%20Preparatoria%20JM/Folleto%20Prepa%20Bilingue%20Tetramestral_MTY.pdf?hsLang=es-mx" class="lp-btn lp-btn--verde w-full min-w-0 lg:w-auto lg:min-w-[295px]">Descargar folleto</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="prepa26 ventajas-prepa bg-prepa-naranja py-14 lg:py-[100px]" id="ventajas">
+  <div class="lp-container grid items-stretch gap-5 lg:grid-cols-2">
+    <div class="flex flex-col rounded-card-sm bg-prepa-verde p-6 text-prepa-gris lg:min-h-[636px] lg:rounded-card lg:p-card-p">
+      <h2 class="lp-heading">Descubre las principales ventajas que ofrece Prepa Tecmilenio</h2>
+      <ul class="lp-list lp-body mt-6 lg:mt-10">
+        <li>Calidad académica.</li>
+        <li>Desarrollo de competencias humanas.</li>
+        <li>Construcción de identidad.</li>
+        <li>Preparación para la vida universitaria.</li>
+        <li>Vivencia estudiantil.</li>
+        <li>Espacio de formación seguro.</li>
+        <li>Experiencias interculturales nacionales e internacionales.</li>
+        <li>Sociedades estudiantiles.</li>
+        <li>Desarrollo progresivo de idiomas.</li>
+      </ul>
+      <div class="mt-10 lg:mt-auto lg:pt-10">
+        <a href="#recibe-informacion" class="lp-btn lp-btn--naranja w-full min-w-0 lg:w-auto lg:min-w-[295px]">Más información</a>
+      </div>
+    </div>
+    <img src="assets/ventajas-estudiantes.webp" alt="Estudiantes de Prepa Tecmilenio sonriendo" loading="lazy" width="610" height="636" class="h-auto w-full rounded-card-sm object-cover lg:h-full lg:rounded-card">
+  </div>
+</section>
+<section class="prepa26 certificaciones-prepa bg-prepa-gris pb-14 pt-14 lg:pb-[62px] lg:pt-[100px]" id="certificaciones">
+  <div class="lp-container">
+    <header class="mx-auto max-w-lp-text text-center text-prepa-verde lg:mx-0 lg:ml-[105px] lg:mr-[85px] lg:max-w-[1050px]">
+      <h2 class="lp-heading">Certificaciones que impulsan tu futuro</h2>
+      <div class="lp-body mt-6 lg:mt-[27px]"><p>Durante tu preparatoria podrás obtener seis certificaciones que respaldan tus conocimientos y te preparan para la universidad y la vida.</p></div>
+    </header>
+    <div class="mt-8 grid items-start gap-5 lg:mt-[41px] lg:grid-cols-2">
+      <img src="assets/certificaciones-graduado.webp" alt="Estudiante graduado sosteniendo su diploma" loading="lazy" width="610" height="456" class="hidden w-full rounded-card-sm object-cover lg:block lg:h-[456px] lg:rounded-card">
+      <ul class="space-y-[30px] rounded-card-sm bg-white px-6 py-5 lg:space-y-[28px] lg:rounded-card lg:px-10 lg:pb-[16px] lg:pt-[33px]">
+        <li class="border-b border-prepa-verde pb-[26px]">
+          <h3>
+            <button type="button" class="js-acordeon-trigger flex w-full items-center justify-between gap-4 text-left text-accordion-item font-bold leading-[21px] text-prepa-verde" aria-expanded="false" aria-controls="cert-1">
+              <span>Competencias Digitales con IA</span>
+              <img src="assets/chevron-down.svg" alt="" aria-hidden="true" width="13" height="7" class="js-acordeon-icono shrink-0 transition-transform duration-200">
+            </button>
+          </h3>
+          <div id="cert-1" class="lp-body hidden pt-4 text-prepa-verde"><span style="color: #393939; background-color: #ffffff;">Desarrolla habilidades tecnológicas y aprende a utilizar la inteligencia artificial para crear, resolver retos y desenvolverte en el entorno digital.​</span>&nbsp;</div>
+        </li>
+        <li class="border-b border-prepa-verde pb-[26px]">
+          <h3>
+            <button type="button" class="js-acordeon-trigger flex w-full items-center justify-between gap-4 text-left text-accordion-item font-bold leading-[21px] text-prepa-verde" aria-expanded="false" aria-controls="cert-2">
+              <span>Bienestar y Propósito de Vida</span>
+              <img src="assets/chevron-down.svg" alt="" aria-hidden="true" width="13" height="7" class="js-acordeon-icono shrink-0 transition-transform duration-200">
+            </button>
+          </h3>
+          <div id="cert-2" class="lp-body hidden pt-4 text-prepa-verde"><span style="color: #393939; background-color: #ffffff;">Reconoce tus fortalezas, intereses y valores para cuidar tu bienestar y darle dirección a tus decisiones.​</span>&nbsp;</div>
+        </li>
+        <li class="border-b border-prepa-verde pb-[26px]">
+          <h3>
+            <button type="button" class="js-acordeon-trigger flex w-full items-center justify-between gap-4 text-left text-accordion-item font-bold leading-[21px] text-prepa-verde" aria-expanded="false" aria-controls="cert-3">
+              <span>Procesos de Innovación</span>
+              <img src="assets/chevron-down.svg" alt="" aria-hidden="true" width="13" height="7" class="js-acordeon-icono shrink-0 transition-transform duration-200">
+            </button>
+          </h3>
+          <div id="cert-3" class="lp-body hidden pt-4 text-prepa-verde"><span style="color: #393939; background-color: #ffffff;">Convierte ideas en soluciones mediante metodologías creativas que te permiten analizar desafíos, experimentar y desarrollar proyectos.​</span>&nbsp;</div>
+        </li>
+        <li class="border-b border-prepa-verde pb-[26px]">
+          <h3>
+            <button type="button" class="js-acordeon-trigger flex w-full items-center justify-between gap-4 text-left text-accordion-item font-bold leading-[21px] text-prepa-verde" aria-expanded="false" aria-controls="cert-4">
+              <span>Finanzas Personales</span>
+              <img src="assets/chevron-down.svg" alt="" aria-hidden="true" width="13" height="7" class="js-acordeon-icono shrink-0 transition-transform duration-200">
+            </button>
+          </h3>
+          <div id="cert-4" class="lp-body hidden pt-4 text-prepa-verde"><span style="color: #393939; background-color: #ffffff;">Aprende a administrar tus recursos, organizar tus finanzas y tomar decisiones económicas informadas desde una edad temprana.​</span>&nbsp;</div>
+        </li>
+        <li class="border-b border-prepa-verde pb-[26px]">
+          <h3>
+            <button type="button" class="js-acordeon-trigger flex w-full items-center justify-between gap-4 text-left text-accordion-item font-bold leading-[21px] text-prepa-verde" aria-expanded="false" aria-controls="cert-5">
+              <span>Idioma</span>
+              <img src="assets/chevron-down.svg" alt="" aria-hidden="true" width="13" height="7" class="js-acordeon-icono shrink-0 transition-transform duration-200">
+            </button>
+          </h3>
+          <div id="cert-5" class="lp-body hidden pt-4 text-prepa-verde"><span style="color: #393939; background-color: #ffffff;">Acredita tus competencias lingüísticas y fortalece tu capacidad para comunicarte, estudiar y conectar con personas de diferentes culturas.​</span>&nbsp;</div>
+        </li>
+        <li class="border-b border-prepa-verde pb-[26px]">
+          <h3>
+            <button type="button" class="js-acordeon-trigger flex w-full items-center justify-between gap-4 text-left text-accordion-item font-bold leading-[21px] text-prepa-verde" aria-expanded="false" aria-controls="cert-6">
+              <span>Rutas de Exploración Profesional</span>
+              <img src="assets/chevron-down.svg" alt="" aria-hidden="true" width="13" height="7" class="js-acordeon-icono shrink-0 transition-transform duration-200">
+            </button>
+          </h3>
+          <div id="cert-6" class="lp-body hidden pt-4 text-prepa-verde">&nbsp;<span style="color: #393939; background-color: #ffffff;">Profundiza en un área de interés, desarrolla un proyecto y descubre opciones profesionales relacionadas con lo que te apasiona.</span>&nbsp;</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="prepa26 perfil-logros-prepa bg-prepa-durazno pb-14 pt-14 lg:pb-[65px] lg:pt-20" id="perfil-de-logros">
+  <div class="lp-container">
+    <header class="mx-auto max-w-lp-text text-center text-prepa-verde">
+      <h2 class="lp-heading">Al graduarte, estarás preparado para elegir y avanzar.</h2>
+      <div class="lp-body mt-6 lg:mt-[43px]"><p>Obtendrás un Perfil Integral de Logros que convierte la experiencia completa de la preparatoria con una evidencia tangible de lo que cada estudiante sabe, ha vivido y puede hacer al graduarse. Es un portafolio que reúne y demuestra:</p></div>
+    </header>
+    <ul class="mx-auto mt-10 flex max-w-lp-text flex-wrap justify-center gap-x-8 gap-y-10 lg:mt-[58px] lg:gap-x-[72px] lg:gap-y-[10px]">
+      <li class="flex w-[calc(50%-16px)] max-w-[295px] flex-col items-center text-center lg:w-[295px]">
+        <span class="flex h-[94px] w-[94px] items-center justify-center rounded-tile lg:h-[129px] lg:w-[129px] bg-prepa-amarillo">
+          <img src="assets/mountain-flag.svg" alt="" loading="lazy" width="58" height="58" class="h-[42px] w-auto lg:h-[58px]">
+        </span>
+        <p class="lp-body mt-4 text-prepa-naranja-texto lg:mt-5 lg:min-h-[60px]">Tu Propósito de Vida</p>
+      </li>
+      <li class="flex w-[calc(50%-16px)] max-w-[295px] flex-col items-center text-center lg:w-[295px]">
+        <span class="flex h-[94px] w-[94px] items-center justify-center rounded-tile lg:h-[129px] lg:w-[129px] bg-prepa-naranja-medio">
+          <img src="assets/signpost.svg" alt="" loading="lazy" width="58" height="58" class="h-[42px] w-auto lg:h-[58px]">
+        </span>
+        <p class="lp-body mt-4 text-prepa-naranja-texto lg:mt-5 lg:min-h-[60px]">Tus principales fortalezas</p>
+      </li>
+      <li class="flex w-[calc(50%-16px)] max-w-[295px] flex-col items-center text-center lg:w-[295px]">
+        <span class="flex h-[94px] w-[94px] items-center justify-center rounded-tile lg:h-[129px] lg:w-[129px] bg-prepa-amarillo">
+          <img src="assets/icono-competencias-humanas.png" alt="Psychology (1)" loading="lazy" width="58" height="58" class="h-[42px] w-auto lg:h-[58px]">
+        </span>
+        <p class="lp-body mt-4 text-prepa-naranja-texto lg:mt-5 lg:min-h-[60px]">Tu nivel de competencias humanas</p>
+      </li>
+      <li class="flex w-[calc(50%-16px)] max-w-[295px] flex-col items-center text-center lg:w-[295px]">
+        <span class="flex h-[94px] w-[94px] items-center justify-center rounded-tile lg:h-[129px] lg:w-[129px] bg-prepa-naranja-medio">
+          <img src="assets/icono-idiomas.png" alt="language_900dp_FFFFFF_FILL0_wght200_GRAD0_opsz48" loading="lazy" width="58" height="58" class="h-[42px] w-auto lg:h-[58px]">
+        </span>
+        <p class="lp-body mt-4 text-prepa-naranja-texto lg:mt-5 lg:min-h-[60px]">Tu dominio de idiomas</p>
+      </li>
+      <li class="flex w-[calc(50%-16px)] max-w-[295px] flex-col items-center text-center lg:w-[295px]">
+        <span class="flex h-[94px] w-[94px] items-center justify-center rounded-tile lg:h-[129px] lg:w-[129px] bg-prepa-amarillo">
+          <img src="assets/icono-eventos.png" alt="event_available_800dp_CB6015_FILL0_wght200_GRAD0_opsz48" loading="lazy" width="58" height="58" class="h-[42px] w-auto lg:h-[58px]">
+        </span>
+        <p class="lp-body mt-4 text-prepa-naranja-texto lg:mt-5 lg:min-h-[60px]">Tu participación destacada en eventos</p>
+      </li>
+      <li class="flex w-[calc(50%-16px)] max-w-[295px] flex-col items-center text-center lg:w-[295px]">
+        <span class="flex h-[94px] w-[94px] items-center justify-center rounded-tile lg:h-[129px] lg:w-[129px] bg-prepa-naranja-medio">
+          <img src="assets/cognition.svg" alt="" loading="lazy" width="58" height="58" class="h-[42px] w-auto lg:h-[58px]">
+        </span>
+        <p class="lp-body mt-4 text-prepa-naranja-texto lg:mt-5 lg:min-h-[60px]">Tu Ruta de Exploración Profesional y proyecto final</p>
+      </li>
+      <li class="flex w-[calc(50%-16px)] max-w-[295px] flex-col items-center text-center lg:w-[295px]">
+        <span class="flex h-[94px] w-[94px] items-center justify-center rounded-tile lg:h-[129px] lg:w-[129px] bg-prepa-amarillo">
+          <img src="assets/icono-certificaciones.png" alt="workspace_premium_500dp_CB6015_FILL0_wght200_GRAD0_opsz48" loading="lazy" width="58" height="58" class="h-[42px] w-auto lg:h-[58px]">
+        </span>
+        <p class="lp-body mt-4 text-prepa-naranja-texto lg:mt-5 lg:min-h-[60px]">Tus certificaciones</p>
+      </li>
+      <li class="flex w-[calc(50%-16px)] max-w-[295px] flex-col items-center text-center lg:w-[295px]">
+        <span class="flex h-[94px] w-[94px] items-center justify-center rounded-tile lg:h-[129px] lg:w-[129px] bg-prepa-naranja-medio">
+          <img src="assets/handshake.svg" alt="handshake" loading="lazy" width="58" height="58" class="h-[42px] w-auto lg:h-[58px]">
+        </span>
+        <p class="lp-body mt-4 text-prepa-naranja-texto lg:mt-5 lg:min-h-[60px]">Tus experiencias interculturales</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="prepa26 rutas-prepa bg-prepa-gris pb-14 pt-14 lg:pb-[79px] lg:pt-[83px]" id="rutas">
+  <div class="lp-container">
+    <header class="mx-auto max-w-lp-text text-center text-prepa-verde">
+      <h2 class="lp-heading">Llega a la universidad con mayor claridad</h2>
+      <div class="lp-body mt-6 lg:mt-10 lg:pl-[7px]"><p>La orientación vocacional y las Rutas Exploratorias Profesionales te permiten conocer intereses, probar áreas y relacionar lo que aprendes con posibles carreras. Así puedes tomar tu siguiente decisión con más información y confianza.</p></div>
+    </header>
+    <div class="mt-10 flex items-center gap-1.5 lg:mt-[89px] lg:block">
+      <button type="button" class="js-rutas-anterior flex h-[35px] w-[18px] shrink-0 items-center justify-center transition-opacity hover:opacity-70 lg:hidden" aria-label="Ver ruta anterior">
+        <img src="assets/chevron-left.svg" alt="" aria-hidden="true" width="11" height="20">
+      </button>
+      <ul class="js-rutas-track flex min-w-0 flex-1 snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth [scrollbar-width:none] lg:flex-wrap lg:justify-center lg:gap-x-5 lg:gap-y-[41px] lg:overflow-visible [&amp;::-webkit-scrollbar]:hidden">
+        <li class="flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-card-sm text-prepa-gris lg:min-h-[600px] lg:w-[400px] lg:rounded-card  bg-prepa-amarillo">
+          <img src="assets/ruta-negocios.jpg" alt="negocios" loading="lazy" width="400" height="280" class="h-[132px] w-full object-cover lg:h-[280px]">
+          <div class="px-4 pb-6 pt-5 text-center lg:px-10 lg:pb-10 lg:pt-10 lg:text-left">
+            <h3 class="text-card-title font-bold">Administración de Negocios</h3>
+            <div class="lp-body mt-3 lg:mt-[43px]"><p>Descubre cómo funcionan las organizaciones y desarrolla ideas para crear, administrar y hacer crecer proyectos de negocio.</p></div>
+          </div>
+        </li>
+        <li class="flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-card-sm text-prepa-gris lg:min-h-[600px] lg:w-[400px] lg:rounded-card  bg-prepa-naranja-medio">
+          <img src="assets/ruta-salud.jpg" alt="salud-prepa" loading="lazy" width="400" height="280" class="h-[132px] w-full object-cover lg:h-[280px]">
+          <div class="px-4 pb-6 pt-5 text-center lg:px-10 lg:pb-10 lg:pt-10 lg:text-left">
+            <h3 class="text-card-title font-bold">Bienestar y Salud</h3>
+            <div class="lp-body mt-3 lg:mt-[43px]"><p>Explora los factores que favorecen la salud y el bienestar integral, así como las áreas profesionales relacionadas con el cuidado de las personas.</p></div>
+          </div>
+        </li>
+        <li class="flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-card-sm text-prepa-gris lg:min-h-[600px] lg:w-[400px] lg:rounded-card  bg-prepa-naranja">
+          <img src="assets/ruta-diseno.jpg" alt="diseño-prepa" loading="lazy" width="400" height="280" class="h-[132px] w-full object-cover lg:h-[280px]">
+          <div class="px-4 pb-6 pt-5 text-center lg:px-10 lg:pb-10 lg:pt-10 lg:text-left">
+            <h3 class="text-card-title font-bold">Diseño e Ilustración</h3>
+            <div class="lp-body mt-3 lg:mt-[43px]"><p>Desarrolla tu creatividad y aprende a comunicar ideas mediante recursos visuales, herramientas digitales y proyectos de diseño.</p></div>
+          </div>
+        </li>
+        <li class="flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-card-sm text-prepa-gris lg:min-h-[600px] lg:w-[400px] lg:rounded-card lg:ml-[82px] bg-prepa-naranja-medio">
+          <img src="assets/ruta-tecnologia.jpg" alt="robotica-prepa" loading="lazy" width="400" height="280" class="h-[132px] w-full object-cover lg:h-[280px]">
+          <div class="px-4 pb-6 pt-5 text-center lg:px-10 lg:pb-10 lg:pt-10 lg:text-left">
+            <h3 class="text-card-title font-bold">Tecnología</h3>
+            <div class="lp-body mt-3 lg:mt-[43px]"><p>Conoce cómo la programación, la robótica y las herramientas digitales permiten crear soluciones para los retos actuales.</p></div>
+          </div>
+        </li>
+        <li class="flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-card-sm text-prepa-gris lg:min-h-[600px] lg:w-[400px] lg:rounded-card  bg-prepa-naranja">
+          <img src="assets/ruta-innovacion.jpg" alt="inovacion-prepa" loading="lazy" width="400" height="280" class="h-[132px] w-full object-cover lg:h-[280px]">
+          <div class="px-4 pb-6 pt-5 text-center lg:px-10 lg:pb-10 lg:pt-10 lg:text-left">
+            <h3 class="text-card-title font-bold">Transformación e Innovación</h3>
+            <div class="lp-body mt-3 lg:mt-[43px]"><p>Aprende a identificar oportunidades, generar ideas y convertirlas en soluciones que mejoren productos, servicios o procesos.</p></div>
+          </div>
+        </li>
+      </ul>
+      <button type="button" class="js-rutas-siguiente flex h-[35px] w-[18px] shrink-0 items-center justify-center transition-opacity hover:opacity-70 lg:hidden" aria-label="Ver siguiente ruta">
+        <img src="assets/chevron-right.svg" alt="" aria-hidden="true" width="11" height="20">
+      </button>
+    </div>
+    <div class="js-rutas-puntos mt-4 flex justify-center gap-1.5 lg:hidden" role="group" aria-label="Llega a la universidad con mayor claridad">
+      <button type="button" class="-m-[9px] p-[9px]" aria-label="Administración de Negocios">
+        <span class="block h-[6px] w-[6px] rounded-full bg-prepa-punto transition-colors"></span>
+      </button>
+      <button type="button" class="-m-[9px] p-[9px]" aria-label="Bienestar y Salud">
+        <span class="block h-[6px] w-[6px] rounded-full bg-prepa-punto transition-colors"></span>
+      </button>
+      <button type="button" class="-m-[9px] p-[9px]" aria-label="Diseño e Ilustración">
+        <span class="block h-[6px] w-[6px] rounded-full bg-prepa-punto transition-colors"></span>
+      </button>
+      <button type="button" class="-m-[9px] p-[9px]" aria-label="Tecnología">
+        <span class="block h-[6px] w-[6px] rounded-full bg-prepa-punto transition-colors"></span>
+      </button>
+      <button type="button" class="-m-[9px] p-[9px]" aria-label="Transformación e Innovación">
+        <span class="block h-[6px] w-[6px] rounded-full bg-prepa-punto transition-colors"></span>
+      </button>
+    </div>
+  </div>
+</section>
+<section class="prepa26 acompanamiento-prepa bg-prepa-naranja pb-14 pt-14 lg:pb-[124px] lg:pt-[125px]" id="acompanamiento">
+  <div class="mx-auto w-full max-w-[1440px] space-y-6 px-3 lg:space-y-10 lg:px-5 lg:pl-[142px] lg:pr-[97px]">
+    <div class="grid items-stretch gap-6 lg:grid-cols-2 lg:gap-10">
+      <img src="assets/acompanamiento-estudiantes.webp" alt="Cuatro estudiantes de Prepa Tecmilenio abrazados" loading="lazy" width="581" height="459" class="order-2 h-auto w-full rounded-card-sm object-cover lg:rounded-card lg:order-1">
+      <div class="order-1 flex flex-col rounded-card-sm p-6 text-prepa-gris lg:order-2 lg:rounded-card lg:px-media-p lg:pb-media-p lg:pt-[42px] bg-prepa-naranja-oscuro">
+        <h2 class="lp-heading">Te acompañamos durante toda la preparatoria</h2>
+        <div class="lp-body mt-6 mb-6 lg:mt-[36px]"><p>Cuenta con el apoyo de un Líder de Generación que orienta tu desarrollo académico y personal, responde tus dudas y te ayuda a avanzar con confianza.</p></div>
+      </div>
+    </div>
+    <div class="grid items-stretch gap-6 lg:grid-cols-2 lg:gap-10">
+      <img src="assets/experiencia-estudiantil.webp" alt="Estudiante sosteniendo un balón de fútbol" loading="lazy" width="581" height="500" class="order-2 h-auto w-full rounded-card-sm object-cover lg:rounded-card lg:order-3">
+      <div class="order-1 flex flex-col rounded-card-sm p-6 text-prepa-gris lg:order-2 lg:rounded-card lg:px-media-p lg:pb-media-p lg:pt-[60px] bg-prepa-amarillo">
+        <h2 class="lp-heading">¡Descubre cómo se
+vive esta experiencia!</h2>
+        <div class="lp-body mt-6 mb-6 lg:mt-[21px]"><p>VIVE la oportunidad de participar en talleres deportivos y culturales que te permitan disfrutar tu pasión y ser feliz durante tu paso como estudiante en Prepa Tecmi.</p>
+<p>Las sociedades estudiantiles, deportes, arte y cultura, gaming e impacto social permiten descubrir talentos, desarrollar liderazgo, disciplina y construir amistades.</p>
+<p>&nbsp;</p></div>
+        <img src="assets/equipos-preparatoria.webp" alt="Equipos y sociedades estudiantiles de Prepa Tecmilenio" loading="lazy" class="mt-10 h-[60px] w-auto max-w-full self-start lg:mt-auto lg:h-20">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="prepa26 escuela-familias-prepa bg-prepa-crema py-14 lg:pb-[55px] lg:pt-[56px]" id="escuela-de-familias">
+  <div class="mx-auto grid w-full max-w-[1440px] items-center gap-8 px-3 lg:grid-cols-2 lg:items-start lg:gap-10 lg:px-5 lg:pl-[143px] lg:pr-[114px]">
+    <div class="text-center text-prepa-verde lg:pt-[67px] lg:text-left">
+      <img src="assets/logo-prepa-familias.png" alt="Prepa Tecmilenio — Escuela de Familias Positivas" width="361" height="56" class="mx-auto h-[44px] w-auto lg:mx-0 lg:h-[56px]">
+      <h2 class="lp-heading mx-auto mt-8 max-w-[505px] lg:mx-0 lg:mt-[33px]">Herramientas para acompañar, conectar y crecer en familia</h2>
+      <div class="lp-body mx-auto mt-8 max-w-[550px] lg:mx-0 lg:mt-[34px]"><p>La Escuela de Familias Positivas brinda orientación y recursos prácticos para afrontar los retos de la adolescencia. Ofrece conferencias, talleres, cursos autodirigidos, actividades y eventos que fortalecen la comunicación, el bienestar y los vínculos familiares.</p></div>
+    </div>
+    <img src="assets/escuela-familias.webp" alt="" loading="lazy" width="563" height="514" class="h-[320px] w-full rounded-card-sm object-cover lg:h-[514px] lg:max-w-[563px] lg:justify-self-end lg:rounded-card">
+  </div>
+</section>
+<section class="prepa26 cta-final-prepa bg-prepa-amarillo pb-14 pt-14 lg:pb-[100px] lg:pt-[95px]" id="cta-final">
+  <div class="lp-container">
+    <div class="mx-auto max-w-[905px] text-center text-prepa-gris lg:mx-0 lg:ml-[134px] lg:mr-[201px]">
+      <h2 class="lp-heading">Hay mucho de ti por descubrir</h2>
+      <div class="lp-body mt-8 lg:mt-[30px]"><p>Conoce la nueva Prepa Tecmi y encuentra un lugar para aprender, crecer, conectar con otras personas y construir lo que sigue. Si tienes alguna duda sobre el proceso de admisión, escríbenos. Nos contactaremos contigo para ayudarte a tomar la mejor decisión.</p></div>
+      <a href="#recibe-informacion" class="lp-btn lp-btn--verde mt-8 text-white lg:mt-[30px]">Más información</a>
+    </div>
+  </div>
+</section>
+    </main>
+<footer class="prepa26 footer_ago26 footer-prepa bg-prepa-verde pb-[49px] pt-[34px] lg:pb-[30px] lg:pt-10">
+  <div class="lp-container">
+    <div class="flex flex-col items-center gap-[39px] sm:flex-row sm:items-center sm:justify-between sm:gap-8">
+      <a href="#recibe-informacion">
+        <img src="assets/logo-prepa-tecmilenio.svg" alt="Prepa Tecmilenio" width="178" height="35" class="h-7 w-auto lg:h-[35px]">
+      </a>
+      <ul class="flex items-center gap-[14px] lg:-mr-[13px]">
+        <li>
+          <a href="#" class="-my-[13.5px] flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-80 lg:-my-[4.5px]" aria-label="Facebook">
+            <img src="assets/facebook.svg" alt="" aria-hidden="true" width="17" height="17" class="h-[17px] w-auto">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="-my-[13.5px] flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-80 lg:-my-[4.5px]" aria-label="X">
+            <img src="assets/x.svg" alt="" aria-hidden="true" width="17" height="17" class="h-[17px] w-auto">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="-my-[13.5px] flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-80 lg:-my-[4.5px]" aria-label="LinkedIn">
+            <img src="assets/linkedin.svg" alt="" aria-hidden="true" width="17" height="17" class="h-[17px] w-auto">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="-my-[13.5px] flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-80 lg:-my-[4.5px]" aria-label="Instagram">
+            <img src="assets/instagram.svg" alt="" aria-hidden="true" width="17" height="17" class="h-[17px] w-auto">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-[39px] flex flex-col items-center gap-6 text-[10px] leading-[14px] lg:mt-[114px] lg:flex-row lg:items-center lg:justify-between lg:text-legal">
+      <p class="font-medium text-prepa-gris">Tecmilenio. Av. Paseo del Acueducto 2610, Col. Del Paseo Residencial, Monterrey, Nuevo León 64909, México, (81) 1052-0000 Ext. 4697</p>
+      <ul class="flex flex-wrap items-center justify-center gap-x-[60px] gap-y-2">
+        <li>
+          <a href="#" class="font-bold text-prepa-naranja underline underline-offset-2 transition-opacity hover:opacity-80">Aviso de privacidad</a>
+        </li>
+        <li>
+          <a href="#" class="font-bold text-prepa-naranja underline underline-offset-2 transition-opacity hover:opacity-80">Términos y Condiciones</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
