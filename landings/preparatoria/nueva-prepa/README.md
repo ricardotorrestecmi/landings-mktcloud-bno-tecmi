@@ -78,8 +78,14 @@ tu futuro" y "Al graduarte…", que es donde se colocó aquí.
 Se maquetó contra esa especificación: tarjeta de 393 px, foto de 220 px, franja `#00534c`
 con 16 px de padding y 8 px entre el nombre y la dirección, nombre en Montserrat Bold 20/28
 y dirección Regular 18/24, ambos en blanco y centrados, y flechas circulares de 47 px sobre
-`#f5f5f5`. El carrusel deja la tercera tarjeta cortada a propósito: así está en el diseño, y
-por eso este módulo sí lleva flechas en escritorio (el de rutas no).
+`#f5f5f5`.
+
+En escritorio las tres tarjetas caben completas y las flechas se ocultan, igual que en el
+módulo de rutas; el carrusel con flechas queda sólo para móvil. En el Figma la tercera
+tarjeta aparece cortada, pero es el borde del frame del diseño, no una decisión: al
+maquetarlo así se leía como un error. Para que no se corte entre 1024 y 1280 px, donde el
+contenedor no da para tres tarjetas de 393, las tarjetas reparten el ancho disponible con
+un tope de 393 px, que es la medida del Figma en pantallas anchas.
 
 Las medidas propias van en el `<style>` del `<head>` porque `styles.css` es un build fijo de
 la plantilla y no trae esas utilidades.
