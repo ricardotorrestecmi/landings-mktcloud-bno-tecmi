@@ -15,6 +15,19 @@
        del tema y no esta ni en preflight.css ni en styles.css. */
     .prepa26 .mb-6 { margin-bottom: 1.5rem; }
 
+    /* Modulo de ubicaciones (CDMX). Medidas del Figma: tarjeta de 393px, foto de
+       220px, franja #00534c con 16px de padding y 8px entre lineas, y flechas
+       circulares de 47px sobre #f5f5f5. Va aparte porque styles.css es un build
+       fijo de la plantilla y no trae estas utilidades. */
+    .ubicaciones-prepa__tarjeta { width: 100%; }
+    .ubicaciones-prepa__foto { height: 176px; }
+    .ubicaciones-prepa__datos { padding: 16px; gap: 8px; }
+    .ubicaciones-prepa__flecha { width: 47px; height: 47px; border-radius: 9999px; background: #f5f5f5; }
+    @media (min-width: 1024px) {
+      .ubicaciones-prepa__tarjeta { width: 393px; }
+      .ubicaciones-prepa__foto { height: 220px; }
+    }
+
     /* CSS propio de la pagina en HubSpot (sus bloques <style> del head). */
     .prepa26 img[src*="equipos-preparatoria"] { align-self: center; }
     .hero-container > div:first-child { margin-top: auto; margin-bottom: auto; }
@@ -461,6 +474,44 @@
           <div id="cert-6" class="lp-body hidden pt-4 text-prepa-verde">&nbsp;<span style="color: #393939; background-color: #ffffff;">Profundiza en un área de interés, desarrolla un proyecto y descubre opciones profesionales relacionadas con lo que te apasiona.</span>&nbsp;</div>
         </li>
       </ul>
+    </div>
+  </div>
+</section>
+<section class="prepa26 ubicaciones-prepa pb-14 pt-14 lg:pb-[79px] lg:pt-[83px]" id="ubicaciones">
+  <div class="lp-container">
+    <header class="mx-auto max-w-lp-text text-center text-prepa-verde">
+      <h2 class="lp-heading">¿Cuáles son las ubicaciones que tenemos en Ciudad de México?</h2>
+    </header>
+    <div class="mt-10 flex items-center gap-1.5 lg:mt-[44px] lg:justify-center lg:gap-4">
+      <button type="button" class="js-ubicaciones-anterior ubicaciones-prepa__flecha flex shrink-0 items-center justify-center transition-opacity hover:opacity-70" aria-label="Ver ubicación anterior">
+        <img src="assets/chevron-left.svg" alt="" aria-hidden="true" width="11" height="20">
+      </button>
+      <ul class="js-ubicaciones-track flex min-w-0 flex-1 snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth [scrollbar-width:none] lg:flex-none [&amp;::-webkit-scrollbar]:hidden">
+        <li class="ubicaciones-prepa__tarjeta flex shrink-0 snap-start flex-col overflow-hidden rounded-card-sm bg-prepa-gris lg:rounded-card">
+          <img src="assets/campus-cuautitlan-izcalli.webp" alt="Campus Cuautitlán Izcalli" loading="lazy" width="786" height="440" class="ubicaciones-prepa__foto w-full object-cover">
+          <div class="ubicaciones-prepa__datos flex flex-1 flex-col bg-prepa-verde text-center text-white">
+            <h3 class="text-card-title font-bold">Campus Cuautitlán Izcalli</h3>
+            <p class="lp-body">Dr. J. Jiménez Cantú s/n, Bosques de la Hacienda, 54715 Cuautitlán Izcalli, Méx</p>
+          </div>
+        </li>
+        <li class="ubicaciones-prepa__tarjeta flex shrink-0 snap-start flex-col overflow-hidden rounded-card-sm bg-prepa-gris lg:rounded-card">
+          <img src="assets/campus-ferreria.webp" alt="Campus Ferrería" loading="lazy" width="664" height="372" class="ubicaciones-prepa__foto w-full object-cover">
+          <div class="ubicaciones-prepa__datos flex flex-1 flex-col bg-prepa-verde text-center text-white">
+            <h3 class="text-card-title font-bold">Campus Ferrería</h3>
+            <p class="lp-body">Av. de las Granjas 800, Santa Barbara, Azcapotzalco, 02230 Ciudad de México, CDMX</p>
+          </div>
+        </li>
+        <li class="ubicaciones-prepa__tarjeta flex shrink-0 snap-start flex-col overflow-hidden rounded-card-sm bg-prepa-gris lg:rounded-card">
+          <img src="assets/campus-connect.webp" alt="Espacio Connect Las Américas" loading="lazy" width="664" height="372" class="ubicaciones-prepa__foto w-full object-cover">
+          <div class="ubicaciones-prepa__datos flex flex-1 flex-col bg-prepa-verde text-center text-white">
+            <h3 class="text-card-title font-bold">Espacio Connect Las Américas</h3>
+            <p class="lp-body">Lote1 Norte Paseo de Las Americas Manzana 138, Av Insurgentes, Las Américas, 55076 Ecatepec de Morelos, Méx</p>
+          </div>
+        </li>
+      </ul>
+      <button type="button" class="js-ubicaciones-siguiente ubicaciones-prepa__flecha flex shrink-0 items-center justify-center transition-opacity hover:opacity-70" aria-label="Ver siguiente ubicación">
+        <img src="assets/chevron-right.svg" alt="" aria-hidden="true" width="11" height="20">
+      </button>
     </div>
   </div>
 </section>

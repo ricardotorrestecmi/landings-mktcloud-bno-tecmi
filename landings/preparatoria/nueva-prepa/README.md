@@ -68,6 +68,33 @@ La diferencia del hero es el widget de reCAPTCHA, que la réplica no monta. Es l
 Sin scroll horizontal a 390, 768 ni 1440. El acordeón y el carrusel (flechas y puntos) se
 comportan igual que en el original; el JS es el mismo de HubSpot.
 
+## El módulo de ubicaciones no viene de HubSpot, viene del Figma
+
+`#ubicaciones` ("¿Cuáles son las ubicaciones que tenemos en Ciudad de México?") es la
+única sección de esta landing que **no** está en la página de HubSpot. Sí está en el Figma
+`Plantilla Preparatoria (Copy)`, en el nodo `187:736`, entre "Certificaciones que impulsan
+tu futuro" y "Al graduarte…", que es donde se colocó aquí.
+
+Se maquetó contra esa especificación: tarjeta de 393 px, foto de 220 px, franja `#00534c`
+con 16 px de padding y 8 px entre el nombre y la dirección, nombre en Montserrat Bold 20/28
+y dirección Regular 18/24, ambos en blanco y centrados, y flechas circulares de 47 px sobre
+`#f5f5f5`. El carrusel deja la tercera tarjeta cortada a propósito: así está en el diseño, y
+por eso este módulo sí lleva flechas en escritorio (el de rutas no).
+
+Las medidas propias van en el `<style>` del `<head>` porque `styles.css` es un build fijo de
+la plantilla y no trae esas utilidades.
+
+**Diferencia conocida:** los chevrons son los `chevron-left/right.svg` que ya usa la página,
+en verde `#00534C`; el Figma los dibuja en `#666666`.
+
+**Pendiente de Marketing:** las tres fotos (`campus-*.webp`) se tomaron de
+`landings/preparatoria/preparatoria/`, que son las mismas del diseño. En la hoja de assets
+del Figma hay una nota que dice "Las ubicaciones yo las agrego", así que faltan sus URLs de
+Salesforce.
+
+Los textos (nombres y direcciones de los tres campus) coinciden palabra por palabra entre el
+Figma y la landing anterior.
+
 ## Erratas de la fuente (no se tocaron)
 
 Están así en la página de HubSpot. Decide Marketing:
