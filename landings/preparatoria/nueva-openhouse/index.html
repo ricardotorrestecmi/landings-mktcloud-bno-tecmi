@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open House Preparatoria Tecmilenio</title>
+  <!-- Sin meta description: la pagina en HubSpot la tiene vacia. Pendiente de Marketing (integrations/head-hubspot.md). -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Sin canonical ni og/twitter: el preview es noindex. El bloque para publicar esta en integrations/head-hubspot.md -->
+  <!-- Sin tracking (GTM/GA4/Clarity/TikTok/HubSpot loader): documentado en integrations/tracking.md -->
+  <link rel="stylesheet" href="preflight.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="hero-openhouse.css">
+  <style>
+    /* Complemento de la pagina: lo que la version de HubSpot recibia del CSS global
+       del tema y no esta ni en preflight.css ni en styles.css. */
+    .prepa26 .mb-6 { margin-bottom: 1.5rem; }
+
+    /* CSS propio de la pagina en HubSpot (su bloque <style> del head). */
+    html { scroll-behavior: smooth; }
+
+    /* De ese mismo bloque NO se copian dos cosas:
+       - El parche del hero en movil (background-image + min-height a 990/767/480 y
+         `#open-house.hero-openhouse > img {display:none}`). Quedo obsoleto: el modulo
+         "Prepa - Ago26 - Hero Open House TW" ya trae campo de imagen movil y resuelve
+         el cambio solo (ver hero-openhouse.css). Copiarlo ademas taparia la imagen nueva.
+       - `.hs-form fieldset:nth-child(...)` y el bloque de `.hero-container`, que vienen
+         heredados de la pagina de Preparatoria y aqui no aplican a nada. */
+  </style>
+</head>
+<body class="bg-white">
+<header class="prepa26 header_ago26 header-prepa bg-prepa-verde">
+  <div class="lp-container flex h-[70px] items-center justify-between gap-4 lg:h-[85px]">
+    <a href="#registro" class="shrink-0">
+      <img src="assets/logo-prepa-tecmilenio.svg" alt="Prepa Tecmilenio" width="178" height="35" class="h-[28px] w-auto lg:h-[35px]">
+    </a>
+    <div class="flex items-center gap-4 lg:gap-10">
+      <nav aria-label="Secciones de la página">
+        <ul class="hidden items-center gap-7 lg:flex">
+          <li>
+            <a href="#que-esperar" class="text-btn-sm font-medium text-white transition-opacity hover:opacity-80">Que esperar</a>
+          </li>
+          <li>
+            <a href="#galeria" class="text-btn-sm font-medium text-white transition-opacity hover:opacity-80">Galería</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#registro" class="lp-btn lp-btn--sm lp-btn--naranja text-white text-btn-sm">¡Quiero ser Halcón!</a>
+    </div>
+  </div>
+</header>
+    <main>
+      <section id="open-house" class="prepa26 hero-openhouse relative w-full [container-type:inline-size] hero-openhouse--con-movil">
+  <img src="assets/oh-hero-fondo.webp" alt="Ilustración del Open House de Prepa Tecmilenio con ventanas, estrellas y una foto de dos estudiantes" width="1440" height="723" class="hero-openhouse__fondo hero-openhouse__fondo--escritorio block w-full">
+  <img src="assets/oh-hero-fondo-movil.jpg" alt="Open House Prepa Tecmilenio: Descubre la nueva Prepa Tecmi, ven y conócenos el 10 de octubre 2026" width="550" height="620" class="hero-openhouse__fondo hero-openhouse__fondo--movil w-full">
+  <div class="hero-openhouse__texto absolute left-[43.4%] top-[39.4%] w-[46%] -translate-x-1/2 text-center">
+    <h1 class="font-semibold leading-[1.19] text-[3.125cqw]">
+      <span class="text-prepa-verde">Descubre la</span>
+      <span class="block text-prepa-naranja-medio">nueva Prepa Tecmi</span>
+    </h1>
+    <p class="mt-[1.1cqw] font-semibold leading-[1.2] text-[2.222cqw] text-prepa-verde">
+      <span class="block">Ven y conócenos</span>
+      <span class="block">10 de octubre 2026</span>
+    </p>
+  </div>
+</section>
+<section class="prepa26 barra-evento-openhouse bg-prepa-durazno-claro py-8 lg:py-0" id="evento">
+  <ul class="mx-auto flex w-full max-w-[1440px] flex-wrap gap-6 px-3 sm:flex-row sm:flex-nowrap sm:justify-between lg:h-[140px] lg:items-center lg:gap-0 lg:px-0 lg:pb-3 lg:pl-[134px] lg:pr-[94px]">
+    <li class="flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5">
+      <img src="assets/oh-calendario.svg" alt="" aria-hidden="true" width="45" height="50" class="shrink-0">
+      <p class="min-w-0 text-body text-prepa-verde lg:w-[210px]">
+        <span class="block font-bold">Fecha</span>
+        <span class="block font-normal">10 de Octubre 2026</span>
+      </p>
+    </li>
+    <li class="flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5">
+      <img src="assets/oh-reloj.svg" alt="" aria-hidden="true" width="42" height="42" class="shrink-0">
+      <p class="min-w-0 text-body text-prepa-verde lg:w-[210px]">
+        <span class="block font-bold">Hora</span>
+        <span class="block font-normal">9:00 am</span>
+      </p>
+    </li>
+    <li class="flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5 max-sm:w-full max-sm:justify-center">
+      <img src="assets/oh-ubicacion.svg" alt="" aria-hidden="true" width="29" height="37" class="shrink-0">
+      <p class="min-w-0 text-body text-prepa-verde lg:w-[210px]">
+        <span class="block font-bold">Lugar</span>
+        <span class="block font-normal">Tecmilenio</span>
+      </p>
+    </li>
+  </ul>
+</section>
+<section class="prepa26 expectativas-openhouse bg-prepa-crema pb-[85px] pt-12 lg:pb-[100px] lg:pt-20" id="que-esperar">
+  <div class="lp-container">
+    <h2 class="lp-heading mx-auto max-w-lp-text text-center text-prepa-verde">¿Qué puedes esperar del evento?</h2>
+    <div class="mt-[60px] flex items-center gap-1.5 lg:mt-[115px] lg:gap-[83px]">
+      <button type="button" class="js-expectativas-anterior flex h-[42px] w-[18px] shrink-0 items-center justify-center transition-opacity hover:opacity-70 lg:w-[22px]" aria-label="Ver anteriores">
+        <img src="assets/oh-chevron-izq.svg" alt="" aria-hidden="true" width="22" height="42">
+      </button>
+      <ul class="js-expectativas-track flex min-w-0 flex-1 snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth [scrollbar-width:none] lg:gap-[73px] [&amp;::-webkit-scrollbar]:hidden">
+        <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
+          <img src="assets/oh-personas.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Vivirás el ambiente de las sociedades estudiantiles</p>
+        </li>
+        <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
+          <img src="assets/oh-interculturalidad.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Realizarás un presupuesto para conocer cómo vivir tu primera experiencia intercultural</p>
+        </li>
+        <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
+          <img src="assets/oh-certificaciones.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Entenderás las certificaciones que ofrece Prepa Tecmilenio</p>
+        </li>
+        <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
+          <img src="assets/oh-medalla.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Disfrutarás el aprendizaje por retos interdisciplinarios</p>
+        </li>
+        <li class="flex min-h-[237px] w-full shrink-0 snap-start flex-col items-center rounded-card-sm bg-prepa-naranja px-6 pb-8 pt-10 text-center text-white lg:h-[340px] lg:min-h-0 lg:w-[295px] lg:rounded-card lg:px-0 lg:pb-0 lg:pt-[63px]">
+          <img src="assets/oh-conexion.svg" alt="" loading="lazy" width="80" height="80" class="h-[60px] w-[60px] lg:h-20 lg:w-20">
+          <p class="lp-body mt-6 max-w-[222px] lg:mt-[53px]">Conocerás gente de tu edad en distintas actividades</p>
+        </li>
+      </ul>
+      <button type="button" class="js-expectativas-siguiente flex h-[42px] w-[18px] shrink-0 items-center justify-center transition-opacity hover:opacity-70 lg:w-[22px]" aria-label="Ver siguientes">
+        <img src="assets/oh-chevron-der.svg" alt="" aria-hidden="true" width="22" height="42">
+      </button>
+    </div>
+  </div>
+</section>
+<section class="prepa26 galeria-openhouse bg-prepa-gris pb-[43px] pt-[41px] lg:pb-[100px] lg:pt-20" id="galeria">
+  <div class="lp-container">
+    <h2 class="lp-heading mx-auto max-w-lp-text text-center text-prepa-verde">¡Una mirada dentro de nuestro Open House!</h2>
+  </div>
+  <ul class="js-galeria-track mt-[45px] flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth px-[56px] [scrollbar-width:none] lg:mt-[54px] lg:gap-5 lg:px-[520px] [&amp;::-webkit-scrollbar]:hidden">
+    <li class="relative shrink-0 snap-center">
+      <img src="assets/oh-galeria-0.jpg" alt="open-house-prepa-cdmx1" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+    </li>
+    <li class="relative shrink-0 snap-center">
+      <img src="assets/oh-galeria-1.webp" alt="Estudiantes caminando por el campus durante el Open House" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+    </li>
+    <li class="relative shrink-0 snap-center">
+      <img src="assets/oh-galeria-2.webp" alt="Grupo de estudiantes con la mascota de Prepa Tecmilenio" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+    </li>
+    <li class="relative shrink-0 snap-center">
+      <img src="assets/oh-galeria-3.webp" alt="La mascota bailando con las familias asistentes" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+    </li>
+    <li class="relative shrink-0 snap-center">
+      <img src="assets/oh-galeria-5.webp" alt="Video del Open House" loading="lazy" width="400" height="495" class="h-[246px] w-[208px] rounded-card-sm object-cover lg:h-[495px] lg:w-[400px] lg:rounded-card">
+      <span class="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true">
+        <img src="assets/oh-play.svg" alt="" width="41" height="40" class="h-[30px] w-auto lg:h-10">
+      </span>
+    </li>
+  </ul>
+  <div class="js-galeria-puntos mt-[25px] flex justify-center gap-1.5 lg:mt-[24px] lg:gap-[10px]" role="group" aria-label="¡Una mirada dentro de nuestro Open House!">
+    <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 1">
+      <span class="block h-1.5 w-1.5 rounded-full bg-prepa-amarillo transition-colors lg:h-[10px] lg:w-[10px]"></span>
+    </button>
+    <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 2">
+      <span class="block h-1.5 w-1.5 rounded-full bg-prepa-amarillo transition-colors lg:h-[10px] lg:w-[10px]"></span>
+    </button>
+    <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 3">
+      <span class="block h-1.5 w-1.5 rounded-full bg-prepa-amarillo transition-colors lg:h-[10px] lg:w-[10px]"></span>
+    </button>
+    <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 4">
+      <span class="block h-1.5 w-1.5 rounded-full bg-prepa-amarillo transition-colors lg:h-[10px] lg:w-[10px]"></span>
+    </button>
+    <button type="button" class="-m-[9px] p-[9px]" aria-label="Ver foto 5">
+      <span class="block h-1.5 w-1.5 rounded-full bg-prepa-amarillo transition-colors lg:h-[10px] lg:w-[10px]"></span>
+    </button>
+  </div>
+</section>
+<section class="prepa26 video-openhouse bg-prepa-verde pb-14 pt-[37px] lg:pb-[101px] lg:pt-[100px]" id="video">
+  <div class="lp-container grid items-center gap-7 lg:grid-cols-[530px_611px] lg:items-start lg:gap-8 lg:gap-x-[99px]">
+    <div class="text-center text-prepa-gris lg:pt-[43px] lg:text-left">
+      <h2 class="lp-heading">Descubre cómo es un día en Prepa Tecmilenio</h2>
+      <div class="text-body font-medium mt-5 lg:mt-[25px]"><p>Conoce nuestras instalaciones, vive el ambiente estudiantil y resuelve tus dudas en nuestro Open House.</p></div>
+      <a href="https://www.youtube.com/watch?v=dqUHsj5LZL0" class="lp-btn lp-btn--naranja mt-6 w-full text-white lg:mt-[36px] lg:w-auto">Ver video</a>
+    </div>
+    <a href="https://www.youtube.com/watch?v=dqUHsj5LZL0" class="group relative block overflow-hidden rounded-card-sm lg:rounded-card" aria-label="Reproducir el video">
+      <img src="assets/oh-video.webp" alt="Video: conoce a tus futuros amigos y compañeros" loading="lazy" width="611" height="344" class="h-auto w-full">
+      <span class="pointer-events-none absolute left-1/2 top-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center transition-transform duration-200 group-hover:scale-110">
+        <img src="assets/oh-play.svg" alt="" aria-hidden="true" width="41" height="40">
+      </span>
+    </a>
+  </div>
+</section>
+<section class="prepa26 formulario-openhouse bg-prepa-naranja pb-5 pt-5 lg:pb-[100px] lg:pt-[88px]" id="registro">
+  <div class="mx-auto grid w-full max-w-[1440px] items-start gap-8 px-3 lg:grid-cols-[505px_505px] lg:gap-[83px] lg:px-0 lg:pl-[142px]">
+    <img src="assets/oh-form-foto.png" alt="form-image-open-house-prepa-2" loading="lazy" width="1010" height="1294" class="hidden h-auto w-full rounded-card-sm object-cover lg:block lg:h-[647px] lg:rounded-card">
+    <div class="text-center text-prepa-gris lg:text-left">
+      <h2 class="lp-heading text-white lg:mt-[11px] lg:w-[537px]">¡Regístrate y vive la experiencia!</h2>
+      <div class="prepa26-form mt-[30px] text-left lg:mt-[42px]">
+        <form class="hs-form stacked" id="np-form" novalidate>
+      <fieldset class="form-columns-1">
+        <div class="hs_email hs-email hs-fieldtype-text field hs-form-field">
+          <label for="np-email"><span>Correo electrónico</span></label>
+          <div class="input"><input id="np-email" name="email" type="email" class="hs-input" placeholder="example@*" autocomplete="email" required></div>
+        </div>
+      </fieldset>
+      <div class="hs_submit">
+        <div class="actions"><input type="submit" class="hs-button primary large" value="Enviar"></div>
+      </div>
+    </form>
+    <p class="np-form-gracias" role="status" hidden>¡Gracias! Pronto nos pondremos en contacto contigo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+<footer class="prepa26 footer_ago26 footer-prepa bg-prepa-verde pb-[49px] pt-[34px] lg:pb-[30px] lg:pt-10">
+  <div class="lp-container">
+    <div class="flex flex-col items-center gap-[39px] sm:flex-row sm:items-center sm:justify-between sm:gap-8">
+      <a href="#registro">
+        <img src="assets/logo-prepa-tecmilenio.svg" alt="Prepa Tecmilenio" width="178" height="35" class="h-7 w-auto lg:h-[35px]">
+      </a>
+      <ul class="flex items-center gap-[14px] lg:-mr-[13px]">
+        <li>
+          <a href="#" class="-my-[13.5px] flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-80 lg:-my-[4.5px]" aria-label="Facebook">
+            <img src="assets/facebook.svg" alt="" aria-hidden="true" width="17" height="17" class="h-[17px] w-auto">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="-my-[13.5px] flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-80 lg:-my-[4.5px]" aria-label="X">
+            <img src="assets/x.svg" alt="" aria-hidden="true" width="17" height="17" class="h-[17px] w-auto">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="-my-[13.5px] flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-80 lg:-my-[4.5px]" aria-label="LinkedIn">
+            <img src="assets/linkedin.svg" alt="" aria-hidden="true" width="17" height="17" class="h-[17px] w-auto">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="-my-[13.5px] flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-80 lg:-my-[4.5px]" aria-label="Instagram">
+            <img src="assets/instagram.svg" alt="" aria-hidden="true" width="17" height="17" class="h-[17px] w-auto">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-[39px] flex flex-col items-center gap-6 text-[10px] leading-[14px] lg:mt-[114px] lg:flex-row lg:items-center lg:justify-between lg:text-legal">
+      <p class="font-medium text-prepa-gris">Tecmilenio. Av. Paseo del Acueducto 2610, Col. Del Paseo Residencial, Monterrey, Nuevo León 64909, México, (81) 1052-0000 Ext. 4697</p>
+      <ul class="flex flex-wrap items-center justify-center gap-x-[60px] gap-y-2">
+        <li>
+          <a href="#" class="font-bold text-prepa-naranja underline underline-offset-2 transition-opacity hover:opacity-80">Aviso de privacidad</a>
+        </li>
+        <li>
+          <a href="#" class="font-bold text-prepa-naranja underline underline-offset-2 transition-opacity hover:opacity-80">Términos y Condiciones</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
