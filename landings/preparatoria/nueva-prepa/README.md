@@ -80,12 +80,31 @@ con 16 px de padding y 8 px entre el nombre y la dirección, nombre en Montserra
 y dirección Regular 18/24, ambos en blanco y centrados, y flechas circulares de 47 px sobre
 `#f5f5f5`.
 
-En escritorio las tres tarjetas caben completas y las flechas se ocultan, igual que en el
-módulo de rutas; el carrusel con flechas queda sólo para móvil. En el Figma la tercera
-tarjeta aparece cortada, pero es el borde del frame del diseño, no una decisión: al
-maquetarlo así se leía como un error. Para que no se corte entre 1024 y 1280 px, donde el
-contenedor no da para tres tarjetas de 393, las tarjetas reparten el ancho disponible con
-un tope de 393 px, que es la medida del Figma en pantallas anchas.
+En el Figma la tercera tarjeta aparece cortada, pero es el borde del frame del diseño, no
+una decisión: maquetado así se leía como un error.
+
+### Agregar o quitar campus no pide tocar nada más
+
+El módulo decide solo si es carrusel. `script.js` mira si el track desborda y pone o quita
+`ubicaciones-prepa--fijo` en la `<section>`; esa clase esconde las flechas y centra la fila.
+Así que para un cuarto campus basta con **duplicar un `<li>`** y cambiarle foto, nombre y
+dirección.
+
+Caben tres a la vez: las tarjetas reparten el ancho disponible con un tope de 393 px, que es
+la medida del Figma. Comprobado recargando en cada ancho:
+
+| | 1440 | 1024 | 390 |
+| --- | --- | --- | --- |
+| 3 campus | 393 px, sin flechas | 317 px, sin flechas | carrusel con flechas |
+| 4 campus | 361 px, carrusel | 275 px, carrusel | carrusel con flechas |
+
+La sección arranca con `--fijo` puesto en el HTML: si el JS no corre, no quedan flechas
+muertas y el track se sigue arrastrando con el dedo.
+
+Un apunte de la verificación: el panel del navegador de esta sesión no entrega eventos
+`resize` ni callbacks de `ResizeObserver`, así que el recálculo **al cambiar el tamaño de la
+ventana en vivo** no se pudo comprobar aquí; lo verificado es el estado inicial en cada
+ancho. Por eso van enganchados los dos mecanismos, el observer y el evento `resize`.
 
 Las medidas propias van en el `<style>` del `<head>` porque `styles.css` es un build fijo de
 la plantilla y no trae esas utilidades.

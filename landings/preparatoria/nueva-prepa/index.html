@@ -23,11 +23,16 @@
     .ubicaciones-prepa__foto { height: 176px; }
     .ubicaciones-prepa__datos { padding: 16px; gap: 8px; }
     .ubicaciones-prepa__flecha { width: 47px; height: 47px; border-radius: 9999px; background: #f5f5f5; }
+    /* `--fijo` lo pone y lo quita script.js segun si el track desborda, asi que el
+       modulo aguanta el numero de tarjetas que sea: con tres caben y no hay flechas,
+       con cuatro o mas se vuelve carrusel solo. */
+    .ubicaciones-prepa--fijo .ubicaciones-prepa__flecha { display: none; }
+    .ubicaciones-prepa--fijo .js-ubicaciones-track { justify-content: center; }
     @media (min-width: 1024px) {
-      /* Las tres tarjetas reparten el ancho disponible en vez de medir 393px fijos:
-         asi ninguna queda cortada entre 1024px y 1280px, donde el contenedor no da
-         para tres de 393. El tope conserva la medida del Figma en pantallas anchas. */
-      .ubicaciones-prepa__tarjeta { width: calc((100% - 32px) / 3); max-width: 393px; }
+      /* Caben tres a la vez. Reparten el ancho en vez de medir 393px fijos para que
+         ninguna se corte entre 1024px y 1280px, donde el contenedor no da para tres
+         de 393; el tope conserva la medida del Figma en pantallas anchas. */
+      .ubicaciones-prepa__tarjeta { width: min(393px, calc((100% - 32px) / 3)); }
       .ubicaciones-prepa__foto { height: 220px; }
     }
 
@@ -480,16 +485,16 @@
     </div>
   </div>
 </section>
-<section class="prepa26 ubicaciones-prepa pb-14 pt-14 lg:pb-[79px] lg:pt-[83px]" id="ubicaciones">
+<section class="prepa26 ubicaciones-prepa ubicaciones-prepa--fijo pb-14 pt-14 lg:pb-[79px] lg:pt-[83px]" id="ubicaciones">
   <div class="lp-container">
     <header class="mx-auto max-w-lp-text text-center text-prepa-verde">
       <h2 class="lp-heading">¿Cuáles son las ubicaciones que tenemos en Ciudad de México?</h2>
     </header>
     <div class="mt-10 flex items-center gap-1.5 lg:mt-[44px] lg:justify-center lg:gap-4">
-      <button type="button" class="js-ubicaciones-anterior ubicaciones-prepa__flecha flex shrink-0 lg:hidden items-center justify-center transition-opacity hover:opacity-70" aria-label="Ver ubicación anterior">
+      <button type="button" class="js-ubicaciones-anterior ubicaciones-prepa__flecha flex shrink-0 items-center justify-center transition-opacity hover:opacity-70" aria-label="Ver ubicación anterior">
         <img src="assets/chevron-left.svg" alt="" aria-hidden="true" width="11" height="20">
       </button>
-      <ul class="js-ubicaciones-track flex min-w-0 flex-1 snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth [scrollbar-width:none] lg:justify-center lg:overflow-visible [&amp;::-webkit-scrollbar]:hidden">
+      <ul class="js-ubicaciones-track flex min-w-0 flex-1 snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
         <li class="ubicaciones-prepa__tarjeta flex shrink-0 snap-start flex-col overflow-hidden rounded-card-sm bg-prepa-gris lg:rounded-card">
           <img src="assets/campus-cuautitlan-izcalli.webp" alt="Campus Cuautitlán Izcalli" loading="lazy" width="786" height="440" class="ubicaciones-prepa__foto w-full object-cover">
           <div class="ubicaciones-prepa__datos flex flex-1 flex-col bg-prepa-verde text-center text-white">
@@ -512,7 +517,7 @@
           </div>
         </li>
       </ul>
-      <button type="button" class="js-ubicaciones-siguiente ubicaciones-prepa__flecha flex shrink-0 lg:hidden items-center justify-center transition-opacity hover:opacity-70" aria-label="Ver siguiente ubicación">
+      <button type="button" class="js-ubicaciones-siguiente ubicaciones-prepa__flecha flex shrink-0 items-center justify-center transition-opacity hover:opacity-70" aria-label="Ver siguiente ubicación">
         <img src="assets/chevron-right.svg" alt="" aria-hidden="true" width="11" height="20">
       </button>
     </div>
