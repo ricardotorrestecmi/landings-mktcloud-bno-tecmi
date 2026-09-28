@@ -21,6 +21,29 @@
        saldrian deformados. */
     .barra-evento-openhouse img, .expectativas-openhouse img { object-fit: contain; }
 
+    /* Barra del evento en movil: las tres filas se centran y los dos primeros
+       datos miden lo que ocupan en vez de medio ancho, para que la fecha no se
+       parta en tres lineas y los margenes laterales queden parejos.
+       Va aqui porque max-sm:w-auto no existe en el build de la plantilla. */
+    @media not all and (min-width: 640px) {
+      /* La lista mide lo que ocupa su fila mas ancha y se centra como bloque, con
+         las tres filas alineadas a la izquierda dentro de ella: asi los iconos
+         quedan en la misma vertical y los margenes laterales son iguales. */
+      .barra-evento__lista {
+        width: max-content;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .barra-evento__dato { width: 100%; justify-content: flex-start; }
+      /* Los tres iconos vienen de tamanos distintos (45, 42 y 29 de ancho), asi que
+         el texto arrancaba en tres puntos diferentes. Se les da la misma caja y
+         object-fit: contain los escala dentro sin deformarlos. */
+      .barra-evento__dato img { width: 45px; height: 45px; }
+    }
+
     /* CSS propio de la pagina en HubSpot (su bloque <style> del head). */
     html { scroll-behavior: smooth; }
 
@@ -70,22 +93,22 @@
   </div>
 </section>
 <section class="prepa26 barra-evento-openhouse bg-prepa-durazno-claro py-8 lg:py-0" id="evento">
-  <ul class="mx-auto flex w-full max-w-[1440px] flex-wrap gap-6 px-3 sm:flex-row sm:flex-nowrap sm:justify-between lg:h-[140px] lg:items-center lg:gap-0 lg:px-0 lg:pb-3 lg:pl-[134px] lg:pr-[94px]">
-    <li class="flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5">
+  <ul class="barra-evento__lista mx-auto flex w-full max-w-[1440px] flex-wrap gap-6 px-3 sm:flex-row sm:flex-nowrap sm:justify-between lg:h-[140px] lg:items-center lg:gap-0 lg:px-0 lg:pb-3 lg:pl-[134px] lg:pr-[94px]">
+    <li class="barra-evento__dato flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5">
       <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/94149237-fa4b-48c5-aefd-b456e70220c9.png" alt="" aria-hidden="true" width="45" height="45" class="shrink-0">
       <p class="min-w-0 text-body text-prepa-verde lg:w-[210px]">
         <span class="block font-bold">Fecha</span>
         <span class="block font-normal">10 de Octubre 2026</span>
       </p>
     </li>
-    <li class="flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5">
+    <li class="barra-evento__dato flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5">
       <img src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/c53c6596-5f5d-47ca-a445-92be15bfc01c.png" alt="" aria-hidden="true" width="42" height="42" class="shrink-0">
       <p class="min-w-0 text-body text-prepa-verde lg:w-[210px]">
         <span class="block font-bold">Hora</span>
         <span class="block font-normal">9:00 am</span>
       </p>
     </li>
-    <li class="flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5 max-sm:w-full max-sm:justify-center">
+    <li class="barra-evento__dato flex w-[calc(50%-12px)] min-w-0 items-center gap-3 sm:w-auto sm:gap-5 max-sm:w-full max-sm:justify-center">
       <img src="assets/oh-ubicacion.svg" alt="" aria-hidden="true" width="29" height="37" class="shrink-0">
       <p class="min-w-0 text-body text-prepa-verde lg:w-[210px]">
         <span class="block font-bold">Lugar</span>
