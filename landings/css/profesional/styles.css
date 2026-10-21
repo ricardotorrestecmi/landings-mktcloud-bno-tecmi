@@ -1020,3 +1020,93 @@ html { scroll-behavior: smooth; }
   .tpl-profesional .reasons__grid h3 { margin: 0; font-size: 15px; }
   .tpl-profesional .reasons__grid img { width: 48px; height: 48px; margin-bottom: 12px; }
 }
+
+/* ==========================================================================
+   FORMATO — "Un formato que se adapta a ti"  [carreras ejecutivas]
+   Misma caja de dos columnas que INTRO, pero con una sola tarjeta: aqui el
+   diseno no lleva la tarjeta lima, asi que la foto ocupa una sola fila.
+   ========================================================================== */
+.tpl-profesional .formato__grid {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 22px 28px;
+  align-items: stretch;
+}
+
+/* .info-card--dark y .portrait-card traen grid-area del modulo INTRO, que aqui no
+   existe: sin esto cada uno se va a su propia fila y la foto ocupa todo el ancho. */
+.tpl-profesional .formato__grid > * { grid-area: auto; }
+
+/* La escuela va como antetitulo del nombre de la carrera, como en el Figma. */
+.tpl-profesional .program-panel__escuela {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--p-dark);
+  text-transform: none;
+}
+
+@media (max-width: 900px) {
+  .tpl-profesional .formato__grid { grid-template-columns: 1fr; gap: 20px; }
+}
+
+/* ==========================================================================
+   CARRERAS EJECUTIVAS — tarjeta de carrera segun el Figma 3.1 (nodo 11:5)
+   Medidas del diseno: tarjeta 1240x459, mitades de 621 y 619, la foto a toda
+   la altura con las esquinas derechas redondeadas, y el boton en contorno.
+   Va acotado a .lp-carreras-ejecutivas para no mover las 24 de Profesional.
+   ========================================================================== */
+@media (min-width: 901px) {
+  .lp-carreras-ejecutivas .program-panel__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 459px;
+  }
+  .lp-carreras-ejecutivas .program-panel__copy { padding: 48px 56px 48px 48px; }
+  .lp-carreras-ejecutivas .program-panel__photo img {
+    min-height: 459px;
+    border-radius: 0 26px 26px 0;
+  }
+  .lp-carreras-ejecutivas .program-panel__escuela { font-size: 20px; line-height: 27px; color: #00524d; }
+  .lp-carreras-ejecutivas .program-panel__copy h3 { font-size: 28px; line-height: 45px; }
+  .lp-carreras-ejecutivas .program-panel__copy p { font-size: 20px; line-height: 27px; color: #00534c; }
+}
+
+/* El boton del Figma es de contorno, no solido. */
+.lp-carreras-ejecutivas .program-panel .btn-green {
+  background: transparent;
+  color: #00904a;
+  border: 1px solid #00904a;
+  border-radius: 24px;
+  min-height: 48px;
+  padding: 0 32px;
+  font-size: 16px;
+}
+
+
+/* ==========================================================================
+   CARRERAS EJECUTIVAS — POR PROGRAMA
+   El plan ejecutivo va por bimestre, no por semestre: cada tarjeta tiene un
+   solo bloque de 8 semanas (dos materias) y un SEDI que lo acompana entero.
+   ========================================================================== */
+.tpl-profesional .plan-sem__grid--bimestre { grid-template-columns: 1fr; }
+
+/* Las landings de una sola carrera ejecutiva: dos bimestres por fila. */
+.lp-ejecutiva-programa .plan-panel { grid-template-columns: 1fr 1fr; gap: 20px 24px; }
+.lp-ejecutiva-programa .plan-sem { grid-template-rows: auto 1fr; }
+.lp-ejecutiva-programa .plan-sem__card { align-content: start; }
+@media (max-width: 900px) {
+  .lp-ejecutiva-programa .plan-panel { grid-template-columns: 1fr; }
+}
+
+/* .plan-block__weeks fija 3 filas (cabecera + 2 materias). El 9o bimestre
+   trae 3 materias, asi que las filas implicitas tienen que medir igual. */
+.tpl-profesional .plan-sem__grid--bimestre .plan-block__weeks { grid-auto-rows: 1fr; }
+
+.tpl-profesional .plan-block--estancia { grid-template-columns: 1fr; }
+.tpl-profesional .plan-block--estancia .plan-estancia { padding: 16px; font-size: 18px; }
+
+.tpl-profesional .plan-download { margin: 28px 0 0; text-align: center; }
+.tpl-profesional .plan-download .btn-folleto { display: inline-block; }
