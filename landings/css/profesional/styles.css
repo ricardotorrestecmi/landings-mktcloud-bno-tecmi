@@ -1140,12 +1140,15 @@ html { scroll-behavior: smooth; }
   margin: 0 auto;
   overflow: hidden;
   border-radius: 16px;
-  background: #8fd460;
+  /* Verde del Figma. Ojo: NO es el --lime (#8fd460) de la plantilla, que es el
+     que usa el modulo de Posgrados; son dos verdes distintos. */
+  background: #94E489;
 }
 .tpl-profesional .formato-card > div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* 2. El texto va arriba, como en el Figma, igual en escritorio y en movil. */
+  justify-content: flex-start;
   padding: 32px;
 }
 .tpl-profesional .formato-card h3 {
