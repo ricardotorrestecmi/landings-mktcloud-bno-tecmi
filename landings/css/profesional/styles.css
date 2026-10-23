@@ -1110,3 +1110,116 @@ html { scroll-behavior: smooth; }
 
 .tpl-profesional .plan-download { margin: 28px 0 0; text-align: center; }
 .tpl-profesional .plan-download .btn-folleto { display: inline-block; }
+
+
+/* ==========================================================================
+   AJUSTES DE OCTUBRE — CARRERAS EJECUTIVAS
+   ========================================================================== */
+
+/* 1. El quinto bimestre de cada ano queda solo en su fila: va centrado. */
+.lp-ejecutiva-programa .plan-panel .plan-sem:nth-child(5) {
+  grid-column: 1 / -1;
+  width: calc((100% - 24px) / 2);
+  margin-inline: auto;
+}
+@media (max-width: 900px) {
+  .lp-ejecutiva-programa .plan-panel .plan-sem:nth-child(5) { width: 100%; }
+}
+
+/* 2. "Un formato que se adapta a ti": una sola pieza, texto y foto pegados,
+      como en las landings de Posgrados. Medidas tomadas del modulo renderizado
+      (maestria-administracion-capital-humano). */
+.tpl-profesional .formato-card {
+  display: grid;
+  grid-template-columns: minmax(0, 50.7%) minmax(0, 1fr);
+  align-items: stretch;
+  /* Alto fijo para que la foto recorte en vez de estirar la caja: asi la pieza
+     guarda la proporcion del modulo de Posgrados y queda al ancho del resto. */
+  height: 320px;
+  max-width: var(--wrap);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #8fd460;
+}
+.tpl-profesional .formato-card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+}
+.tpl-profesional .formato-card h3 {
+  margin: 0 0 23px;
+  color: #00534c;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  letter-spacing: 0.225px;
+}
+.tpl-profesional .formato-card p {
+  margin: 0;
+  max-width: 530px;
+  color: #00534c;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+}
+.tpl-profesional .formato-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 16px 16px 0;
+}
+@media (max-width: 900px) {
+  .tpl-profesional .formato-card { grid-template-columns: 1fr; height: auto; }
+  .tpl-profesional .formato-card > div { padding: 28px; }
+  .tpl-profesional .formato-card img { height: 240px; border-radius: 0 0 16px 16px; }
+}
+
+/* 3. [SOLO CDMX] Las ubicaciones van en carrusel, con el mismo patron que
+      preparatoria-cdmx. El JS ya existe en landings.js (initCarousel sobre
+      .ubicaciones-track), asi que aqui solo va la presentacion. */
+.lp-cdmx-carreras-ejecutivas .ubicaciones-carousel {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 4px;
+}
+.lp-cdmx-carreras-ejecutivas .carousel-arrow {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f1;
+  border: 0;
+  border-radius: 30px;
+  padding: 16px;
+  cursor: pointer;
+}
+.lp-cdmx-carreras-ejecutivas .carousel-arrow:disabled { opacity: 0.4; cursor: default; }
+.lp-cdmx-carreras-ejecutivas .ubicaciones-track {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0 12px;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  flex: 1;
+  scrollbar-width: none;
+}
+.lp-cdmx-carreras-ejecutivas .ubicaciones-track::-webkit-scrollbar { display: none; }
+.lp-cdmx-carreras-ejecutivas .ubicaciones-track .campus-card {
+  flex: 0 0 300px;
+  max-width: none;
+  scroll-snap-align: center;
+}
+@media (max-width: 760px) {
+  .lp-cdmx-carreras-ejecutivas .ubicaciones-carousel { gap: 8px; padding: 0; }
+  .lp-cdmx-carreras-ejecutivas .carousel-arrow { padding: 10px; }
+  .lp-cdmx-carreras-ejecutivas .ubicaciones-track .campus-card { flex: 0 0 240px; }
+}
