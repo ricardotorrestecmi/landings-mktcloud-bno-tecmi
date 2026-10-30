@@ -47,6 +47,27 @@ donde está clavado el pin. Lo que cambiaron:
   frecuentes. Se reusó el patrón de ambos.
 - **#2** pide que el mapa de las 29 ciudades se comporte como el de la página viva.
 
+## Sin dependencias de HubSpot
+
+La pagina se monta en Salesforce tal cual: **cero scripts externos**. El unico JavaScript
+son 9 KB inline al final del `index.html` (pastillas, mapa, carruseles, video, acordeon),
+y el unico CSS es `landings/css/institucional/styles.css`.
+
+El mapa de «Presencia fisica» **no usa el script del modulo de HubSpot**. Se rehizo: el SVG
+va incrustado en el HTML y el comportamiento son 30 lineas propias de `mouseenter` /
+`mouseleave` sobre los 32 estados y los 30 pines. Del modulo original solo se copiaron la
+geometria y los estilos, que son activo de Tecmilenio; su codigo de ejecucion no se usa.
+
+Quedan tres hosts externos, ninguno de HubSpot, y conviene confirmarlos antes de publicar:
+
+| Host | Para que | Nota |
+| --- | --- | --- |
+| `image.admisiones.tecmilenio.mx` | las 35 imagenes | es el CDN de Salesforce |
+| `fonts.googleapis.com` / `gstatic` | Montserrat | se puede autoalojar si se prefiere |
+| `www.google.com` | iframe del mapa del campus | tercero, por diseno |
+
+El favicon y el logo son locales, en `assets/`.
+
 ## Lo que falta
 
 1. **El contenido del acordeón de escuelas y programas.** Es el único hueco real: ni el Figma
