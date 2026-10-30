@@ -1,0 +1,132 @@
+
+======================================================================
+## banner-section (1300 bytes)
+  H1: Tecmilenio: Educación de alta calidad.
+  H2: Vive experiencias únicas, construye tu camino, amplía tu red de contactos.
+  H3: 
+
+======================================================================
+## tabs-section (8673 bytes)
+  H2: ¿Qué programas puedes estudiar en Tecmilenio?
+  H3: Preparatoria
+  H3: Carreras Profesionales
+  H3: Carreras Ejecutivas
+  H3: Posgrados
+  P : Te ofrecemos diversos planes de estudio para cada uno de los niveles de educación.
+  P : En Prepa Tecmilenio, tu Propósito de Vida está en el centro de todo. Con un enfoque que te prepara no solo para la escuela, sino también para la vida, aquí desarrollarás habilidades clave a través de 3 certificaciones qu
+  P : En Universidad Tecmilenio transformamos el modelo tradicional de materias y ahora te ofrecemos un plan de estudios innovador, compuesto por más de 28 certificados cocreados con empresas y expertos en la industria. Además
+  P : En estas carreras obtienes una experiencia laboral real junto con la enseñanza de docentes expertos en la industria. Además, cuentas con acompañamiento durante todos tus estudios y tienes la oportunidad de experimentar a
+  P : Podrás profundizar en conocimientos teóricos, técnicos y metodológicos en áreas de educación, negocios, tecnología y liderazgo.
+  A : 'Preparatoria' -> #
+  A : 'Carreras Profesionales' -> #
+  A : 'Carreras Ejecutivas' -> #
+  A : 'Posgrados' -> #
+  A : 'Conoce la oferta' -> https://universidad.tecmilenio.mx/preparatoria?hsLang=es-mx
+  A : 'Conoce la oferta' -> https://universidad.tecmilenio.mx/carreras-profesionales?hsLang=es-mx
+  A : 'Conoce la oferta' -> https://universidad.tecmilenio.mx/carreras-ejecutivas?hsLang=es-mx
+  A : 'Conoce la oferta' -> https://universidad.tecmilenio.mx/posgrados?hsLang=es-mx
+  IMG: Tecmilenio_Prepa2.png
+  IMG: carreras_profesionales_Tecmilenio_General2.png
+  IMG: carreras_ejecutivas_Tecmilenio_General2.png
+  IMG: posgrados-tecmilenio.jpg
+
+======================================================================
+## icons-cards-section (5563 bytes)
+  H2: ¿Por qué estudiar en Tecmilenio?
+  H3: Certificaciones
+  H3: Insignias Digitales
+  H3: Interculturalidad
+  H3: Acompañamiento
+  H3: Bienestar Integral
+  H3: Éxito Profesional
+  H3: Flexibilidad
+  P : Acreditaciones emitidas por una casa certificadora externa a Tecmilenio, que avalan que has adquirido una competencia específica.
+  P : Certificados digitales, emitidos por Tecmilenio, que validan el conocimiento y las competencias que has adquirido al cursar un módulo dentro del plan de estudios.
+  P : Elige estudiar en una de las más de 60 universidades extranjeras y de prestigio con las que tenemos convenio.
+  P : En todo momento contarás con una red de apoyo que te ayudará a definir y alcanzar tus objetivos.
+  P : Participa en actividades que buscan promover, prevenir y cultivar hábitos saludables.
+  P : En nuestra plataforma encuentra bolsa de trabajo y ferias virtuales de empleo, así como eventos relacionados con mejores oportunidades alineadas a tu Propósito de Vida.
+  P : Encuentra el formato de estudio que mejor se adapte a tus necesidades de aprendizaje, espacio y tiempo.
+  IMG: workspace_premium.svg
+  IMG: devices_other.svg
+  IMG: emoji_language.svg
+  IMG: group.svg
+  IMG: diagnosis.svg
+  IMG: mountain_flag.svg
+  IMG: flex_wrap.svg
+
+======================================================================
+## map-numbers-section (171666 bytes)
+  H2: Presencia física en 29 ciudades + oferta online
+  H3: Tijuana
+  H3: Hermosillo
+  ciudades (42): Tijuana, Hermosillo, Ciudad Obregón, Ciudad Juárez, Chihuahua, Laguna, Saltillo, Cumbres, Guadalupe, Las Torres, Espacio Connect, San Nicolás, Nuevo Laredo, Reynosa, Tampico, Los Mochis, Culiacán, Mazatlán, Durango, Zacatecas, Aguascalientes, Guadalajara, Zapopan, León, Morelia, Querétaro, Toluca, Las Américas, Reforma, Artz, Mítikah, Satélite en 2024, Santa Fe, Ferreria - Espacio Connect, Cuautitlán Izcalli, San Luis Potosí, Cuernavaca, Puebla, Veracruz, Mérida, Cancún, Villahermosa
+
+======================================================================
+## carousel-numbers-section (2112 bytes)
+  H2: Tecmilenio en números
+  H3: +112,000
+  H3: +49,000
+  H3: +62,023
+  H3: +154,501
+  H3: +52,722
+  H3: 89%
+  H3: 85%
+  H3: +4,500
+  P : Personas conforman nuestra comunidad
+  P : Aprendedores
+  P : Estudiantes de Educación formal
+  P : Egresados
+  P : Estudiantes con apoyo educativo
+  P : de empleabilidad de las y los egresados
+  P : Es la evaluación promedio sobre la formación recibida
+  P : Convenios con empresas
+
+======================================================================
+## formato-section (4351 bytes)
+  H2: Elige el formato que mejor se adapte a ti
+  H3: Presencial
+  H3: Connect Online
+  P : Desarrolla tus competencias a través de diferentes formatos de estudio según tus necesidades
+  P : Asiste a clases presenciales en tu campus Tecmilenio más cercano. Vive la experiencia de convivir con tus compañeros(as) y docentes en nuestras amplias y modernas instalaciones.
+  P : *Aplica para preparatoria y carreras profesionales.
+  P : ¿Quieres transformar cualquier lugar en un espacio para aprender? Con Connect Online puedes tomar tus clases virtuales en tiempo real desde donde estés o, si te perdiste alguna, revisar las grabaciones a tu ritmo. Tendrá
+  P : *Aplica para carreras ejecutivas y posgrados.
+  A : 'Presencial' -> #
+  A : 'Connect Online' -> #
+  IMG: formato_presencial_Tecmilenio2.png
+  IMG: formato_connect_online_Tecmilenio1.png
+
+======================================================================
+## faq-accordion-section (5523 bytes)
+  H2: Preguntas frecuentes
+  P : Somos una institución comprometida con la educación de alta calidad, accesible y enfocada en tu Bienestar Integral. Contamos con 31 campus y 12 Espacios Connect en 29 ciudades de México. Ofrecemos diversos programas, cer
+  P : Actualmente, Tecmilenio cuenta con 31 campus y 13 Espacios Connect en 28 ciudades de la República Mexicana.
+  P : La duración de nuestros programas varía dependiendo el nivel y formato que elijas, además pueden ser semestrales, bimestrales o tetramestrales. Preparatoria semestral: 3 años (6 semestres) o 2 años (6 tetramestres, sólo 
+  P : En Tecmilenio ofrecemos: preparatoria, carreras profesionales, carreras ejecutivas, especialidades, másteres, maestrías y Educación Continua.
+  LI: 1. ¿Quiénes somos? Somos una institución comprometida con la educación de alta calidad, accesible y enfocada en tu Bienestar Integral. Contamos con 31 campus y 12 Espacio
+  LI: 2. ¿Qué son los certificados que ofrece Tecmilenio? Tecmilenio ofrece varios tipos de certificados en sus distintos programas de estudio. Los certificados se dividen en v
+  LI: Certificados de Carrera : Están directamente relacionados con los programas académicos que ofrecen.
+  LI: Certificados Optativos : Permiten a los estudiantes elegir áreas de enfoque según sus intereses y propósitos de vida.
+  LI: Certificados de Lengua Extranjera : Enfocados en el desarrollo de habilidades lingüísticas específicas.
+  LI: 3. ¿Cuántos campus tiene Tecmilenio? Actualmente, Tecmilenio cuenta con 31 campus y 13 Espacios Connect en 28 ciudades de la República Mexicana.
+  LI: 4. ¿Cuánto tiempo dura un programa académico? La duración de nuestros programas varía dependiendo el nivel y formato que elijas, además pueden ser semestrales, bimestrale
+  LI: 5.¿Cuál es la oferta académica de Tecmilenio? ¿Con cuántos programas cuenta la universidad? En Tecmilenio ofrecemos: preparatoria, carreras profesionales, carreras ejecut
+
+======================================================================
+## carousel-certifications-section (3533 bytes)
+  H2: Certificaciones y Reconocimientos Nacionales e Internacionales
+  IMG: logo_1.svg
+  IMG: Logo%20(1).png
+  IMG: logo_2.svg
+  IMG: Green_Gown_Awards_wordmark.svg.png
+  IMG: fsoblanco-2.png
+  IMG: Logo_QSSTARS_3.png
+
+======================================================================
+## banner-cta-section (3920 bytes)
+  H2: ¿Tienes dudas sobre Tecmilenio?
+  P : Déjanos tus datos y uno de nuestros asesores te contactará para resolver todas tus dudas.
+  P : Universidad Tecmilenio D.R. Enseñanza e Investigación Superior, A.C.
+  A : 'Aviso de privacidad' -> https://tecmilenio.mx/es/aviso-de-privacidad/alumnos?_ga=2.132974286.1988285691.1754320610-1385
+  IMG: Tecmilenio_Logotipo.svg

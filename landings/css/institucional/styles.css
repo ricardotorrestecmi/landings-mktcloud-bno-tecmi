@@ -1,0 +1,1881 @@
+/* ==========================================================================
+   PLANTILLA INSTITUCIONAL — Tecmilenio
+   Figma "Plantilla Institucional (Copy)", seccion 1.0.
+   Paleta tomada del propio archivo (los 6 colores mas usados del spec).
+   Todo vive bajo .tpl-institucional para no tocar las otras familias.
+   ========================================================================== */
+
+:root {
+  --i-deep:   #00534c;   /* verde profundo: titulos, tarjetas oscuras */
+  --i-green:  #26d07c;   /* verde vivo: botones, tarjetas claras */
+  --i-sea:    #007864;   /* panel del hero */
+  --i-teal:   #6bcaba;   /* detalle del footer */
+  --i-aqua:   #00a499;   /* tarjetas impares de "en numeros" */
+  --i-bg:     #f8f9fa;   /* fondo de pagina */
+  --i-cream:  #f9f1e6;   /* panel del acordeon de programas */
+  --i-ink:    #0b3b2e;
+  --i-wrap:   1240px;
+  --i-gutter: clamp(20px, 5vw, 100px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+.tpl-institucional {
+  margin: 0;
+  background: var(--i-bg);
+  color: var(--i-ink);
+  font-family: Montserrat, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+.tpl-institucional img { max-width: 100%; display: block; }
+.tpl-institucional h1, .tpl-institucional h2,
+.tpl-institucional h3, .tpl-institucional p,
+/* blockquote trae 40px de margen lateral por omision: sin esto los
+   testimoniales suman 80px de mas cada uno y el segundo queda cortado. */
+.tpl-institucional blockquote, .tpl-institucional figure,
+.tpl-institucional ul, .tpl-institucional ol { margin: 0; }
+.tpl-institucional .sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.tpl-institucional .seccion { padding: 72px var(--i-gutter); }
+.tpl-institucional .wrap { max-width: var(--i-wrap); margin: 0 auto; }
+.tpl-institucional .titulo {
+  color: var(--i-deep); font-size: 34px; line-height: 1.2;
+  font-weight: 700; text-align: center;
+}
+.tpl-institucional .bajada {
+  margin: 14px auto 0; max-width: 760px; text-align: center;
+  font-size: 16px; color: var(--i-deep);
+}
+
+/* ---------- Header ---------- */
+.tpl-institucional .encabezado {
+  display: flex; align-items: center; gap: 24px;
+  padding: 0 var(--i-gutter); height: 85px; background: var(--i-deep);
+}
+.tpl-institucional .encabezado .logo img { width: 190px; height: auto; }
+.tpl-institucional .nav { margin-left: auto; display: flex; align-items: center; gap: 32px; }
+.tpl-institucional .nav a { color: #fff; text-decoration: none; font-size: 15px; font-weight: 500; }
+.tpl-institucional .nav a:hover { text-decoration: underline; }
+.tpl-institucional .nav .cta {
+  background: var(--i-green); color: var(--i-deep); font-weight: 700;
+  border-radius: 999px; padding: 12px 26px;
+}
+.tpl-institucional .nav .cta:hover { text-decoration: none; filter: brightness(1.05); }
+.tpl-institucional .menu-movil { display: none; background: none; border: 0; cursor: pointer; }
+
+/* ---------- 1. Hero + formulario ---------- */
+.tpl-institucional .hero { display: grid; grid-template-columns: 1fr 1fr; background: var(--i-sea); }
+.tpl-institucional .hero__foto {
+  position: relative; min-height: 727px;
+  background: var(--hero-image, #0d4f43) center / cover no-repeat;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 0 40px 0 var(--i-gutter);
+}
+.tpl-institucional .hero__foto::after {
+  content: ""; position: absolute; inset: 0;
+  /* En el Figma el velo es negro, no verde (Rectangle 897: fills image + #000000). */
+  background: linear-gradient(90deg, rgba(0,0,0,.65) 0%, rgba(0,0,0,.25) 65%, rgba(0,0,0,0) 100%);
+}
+.tpl-institucional .hero__texto { position: relative; z-index: 1; max-width: 560px; }
+.tpl-institucional .hero__texto h1 {
+  color: #f8f9fa; font-size: 64px; line-height: 1.02; font-weight: 700; letter-spacing: -1px;
+}
+.tpl-institucional .hero__texto p {
+  margin-top: 18px; color: #f8f9fa; font-size: 22px; line-height: 1.5; font-weight: 700;
+}
+.tpl-institucional .hero__form { display: flex; align-items: center; padding: 48px var(--i-gutter) 48px 40px; }
+
+/* ---------- Formulario ---------- */
+.tpl-institucional .form { width: 100%; max-width: 505px; margin: 0 auto; }
+.tpl-institucional .form__fila { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.tpl-institucional .form label { display: block; margin-bottom: 16px; }
+.tpl-institucional .form__fila label { margin-bottom: 0; }
+.tpl-institucional .form input[type=text],
+.tpl-institucional .form input[type=tel],
+.tpl-institucional .form input[type=email],
+.tpl-institucional .form select {
+  width: 100%; height: 52px; border: 0; border-radius: 999px;
+  padding: 0 26px; font: inherit; font-size: 15px; color: var(--i-ink);
+  background: #f8f9fa; appearance: none;
+}
+.tpl-institucional .form select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='8' fill='none'><path d='M1 1l6 6 6-6' stroke='%2300534c' stroke-width='1.6' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat; background-position: right 24px center;
+  padding-right: 52px;
+}
+.tpl-institucional .form input::placeholder { color: var(--i-deep); }
+.tpl-institucional .form select { color: var(--i-deep); }
+.tpl-institucional .form__consent {
+  display: flex; gap: 10px; align-items: flex-start;
+  margin: 6px 0 20px; color: #f8f9fa; font-size: 13px; line-height: 1.4;
+}
+.tpl-institucional .form__consent input { margin-top: 2px; flex: none; width: 15px; height: 15px; }
+.tpl-institucional .form button {
+  width: 100%; height: 58px; border: 0; border-radius: 999px; cursor: pointer;
+  background: var(--i-green); color: var(--i-deep);
+  font: inherit; font-size: 17px; font-weight: 800;
+}
+.tpl-institucional .form button:hover { filter: brightness(1.05); }
+
+/* ---------- 2. Programas: pastillas + acordeon + foto ---------- */
+.tpl-institucional .programas { background: #fff; }
+.tpl-institucional .pastillas {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 38px 0 32px;
+}
+.tpl-institucional .pastilla {
+  border: 1px solid var(--i-deep); background: #fff; color: var(--i-deep);
+  border-radius: 999px; padding: 13px 26px; cursor: pointer;
+  font: inherit; font-size: 15px; white-space: nowrap;
+}
+.tpl-institucional .pastilla.is-activa { background: var(--i-green); border-color: var(--i-green); font-weight: 700; }
+.tpl-institucional .programas__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: stretch; }
+/* [hidden] no gana contra display:grid/flex: hay que apagarlo explicitamente. */
+.tpl-institucional .programas__grid[hidden] { display: none; }
+.tpl-institucional .programas__panel { background: var(--i-cream); border-radius: 20px; padding: 30px 38px; }
+.tpl-institucional .escuela { border-bottom: 1px solid var(--i-deep); }
+.tpl-institucional .escuela > summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 22px 0; cursor: pointer; list-style: none;
+  color: var(--i-deep); font-size: 18px; font-weight: 700;
+}
+.tpl-institucional .escuela > summary::-webkit-details-marker { display: none; }
+.tpl-institucional .escuela > summary::after {
+  content: ""; flex: none; width: 10px; height: 10px; margin-right: 4px;
+  border-right: 1.6px solid var(--i-deep); border-bottom: 1.6px solid var(--i-deep);
+  transform: rotate(45deg) translateY(-3px); transition: transform .2s ease;
+}
+.tpl-institucional .escuela[open] > summary::after { transform: rotate(225deg) translateY(-3px); }
+.tpl-institucional .escuela ul { margin: 0 0 20px; padding-left: 20px; }
+.tpl-institucional .escuela li { color: var(--i-deep); font-size: 15px; margin: 6px 0; }
+.tpl-institucional .escuela li a { color: inherit; }
+.tpl-institucional .programas__foto img {
+  width: 100%; height: 100%; min-height: 420px; object-fit: cover; border-radius: 20px;
+}
+
+/* ---------- 3. ¿Por que estudiar?: 7 tarjetas ---------- */
+.tpl-institucional .razones__grid {
+  /* 8 columnas y cada tarjeta ocupa 2: asi la fila de 3 puede arrancar en la
+     columna 2 y quedar centrada. Con 4 columnas quedaba recorrida a la derecha. */
+  display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 18px; margin-top: 44px;
+}
+.tpl-institucional .razones__grid > .razon { grid-column: span 2; }
+.tpl-institucional .razon {
+  border-radius: 18px; padding: 30px 24px; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+}
+.tpl-institucional .razon img { width: 54px; height: 54px; object-fit: contain; }
+.tpl-institucional .razon h3 { font-size: 17px; font-weight: 600; }
+.tpl-institucional .razon p { font-size: 14px; line-height: 1.5; }
+.tpl-institucional .razon--oscura { background: var(--i-deep); color: #fff; }
+.tpl-institucional .razon--oscura h3 { color: #fff; }
+.tpl-institucional .razon--clara { background: var(--i-green); color: var(--i-deep); }
+/* la segunda fila lleva 3 y va centrada, como en el Figma */
+.tpl-institucional .razones__grid > .razon:nth-child(5) { grid-column: 2 / span 2; }
+
+/* ---------- 4. Ubicacion del campus ---------- */
+.tpl-institucional .ubicacion { background: #fff; padding-bottom: 0; }
+/* En el Figma el mapa va de borde a borde: se sale del gutter de la seccion.
+   (No usar .mapa aqui: esa clase es del mapa de Mexico, en .presencia.) */
+.tpl-institucional .ubicacion iframe {
+  display: block; border: 0; background: #e9edec;
+  /* width:auto no estira un iframe (ancho intrinseco 300px): hay que darselo. */
+  width: calc(100% + var(--i-gutter) * 2); height: 420px;
+  margin: 40px calc(var(--i-gutter) * -1) 0;
+}
+@media (max-width: 900px) {
+  .tpl-institucional .ubicacion iframe { height: 300px; margin-top: 28px; }
+}
+
+/* ---------- 5. Formato ---------- */
+.tpl-institucional .formato { background: var(--i-bg); }
+.tpl-institucional .formato-card {
+  display: grid; grid-template-columns: minmax(0, 50.7%) minmax(0, 1fr);
+  align-items: stretch; height: 320px; max-width: var(--i-wrap);
+  margin: 0 auto; overflow: hidden; border-radius: 16px;
+  /* Nodo 9:1591 del Figma institucional: 1240x320, #26d07c. */
+  background: var(--i-green);
+}
+.tpl-institucional .formato-card[hidden] { display: none; }
+.tpl-institucional .formato-card > div {
+  display: flex; flex-direction: column; justify-content: flex-start; padding: 32px;
+}
+.tpl-institucional .formato-card h3 {
+  margin: 0 0 23px; color: var(--i-deep); font-size: 24px; line-height: 29px; font-weight: 700;
+}
+.tpl-institucional .formato-card p { max-width: 530px; color: var(--i-deep); font-size: 16px; line-height: 22px; font-weight: 500; }
+.tpl-institucional .formato-card .nota { margin-top: 14px; font-size: 13px; font-style: italic; }
+.tpl-institucional .formato-card img { width: 100%; height: 100%; object-fit: cover; border-radius: 0 16px 16px 0; }
+
+/* ---------- 6. Presencia en 29 ciudades ---------- */
+.tpl-institucional .presencia { background: var(--i-deep); color: #fff; }
+.tpl-institucional .presencia .titulo { color: #fff; }
+.tpl-institucional .presencia__grid {
+  display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 40px; align-items: center; margin-top: 40px;
+}
+.tpl-institucional .presencia__mapa img { width: 100%; height: auto; }
+.tpl-institucional .ciudades {
+  list-style: none; margin: 0; padding: 0; max-height: 420px; overflow-y: auto;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 18px;
+}
+.tpl-institucional .ciudades li { font-size: 14px; color: #d8efe8; }
+
+/* ---------- 7. Tecmilenio en numeros ---------- */
+.tpl-institucional .numeros { background: var(--i-deep); color: #fff; padding-top: 0; }
+.tpl-institucional .numeros .titulo { color: #fff; }
+/* Es carrusel: el bloque del Figma mide 1660 dentro de un marco de 1440, o sea
+   que se desborda y se desplaza. Scroll-snap horizontal con flechas. */
+.tpl-institucional .numeros__carrusel { display: flex; align-items: center; gap: 16px; margin-top: 40px; }
+.tpl-institucional .numeros__grid {
+  display: flex; gap: 18px; flex: 1; overflow-x: auto;
+  scroll-snap-type: x mandatory; scrollbar-width: none; padding-bottom: 4px;
+}
+.tpl-institucional .numeros__grid::-webkit-scrollbar { display: none; }
+.tpl-institucional .numeros__grid > .numero { flex: 0 0 calc((100% - 54px) / 4); scroll-snap-align: start; }
+.tpl-institucional .numeros .carousel-arrow {
+  flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border: 0; border-radius: 50%; cursor: pointer;
+  background: var(--i-green); color: var(--i-deep); font: inherit; font-size: 20px; font-weight: 700;
+}
+.tpl-institucional .numeros .carousel-arrow:disabled { opacity: .4; cursor: default; }
+/* Alternan #00a499 y #26d07c, con el texto invertido en cada una. */
+.tpl-institucional .numero {
+  border-radius: 16px; padding: 26px 20px; text-align: center;
+  background: var(--i-aqua); color: #f8f9fa;
+}
+.tpl-institucional .numero:nth-child(even) { background: var(--i-green); color: var(--i-deep); }
+.tpl-institucional .numero strong { display: block; font-size: 30px; font-weight: 800; }
+.tpl-institucional .numero span { display: block; margin-top: 8px; font-size: 14px; line-height: 1.4; }
+
+/* ---------- 8. Empleabilidad ---------- */
+.tpl-institucional .empleabilidad { background: var(--i-bg); }
+/* Mosaico de 3x2: la primera celda es el titulo y el video es una celda mas. */
+.tpl-institucional .empleabilidad__grid {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 240px; gap: 18px;
+}
+.tpl-institucional .empleo-card--titulo { background: var(--i-deep); color: #f8f9fa; text-align: left; }
+.tpl-institucional .empleo-card--titulo h2 { font-size: 24px; font-weight: 700; margin-bottom: 14px; color: #f8f9fa; }
+.tpl-institucional .empleo-card--titulo p { font-size: 15px; line-height: 1.5; }
+.tpl-institucional .empleo-card {
+  border-radius: 18px; padding: 28px 24px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.tpl-institucional .empleo-card--oscura { background: var(--i-deep); color: #fff; text-align: center; }
+.tpl-institucional .empleo-card--clara { background: var(--i-green); color: var(--i-deep); text-align: center; }
+.tpl-institucional .empleo-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 12px; }
+.tpl-institucional .empleo-card p { font-size: 14px; line-height: 1.5; }
+.tpl-institucional .empleo-card img { width: 46px; height: 46px; margin: 0 auto 12px; object-fit: contain; }
+/* video (comentario #1 y #6 del Figma) */
+.tpl-institucional .video {
+  position: relative; display: block; border-radius: 18px; overflow: hidden;
+}
+.tpl-institucional .video img { width: 100%; height: 100%; object-fit: cover; }
+.tpl-institucional .video::after {
+  content: ""; position: absolute; left: 50%; top: 50%; width: 56px; height: 56px;
+  transform: translate(-50%, -50%); border-radius: 50%;
+  background: rgba(255,255,255,.18); border: 2px solid #fff;
+}
+.tpl-institucional .video::before {
+  content: ""; position: absolute; left: 50%; top: 50%; z-index: 1;
+  transform: translate(-40%, -50%);
+  border-left: 17px solid #fff;
+  border-top: 13px solid transparent; border-bottom: 13px solid transparent;
+}
+.tpl-institucional .video span { position: absolute; inset: 0; z-index: 2; }
+
+/* ---------- 9. Espacio Connect: carrusel de loop infinito ---------- */
+.tpl-institucional .connect { background: #fff; }
+/* En el Figma las fotos salen de borde a borde: el carril se sale del gutter. */
+.tpl-institucional .marquesina {
+  margin: 40px calc(var(--i-gutter) * -1) 0;
+  width: calc(100% + var(--i-gutter) * 2);
+  overflow: hidden;
+}
+.tpl-institucional .puntos { display: flex; justify-content: center; gap: 9px; margin-top: 22px; }
+.tpl-institucional .puntos button {
+  width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%;
+  background: var(--i-deep); opacity: .35; cursor: pointer;
+}
+.tpl-institucional .puntos button.is-activo { opacity: 1; background: var(--i-green); }
+/* El desplazamiento lo lleva el JS cuadro a cuadro, no una animacion CSS:
+   asi el reinicio a mitad de recorrido es exacto y los puntos pueden saltar
+   a una foto concreta sin pelearse con la animacion. */
+.tpl-institucional .marquesina__pista { display: flex; gap: 18px; width: max-content; will-change: transform; }
+/* Alto pedido en la revision: 500px. */
+.tpl-institucional .marquesina img { width: 340px; height: 500px; object-fit: cover; border-radius: 16px; }
+@media (prefers-reduced-motion: reduce) {
+  .tpl-institucional .marquesina { overflow-x: auto; }
+}
+
+/* ---------- 10. Testimoniales ---------- */
+.tpl-institucional .testimoniales { background: #fff; }
+.tpl-institucional .testimoniales__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+.tpl-institucional .testimonio {
+  background: var(--i-bg); border-radius: 16px; padding: 26px 28px;
+  color: var(--i-deep); font-size: 14px; line-height: 1.6;
+}
+.tpl-institucional .testimonio cite { display: block; margin-top: 16px; font-style: normal; font-weight: 700; font-size: 13px; }
+
+/* ---------- 11. Preguntas frecuentes ---------- */
+.tpl-institucional .faq { background: var(--i-bg); }
+.tpl-institucional .faq__lista { max-width: 980px; margin: 40px auto 0; }
+.tpl-institucional .faq__lista details { background: #fff; border-radius: 12px; margin-bottom: 12px; }
+.tpl-institucional .faq__lista summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  padding: 20px 26px; cursor: pointer; list-style: none;
+  color: var(--i-deep); font-size: 15px; font-weight: 600;
+}
+.tpl-institucional .faq__lista summary::-webkit-details-marker { display: none; }
+.tpl-institucional .faq__lista summary::after {
+  content: ""; flex: none; width: 9px; height: 9px;
+  border-right: 1.6px solid var(--i-deep); border-bottom: 1.6px solid var(--i-deep);
+  transform: rotate(45deg) translateY(-3px); transition: transform .2s ease;
+}
+.tpl-institucional .faq__lista details[open] summary::after { transform: rotate(225deg) translateY(-3px); }
+.tpl-institucional .faq__cuerpo { padding: 0 26px 22px; color: var(--i-deep); font-size: 14px; line-height: 1.6; }
+.tpl-institucional .faq__cuerpo ul { margin: 10px 0 0; padding-left: 20px; }
+
+/* ---------- 12. Certificaciones ---------- */
+.tpl-institucional .certificaciones { background: var(--i-deep); }
+.tpl-institucional .certificaciones .titulo { color: #fff; font-size: 26px; }
+.tpl-institucional .logos { display: flex; align-items: center; justify-content: center; gap: 46px; flex-wrap: wrap; margin-top: 36px; }
+.tpl-institucional .logos img { height: 64px; width: auto; object-fit: contain; }
+
+/* ---------- 13. CTA final ---------- */
+.tpl-institucional .cta-final { background: var(--i-green); text-align: center; }
+.tpl-institucional .cta-final h2 { color: var(--i-deep); font-size: 30px; font-weight: 700; }
+.tpl-institucional .cta-final p { margin: 14px auto 26px; max-width: 620px; color: var(--i-deep); font-size: 16px; }
+.tpl-institucional .cta-final a {
+  display: inline-block; background: var(--i-deep); color: #fff; text-decoration: none;
+  border-radius: 999px; padding: 15px 40px; font-weight: 700;
+}
+
+/* ---------- Footer ---------- */
+/* Dos filas, como el Figma: logo y redes arriba, legal abajo. */
+.tpl-institucional .pie { background: var(--i-deep); color: #f8f9fa; padding: 44px var(--i-gutter); }
+.tpl-institucional .pie__inner { max-width: var(--i-wrap); margin: 0 auto; }
+.tpl-institucional .pie__fila {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px 32px; flex-wrap: wrap;
+}
+.tpl-institucional .pie__fila--legal { margin-top: 56px; }
+.tpl-institucional .pie__logo { width: 180px; height: auto; }
+.tpl-institucional .pie__redes { display: flex; gap: 26px; }
+.tpl-institucional .pie__redes img {
+  width: 18px; height: 18px;
+  /* los iconos vienen en verde oscuro; en el footer van en blanco */
+  filter: brightness(0) invert(1);
+}
+.tpl-institucional .pie small { font-size: 13px; color: #f8f9fa; }
+.tpl-institucional .pie__fila--legal nav { display: flex; gap: 40px; }
+.tpl-institucional .pie__fila--legal a { color: #f8f9fa; font-size: 13px; text-decoration: underline; }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .tpl-institucional .razones__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tpl-institucional .razones__grid > .razon,
+  .tpl-institucional .razones__grid > .razon:nth-child(5) { grid-column: span 2; }
+  .tpl-institucional .numeros__grid > .numero { flex: 0 0 calc((100% - 18px) / 2); }
+  .tpl-institucional .empleabilidad__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
+  .tpl-institucional .seccion { padding: 54px var(--i-gutter); }
+  .tpl-institucional .titulo { font-size: 26px; }
+  .tpl-institucional .nav { display: none; }
+  .tpl-institucional .menu-movil { display: block; margin-left: auto; }
+  .tpl-institucional .hero { grid-template-columns: 1fr; }
+  .tpl-institucional .hero__foto { min-height: 460px; padding: 40px var(--i-gutter); }
+  .tpl-institucional .hero__texto h1 { font-size: 40px; }
+  .tpl-institucional .hero__texto p { font-size: 17px; }
+  .tpl-institucional .hero__form { padding: 32px var(--i-gutter) 44px; }
+  .tpl-institucional .programas__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .programas__foto img { min-height: 260px; }
+  .tpl-institucional .formato-card { grid-template-columns: 1fr; height: auto; }
+  .tpl-institucional .formato-card > div { padding: 28px; }
+  .tpl-institucional .formato-card img { height: 240px; border-radius: 0 0 16px 16px; }
+  .tpl-institucional .presencia__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .ciudades { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: none; }
+  .tpl-institucional .testimoniales__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .logos { gap: 28px; }
+  .tpl-institucional .logos img { height: 46px; }
+  .tpl-institucional .pie__fila--legal { margin-top: 32px; }
+  .tpl-institucional .pie__fila--legal nav { gap: 22px; }
+}
+@media (max-width: 560px) {
+  .tpl-institucional .razones__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .razones__grid > .razon,
+  .tpl-institucional .razones__grid > .razon:nth-child(5) { grid-column: auto; }
+  .tpl-institucional .numeros__grid > .numero { flex: 0 0 100%; }
+  .tpl-institucional .form__fila { grid-template-columns: 1fr; }
+  .tpl-institucional .ciudades { grid-template-columns: 1fr; }
+  .tpl-institucional .marquesina img { width: 230px; height: 340px; }
+}
+
+
+/* ==========================================================================
+   === MAPA INTERACTIVO — modulo "Tec - Ago25 - Mapa" de HubSpot
+   Copiado tal cual de https://universidad.tecmilenio.mx/hubfs/map-jul24/css/map.css
+   (9.2 KB, sin minificar). Es el CSS propio del modulo: posiciona los 30 pines
+   por coordenada y las 31 cajas de ciudad con su linea guia.
+   No se reescribio nada para no desalinear los pines.
+   ========================================================================== */
+.mapa .main-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 90px;
+  background-color: #00534c;
+  padding: 0 20px;
+}
+.mapa .main-block .map {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+.mapa .main-block .map svg {
+  position: relative;
+  fill: #00534c;
+  max-width: 100%;
+}
+.mapa .main-block .map svg path {
+  position: relative;
+  transition: all 0.1s ease-in-out;
+}
+.mapa .main-block .map svg path:hover {
+  fill: #16a195;
+}
+.mapa .main-block .map svg .point {
+  fill: #26d07c;
+  stroke-width: 11px;
+  stroke: rgba(38, 208, 124, 0.2);
+  r: 4px;
+  z-index: -1;
+}
+.mapa .main-block .map svg .point.point-tijuana {
+  cy: 50px;
+  cx: 97px;
+}
+.mapa .main-block .map svg .point.point-sonora {
+  cy: 112px;
+  cx: 221px;
+}
+.mapa .main-block .map svg .point.point-sonora2 {
+  cy: 174px;
+  cx: 283px;
+}
+.mapa .main-block .map svg .point.point-chihuahua {
+  cy: 144px;
+  cx: 390px;
+}
+.mapa .main-block .map svg .point.point-chihuahua2 {
+  cy: 98px;
+  cx: 353px;
+}
+.mapa .main-block .map svg .point.point-coahuila {
+  cy: 267px;
+  cx: 483px;
+}
+.mapa .main-block .map svg .point.point-coahuila2 {
+  cy: 282px;
+  cx: 544px;
+}
+.mapa .main-block .map svg .point.point-nuevoleon {
+  cy: 262px;
+  cx: 569px;
+}
+.mapa .main-block .map svg .point.point-tamaulipas {
+  cy: 205px;
+  cx: 584px;
+}
+.mapa .main-block .map svg .point.point-tamaulipas2 {
+  cy: 251px;
+  cx: 621px;
+}
+.mapa .main-block .map svg .point.point-tamaulipas3 {
+  cy: 300px;
+  cx: 615px;
+}
+.mapa .main-block .map svg .point.point-sinaloa {
+  cy: 252px;
+  cx: 311px;
+}
+.mapa .main-block .map svg .point.point-sinaloa2 {
+  cy: 296px;
+  cx: 367px;
+}
+.mapa .main-block .map svg .point.point-sinaloa3 {
+  cy: 339px;
+  cx: 394px;
+}
+.mapa .main-block .map svg .point.point-durango {
+  cy: 310px;
+  cx: 428px;
+}
+.mapa .main-block .map svg .point.point-zacatecas {
+  cy: 349px;
+  cx: 499px;
+}
+.mapa .main-block .map svg .point.point-sanluis {
+  cy: 370px;
+  cx: 544px;
+}
+.mapa .main-block .map svg .point.point-jalisco {
+  cy: 414px;
+  cx: 471px;
+}
+.mapa .main-block .map svg .point.point-guanajuato {
+  cy: 410px;
+  cx: 524px;
+}
+.mapa .main-block .map svg .point.point-queretaro {
+  cy: 460px;
+  cx: 514px;
+}
+.mapa .main-block .map svg .point.point-morelos {
+  cy: 473px;
+  cx: 598px;
+  r: 1.5px;
+  stroke-width: 6px;
+}
+.mapa .main-block .map svg .point.point-edomex {
+  cy: 459px;
+  cx: 580px;
+}
+.mapa .main-block .map svg .point.point-cdmx {
+  cy: 459px;
+  cx: 598px;
+  r: 1.5px;
+  stroke-width: 6px;
+}
+.mapa .main-block .map svg .point.point-puebla {
+  cy: 470px;
+  cx: 625px;
+}
+.mapa .main-block .map svg .point.point-veracruz {
+  cy: 468px;
+  cx: 678px;
+}
+.mapa .main-block .map svg .point.point-tabasco {
+  cy: 497px;
+  cx: 779px;
+}
+.mapa .main-block .map svg .point.point-quintanaroo {
+  cy: 400px;
+  cx: 948px;
+}
+.mapa .main-block .map svg .point.point-yucatan {
+  cy: 407px;
+  cx: 869px;
+}
+.mapa .main-block .map .info-boxes .info-box {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+}
+.mapa .main-block .map .info-boxes .info-box h3 {
+  font-size: 12px;
+  color: white;
+  margin: 0;
+  font-weight: normal;
+}
+.mapa .main-block .map .info-boxes .info-box::before {
+  content: "";
+  background-color: white;
+  width: 1px;
+  position: absolute;
+  left: -7px;
+  top: 4px;
+}
+.mapa .main-block .map .info-boxes .info-box::after {
+  display: none;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -7px;
+  border-radius: 50%;
+  top: 4px;
+  background-color: #26d07c;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXBCN {
+  left: 55px;
+  top: -19px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXBCN::before {
+  height: 40px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSON {
+  left: 117px;
+  top: -8px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSON::before {
+  height: 60px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSON#info-MXSON2 {
+  left: 148px;
+  top: 23px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXCHH {
+  left: 183px;
+  top: -15px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXCHH::before {
+  height: 60px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXCHH#info-MXCHH2 {
+  left: 201px;
+  top: 8px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXCOA {
+  left: 248px;
+  top: 9px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXCOA::before {
+  height: 120px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXCOA#info-MXCOA2 {
+  left: 278px;
+  top: 37px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXCOA#info-MXCOA2::before {
+  height: 100px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXNLE {
+  left: 291px;
+  top: -8px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXNLE::before {
+  height: 135px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXTAM {
+  left: 298px;
+  top: 69px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXTAM::before {
+  height: 30px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM2 {
+  left: 317px;
+  top: 91px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM2::before {
+  height: 30px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSIN {
+  left: 90px;
+  top: 194px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSIN::before {
+  height: 80px;
+  left: 65px;
+  top: -68px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN2 {
+  left: 134px;
+  top: 216px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN2::before {
+  height: 80px;
+  left: 49px;
+  top: -68px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN3 {
+  left: 144px;
+  top: 238px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN3::before {
+  height: 80px;
+  left: 53px;
+  top: -68px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXDUR {
+  left: 160px;
+  top: 243px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXDUR h3::after {
+  display: none;
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXDUR::before {
+  height: 100px;
+  left: 53px;
+  top: -88px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXZAC {
+  left: 192px;
+  top: 283px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXZAC::before {
+  height: 120px;
+  left: 57px;
+  top: -108px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXJAL {
+  left: 166px;
+  top: 274px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXJAL h3 {
+  text-align: right;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXJAL::before {
+  height: 95px;
+  left: 69px;
+  top: -67px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXGUA {
+  left: 230px;
+  top: 272px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXGUA h3 {
+  text-align: right;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXGUA::before {
+  height: 79px;
+  left: 31px;
+  top: -67px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXQUE {
+  left: 190px;
+  top: 281px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXQUE h3 {
+  text-align: right;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXQUE::before {
+  height: 99px;
+  left: 91px;
+  top: -72px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXDIF {
+  left: 155px;
+  top: 284px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXDIF h3 {
+  text-align: right;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXDIF::before {
+  height: 182px;
+  left: 144px;
+  top: -54px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSLP {
+  left: 354px;
+  top: 164px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXSLP::before {
+  height: 1px;
+  width: 164px;
+  left: -82px;
+  top: 20px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXMOR {
+  left: 234px;
+  top: 304px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXMOR h3 {
+  text-align: right;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXMOR::before {
+  height: 80px;
+  left: 65px;
+  top: -67px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXPUE {
+  left: 273px;
+  top: 302px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXPUE h3 {
+  text-align: right;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXPUE::before {
+  height: 80px;
+  left: 39px;
+  top: -67px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXVER {
+  left: 345px;
+  top: 200px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXVER::before {
+  height: 30px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXYUC {
+  left: 441px;
+  top: 169px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXYUC::before {
+  height: 30px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXTAB {
+  left: 320px;
+  top: 194px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXTAB::before {
+  height: 50px;
+  left: 69px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXROO {
+  left: 480px;
+  top: 165px;
+}
+.mapa .main-block .map .info-boxes .info-box.info-MXROO::before {
+  height: 30px;
+}
+
+@media (max-width: 999px) {
+  .mapa .main-block .map .info-boxes {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=map.css.map */
+
+/* --- Ajustes del contenedor del mapa, medidos sobre la pagina viva ---
+   El modulo trae max-width:500px, pero en produccion el mapa se sirve a 800px.
+   Las cajas de ciudad estan posicionadas en px sobre esa medida, asi que
+   cambiarla las desalinea: 800 es obligatorio, no una preferencia estetica. */
+.tpl-institucional .presencia { background: var(--i-deep); padding: 72px 0; }
+.tpl-institucional .presencia .titulo { color: var(--i-green); margin-bottom: 28px; }
+.tpl-institucional .mapa .main-block { display: block; padding: 0 20px; background: transparent; }
+.tpl-institucional .mapa .main-block .map { max-width: 800px; }
+.tpl-institucional .mapa .left-block { display: flex; flex-direction: column; }
+@media (max-width: 999px) {
+  .tpl-institucional .presencia { padding: 54px 0; }
+}
+
+/* ==========================================================================
+   === Estilos propios del modulo "Tec - Ago25 - Mapa"
+   Copia literal del <style> de su module.html (422 reglas, 6 media queries),
+   con los selectores reescritos al ambito de .tpl-institucional .presencia.
+   Va DESPUES del map.css publicado porque lo corrige: reposiciona 4 pines y
+   recoloca las 31 cajas de ciudad en porcentaje por cada corte responsive.
+   Sin este bloque las cajas salen lejos de su estado y encimadas.
+   No reordenar ni aplanar: las posiciones dependen de su media query.
+   ========================================================================== */
+
+  .tpl-institucional .presencia .mapa .main-block .map svg .point.point-queretaro {
+    cy: 420px;
+    cx: 570px;
+  }
+  
+  .tpl-institucional .presencia .mapa .main-block .map svg .point.point-morelia {
+    cy: 460px;
+    cx: 514px;
+  }
+  
+  .tpl-institucional .mapa .main-block .map svg .point.point-tamaulipas3 {
+    cy: 340px;
+    cx: 620px;
+  }
+  
+  .tpl-institucional .mapa .main-block .map svg .point.point-aguascalientes {
+    cy: 375px;
+    cx: 506px;
+  }
+
+  
+  .tpl-institucional .presencia {
+    background: #00534c;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .tpl-institucional .presencia h2 {
+    font-size: 31px;
+    line-height: 39px;
+  }
+
+  .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box h3 {
+    line-height: 14px;
+    margin-bottom: 0;
+  }
+
+  .tpl-institucional .presencia .mapa .main-block {
+    display: block;
+  }
+
+  .tpl-institucional .presencia .number-block::before {
+    background: #6BCABA;
+    bottom: -60px;
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  @media(min-width: 1024px) {
+    .tpl-institucional .presencia .number-block::before {
+      bottom: unset;
+      height: 120%;
+      top: -60px;
+    }
+  }
+
+  .tpl-institucional .presencia .mapa .main-block .map .info-boxes {
+    display: none !important;
+  }
+
+  @media(min-width: 1024px) {
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes {
+      display: block !important;
+    }
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  {#
+  @media(min-width: 1024px) {
+    .tpl-institucional .presencia .mapa .main-block .map {
+      max-width: 440px;
+    }
+
+  
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXBCN {
+      left: 11.5%;
+      top: -8%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXBCN::before {
+      height: 40px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSON {
+      left: 23.5%;
+      top: -5%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSON::before {
+      height: 60px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSON#info-MXSON2 {
+      left: 30%;
+      top: 4.5%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCHH {
+      left: 36.8%;
+      top: -7.5%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCHH::before {
+      height: 60px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCHH#info-MXCHH2 {
+      left: 40.5%;
+      top: 0%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA {
+      left: 50%;
+      top: -2%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA::before {
+      height: 120px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA#info-MXCOA2 {
+      left: 56%;
+      top: 7%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA#info-MXCOA2::before {
+      height: 100px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXNLE {
+      left: 58.5%;
+      top: -8%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXNLE::before {
+      height: 135px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM {
+      left: 60%;
+      top: 20%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM::before {
+      height: 30px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM2 {
+      left: 63.7%;
+      top: 28%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM2::before {
+      height: 30px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM3 {
+      left: 63.5%;
+      top: 48%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM3::before {
+      height: 12px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN {
+      left: 16.5%;
+      top: 64%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN::before {
+      height: 80px;
+      left: 65px;
+      top: -68px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN2 {
+      left: 25.5%;
+      top: 71%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN2::before {
+      height: 80px;
+      left: 49px;
+      top: -68px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN3 {
+      left: 27%;
+      top: 78%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN3::before {
+      height: 80px;
+      left: 53px;
+      top: -68px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDUR {
+      left: 31%;
+      top: 81%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDUR h3::after {
+      display: none;
+      content: "";
+      background-color: white;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDUR::before {
+      height: 100px;
+      left: 53px;
+      top: -88px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXZAC {
+      left: 37%;
+      top: 94%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXZAC::before {
+      height: 120px;
+      left: 57px;
+      top: -108px;
+    }
+    
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXAGU {
+      left: 37.5%;
+      top: 99%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXAGU::before {
+      height: 110px;
+      left: 58px;
+      top: -108px;
+    }
+    
+    
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXJAL {
+      left: 31.5%;
+      top: 90%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXJAL h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXJAL::before {
+      height: 95px;
+      left: 69px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXGUA {
+      left: 45.5%;
+      top: 89%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXGUA h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXGUA::before {
+      height: 79px;
+      left: 31px;
+      top: -67px;
+    }
+    
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXQUE {
+      left: 43%;
+      top: 93%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXQUE h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXQUE::before {
+      height: 85px;
+      left: 60px;
+      top: -72px;
+    }
+    
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMIC {
+      left: 40%;
+      top: 99%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMIC h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMIC::before {
+      height: 85px;
+      left: 50px;
+      top: -72px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMEX {
+      left: 60%;
+      top: 98%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMEX h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMEX::before {
+      height: 80px;
+      left: -10px;
+      top: -70px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDIF {
+      left: 27%;
+      top: 92%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDIF h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDIF::before {
+      height: 182px;
+      left: 144px;
+      top: -54px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSLP {
+      left: 73%;
+      top: 51%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSLP::before {
+      height: 1px;
+      width: 164px;
+      left: -82px;
+      top: 20px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMOR {
+      left: 45%;
+      top: 99%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMOR h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMOR::before {
+      height: 80px;
+      left: 65px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXPUE {
+      left: 53.5%;
+      top: 99%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXPUE h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXPUE::before {
+      height: 80px;
+      left: 39px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXVER {
+      left: 69.5%;
+      top: 62%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXVER::before {
+      height: 30px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXYUC {
+      left: 88.5%;
+      top: 52%;
+    }
+
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAB {
+      left: 62%;
+      top: 59%;
+    }
+
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAB::before {
+      left: 70px;
+    }
+
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXROO {
+      left: 96.5%;
+      top: 51%;
+    }
+  
+  }
+
+  
+  @media(min-width: 1280px) {
+    .tpl-institucional .presencia .mapa .main-block .map {
+      max-width: 560px;
+    }
+
+
+  
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXBCN {
+      left: 11%;
+      top: -4%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXBCN::before {
+      height: 40px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSON {
+      left: 23.5%;
+      top: 0%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSON::before {
+      height: 60px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSON#info-MXSON2 {
+      left: 29.5%;
+      top: 10%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCHH {
+      left: 36.5%;
+      top: -2%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCHH::before {
+      height: 60px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCHH#info-MXCHH2 {
+      left: 40.2%;
+      top: 5%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA {
+      left: 49.5%;
+      top: 7.5%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA::before {
+      height: 120px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA#info-MXCOA2 {
+      left: 55.5%;
+      top: 15%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA#info-MXCOA2::before {
+      height: 100px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXNLE {
+      left: 58%;
+      top: 2%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXNLE::before {
+      height: 135px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM {
+      left: 59.5%;
+      top: 23%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM::before {
+      height: 30px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM2 {
+      left: 63.5%;
+      top: 30.5%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM2::before {
+      height: 30px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM3 {
+      left: 63.5%;
+      top: 47%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM3::before {
+      height: 20px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN {
+      left: 19.5%;
+      top: 59%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN::before {
+      height: 80px;
+      left: 65px;
+      top: -68px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN2 {
+      left: 28%;
+      top: 67%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN2::before {
+      height: 80px;
+      left: 49px;
+      top: -68px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN3 {
+      left: 30%;
+      top: 73%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN3::before {
+      height: 80px;
+      left: 53px;
+      top: -68px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDUR {
+      left: 33%;
+      top: 74%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDUR h3::after {
+      display: none;
+      content: "";
+      background-color: white;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDUR::before {
+      height: 100px;
+      left: 53px;
+      top: -88px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXZAC {
+      left: 39.5%;
+      top: 86%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXZAC::before {
+      height: 120px;
+      left: 57px;
+      top: -108px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXJAL {
+      left: 34.5%;
+      top: 85%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXJAL h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXJAL::before {
+      height: 95px;
+      left: 69px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXGUA {
+      left: 47%;
+      top: 84%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXGUA h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXGUA::before {
+      height: 79px;
+      left: 31px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXQUE {
+      left: 46%;
+      top: 87%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXQUE h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXQUE::before {
+      height: 85px;
+      left: 60px;
+      top: -72px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMIC {
+      left: 42.5%;
+      top: 94%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMIC h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMIC::before {
+      height: 85px;
+      left: 50px;
+      top: -72px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMEX {
+      left: 60%;
+      top: 93%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMEX h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMEX::before {
+      height: 80px;
+      left: -10px;
+      top: -70px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDIF {
+      left: 34%;
+      top: 88%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDIF h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDIF::before {
+      height: 182px;
+      left: 144px;
+      top: -54px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSLP {
+      left: 69%;
+      top: 53%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSLP::before {
+      height: 1px;
+      width: 164px;
+      left: -82px;
+      top: 20px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMOR {
+      left: 48%;
+      top: 94%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMOR h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMOR::before {
+      height: 80px;
+      left: 65px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXPUE {
+      left: 55.5%;
+      top: 94%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXPUE h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXPUE::before {
+      height: 80px;
+      left: 39px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXVER {
+      left: 69%;
+      top: 65%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXVER::before {
+      height: 30px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXYUC {
+      left: 88%;
+      top: 55%;
+    }
+
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAB {
+      left: 65.5%;
+      top: 64%;
+    }
+
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAB::before {
+      left: 70px;
+    }
+
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXROO {
+      left: 96%;
+      top: 54.5%;
+    }
+    
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXAGU {
+      left: 40.5%;
+      top: 91%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXAGU::before {
+      height: 110px;
+      left: 58px;
+      top: -108px;
+    }
+  
+  }
+
+  
+    
+    
+ 
+  
+  
+  @media(min-width: 1366px){
+     .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXROO {
+      left: 96%;
+      top: 54.5%;
+    }
+    
+    
+    
+  }
+  #} 
+  
+  @media(min-width: 1024px) {
+    .tpl-institucional .presencia .mapa .main-block .map {
+      max-width: 800px;
+    }
+
+
+    {# ############################# #}
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXBCN {
+      left: 10.5%;
+      top: -1%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXBCN::before {
+      height: 40px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSON {
+      left: 23%;
+      top: 5%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSON::before {
+      height: 60px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSON#info-MXSON2 {
+      left: 29%;
+      top: 15%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCHH {
+      left: 36%;
+      top: 3%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCHH::before {
+      height: 60px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCHH#info-MXCHH2 {
+      left: 40%;
+      top: 10%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA {
+      left: 49%;
+      top: 18%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA::before {
+      height: 120px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA#info-MXCOA2 {
+      left: 55.5%;
+      top: 24%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXCOA#info-MXCOA2::before {
+      height: 100px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXNLE {
+      left: 58%;
+      top: 14%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXNLE::before {
+      height: 135px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM {
+      left: 59.5%;
+      top: 26%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM::before {
+      height: 30px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM2 {
+      left: 63%;
+      top: 33%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM2::before {
+      height: 30px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM3 {
+      left: 63%;
+      top: 49%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAM#info-MXTAM3::before {
+      height: 20px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN {
+      left: 21.5%;
+      top: 54%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN::before {
+      height: 80px;
+      left: 75px;
+      top: -68px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN2 {
+      left: 29%;
+      top: 61%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN2::before {
+      height: 80px;
+      left: 60px;
+      top: -68px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN3 {
+      left: 32%;
+      top: 67%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSIN#info-MXSIN3::before {
+      height: 80px;
+      left: 60px;
+      top: -68px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDUR {
+      left: 35%;
+      top: 67%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDUR h3::after {
+      display: none;
+      content: "";
+      background-color: white;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDUR::before {
+      height: 100px;
+      left: 60px;
+      top: -88px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXZAC {
+      left: 36%;
+      text-align: right;
+      top: 75%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXZAC::before {
+      height: 120px;
+      left: 110px;
+      top: -95px;
+    }
+    
+    
+    
+    
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXJAL {
+      left: 37%;
+      top: 79%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXJAL h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXJAL::before {
+      height: 95px;
+      left: 80px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXGUA {
+      left: 47.5%;
+      top: 79%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXGUA h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXGUA::before {
+      height: 79px;
+      left: 40px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXQUE {
+      left: 48%;
+      top: 81%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXQUE h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXQUE::before {
+      height: 85px;
+      left: 70px;
+      top: -72px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMIC {
+      left: 45%;
+      top: 87%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMIC h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMIC::before {
+      height: 85px;
+      left: 50px;
+      top: -72px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMEX {
+      left: 59%;
+      top: 87%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMEX h3 {
+      text-align: left;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMEX::before {
+      height: 80px;
+      left: -10px;
+      top: -70px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDIF {
+      left: 37%;
+      top: 84%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDIF h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXDIF::before {
+      height: 182px;
+      left: 180px;
+      top: -54px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSLP {
+      left: 65%;
+      top: 55%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXSLP::before {
+      height: 1px;
+      width: 164px;
+      left: -82px;
+      top: 20px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMOR {
+      left: 49.5%;
+      top: 89%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMOR h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXMOR::before {
+      height: 80px;
+      left: 80px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXPUE {
+      left: 55.5%;
+      top: 88%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXPUE h3 {
+      text-align: right;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXPUE::before {
+      height: 80px;
+      left: 55px;
+      top: -67px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXVER {
+      left: 68.5%;
+      top: 67%;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXVER::before {
+      height: 30px;
+    }
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXYUC {
+      left: 88%;
+      top: 58%;
+    }
+
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAB {
+      left: 69%;
+      top: 68%;
+    }
+
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXTAB::before {
+      left: 70px;
+    }
+
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXROO {
+      left: 95.5%;
+      top: 57%;
+    }
+    
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXAGU {
+      left: 43%;
+      top: 81%;
+    }
+    
+    .tpl-institucional .presencia .mapa .main-block .map .info-boxes .info-box.info-MXAGU::before {
+      height: 110px;
+      left: 58px;
+      top: -108px;
+    }
+    {# ############################# #}
+  }
+
+  
+
+
+
+
+
+
+
+
+
+/* --- Flechas de Testimoniales y Certificaciones (el Figma las dibuja a los lados) --- */
+.tpl-institucional .con-flechas { display: flex; align-items: center; gap: 16px; margin-top: 40px; }
+.tpl-institucional .con-flechas > .carril {
+  flex: 1; display: flex; gap: 24px; overflow-x: auto;
+  scroll-snap-type: x mandatory; scrollbar-width: none;
+}
+.tpl-institucional .con-flechas > .carril::-webkit-scrollbar { display: none; }
+.tpl-institucional .con-flechas .carousel-arrow {
+  flex: none; width: 42px; height: 42px; border: 0; border-radius: 50%; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; color: var(--i-deep); font: inherit; font-size: 26px; line-height: 1;
+}
+.tpl-institucional .certificaciones .carousel-arrow { color: #f8f9fa; }
+.tpl-institucional .testimoniales .carril > * { flex: 0 0 calc((100% - 24px) / 2); scroll-snap-align: start; }
+.tpl-institucional .certificaciones .carril { align-items: center; gap: 46px; }
+/* Altura pareja: los logos vienen en proporciones muy distintas. */
+.tpl-institucional .certificaciones .carril img {
+  flex: none; scroll-snap-align: center;
+  height: 62px; width: auto; max-width: 200px; object-fit: contain;
+}
+@media (max-width: 900px) {
+  .tpl-institucional .testimoniales .carril > * { flex: 0 0 100%; }
+  .tpl-institucional .empleabilidad__grid { grid-auto-rows: auto; }
+}
+
+
+/* --- Pastillas del modulo de formato ---
+   Aqui la activa es verde profundo con texto blanco (nodos 9:1579 y 9:1580),
+   no el verde claro con texto oscuro que usa el modulo de programas. */
+.tpl-institucional .formato .pastilla.is-activa {
+  background: var(--i-deep); border-color: var(--i-deep); color: #fff;
+}
+
+
+/* ==========================================================================
+   AJUSTES DE LA REVISION (presentacion "Ajustes plantilla institucional")
+   ========================================================================== */
+
+/* 2. En movil las pastillas van en filas de dos; si la ultima queda sola,
+      se centra. Con grid sale solo, sin depender de cuantas sean. */
+@media (max-width: 760px) {
+  .tpl-institucional .pastillas {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .tpl-institucional .pastilla { width: 100%; white-space: normal; padding: 12px 14px; }
+  .tpl-institucional .pastillas > .pastilla:last-child:nth-child(odd) {
+    grid-column: 1 / -1; width: 60%; margin-inline: auto;
+  }
+}
+
+/* 6. En escritorio los cinco logos caben completos, asi que las flechas no
+      mueven nada y estorban: se ocultan. En movil si hacen falta. */
+@media (min-width: 901px) {
+  .tpl-institucional .certificaciones .carousel-arrow { display: none; }
+  .tpl-institucional .certificaciones .carril { justify-content: center; overflow-x: visible; }
+}
+
+/* 3b. El video vive dentro de su celda del mosaico: el boton y el iframe que
+       lo sustituye ocupan la celda completa. */
+.tpl-institucional button.video { padding: 0; border: 0; cursor: pointer; background: none; width: 100%; height: 100%; }
+.tpl-institucional .video--activo { width: 100%; height: 100%; border: 0; border-radius: 18px; }
