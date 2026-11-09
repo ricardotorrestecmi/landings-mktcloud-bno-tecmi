@@ -1879,3 +1879,476 @@
        lo sustituye ocupan la celda completa. */
 .tpl-institucional button.video { padding: 0; border: 0; cursor: pointer; background: none; width: 100%; height: 100%; }
 .tpl-institucional .video--activo { width: 100%; height: 100%; border: 0; border-radius: 18px; }
+
+
+/* ==========================================================================
+   === PLANTILLA INSTITUCIONAL 2.0
+   ===
+   === Se agrega al mismo archivo que la 1.0, como pide la tarea, para que los
+   === modulos de ambas plantillas puedan intercalarse en una misma pagina.
+   === Todo cuelga de .tpl-institucional (la familia) y lleva prefijo .i2- para
+   === no chocar con nada de la 1.0. Los tokens son los mismos de :root.
+   ========================================================================== */
+
+/* --- piezas compartidas ------------------------------------------------- */
+.tpl-institucional .i2-wrap { max-width: var(--i-wrap); margin-inline: auto; padding-inline: var(--i-gutter); }
+
+.tpl-institucional .i2-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 12px 28px; border: 0; border-radius: 100px;
+  font: 700 16px/1.2 Montserrat, sans-serif; text-decoration: none; cursor: pointer;
+  transition: filter .18s ease;
+}
+.tpl-institucional .i2-btn:hover { filter: brightness(.93); }
+.tpl-institucional .i2-btn--green { background: var(--i-green); color: #fff; }
+.tpl-institucional .i2-btn--deep  { background: var(--i-deep);  color: #fff; }
+
+.tpl-institucional .i2-becas h2, .tpl-institucional .i2-servicios h2,
+.tpl-institucional .i2-paquetes h2, .tpl-institucional .i2-folletos h2,
+.tpl-institucional .i2-guias h2, .tpl-institucional .i2-heforshe h2,
+.tpl-institucional .i2-form h2, .tpl-institucional .i2-tips h2,
+.tpl-institucional .i2-beneficios h2, .tpl-institucional .i2-plan h2 {
+  font: 700 30px/1.25 Montserrat, sans-serif; text-align: center; color: var(--i-deep);
+}
+.tpl-institucional .i2-servicios h2,
+.tpl-institucional .i2-heforshe h2 { color: #fff; }
+
+/* --- 1. header ---------------------------------------------------------- */
+.tpl-institucional .i2-header { background: var(--i-deep); }
+.tpl-institucional .i2-header__wrap {
+  max-width: var(--i-wrap); margin-inline: auto; padding: 24px var(--i-gutter);
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 85px;
+}
+.tpl-institucional .i2-header__logo img { display: block; height: 30px; width: auto; }
+.tpl-institucional .i2-header .i2-btn { padding: 10px 22px; font-size: 12px; font-weight: 700; min-height: 38px; }
+
+/* --- 2. hero con foto a sangre ------------------------------------------ */
+.tpl-institucional .i2-hero--foto {
+  position: relative; min-height: 727px; display: flex; align-items: center;
+  background: var(--i-deep) center/cover no-repeat
+    url('https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/cf547964-05ce-4cd2-929d-80c458270f93.jpg');
+}
+/* El degradado sostiene el texto sobre la foto; sin el, el blanco se pierde. */
+.tpl-institucional .i2-hero--foto::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,.78) 0%, rgba(0,0,0,.55) 45%, rgba(0,0,0,0) 78%);
+}
+.tpl-institucional .i2-hero__wrap {
+  position: relative; max-width: var(--i-wrap); margin-inline: auto;
+  padding: 64px var(--i-gutter); width: 100%;
+}
+/* El sello de interculturalidad va sobre el titular, arriba a la izquierda. */
+.tpl-institucional .i2-hero__sello { display: block; width: 197px; height: auto; margin-bottom: 26px; }
+.tpl-institucional .i2-hero--foto h1 { font: 700 60px/1.1 Montserrat, sans-serif; color: #fff; }
+.tpl-institucional .i2-hero--foto p  { max-width: 52ch; margin: 20px 0 28px; font: 500 16px/1.6 Montserrat, sans-serif; color: #fff; }
+
+/* --- 3. hero crema + foto ----------------------------------------------- */
+.tpl-institucional .i2-hero--crema {
+  display: grid; grid-template-columns: 1fr 1fr; align-items: center;
+  background: var(--i-cream); min-height: 727px;
+}
+.tpl-institucional .i2-hero__texto { padding: 64px clamp(24px, 6vw, 96px); }
+.tpl-institucional .i2-hero--crema h1 { font: 700 60px/1.1 Montserrat, sans-serif; color: var(--i-deep); }
+.tpl-institucional .i2-hero__sub { font: 700 24px/1.3 Montserrat, sans-serif; color: var(--i-green); margin-top: 6px; }
+.tpl-institucional .i2-hero--crema p:not(.i2-hero__sub) { max-width: 46ch; margin: 18px 0 26px; font: 500 16px/1.7 Montserrat, sans-serif; color: #3f4a46; }
+.tpl-institucional .i2-hero__foto { height: 100%; min-height: 727px; }
+.tpl-institucional .i2-hero__foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* height:100% no resuelve contra un padre que solo tiene min-height: la imagen
+   caeria en su alto natural y estiraria el hero. Se fija explicitamente. */
+.tpl-institucional .i2-hero--crema .i2-hero__foto img { height: 727px; }
+
+/* --- 4. becas ------------------------------------------------------------ */
+.tpl-institucional .i2-becas { background: var(--i-bg); padding: 60px 0; }
+.tpl-institucional .i2-pastillas {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 34px 0 32px;
+}
+.tpl-institucional .i2-pastilla {
+  min-height: 44px; padding: 12px 26px; border: 1px solid var(--i-deep); border-radius: 100px;
+  background: #fff; color: var(--i-deep); font: 500 16px/1.2 Montserrat, sans-serif; cursor: pointer;
+  transition: background .18s ease, color .18s ease;
+}
+.tpl-institucional .i2-pastilla:hover { background: #eef7f3; }
+.tpl-institucional .i2-pastilla.is-activa { background: var(--i-green); border-color: var(--i-green); color: #fff; font-weight: 600; }
+
+.tpl-institucional .i2-beca { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+/* [hidden] pierde contra display:grid, hay que ganarle explicitamente. */
+.tpl-institucional .i2-beca[hidden] { display: none; }
+.tpl-institucional .i2-beca__panel { background: #fff; border-radius: 26px; padding: 28px 30px; }
+.tpl-institucional .i2-beca__panel h3 {
+  font: 700 18px/1.3 Montserrat, sans-serif; color: var(--i-deep);
+  padding-bottom: 14px; border-bottom: 1px solid #ebebeb;
+}
+.tpl-institucional .i2-beca__cuerpo { margin-top: 16px; font: 500 16px/1.65 Montserrat, sans-serif; color: #3f4a46; }
+.tpl-institucional .i2-beca__cuerpo p { margin-bottom: 10px; }
+.tpl-institucional .i2-beca__cuerpo ul { margin: 6px 0 0 18px; list-style: disc; }
+.tpl-institucional .i2-beca__cuerpo li { margin-bottom: 4px; }
+.tpl-institucional .i2-beca__destacado { font-weight: 700; color: var(--i-deep); }
+.tpl-institucional .i2-beca__nota { font-style: italic; color: #6b7672; }
+/* El panel vacio no debe colapsar: queda la caja a la espera del copy. */
+.tpl-institucional .i2-beca__cuerpo:empty { min-height: 120px; }
+.tpl-institucional .i2-beca__foto img { width: 100%; height: 422px; object-fit: cover; border-radius: 20px; display: block; }
+
+/* --- 5/6/11. modulos partidos foto + texto ------------------------------- */
+.tpl-institucional .i2-split { padding: 92px 0; }
+.tpl-institucional .i2-split--oscuro { background: var(--i-deep); }
+.tpl-institucional .i2-split--claro  { background: var(--i-bg); }
+.tpl-institucional .i2-split__wrap {
+  max-width: var(--i-wrap); margin-inline: auto; padding-inline: var(--i-gutter);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+}
+.tpl-institucional .i2-split__foto img { width: 100%; height: 410px; object-fit: cover; border-radius: 20px; display: block; }
+/* Cada modulo partido lleva en el Figma su propia altura de foto. */
+.tpl-institucional .i2-split--oscuro .i2-split__foto img { height: 264px; }
+.tpl-institucional .i2-split--requisitos .i2-split__foto img { height: 410px; }
+.tpl-institucional .i2-split--video .i2-split__foto { min-height: 360px; }
+.tpl-institucional .i2-split__texto h2 { font: 700 30px/1.25 Montserrat, sans-serif; text-align: left; }
+.tpl-institucional .i2-split--oscuro h2 { color: #fff; }
+.tpl-institucional .i2-split--claro  h2 { color: var(--i-deep); }
+.tpl-institucional .i2-split__texto p,
+.tpl-institucional .i2-split__texto li { font: 500 16px/1.7 Montserrat, sans-serif; }
+.tpl-institucional .i2-split--oscuro p { color: #e7efec; margin-top: 16px; }
+.tpl-institucional .i2-split--claro  p { color: #3f4a46; margin-top: 16px; }
+.tpl-institucional .i2-split__texto ul { margin: 18px 0 0 18px; list-style: disc; color: #3f4a46; }
+.tpl-institucional .i2-split__texto li { margin-bottom: 8px; }
+.tpl-institucional .i2-split__texto .i2-btn { margin-top: 26px; }
+/* El vacio reservado para el copy que falta no debe cerrar el modulo. */
+.tpl-institucional .i2-split__texto p:empty { min-height: 72px; margin-top: 16px; }
+
+/* --- 7. tecmicare -------------------------------------------------------- */
+.tpl-institucional .i2-servicios { background: var(--i-sea); padding: 92px 0; }
+.tpl-institucional .i2-servicios__grid {
+  display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 20px; margin-top: 36px;
+
+}
+.tpl-institucional .i2-servicio {
+  background: var(--i-bg); border-radius: 20px; padding: 34px 22px; text-align: center; min-height: 290px;
+}
+.tpl-institucional .i2-servicio svg { width: 34px; height: 34px; fill: var(--i-deep); margin-bottom: 14px; }
+.tpl-institucional .i2-servicio h3 { font: 700 16px/1.35 Montserrat, sans-serif; color: var(--i-deep); }
+.tpl-institucional .i2-servicio p  { margin-top: 10px; font: 500 14px/1.6 Montserrat, sans-serif; color: #3f4a46; }
+.tpl-institucional .i2-servicio p:empty { min-height: 54px; }
+
+/* La quinta tarjeta va sola y centrada, como en el Figma. */
+.tpl-institucional .i2-servicio { grid-column: span 2; }
+/* La quinta va sola y centrada, pero con el MISMO ancho que las otras cuatro:
+   empezar en la columna 4 de ocho la deja centrada exacta. */
+.tpl-institucional .i2-servicio--sola { grid-column: 4 / span 2; margin-top: 24px; }
+
+/* --- 8. paquetes --------------------------------------------------------- */
+.tpl-institucional .i2-paquetes { background: var(--i-bg); padding: 92px 0; }
+.tpl-institucional .i2-paquetes__grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 36px;
+}
+.tpl-institucional .i2-paquete {
+  display: grid; grid-template-columns: 170px 1fr; background: #fff; border-radius: 20px; overflow: hidden;
+}
+.tpl-institucional .i2-paquete__foto img { width: 100%; height: 100%; min-height: 307px; object-fit: cover; display: block; }
+.tpl-institucional .i2-paquete__cuerpo { padding: 24px 22px; }
+.tpl-institucional .i2-paquete__cuerpo h3 { font: 700 16px/1.3 Montserrat, sans-serif; color: var(--i-deep); }
+.tpl-institucional .i2-paquete__cuerpo p  { margin: 10px 0 20px; font: 500 16px/1.5 Montserrat, sans-serif; color: #3f4a46; }
+
+/* --- 9. folletos --------------------------------------------------------- */
+.tpl-institucional .i2-folletos { background: var(--i-bg); padding: 80px 0; }
+.tpl-institucional .i2-folletos__intro {
+  margin: 12px auto 36px; max-width: 70ch; text-align: center;
+  font: 500 16px/1.6 Montserrat, sans-serif; color: #3f4a46;
+}
+.tpl-institucional .i2-folleto {
+  display: grid; grid-template-columns: 1fr 1fr; border-radius: 20px; overflow: hidden;
+  background: var(--i-deep); margin-bottom: 28px; min-height: 424px;
+}
+.tpl-institucional .i2-folleto__texto { padding: 38px 36px; display: flex; flex-direction: column; }
+.tpl-institucional .i2-folleto__texto h3 { font: 700 25px/1.3 Montserrat, sans-serif; color: #fff; }
+.tpl-institucional .i2-folleto__texto p  { margin: 16px 0 auto; font: 500 16px/1.65 Montserrat, sans-serif; color: #e7efec; }
+.tpl-institucional .i2-folleto__texto .i2-btn { align-self: flex-start; margin-top: 26px; }
+.tpl-institucional .i2-folleto__foto img { width: 100%; height: 424px; object-fit: cover; display: block; }
+
+/* --- 10. guias (carrusel) ------------------------------------------------ */
+/* Este modulo no lleva fondo propio en el Figma: se apoya en el blanco del
+   frame. Por eso va #fff y no el gris de pagina como sus vecinos. */
+.tpl-institucional .i2-guias { background: #fff; padding: 60px 0; }
+.tpl-institucional .i2-carrusel { position: relative; display: flex; align-items: center; gap: 10px; margin-top: 34px; }
+.tpl-institucional .i2-carrusel__carril {
+  display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; flex: 1;
+}
+.tpl-institucional .i2-carrusel__carril::-webkit-scrollbar { display: none; }
+.tpl-institucional .i2-guia { flex: 0 0 calc((100% - 48px) / 3); scroll-snap-align: start; }
+.tpl-institucional .i2-guia__portada { width: 100%; height: 300px; object-fit: contain; background: #fff; border-radius: 20px 20px 0 0; display: block; }
+.tpl-institucional .i2-guia__pie {
+  display: block; padding: 20px 22px; min-height: 90px;
+  background: var(--i-deep); color: #fff; border-radius: 0 0 20px 20px;
+  font: 700 16px/1.4 Montserrat, sans-serif; text-decoration: none;
+}
+.tpl-institucional .i2-guia__pie:hover { background: #00443e; }
+.tpl-institucional .i2-guia__pie--sinpdf { background: var(--i-green); cursor: default; }
+.tpl-institucional .i2-flecha {
+  flex: 0 0 auto; width: 36px; height: 36px; border: 0; border-radius: 50%;
+  background: transparent; color: var(--i-deep); cursor: pointer;
+}
+.tpl-institucional .i2-flecha svg { width: 22px; height: 22px; }
+
+/* --- 12. heforshe -------------------------------------------------------- */
+.tpl-institucional .i2-heforshe { background: var(--i-sea); padding: 92px 0; }
+.tpl-institucional .i2-heforshe__intro {
+  margin: 26px auto 52px; max-width: 86ch; text-align: center;
+  font: 500 16px/1.7 Montserrat, sans-serif; color: #e7efec;
+}
+.tpl-institucional .i2-heforshe__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.tpl-institucional .i2-tarjeta-video {
+  background: #fff; border-radius: 20px; overflow: hidden; text-align: center;
+  display: flex; flex-direction: column; min-height: 470px;
+}
+.tpl-institucional .i2-tarjeta-video p { padding: 24px 18px 0; font: 600 18px/1.4 Montserrat, sans-serif; color: var(--i-deep); }
+.tpl-institucional .i2-tarjeta-video .i2-btn { margin: 22px auto 30px; }
+
+/* El boton de video ocupa su celda y el iframe lo sustituye en el mismo hueco. */
+.tpl-institucional .i2-video {
+  position: relative; display: block; width: 100%; padding: 0; border: 0;
+  background: none; cursor: pointer; aspect-ratio: 16 / 9;
+}
+.tpl-institucional .i2-video > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tpl-institucional .i2-video > span {
+  position: absolute; inset: 50% auto auto 50%; translate: -50% -50%;
+  width: 54px; height: 54px; border-radius: 50%; background: rgba(255,255,255,.9);
+}
+.tpl-institucional .i2-video > span::after {
+  content: ''; position: absolute; inset: 50% auto auto 54%; translate: -50% -50%;
+  border: 11px solid transparent; border-left-color: var(--i-deep); border-right: 0;
+}
+.tpl-institucional .i2-video--activo { aspect-ratio: 16 / 9; width: 100%; border: 0; }
+.tpl-institucional .i2-split__foto .i2-video { border-radius: 20px; overflow: hidden; }
+
+/* --- 13. formulario ------------------------------------------------------ */
+.tpl-institucional .i2-form { background: var(--i-green); padding: 110px 0; }
+.tpl-institucional .i2-form__wrap { max-width: 760px; margin-inline: auto; padding-inline: var(--i-gutter); }
+.tpl-institucional .i2-form__intro {
+  margin: 14px auto 30px; max-width: 70ch; text-align: center;
+  font: 500 16px/1.6 Montserrat, sans-serif; color: var(--i-deep);
+}
+.tpl-institucional .i2-form__intro:empty { min-height: 20px; margin-bottom: 20px; }
+.tpl-institucional .i2-form__campos { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.tpl-institucional .i2-form__campos input[type="text"],
+.tpl-institucional .i2-form__campos input[type="tel"],
+.tpl-institucional .i2-form__campos input[type="email"],
+.tpl-institucional .i2-form__campos select {
+  min-height: 56px; padding: 16px 24px; border: 0; border-radius: 100px;
+  background: #fff; font: 500 12px/1.2 Montserrat, sans-serif; color: #3f4a46; width: 100%;
+  appearance: none;
+}
+.tpl-institucional .i2-form__campos select {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%2300534c' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 18px center; background-size: 18px;
+  padding-right: 44px;
+}
+.tpl-institucional .i2-form__ancho { grid-column: 1 / -1; }
+.tpl-institucional .i2-form__aviso {
+  grid-column: 1 / -1; display: flex; gap: 10px; align-items: flex-start;
+  font: 500 12px/1.5 Montserrat, sans-serif; color: var(--i-deep); margin-top: 4px;
+}
+.tpl-institucional .i2-form__aviso a { color: var(--i-deep); }
+.tpl-institucional .i2-form__enviar { grid-column: 1 / -1; width: 100%; margin-top: 6px; }
+
+/* --- 14. footer ---------------------------------------------------------- */
+.tpl-institucional .i2-footer { background: var(--i-deep); padding: 70px 0 60px; }
+.tpl-institucional .i2-footer__alto { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.tpl-institucional .i2-footer__logo img { display: block; height: 30px; width: auto; }
+.tpl-institucional .i2-footer__redes { display: flex; gap: 18px; list-style: none; }
+.tpl-institucional .i2-footer__redes img { display: block; width: 18px; height: 18px; }
+.tpl-institucional .i2-footer__bajo {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  margin-top: 58px; font: 500 12px/1.5 Montserrat, sans-serif; color: #cfe0db;
+}
+.tpl-institucional .i2-footer__legal { display: flex; gap: 26px; }
+.tpl-institucional .i2-footer__legal a { color: #fff; text-decoration: underline; font-weight: 700; font-size: 12px; }
+
+/* ==========================================================================
+   === 2.0 — MOBILE
+   === El Figma trae su propia columna de 320px, asi que esto no es una
+   === suposicion: son las decisiones que ahi se ven. El cliente pidio cuidar
+   === especialmente este ancho.
+   ========================================================================== */
+@media (max-width: 900px) {
+  .tpl-institucional .i2-servicios__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tpl-institucional .i2-servicio--sola { grid-column: 2 / span 2; max-width: none; margin-inline: 0; }
+  .tpl-institucional .i2-heforshe__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .i2-paquetes__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .i2-guia { flex: 0 0 calc((100% - 24px) / 2); }
+}
+
+@media (max-width: 760px) {
+  .tpl-institucional .i2-becas h2, .tpl-institucional .i2-servicios h2,
+  .tpl-institucional .i2-paquetes h2, .tpl-institucional .i2-folletos h2,
+  .tpl-institucional .i2-guias h2, .tpl-institucional .i2-heforshe h2,
+  .tpl-institucional .i2-form h2, .tpl-institucional .i2-tips h2,
+  .tpl-institucional .i2-beneficios h2, .tpl-institucional .i2-plan h2 { font-size: 22px; }
+
+  .tpl-institucional .i2-hero--foto { min-height: 440px; }
+  .tpl-institucional .i2-hero--foto::before { background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.8) 100%); }
+  .tpl-institucional .i2-hero--foto h1,
+  .tpl-institucional .i2-hero--crema h1 { font-size: 32px; }
+  .tpl-institucional .i2-hero__sello { width: 148px; margin-bottom: 18px; }
+  .tpl-institucional .i2-hero__sub { font-size: 18px; }
+
+  /* En movil el hero crema apila: primero el texto, luego la foto. */
+  .tpl-institucional .i2-hero--crema { grid-template-columns: 1fr; min-height: 0; }
+  .tpl-institucional .i2-hero__texto { padding: 40px var(--i-gutter); }
+  .tpl-institucional .i2-hero__foto { min-height: 0; height: 260px; }
+  .tpl-institucional .i2-hero--crema .i2-hero__foto img { height: 260px; }
+
+  .tpl-institucional .i2-becas, .tpl-institucional .i2-servicios,
+  .tpl-institucional .i2-paquetes, .tpl-institucional .i2-folletos,
+  .tpl-institucional .i2-guias, .tpl-institucional .i2-heforshe,
+  .tpl-institucional .i2-form, .tpl-institucional .i2-split { padding: 44px 0; }
+
+  /* Las pastillas se vuelven un carril horizontal: siete no caben apiladas
+     sin empujar el panel fuera de la primera pantalla. */
+  .tpl-institucional .i2-pastillas {
+    flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start;
+    scrollbar-width: none; padding-bottom: 4px;
+  }
+  .tpl-institucional .i2-pastillas::-webkit-scrollbar { display: none; }
+  .tpl-institucional .i2-pastilla { flex: 0 0 auto; }
+
+  .tpl-institucional .i2-beca { grid-template-columns: 1fr; }
+  .tpl-institucional .i2-beca__foto img { height: 220px; }
+
+  .tpl-institucional .i2-split__wrap { grid-template-columns: 1fr; gap: 26px; }
+  /* La foto siempre arriba en movil, sin importar el orden del escritorio. */
+  .tpl-institucional .i2-split--invertido .i2-split__foto { order: -1; }
+  .tpl-institucional .i2-split__foto img { height: 220px; }
+  .tpl-institucional .i2-split__texto h2 { font-size: 20px; }
+
+  .tpl-institucional .i2-servicios__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .i2-servicio,
+  .tpl-institucional .i2-servicio--sola { grid-column: 1 / -1; max-width: none; margin-top: 0; }
+
+  .tpl-institucional .i2-paquete { grid-template-columns: 1fr; }
+  .tpl-institucional .i2-paquete__foto img { height: 190px; min-height: 0; }
+
+  .tpl-institucional .i2-folleto { grid-template-columns: 1fr; }
+  .tpl-institucional .i2-folleto--invertido .i2-folleto__foto { order: -1; }
+  .tpl-institucional .i2-folleto__foto img { height: 200px; }
+  .tpl-institucional .i2-folleto__texto { padding: 28px 24px; }
+
+  .tpl-institucional .i2-guia { flex: 0 0 100%; }
+  .tpl-institucional .i2-guia__portada { height: 230px; }
+
+  .tpl-institucional .i2-form__campos { grid-template-columns: 1fr; }
+
+  .tpl-institucional .i2-footer__alto { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .tpl-institucional .i2-footer__bajo { flex-direction: column; align-items: flex-start; gap: 14px; margin-top: 28px; }
+  .tpl-institucional .i2-footer__legal { gap: 18px; }
+}
+
+/* --- modulos sueltos del Figma, fuera del frame "Content - Desktop" ------- */
+
+/* banda verde de texto centrado (9:621 convocatoria, 9:628 contactanos) */
+.tpl-institucional .i2-banda { background: var(--i-green); padding: 70px 0; text-align: center; }
+.tpl-institucional .i2-banda h2 { font: 700 30px/1.3 Montserrat, sans-serif; color: var(--i-deep); text-align: center; }
+.tpl-institucional .i2-banda p {
+  max-width: 92ch; margin: 18px auto 0;
+  font: 500 16px/1.7 Montserrat, sans-serif; color: var(--i-deep);
+}
+.tpl-institucional .i2-banda__fecha { font-weight: 700; margin-top: 16px; }
+.tpl-institucional .i2-banda--cta { padding: 125px 0; }
+.tpl-institucional .i2-banda--cta .i2-btn { margin-top: 34px; min-width: 240px; }
+
+/* beneficios: foto + acordeon (9:549) */
+.tpl-institucional .i2-beneficios { background: var(--i-bg); padding: 92px 0; }
+.tpl-institucional .i2-beneficios__grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 34px; align-items: start;
+}
+.tpl-institucional .i2-beneficios__foto img { width: 100%; height: 470px; object-fit: cover; border-radius: 20px; display: block; }
+.tpl-institucional .i2-beneficios__panel { background: #fff; border-radius: 26px; padding: 12px 28px; min-height: 470px; }
+
+.tpl-institucional .i2-acordeon { border-bottom: 1px solid #ebebeb; }
+.tpl-institucional .i2-acordeon summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 20px 0; cursor: pointer; list-style: none;
+  font: 700 18px/1.35 Montserrat, sans-serif; color: var(--i-deep);
+}
+.tpl-institucional .i2-acordeon summary::-webkit-details-marker { display: none; }
+/* La flecha gira al abrir; se dibuja con borde para no depender de un icono. */
+.tpl-institucional .i2-acordeon summary::after {
+  content: ''; flex: 0 0 auto; width: 9px; height: 9px;
+  border-right: 2px solid var(--i-deep); border-bottom: 2px solid var(--i-deep);
+  rotate: 45deg; transition: rotate .2s ease;
+}
+.tpl-institucional .i2-acordeon[open] summary::after { rotate: -135deg; }
+.tpl-institucional .i2-acordeon__cuerpo { padding-bottom: 20px; font: 500 16px/1.7 Montserrat, sans-serif; color: var(--i-sea); }
+.tpl-institucional .i2-acordeon__cuerpo ul { margin-left: 18px; list-style: disc; }
+.tpl-institucional .i2-acordeon__cuerpo:empty { min-height: 64px; }
+
+/* tips para tu salud: pestanas verticales + panel (9:579) */
+.tpl-institucional .i2-tips { background: var(--i-bg); padding: 92px 0; }
+.tpl-institucional .i2-tips__grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 34px; align-items: start;
+}
+.tpl-institucional .i2-tips__lista { display: flex; flex-direction: column; gap: 14px; }
+.tpl-institucional .i2-tip {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: 44px; padding: 13px 24px; border: 1px solid var(--i-deep); border-radius: 100px;
+  background: #fff; color: var(--i-deep); font: 700 16px/1.2 Montserrat, sans-serif;
+  cursor: pointer; text-align: left; transition: background .18s ease, color .18s ease;
+}
+.tpl-institucional .i2-tip:hover { background: #eef7f3; }
+.tpl-institucional .i2-tip.is-activa { background: var(--i-deep); border-color: var(--i-deep); color: #fff; }
+.tpl-institucional .i2-tips__panel {
+  grid-column: 2; grid-row: 1; background: #fff; border-radius: 26px; padding: 28px 30px;
+  display: flex; flex-direction: column; min-height: 620px;
+}
+.tpl-institucional .i2-tips__panel[hidden] { display: none; }
+.tpl-institucional .i2-tips__cuerpo { flex: 1; font: 500 16px/1.7 Montserrat, sans-serif; color: var(--i-sea); }
+.tpl-institucional .i2-tips__cuerpo:empty { min-height: 180px; }
+.tpl-institucional .i2-tips__panel .i2-btn { align-self: flex-start; margin-top: 20px; min-width: 240px; }
+
+/* plan de estudios: pastilla sobre tarjeta (9:641) */
+.tpl-institucional .i2-plan { background: var(--i-bg); padding: 92px 0; }
+.tpl-institucional .i2-plan__grid {
+  display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; margin-top: 34px;
+}
+.tpl-institucional .i2-plan__pildora {
+  min-height: 48px; display: flex; align-items: center; justify-content: center;
+  border-radius: 100px; background: var(--i-green); color: #fff;
+  font: 700 18px/1.2 Montserrat, sans-serif; margin-bottom: 12px;
+}
+.tpl-institucional .i2-plan__pildora--oscura { background: var(--i-deep); }
+.tpl-institucional .i2-plan__pildora--media  { background: var(--i-sea); }
+.tpl-institucional .i2-plan__tarjeta { background: #fff; border-radius: 20px; padding: 30px 24px; text-align: center; min-height: 206px; }
+.tpl-institucional .i2-plan__tarjeta h4 { font: 700 16px/1.3 Montserrat, sans-serif; color: var(--i-deep); }
+.tpl-institucional .i2-plan__tarjeta p  { margin-top: 10px; font: 500 14px/1.6 Montserrat, sans-serif; color: #3f4a46; }
+.tpl-institucional .i2-plan__tarjeta p:empty { min-height: 54px; }
+/* Las dos ultimas van centradas bajo las tres primeras, como en el Figma. */
+.tpl-institucional .i2-plan__tema { grid-column: span 2; }
+/* Las dos ultimas van centradas bajo las tres primeras, pero con el MISMO
+   ancho: se desplazan con la columna de inicio, no con un margen, porque un
+   margen en una celda de grid le resta anchura ademas de moverla. */
+.tpl-institucional .i2-plan__tema:nth-child(4) { grid-column: 2 / span 2; }
+.tpl-institucional .i2-plan__tema:nth-child(5) { grid-column: 4 / span 2; }
+
+@media (max-width: 900px) {
+  .tpl-institucional .i2-plan__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tpl-institucional .i2-plan__tema:nth-child(4),
+  .tpl-institucional .i2-plan__tema:nth-child(5) { grid-column: span 2; }
+}
+
+@media (max-width: 760px) {
+  .tpl-institucional .i2-banda, .tpl-institucional .i2-beneficios,
+  .tpl-institucional .i2-tips,  .tpl-institucional .i2-plan { padding: 44px 0; }
+  .tpl-institucional .i2-banda h2 { font-size: 20px; }
+
+  .tpl-institucional .i2-beneficios__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .i2-beneficios__foto img { height: 210px; }
+  .tpl-institucional .i2-beneficios__panel { min-height: 0; }
+
+  /* En movil las pestanas van arriba y el panel debajo, en una sola columna. */
+  .tpl-institucional .i2-tips__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .i2-tips__panel { grid-column: 1; grid-row: auto; min-height: 0; }
+
+  .tpl-institucional .i2-plan__grid { grid-template-columns: 1fr; }
+  .tpl-institucional .i2-plan__tema,
+  .tpl-institucional .i2-plan__tema:nth-child(4),
+  .tpl-institucional .i2-plan__tema:nth-child(5) { grid-column: 1 / -1; }
+}
