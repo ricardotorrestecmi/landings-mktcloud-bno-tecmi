@@ -1971,9 +1971,12 @@
 .tpl-institucional .i2-pastilla:hover { background: #eef7f3; }
 .tpl-institucional .i2-pastilla.is-activa { background: var(--i-green); border-color: var(--i-green); color: #fff; font-weight: 600; }
 
-.tpl-institucional .i2-beca { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.tpl-institucional .i2-beca__caja { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
 /* [hidden] pierde contra display:grid, hay que ganarle explicitamente. */
 .tpl-institucional .i2-beca[hidden] { display: none; }
+/* En escritorio manda la pastilla: el <summary> no se ve y el panel va siempre
+   desplegado. El <details> solo entra en juego en movil. */
+.tpl-institucional .i2-beca__resumen { display: none; }
 .tpl-institucional .i2-beca__panel { background: #fff; border-radius: 26px; padding: 28px 30px; }
 .tpl-institucional .i2-beca__panel h3 {
   font: 700 18px/1.3 Montserrat, sans-serif; color: var(--i-deep);
@@ -2360,4 +2363,39 @@
   .tpl-institucional .i2-plan__tema,
   .tpl-institucional .i2-plan__tema:nth-child(4),
   .tpl-institucional .i2-plan__tema:nth-child(5) { grid-column: 1 / -1; }
+}
+
+
+/* --- becas en movil: el "Dropdown" del Figma (nodo 9:962) ----------------
+   En 320px el Figma no dibuja las pastillas: pone una lista de filas
+   desplegables, cada una con su flecha y una linea separadora. Se usa el
+   <details> nativo, igual que el acordeon de "Conoce nuestros beneficios". */
+@media (max-width: 760px) {
+  .tpl-institucional .i2-becas .i2-pastillas { display: none; }
+
+  /* Todas las becas se ven a la vez: aqui manda el <details>, no la pastilla. */
+  .tpl-institucional .i2-becas .i2-beca[hidden] { display: block; }
+  .tpl-institucional .i2-beca { border-bottom: 1px solid #d4d3d3; background: #fff; }
+  .tpl-institucional .i2-becas .i2-beca:first-of-type { border-radius: 20px 20px 0 0; }
+  .tpl-institucional .i2-becas .i2-beca:last-of-type  { border-radius: 0 0 20px 20px; border-bottom: 0; }
+
+  .tpl-institucional .i2-beca__resumen {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    min-height: 56px; padding: 16px 20px; cursor: pointer; list-style: none;
+    font: 700 16px/1.35 Montserrat, sans-serif; color: var(--i-deep);
+  }
+  .tpl-institucional .i2-beca__resumen::-webkit-details-marker { display: none; }
+  .tpl-institucional .i2-beca__resumen::after {
+    content: ''; flex: 0 0 auto; width: 9px; height: 9px;
+    border-right: 2px solid var(--i-deep); border-bottom: 2px solid var(--i-deep);
+    rotate: 45deg; transition: rotate .2s ease;
+  }
+  .tpl-institucional .i2-beca[open] .i2-beca__resumen::after { rotate: -135deg; }
+
+  .tpl-institucional .i2-beca__caja { grid-template-columns: 1fr; gap: 16px; padding: 0 20px 22px; }
+  /* El titulo ya lo dice el <summary>, no hace falta repetirlo dentro. */
+  .tpl-institucional .i2-beca__panel { background: none; border-radius: 0; padding: 0; }
+  .tpl-institucional .i2-beca__panel h3 { display: none; }
+  .tpl-institucional .i2-beca__cuerpo { margin-top: 0; }
+  .tpl-institucional .i2-beca__foto img { height: 225px; }
 }

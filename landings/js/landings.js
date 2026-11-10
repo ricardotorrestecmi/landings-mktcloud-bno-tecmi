@@ -790,6 +790,40 @@ document.querySelectorAll("#np-form").forEach(function (f) {
     centrarActivas();
     window.addEventListener('load', centrarActivas);
     window.addEventListener('resize', centrarActivas);
+
+    /* En movil el Figma cambia las pastillas de beca por una lista desplegable.
+       El HTML es el mismo: en escritorio el <details> va siempre abierto y la
+       pastilla decide cual se ve; en movil se ven todos y manda el <details>. */
+    var becas = document.querySelectorAll('.i2-becas .i2-beca');
+    if (becas.length) {
+        var chico = window.matchMedia('(max-width: 760px)');
+
+        function acomodar() {
+            if (chico.matches) {
+                var hayAbierto = false;
+                becas.forEach(function (d) {
+                    /* se abre el que la pastilla tenia activo */
+                    d.open = !d.hidden && !hayAbierto;
+                    if (d.open) hayAbierto = true;
+                });
+                if (!hayAbierto) becas[0].open = true;
+            } else {
+                becas.forEach(function (d) { d.open = true; });
+            }
+        }
+
+        /* Acordeon: al abrir uno se cierran los demas, como en el Figma. */
+        becas.forEach(function (d) {
+            d.addEventListener('toggle', function () {
+                if (!d.open || !chico.matches) return;
+                becas.forEach(function (o) { if (o !== d) o.open = false; });
+            });
+        });
+
+        acomodar();
+        if (chico.addEventListener) chico.addEventListener('change', acomodar);
+        else if (chico.addListener) chico.addListener(acomodar);
+    }
 })();
 
 /* 2. Carruseles. El respaldo con asignacion directa esta porque hay navegadores
