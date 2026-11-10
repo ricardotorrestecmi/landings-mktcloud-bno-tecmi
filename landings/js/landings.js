@@ -739,3 +739,105 @@ document.querySelectorAll("#np-form").forEach(function (f) {
     closeModal();
   });
 })();
+
+
+/* ==========================================================================
+   === PLANTILLA INSTITUCIONAL 2.0
+   ===
+   === Antes vivia inline en el index.html de cada version. Se mueve aqui para
+   === que las dos plantillas institucionales compartan JS, como pide la tarea.
+   === Cada bloque sale si no encuentra sus elementos, asi que en las landings
+   === de las otras familias no hace nada.
+   ========================================================================== */
+/* Sin dependencias externas: todo el comportamiento vive aqui, igual que en la 1.0,
+   para que la plantilla se monte en Salesforce sin cargar ningun archivo extra. */
+
+/* 1. Pastillas de becas: misma mecanica que las pastillas de nivel de la 1.0. */
+(function () {
+    var pastillas = document.querySelectorAll('.i2-pastilla, .i2-tip');
+    if (!pastillas.length) return;
+
+    /* En movil la fila de pastillas es un carril horizontal y la activa puede
+       quedar fuera de pantalla. Se centra moviendo solo el scroll del carril:
+       scrollIntoView moveria tambien la pagina, que no es lo que queremos. */
+    function centrar(pastilla) {
+        var carril = pastilla.parentElement;
+        if (!carril || carril.scrollWidth <= carril.clientWidth + 2) return;
+        var destino = pastilla.offsetLeft - (carril.clientWidth - pastilla.offsetWidth) / 2;
+        carril.scrollLeft = Math.max(0, destino);
+    }
+
+    pastillas.forEach(function (b) {
+        b.addEventListener('click', function () {
+            var hermanas = b.parentElement.querySelectorAll('.i2-pastilla, .i2-tip');
+            hermanas.forEach(function (o) {
+                o.classList.remove('is-activa');
+                o.setAttribute('aria-selected', 'false');
+                var panel = document.getElementById(o.getAttribute('aria-controls'));
+                if (panel) panel.hidden = true;
+            });
+            b.classList.add('is-activa');
+            b.setAttribute('aria-selected', 'true');
+            var activo = document.getElementById(b.getAttribute('aria-controls'));
+            if (activo) activo.hidden = false;
+            centrar(b);
+        });
+    });
+
+    function centrarActivas() {
+        document.querySelectorAll('.i2-pastilla.is-activa, .i2-tip.is-activa').forEach(centrar);
+    }
+    centrarActivas();
+    window.addEventListener('load', centrarActivas);
+    window.addEventListener('resize', centrarActivas);
+})();
+
+/* 2. Carruseles. El respaldo con asignacion directa esta porque hay navegadores
+      que no animan scrollTo y el carril se quedaria quieto. */
+(function () {
+    function paso(carril) {
+        var tarjeta = carril.firstElementChild;
+        if (!tarjeta) return carril.clientWidth;
+        var gap = parseFloat(getComputedStyle(carril).columnGap || getComputedStyle(carril).gap || 0) || 0;
+        return tarjeta.getBoundingClientRect().width + gap;
+    }
+    document.querySelectorAll('[data-car]').forEach(function (boton) {
+        boton.addEventListener('click', function () {
+            var carril = document.querySelector('[data-car-track="' + boton.getAttribute('data-car') + '"]');
+            if (!carril) return;
+            var antes = carril.scrollLeft;
+            var destino = antes + paso(carril) * parseInt(boton.getAttribute('data-dir'), 10);
+            carril.scrollTo({ left: destino, behavior: 'smooth' });
+            setTimeout(function () { if (carril.scrollLeft === antes) carril.scrollLeft = destino; }, 60);
+        });
+    });
+
+    /* Las flechas solo tienen sentido si el carril desborda. */
+    function revisar() {
+        document.querySelectorAll('[data-car-track]').forEach(function (carril) {
+            var nombre = carril.getAttribute('data-car-track');
+            var desborda = carril.scrollWidth > carril.clientWidth + 2;
+            document.querySelectorAll('[data-car="' + nombre + '"]').forEach(function (b) {
+                b.style.display = desborda ? '' : 'none';
+            });
+        });
+    }
+    revisar();
+    window.addEventListener('resize', revisar);
+    window.addEventListener('load', revisar);
+})();
+
+/* 3. El video se reproduce en su propia celda: al pulsar, la miniatura se
+      sustituye por el iframe de YouTube. */
+(function () {
+    document.querySelectorAll('.i2-video[data-video]').forEach(function (boton) {
+        boton.addEventListener('click', function () {
+            var marco = document.createElement('iframe');
+            marco.src = 'https://www.youtube-nocookie.com/embed/' + boton.getAttribute('data-video') + '?autoplay=1&rel=0';
+            marco.className = 'i2-video i2-video--activo';
+            marco.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; picture-in-picture');
+            marco.setAttribute('allowfullscreen', '');
+            boton.replaceWith(marco);
+        });
+    });
+})();

@@ -2154,13 +2154,22 @@
 .tpl-institucional .i2-footer { background: var(--i-deep); padding: 70px 0 60px; }
 .tpl-institucional .i2-footer__alto { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .tpl-institucional .i2-footer__logo img { display: block; height: 30px; width: auto; }
-.tpl-institucional .i2-footer__redes { display: flex; gap: 18px; list-style: none; }
+/* Area tactil: el icono mide 18px, pero el enlace debe llegar a 44 para que
+   se pueda tocar con el pulgar sin fallar. */
+.tpl-institucional .i2-footer__redes { display: flex; gap: 6px; list-style: none; }
+.tpl-institucional .i2-footer__redes a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; margin: -13px 0;
+}
 .tpl-institucional .i2-footer__redes img { display: block; width: 18px; height: 18px; }
 .tpl-institucional .i2-footer__bajo {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
   margin-top: 58px; font: 500 12px/1.5 Montserrat, sans-serif; color: #cfe0db;
 }
-.tpl-institucional .i2-footer__legal { display: flex; gap: 26px; }
+.tpl-institucional .i2-footer__legal { display: flex; gap: 14px; align-items: center; }
+.tpl-institucional .i2-footer__legal a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px;
+}
 .tpl-institucional .i2-footer__legal a { color: #fff; text-decoration: underline; font-weight: 700; font-size: 12px; }
 
 /* ==========================================================================

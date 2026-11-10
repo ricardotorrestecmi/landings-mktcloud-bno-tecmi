@@ -33,10 +33,14 @@ La tarea pide que los módulos de ambas plantillas se puedan intercalar. Por eso
 - Los tokens no se duplicaron: el Figma de la 2.0 usa exactamente la misma paleta
   (`#00534c`, `#26d07c`, `#007864`, `#f8f9fa`, `#f9f1e6`) y Montserrat.
 
-**No se usó `landings.js`.** Igual que en la 1.0, el comportamiento va inline al final
-del `index.html`: cero scripts externos, que es lo que permite montarla en Salesforce
-sin cargar nada más. Si más adelante se decide extraer el JS a un archivo institucional
-compartido, los dos archivos están listos para ello (misma mecánica, mismos nombres).
+**El JS vive en `landings/js/landings.js`**, como pide la tarea. Estuvo inline hasta que
+se movió: ahora las dos versiones cargan el archivo compartido y cada bloque sale solo si
+no encuentra sus elementos, así que en las landings de las otras familias no hace nada.
+
+Esto tiene una contrapartida que conviene saber: **la plantilla ya no es de cero scripts
+externos**. En Salesforce hay que subir también ese `landings.js`. La 1.0 sigue con su JS
+inline; si se quiere que las dos compartan de verdad el archivo, hay que moverle el suyo
+también, y eso toca una plantilla ya entregada.
 
 ## Por qué el Figma no se lee de un solo sitio
 
@@ -169,12 +173,32 @@ el Figma**: los paneles de Beca Mérito Académico, STEAM, con Propósito, Prés
 Educativos y Convenios Empresariales, y el acordeón de «Beneficios para miembros y
 colaboradores». Ahí no hay nada que copiar.
 
+## Marcas que hay que buscar antes de publicar
+
+Tres comentarios en el HTML señalan lo que está provisional. Buscarlos da la lista
+completa, sin depender de este README:
+
+| Marca | Cuántas | Qué señala |
+| --- | ---: | --- |
+| `TEXTO DE RELLENO` | 15 | Lorem Ipsum que viene del propio Figma |
+| `FOTO PRESTADA` | 6 | huecos sin imagen asignada en el Figma |
+| `URL PENDIENTE` | 9 | botones que apuntan al formulario de forma provisional |
+
+Los nueve con URL pendiente son los cuatro **Pagar ahora**, los cuatro **Descarga
+folleto** de Tips para tu salud y el **Saber más** de Diseña tu Tecmilenio. Los que sí
+deben ir al formulario —Más Información, el CTA del hero y Contáctanos— no llevan marca.
+
 ## Lo que falta de Marketing
 
-1. **Copy de 5 de las 7 becas.** El Figma sólo trae el panel de *Socioeconómica*, y
-   *VIVE* se armó con el contenido de beca-vive. Quedan sin texto: Mérito Académico,
-   STEAM, con Propósito, Préstamos Educativos y Convenios Empresariales. La caja está
-   construida y dimensionada; es sólo rellenar.
+1. ~~Copy de 5 de las 7 becas.~~ **Resuelto.** Monse pasó
+   `universidad.tecmilenio.mx/becas-tecmilenio-1`, de donde salieron los cinco paneles
+   que faltaban, con su lema, porcentaje, requisitos, proceso de solicitud y fechas.
+
+   **Ojo:** esa misma página trae texto más nuevo para *VIVE* (ahora «Beca de 10% a 30%»,
+   con otros requisitos) y para *Socioeconómica*. Esos dos siguen con el contenido
+   anterior —beca-vive y el Figma— porque sólo se pidieron los cinco vacíos. Conviene
+   decidir si se alinean los siete a la página de Monse, porque hoy la estructura de los
+   paneles no es homogénea.
 2. **Descripciones de los 5 servicios Tecmicare.** En el Figma son Lorem Ipsum.
 3. **Texto de «Diseña tu Tecmilenio»** y **el intro del formulario**: Lorem Ipsum.
 4. **El titular del módulo de folletos** dice literalmente «Escribe tu titular aquí».
