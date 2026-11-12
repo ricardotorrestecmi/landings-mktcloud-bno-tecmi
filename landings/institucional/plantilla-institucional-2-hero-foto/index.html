@@ -60,9 +60,9 @@
         <h2 id="i2-becas-t">Conoce nuestras becas</h2>
 
         <div class="i2-pastillas" role="tablist" aria-label="Tipos de beca">
-            <button class="i2-pastilla" role="tab" aria-selected="false" aria-controls="beca-merito"   id="tab-merito"   type="button">Beca Mérito Académico</button>
+            <button class="i2-pastilla is-activa" role="tab" aria-selected="true" aria-controls="beca-merito"   id="tab-merito"   type="button">Beca Mérito Académico</button>
             <button class="i2-pastilla" role="tab" aria-selected="false" aria-controls="beca-vive"     id="tab-vive"     type="button">Beca VIVE</button>
-            <button class="i2-pastilla is-activa" role="tab" aria-selected="true" aria-controls="beca-socio" id="tab-socio" type="button">Beca Socioeconómica</button>
+            <button class="i2-pastilla" role="tab" aria-selected="false" aria-controls="beca-socio" id="tab-socio" type="button">Beca Socioeconómica</button>
             <button class="i2-pastilla" role="tab" aria-selected="false" aria-controls="beca-steam"    id="tab-steam"    type="button">Beca STEAM</button>
             <button class="i2-pastilla" role="tab" aria-selected="false" aria-controls="beca-proposito" id="tab-proposito" type="button">Beca con Propósito</button>
             <button class="i2-pastilla" role="tab" aria-selected="false" aria-controls="beca-prestamos" id="tab-prestamos" type="button">Préstamos Educativos</button>
@@ -70,7 +70,7 @@
         </div>
 
         <!-- Beca Merito Academico -->
-        <details class="i2-beca" id="beca-merito" role="tabpanel" aria-labelledby="tab-merito" hidden open>
+        <details class="i2-beca" id="beca-merito" role="tabpanel" aria-labelledby="tab-merito" open>
             <summary class="i2-beca__resumen">Beca Mérito Académico</summary>
             <div class="i2-beca__caja">
                 <article class="i2-beca__panel">
@@ -141,7 +141,7 @@
 
 
         <!-- Beca Socioeconomica -->
-        <details class="i2-beca" id="beca-socio" role="tabpanel" aria-labelledby="tab-socio" open>
+        <details class="i2-beca" id="beca-socio" role="tabpanel" aria-labelledby="tab-socio" hidden open>
             <summary class="i2-beca__resumen">Beca Socioeconómica</summary>
             <div class="i2-beca__caja">
                 <article class="i2-beca__panel">
@@ -339,12 +339,12 @@
         <h2 id="i2-tips-t">Tips para tu salud</h2>
         <div class="i2-tips__grid">
             <div class="i2-tips__lista" role="tablist" aria-label="Tips para tu salud">
-                <button class="i2-tip" role="tab" aria-selected="false" aria-controls="tip-descanso" id="t-descanso" type="button">Importancia del descanso<span aria-hidden="true">&rsaquo;</span></button>
-                <button class="i2-tip is-activa" role="tab" aria-selected="true" aria-controls="tip-estres" id="t-estres" type="button">Manejo del estrés<span aria-hidden="true">&rsaquo;</span></button>
+                <button class="i2-tip is-activa" role="tab" aria-selected="true" aria-controls="tip-descanso" id="t-descanso" type="button">Importancia del descanso<span aria-hidden="true">&rsaquo;</span></button>
+                <button class="i2-tip" role="tab" aria-selected="false" aria-controls="tip-estres" id="t-estres" type="button">Manejo del estrés<span aria-hidden="true">&rsaquo;</span></button>
                 <button class="i2-tip" role="tab" aria-selected="false" aria-controls="tip-fisica" id="t-fisica" type="button">Actividad física<span aria-hidden="true">&rsaquo;</span></button>
                 <button class="i2-tip" role="tab" aria-selected="false" aria-controls="tip-alimentacion" id="t-alimentacion" type="button">Alimentación balanceada<span aria-hidden="true">&rsaquo;</span></button>
             </div>
-            <div class="i2-tips__panel" id="tip-descanso"      role="tabpanel" aria-labelledby="t-descanso" hidden><div class="i2-tips__cuerpo">
+            <div class="i2-tips__panel" id="tip-descanso"      role="tabpanel" aria-labelledby="t-descanso"><div class="i2-tips__cuerpo">
                     <!-- TEXTO DE RELLENO: es el Lorem Ipsum del Figma. Pendiente del copy de Marketing. -->
                     <ul>
                         <li>Es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>
@@ -356,7 +356,7 @@
                 </div>
                 <!-- URL PENDIENTE: apunta al formulario de forma provisional. Falta el destino real. -->
                 <a class="i2-btn i2-btn--green" href="#solicita">Descarga folleto</a></div>
-            <div class="i2-tips__panel" id="tip-estres"        role="tabpanel" aria-labelledby="t-estres"><div class="i2-tips__cuerpo">
+            <div class="i2-tips__panel" id="tip-estres"        role="tabpanel" aria-labelledby="t-estres" hidden><div class="i2-tips__cuerpo">
                     <!-- TEXTO DE RELLENO: es el Lorem Ipsum del Figma. Pendiente del copy de Marketing. -->
                     <ul>
                         <li>Es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</li>

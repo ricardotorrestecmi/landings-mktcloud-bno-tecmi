@@ -1953,6 +1953,17 @@
 .tpl-institucional .i2-hero__sub { font: 700 24px/1.3 Montserrat, sans-serif; color: var(--i-green); margin-top: 6px; }
 .tpl-institucional .i2-hero--crema p:not(.i2-hero__sub) { max-width: 46ch; margin: 18px 0 26px; font: 500 16px/1.7 Montserrat, sans-serif; color: #3f4a46; }
 .tpl-institucional .i2-hero__foto { height: 100%; min-height: 727px; }
+/* Las fotos recortadas con object-fit: cover se centran por omision, y en
+   retratos eso corta la cabeza. Subiendo el punto de anclaje al 22% el
+   recorte se come el pie de la foto, no la cara. No es deteccion facial,
+   pero funciona para cualquier foto de persona de pie. */
+.tpl-institucional .i2-hero__foto img,
+.tpl-institucional .i2-beca__foto img,
+.tpl-institucional .i2-split__foto img,
+.tpl-institucional .i2-beneficios__foto img,
+.tpl-institucional .i2-paquete__foto img,
+.tpl-institucional .i2-folleto__foto img { object-position: 50% 22%; }
+
 .tpl-institucional .i2-hero__foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
 /* height:100% no resuelve contra un padre que solo tiene min-height: la imagen
    caeria en su alto natural y estiraria el hero. Se fija explicitamente. */
@@ -1990,7 +2001,7 @@
 .tpl-institucional .i2-beca__nota { font-style: italic; color: #6b7672; }
 /* El panel vacio no debe colapsar: queda la caja a la espera del copy. */
 .tpl-institucional .i2-beca__cuerpo:empty { min-height: 120px; }
-.tpl-institucional .i2-beca__foto img { width: 100%; height: 422px; object-fit: cover; border-radius: 20px; display: block; }
+.tpl-institucional .i2-beca__foto img { width: 100%; height: 600px; object-fit: cover; border-radius: 20px; display: block; }
 
 /* --- 5/6/11. modulos partidos foto + texto ------------------------------- */
 .tpl-institucional .i2-split { padding: 92px 0; }
@@ -2005,6 +2016,11 @@
 .tpl-institucional .i2-split--oscuro .i2-split__foto img { height: 264px; }
 .tpl-institucional .i2-split--requisitos .i2-split__foto img { height: 410px; }
 .tpl-institucional .i2-split--video .i2-split__foto { min-height: 360px; }
+/* En movil el video ocupa su 16:9 real (~188px a 335 de ancho): forzar 360
+   dejaba casi 170px de hueco entre el video y el texto. */
+@media (max-width: 760px) {
+  .tpl-institucional .i2-split--video .i2-split__foto { min-height: 0; }
+}
 .tpl-institucional .i2-split__texto h2 { font: 700 30px/1.25 Montserrat, sans-serif; text-align: left; }
 .tpl-institucional .i2-split--oscuro h2 { color: #fff; }
 .tpl-institucional .i2-split--claro  h2 { color: var(--i-deep); }
@@ -2101,7 +2117,7 @@
 .tpl-institucional .i2-heforshe__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 .tpl-institucional .i2-tarjeta-video {
   background: #fff; border-radius: 20px; overflow: hidden; text-align: center;
-  display: flex; flex-direction: column; min-height: 470px;
+  display: flex; flex-direction: column;
 }
 .tpl-institucional .i2-tarjeta-video p { padding: 24px 18px 0; font: 600 18px/1.4 Montserrat, sans-serif; color: var(--i-deep); }
 .tpl-institucional .i2-tarjeta-video .i2-btn { margin: 22px auto 30px; }
@@ -2249,9 +2265,10 @@
 
   .tpl-institucional .i2-form__campos { grid-template-columns: 1fr; }
 
-  .tpl-institucional .i2-footer__alto { flex-direction: column; align-items: flex-start; gap: 18px; }
-  .tpl-institucional .i2-footer__bajo { flex-direction: column; align-items: flex-start; gap: 14px; margin-top: 28px; }
-  .tpl-institucional .i2-footer__legal { gap: 18px; }
+  /* Centrado, para unificarlo con los footers de las otras familias. */
+  .tpl-institucional .i2-footer__alto { flex-direction: column; align-items: center; gap: 18px; }
+  .tpl-institucional .i2-footer__bajo { flex-direction: column; align-items: center; gap: 14px; margin-top: 28px; text-align: center; }
+  .tpl-institucional .i2-footer__legal { gap: 18px; justify-content: center; }
 }
 
 /* --- modulos sueltos del Figma, fuera del frame "Content - Desktop" ------- */
