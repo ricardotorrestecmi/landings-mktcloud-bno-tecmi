@@ -31,7 +31,10 @@
     <main>
       <!-- 1. HERO + FORMULARIO -->
       <section class="hero" id="hero">
-        <div class="hero__foto" style="--hero-image:url('https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/d4f9d2a2-6c43-4703-8196-60c0dc2cf107.jpg')">
+        <div class="hero__foto">
+          <!-- La foto va como <img> y no como fondo de CSS para que se pueda
+               cambiar desde el editor de Content Builder. -->
+          <img class="hero__img" src="https://image.admisiones.tecmilenio.mx/lib/fe2811747364057b7d1d70/m/1/d4f9d2a2-6c43-4703-8196-60c0dc2cf107.jpg" alt="" loading="eager" fetchpriority="high">
           <div class="hero__texto">
             <h1>Campus<br>Tecmilenio</h1>
             <p>Vive experiencias únicas, construye tu camino, amplía tu red de contactos.</p>
