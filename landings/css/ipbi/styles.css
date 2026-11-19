@@ -80,14 +80,16 @@
 /* ---------- Botones ---------- */
 .tpl-ipbi .i2-btn {
   display: inline-flex; align-items: center; justify-content: center;
-  min-height: 52px; padding: 0 32px; border: 0; border-radius: 100px;
+  min-height: 52px; min-width: 293px; padding: 0 32px; border: 0; border-radius: 100px;
   font: 700 16px/18px Montserrat, sans-serif; text-decoration: none;
   white-space: nowrap; cursor: pointer; transition: filter .2s;
 }
 .tpl-ipbi .i2-btn:hover { filter: brightness(1.08); }
 .tpl-ipbi .i2-btn--verde  { background: var(--p-verde);  color: var(--p-blanco); }
 .tpl-ipbi .i2-btn--morado { background: var(--p-morado); color: var(--p-blanco); }
-.tpl-ipbi .i2-btn--chico  { min-height: 35px; padding: 0 24px; font-size: 12px; }
+/* Los botones del Figma tienen ancho fijo: 293x52 el estandar y 190x35 el
+   de la cabecera. Sin min-width se encogian al ancho del texto. */
+.tpl-ipbi .i2-btn--chico  { min-height: 35px; min-width: 190px; padding: 0 24px; font-size: 12px; }
 
 /* ---------- Cabecera ---------- */
 .tpl-ipbi .i2-header { background: var(--p-verde); }
@@ -144,7 +146,12 @@
    cae exactamente sobre el del resto de la pagina a cualquier ancho. Sin
    100vw, que incluye la barra de scroll. */
 .tpl-ipbi .i2-hero__texto {
-  width: calc(var(--p-wrap) / 2 - var(--p-gutter));
+  /* El borde izquierdo del texto tiene que caer en el borde de contenido de
+     la pagina, y ese borde cambia de regimen: mientras la reticula cabe
+     entera manda el margen lateral, y a partir de ~1378 manda el centrado
+     de los 1240. min() elige el correcto en cada ancho; con un solo valor
+     fallaba en la banda de 1240 a 1378. */
+  width: min(calc(100% - var(--p-gutter)), calc(var(--p-wrap) / 2));
   max-width: 100%;
   margin-left: auto;
   padding: 64px 32px 64px 0;
@@ -292,7 +299,8 @@
   flex: 0 0 347px; scroll-snap-align: start;
   border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;
 }
-.tpl-ipbi .i2-experto img { width: 100%; height: 213px; object-fit: cover; object-position: 50% 22%; }
+/* 300 a peticion del cliente; en el Figma eran 213. */
+.tpl-ipbi .i2-experto img { width: 100%; height: 300px; object-fit: cover; object-position: 50% 22%; }
 .tpl-ipbi .i2-experto__cuerpo { flex: 1; padding: 22px 24px 28px; text-align: center; color: var(--p-bg); }
 .tpl-ipbi .i2-experto h3 {
   font: 700 16px/22px Montserrat, sans-serif; text-transform: uppercase; letter-spacing: .02em;
@@ -353,7 +361,7 @@
   font: 500 16px/22px Montserrat, sans-serif; color: var(--p-verde);
 }
 .tpl-ipbi .i2-plan__panel li::before { content: "·"; position: absolute; left: 6px; }
-.tpl-ipbi .i2-plan__panel .i2-btn { margin-top: auto; align-self: flex-start; }
+.tpl-ipbi .i2-plan__panel .i2-btn { margin-top: auto; align-self: flex-start; min-width: 295px; }
 
 /* ---------- B7. Formulario (Figma 1:206) ---------- */
 /* El margen lateral vive en la seccion, no en el contenedor: puesto dentro
@@ -396,7 +404,7 @@
   width: 12px; height: 12px; margin: 3px 0 0; flex-shrink: 0; accent-color: var(--p-morado);
 }
 .tpl-ipbi .i2-form__aviso a { color: var(--p-bg); }
-.tpl-ipbi .i2-form__enviar { width: 100%; }
+.tpl-ipbi .i2-form__enviar { width: 100%; min-width: 0; }
 
 /* ==========================================================================
    C. MUSEOS POSITIVOS — landing "Programa Museos Positivos"
@@ -698,7 +706,7 @@
   margin: 20px auto 0; max-width: 819px;
   font: 500 16px/22px Montserrat, sans-serif; color: var(--t-verde);
 }
-.tpl-ipbi .i2-banda--clara .i2-btn { min-width: 342px; }
+.tpl-ipbi .i2-banda--clara .i2-btn { min-width: 380px; }
 
 /* ---------- D7. Registro (Figma 2:4121, 1440x1252) ---------- */
 /* El bloque de campos mide 820 y las mitades 400: de ahi los 20 de hueco. */
@@ -732,8 +740,10 @@
   .tpl-ipbi.lp-ipbi .i2-split--claro   { padding: 68px 0; }            /* 654 */
   .tpl-ipbi.lp-ipbi .i2-split--blanco  { padding: 82px 0 83px; }       /* 612 */
   .tpl-ipbi.lp-ipbi .i2-banda--ayuda   { padding: 135px 0; }           /* 424 */
-  .tpl-ipbi.lp-ipbi .i2-expertos       { padding: 129px 0 137px; }     /* 803 */
-  .tpl-ipbi.lp-ipbi .i2-plan           { padding: 117px 0 126px; }     /* 650 */
+  /* El cliente pidio reducir el blanco entre expertos y Plan de Estudios:
+     eran 254px sumando los dos modulos, ahora 128. */
+  .tpl-ipbi.lp-ipbi .i2-expertos       { padding: 129px 0 64px; }
+  .tpl-ipbi.lp-ipbi .i2-plan           { padding: 64px 0 126px; }
   .tpl-ipbi.lp-ipbi .i2-form           { padding: 89px var(--p-gutter) 98px; }  /* 747 */
 
   /* --- Museos Positivos --- */
@@ -762,29 +772,32 @@
    Medidas tomadas de los rectangulos del Figma, modulo por modulo.
    ========================================================================== */
 
+/* El color de la tarjeta vale en todos los anchos; los altos fijos solo
+   en escritorio, porque en telefono manda el contenido. */
+.tpl-ipbi.lp-ipbi    .i2-split--claro   .i2-split__texto { background: var(--p-blanco); }
+.tpl-ipbi.lp-ipbi    .i2-split--blanco  .i2-split__texto { background: #ebebeb; }
+.tpl-ipbi.lp-museos  .i2-split--claro   .i2-split__texto { background: var(--p-blanco); }
+.tpl-ipbi.lp-museos  .i2-split--video   .i2-split__texto { background: none; }
+.tpl-ipbi.lp-premios .i2-split--claro   .i2-split__texto { background: var(--p-blanco); }
+.tpl-ipbi.lp-premios .i2-split--premios .i2-split__texto { background: #ebebeb; }
+
 @media (min-width: 761px) {
-  /* Liderazgo: "Por que estudiar" -- tarjeta blanca, foto de 518 */
-  .tpl-ipbi.lp-ipbi .i2-split--claro .i2-split__texto { background: var(--p-blanco); min-height: 518px; }
+  .tpl-ipbi.lp-ipbi .i2-split--claro .i2-split__texto { min-height: 518px; }
   .tpl-ipbi.lp-ipbi .i2-split--claro .i2-split__foto img { height: 518px; }
-  /* Liderazgo: "A quien va dirigido" -- tarjeta gris, foto de 447 */
-  .tpl-ipbi.lp-ipbi .i2-split--blanco .i2-split__texto { background: #ebebeb; min-height: 412px; }
+  .tpl-ipbi.lp-ipbi .i2-split--blanco .i2-split__texto { min-height: 412px; }
   .tpl-ipbi.lp-ipbi .i2-split--blanco .i2-split__foto img { height: 447px; }
 
-  /* Museos: "Conocenos" -- tarjeta blanca sobre el fondo de bolitas */
-  .tpl-ipbi.lp-museos .i2-split--claro .i2-split__texto { background: var(--p-blanco); min-height: 412px; }
+  .tpl-ipbi.lp-museos .i2-split--claro .i2-split__texto { min-height: 412px; }
   .tpl-ipbi.lp-museos .i2-split--claro .i2-split__foto img { height: 412px; }
-  /* Museos: CURSA -- sin tarjeta, video de 344. La imagen tiene que llenar
-     la caja: la regla general de .i2-split__foto img le pone 440 y el
-     modulo crecia 150px de mas. */
-  .tpl-ipbi.lp-museos .i2-split--video .i2-split__texto { background: none; padding: 0; min-height: 0; }
+  .tpl-ipbi.lp-museos .i2-split--video .i2-split__texto { padding: 0; min-height: 0; }
   .tpl-ipbi.lp-museos .i2-split--video .i2-split__foto { height: 344px; }
   .tpl-ipbi.lp-museos .i2-split--video .i2-split__foto img { height: 100%; }
 
-  /* Premios: "Que son" -- tarjeta blanca, foto de 412 */
-  .tpl-ipbi.lp-premios .i2-split--claro .i2-split__texto { background: var(--p-blanco); min-height: 412px; }
+  .tpl-ipbi .i2-split__texto .i2-btn { align-self: flex-start; min-width: 293px; }
+
+  .tpl-ipbi.lp-premios .i2-split--claro .i2-split__texto { min-height: 412px; }
   .tpl-ipbi.lp-premios .i2-split--claro .i2-split__foto img { height: 412px; }
-  /* Premios: "Como participar" -- tarjeta gris, foto de 447 */
-  .tpl-ipbi.lp-premios .i2-split--premios .i2-split__texto { background: #ebebeb; min-height: 412px; }
+  .tpl-ipbi.lp-premios .i2-split--premios .i2-split__texto { min-height: 412px; }
   .tpl-ipbi.lp-premios .i2-split--premios .i2-split__foto img { height: 447px; }
 }
 
@@ -813,8 +826,8 @@
 
 @media (max-width: 760px) {
   .tpl-ipbi .i2-header__wrap { height: 70px; gap: 12px; }
-  /* El logo es un lockup muy ancho (374x35) y junto al boton no cabe en un
-     telefono: se deja encoger para que "Mas Informacion" no parta en dos. */
+  /* El lockup mide 374x35 y junto al boton no cabe en un telefono: se deja
+     encoger para que la etiqueta del boton no parta en dos lineas. */
   .tpl-ipbi .i2-header__logo { min-width: 0; }
   .tpl-ipbi .i2-header__logo img { width: 100%; max-width: 200px; height: auto; }
   .tpl-ipbi .i2-footer__logo img { width: 230px; height: 22px; }
@@ -826,12 +839,21 @@
   .tpl-ipbi .i2-hero__lockup { width: 118px; height: 71px; }
   .tpl-ipbi .i2-hero__sello  { width: 210px; height: 43px; }
   .tpl-ipbi .i2-hero h1 { font-size: 36px; line-height: 40px; }
+  .tpl-ipbi .i2-btn { min-width: 0; }
   .tpl-ipbi .i2-hero .i2-btn { width: 100%; }
   .tpl-ipbi .i2-hero__foto { min-height: 0; height: 320px; }
   .tpl-ipbi .i2-video span { width: 72px; height: 72px; border-width: 2px; }
   .tpl-ipbi .i2-video span::after { border-left-width: 22px; border-top-width: 14px; border-bottom-width: 14px; margin-left: 5px; }
 
-  .tpl-ipbi .i2-banda__wrap { flex-direction: column; align-items: flex-start; gap: 18px; padding: 28px var(--p-gutter); }
+  /* Dos en una fila y el tercero centrado debajo, a peticion del cliente.
+     Se dobla el numero de columnas para que el solitario arranque en la
+     segunda sin perder ancho. */
+  .tpl-ipbi .i2-banda__wrap {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px; padding: 28px var(--p-gutter);
+  }
+  .tpl-ipbi .i2-banda__item { grid-column: span 2; }
+  .tpl-ipbi .i2-banda__item:nth-child(3) { grid-column: 2 / span 2; justify-content: center; }
   .tpl-ipbi .i2-banda__item img { width: 44px; height: 44px; }
 
   .tpl-ipbi .i2-split { padding: 44px 0; }
@@ -841,6 +863,7 @@
   .tpl-ipbi .i2-split--invertido .i2-split__foto { order: 0; }
   /* 40px de margen interno se comen demasiado de una tarjeta de 335. */
   .tpl-ipbi .i2-split__texto { padding: 26px 22px; min-height: 0; }
+  .tpl-ipbi .i2-split--video .i2-split__texto { padding: 0; }
   .tpl-ipbi .i2-split__foto img { height: 260px; }
   .tpl-ipbi .i2-split__texto h2 { font-size: 24px; line-height: 28px; }
 
@@ -868,7 +891,6 @@
 
   /* --- Museos Positivos --- */
   .tpl-ipbi .i2-header__marcas { gap: 12px; }
-  .tpl-ipbi .i2-header__programa { height: 34px; }
   .tpl-ipbi .i2-hero--museos { min-height: 0; background-position: center top; }
   .tpl-ipbi .i2-hero--museos h1 { font-size: 30px; line-height: 36px; }
   .tpl-ipbi .i2-hero--museos .i2-hero__foto { min-height: 0; height: 280px; }
@@ -887,15 +909,16 @@
   .tpl-ipbi .i2-form--museos h2 { font-size: 20px; line-height: 26px; }
 
   /* --- Premios TOP --- */
-  /* Dos logos y un boton no caben en una linea de telefono: la cabecera pasa
-     a dos filas en vez de encimar las marcas. */
-  .tpl-ipbi .i2-header--claro .i2-header__wrap {
-    flex-direction: column; height: auto; padding: 14px var(--p-gutter) 16px; gap: 12px;
-  }
-  .tpl-ipbi .i2-header--claro .i2-header__marcas { gap: 14px; justify-content: center; }
-  .tpl-ipbi .i2-header--claro .i2-header__logo img { width: auto; max-width: 170px; height: auto; }
-  .tpl-ipbi .i2-header__amedirh { width: auto; max-width: 96px; height: auto; }
-  .tpl-ipbi .i2-header--claro .i2-btn--chico { width: 100%; }
+  /* PRUEBA: las dos marcas y el boton en UNA sola fila, como pidio el
+     cliente. Obliga a encoger el lockup de Tecmilenio y el de AMEDIRH. */
+  .tpl-ipbi.lp-museos .i2-header__marcas,
+  .tpl-ipbi.lp-premios .i2-header__marcas { gap: 8px; min-width: 0; }
+  .tpl-ipbi.lp-museos .i2-header__logo img,
+  .tpl-ipbi.lp-premios .i2-header__logo img { width: auto; max-width: 128px; height: auto; }
+  .tpl-ipbi .i2-header__amedirh { width: auto; max-width: 74px; height: auto; }
+  .tpl-ipbi .i2-header__programa { height: 30px; }
+  .tpl-ipbi.lp-museos .i2-header .i2-btn--chico,
+  .tpl-ipbi.lp-premios .i2-header .i2-btn--chico { padding: 0 12px; font-size: 11px; }
   .tpl-ipbi .i2-hero--premios { min-height: 0; padding: 44px var(--p-gutter) 48px; }
   .tpl-ipbi .i2-hero__emblema { width: 124px; margin-bottom: 20px; }
   .tpl-ipbi .i2-hero--premios h1 { font-size: 34px; line-height: 38px; }

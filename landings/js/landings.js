@@ -835,12 +835,53 @@ document.querySelectorAll("#np-form").forEach(function (f) {
         var gap = parseFloat(getComputedStyle(carril).columnGap || getComputedStyle(carril).gap || 0) || 0;
         return tarjeta.getBoundingClientRect().width + gap;
     }
+    /* Carrusel infinito: solo para los carriles marcados con data-car-loop.
+       Los demas carruseles de las otras paginas no cambian.
+
+       Se duplica la lista una vez. Cuando el scroll pasa del final de la
+       primera copia se devuelve de golpe, sin animacion, un ancho de copia:
+       como lo que se ve es identico, el salto es imperceptible y nunca
+       aparece el rebobinado. La correccion se hace con el carril quieto,
+       porque hacerla a media animacion la cancelaria. */
+    function anchoCopia(carril) {
+        var gap = parseFloat(getComputedStyle(carril).columnGap || getComputedStyle(carril).gap || 0) || 0;
+        return (carril.scrollWidth + gap) / 2;
+    }
+    document.querySelectorAll('[data-car-track][data-car-loop]').forEach(function (carril) {
+        var originales = Array.prototype.slice.call(carril.children);
+        if (!originales.length) return;
+        originales.forEach(function (nodo) {
+            var copia = nodo.cloneNode(true);
+            copia.setAttribute('aria-hidden', 'true');
+            copia.setAttribute('data-car-copia', '');
+            /* Las copias NO pueden ir en carga diferida: su imagen terminaria
+               de cargar a destiempo, cambiaria el ancho del carril y eso
+               cancela la animacion de scroll en curso, dejando el carrusel
+               clavado. Como la imagen es la misma que la del original, ya
+               esta en cache y no supone otra descarga. */
+            Array.prototype.forEach.call(copia.querySelectorAll('img'), function (im) {
+                im.setAttribute('loading', 'eager');
+            });
+            carril.appendChild(copia);
+        });
+    });
     document.querySelectorAll('[data-car]').forEach(function (boton) {
         boton.addEventListener('click', function () {
             var carril = document.querySelector('[data-car-track="' + boton.getAttribute('data-car') + '"]');
             if (!carril) return;
+            var salto = paso(carril);
+            var dir = parseInt(boton.getAttribute('data-dir'), 10);
+            /* En un carril infinito se recoloca ANTES de animar, de golpe: asi
+               la costura nunca se anima y no depende de ningun temporizador.
+               Hacia atras hay que adelantar una copia entera, porque si no el
+               destino seria negativo y el navegador lo recorta a cero. */
+            if (carril.hasAttribute('data-car-loop')) {
+                var copia = anchoCopia(carril);
+                if (carril.scrollLeft >= copia - 1) carril.scrollLeft -= copia;
+                if (dir < 0 && carril.scrollLeft < salto) carril.scrollLeft += copia;
+            }
             var antes = carril.scrollLeft;
-            var destino = antes + paso(carril) * parseInt(boton.getAttribute('data-dir'), 10);
+            var destino = antes + salto * dir;
             carril.scrollTo({ left: destino, behavior: 'smooth' });
             setTimeout(function () { if (carril.scrollLeft === antes) carril.scrollLeft = destino; }, 60);
         });
