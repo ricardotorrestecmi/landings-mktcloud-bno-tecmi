@@ -49,8 +49,10 @@ beneficio de Museos, temario, categorias y la lista de pasos numerados.
 - Formularios: 820 de ancho con mitades de 400 (Museos y Premios) y 505 con
   mitades de 242 (Liderazgo).
 - Cinco de los seis splits llevan una tarjeta bajo el texto: blanca en
-  "Por que estudiar", "Conocenos" y "Que son los Premios TOP"; `#ebebeb` en
+  "Por que estudiar", "Conocenos" y "Que son los Premios TOP"; gris en
   "A quien va dirigido" y "Como participar". CURSA no lleva.
+  OJO: esas dos grises van en `#f8f9fa` por peticion del cliente, no en el
+  `#ebebeb` que dibuja el Figma.
 
 ## Pendiente de Marketing
 

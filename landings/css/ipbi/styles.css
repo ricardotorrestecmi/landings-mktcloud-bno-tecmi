@@ -773,13 +773,15 @@
    ========================================================================== */
 
 /* El color de la tarjeta vale en todos los anchos; los altos fijos solo
-   en escritorio, porque en telefono manda el contenido. */
+   en escritorio, porque en telefono manda el contenido.
+   Las dos tarjetas grises van en #f8f9fa a peticion del cliente; el Figma
+   las dibuja en #ebebeb. */
 .tpl-ipbi.lp-ipbi    .i2-split--claro   .i2-split__texto { background: var(--p-blanco); }
-.tpl-ipbi.lp-ipbi    .i2-split--blanco  .i2-split__texto { background: #ebebeb; }
+.tpl-ipbi.lp-ipbi    .i2-split--blanco  .i2-split__texto { background: #f8f9fa; }
 .tpl-ipbi.lp-museos  .i2-split--claro   .i2-split__texto { background: var(--p-blanco); }
 .tpl-ipbi.lp-museos  .i2-split--video   .i2-split__texto { background: none; }
 .tpl-ipbi.lp-premios .i2-split--claro   .i2-split__texto { background: var(--p-blanco); }
-.tpl-ipbi.lp-premios .i2-split--premios .i2-split__texto { background: #ebebeb; }
+.tpl-ipbi.lp-premios .i2-split--premios .i2-split__texto { background: #f8f9fa; }
 
 @media (min-width: 761px) {
   .tpl-ipbi.lp-ipbi .i2-split--claro .i2-split__texto { min-height: 518px; }
